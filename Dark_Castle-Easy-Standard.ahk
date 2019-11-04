@@ -1,3 +1,7 @@
+^e::
+Run A_AhkPath " " A_ScriptFullPath
+ExitApp
+
 #If WinActive("BloonsTD6")
 ^j::
 Click 800, 900          ; Play
