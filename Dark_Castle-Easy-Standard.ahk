@@ -27,7 +27,11 @@ Sleep 200
 Send "-"            ; Dart -> 0-0-1
 Sleep 100
 Send "-"            ; Dart -> 0-0-2
-Sleep 10000		
+Sleep 100
+Click 785, 555
+Sleep 100
+MouseMove 1500, 1000
+Sleep 9800		
 MouseMove 1071, 409
 Sleep 100
 Send "x"            ; Monkey Sub
@@ -35,20 +39,40 @@ Sleep 100
 Click 1071, 409		
 Sleep 100
 Click 1071, 409
-Sleep 25000		
+Sleep 100
+Click 1500, 1000
+Sleep 24800
+Click 1071, 409
+Sleep 100		
 Send ","            ; Sub -> 1-0-0
 Sleep 100
 Send ","            ; Sub -> 2-0-0
-Sleep 19000		
+Sleep 100
+Click 1500, 1000
+Sleep 18800
+Click 1071, 409
+Sleep 100		
 Send "-"            ; Sub -> 2-0-1
-Sleep 49000		
+Sleep 100
+Click 1500, 1000
+Sleep 48800
+Click 1071, 409
+Sleep 100		
 Send "-"            ; Sub -> 2-0-2
-Sleep 41000		
+Sleep 100
+Click 1500, 1000
+Sleep 40800
+Click 1071, 409
+Sleep 100		
 Send "-"            ; Sub -> 2-0-3
-Sleep 60000		
+Sleep 100
+Click 1500, 1000
+Sleep 59800
+Click 1071, 409
+Sleep 100		
 Send "-"            ; Sub -> 2-0-4
 Sleep 100
-Click 785, 555      ; Close upgrade menu
-Sleep 160000
+Click 1500, 1000
+Sleep 158500
 Click 760, 911      ; Home
 return
