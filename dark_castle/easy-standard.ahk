@@ -47,7 +47,7 @@ PlayGame() {
     Click("1500 1000")
     Sleep(20800)
     Click("1150 390")
-    Sleep 100)
+    Sleep(100)
     Send("-")           ; Sub -> 2-0-1
     Sleep(100)
     Click("1500 1000")
