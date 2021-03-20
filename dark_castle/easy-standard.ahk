@@ -84,21 +84,32 @@ FindElement(picName) {
     Return xCoord and yCoord
 }
 
-OpenCollections() {
-    Click("683 535")
-    Sleep(1000)
-    Click("900, 550")
-    Sleep(500)
-    Click("897 535")
-    Sleep(1000)
-    Click("900, 550")
-    Sleep(500)
-    Click("1190 535")
-    Sleep(1000)
-    Click("900, 550")
-    Sleep(500)
-    Click("950 930")
-    Sleep(500)
+CheckForDefeat() {
+    If FindElement("../res/gc_defeat.png") {
+        Click("700 810")
+        Sleep(3000)
+    }
+}
+
+OpenBoxes() {
+    If FindElement("../res/gc_event.png") {
+        ClickElement("../res/gc_collect.png", 2000)
+        Click("683 535")
+        Sleep(1000)
+        Click("900, 550")
+        Sleep(500)
+        Click("897 535")
+        Sleep(1000)
+        Click("900, 550")
+        Sleep(500)
+        Click("1190 535")
+        Sleep(1000)
+        Click("900, 550")
+        Sleep(500)
+        Click("950 930")
+        Sleep(500)
+        ClickElement("../res/gc_return.png", 1000)
+    }
 }
 
 
@@ -122,16 +133,8 @@ OpenCollections() {
             ; ClickElement("../res/gc_home.png", 3000)
             Click("800 850")
             Sleep(3000)
-
-            If FindElement("../res/gc_defeat.png") {
-                Click("700 810")
-            }
-
-            If FindElement("../res/gc_event.png") {
-                ClickElement("../res/gc_collect.png", 2000)
-                OpenCollections()
-                ClickElement("../res/gc_return.png", 1000)
-            }
+            CheckForDefeat()
+            OpenBoxes()
         }
     }
     Return
