@@ -126,7 +126,7 @@ If WinActive("BloonsTD6") {
         If FindElement("../res/gc_event.png") {
             ClickElement("../res/gc_collect.png", 2000)
             OpenCollections()
-            ClickElement("../res/gc_return", 500)
+            ClickElement("../res/gc_return.png", 500)
         }
     }
 }
