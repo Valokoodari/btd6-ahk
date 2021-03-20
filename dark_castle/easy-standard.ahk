@@ -123,6 +123,10 @@ OpenCollections() {
             Click("800 850")
             Sleep(3000)
 
+            If FindElement("../res/gc_defeat.png") {
+                Click("700 810")
+            }
+
             If FindElement("../res/gc_event.png") {
                 ClickElement("../res/gc_collect.png", 2000)
                 OpenCollections()
