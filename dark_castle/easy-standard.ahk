@@ -1,5 +1,5 @@
 ; Author: Valokoodari
-; Script status: Experimental
+; Script status: Unstable
 ; Game version: v24.1.3723
 ; Display resolution: 1920 x 1080
 
@@ -126,7 +126,7 @@ If WinActive("BloonsTD6") {
         If FindElement("../res/gc_event.png") {
             ClickElement("../res/gc_collect.png", 2000)
             OpenCollections()
-            ClickElement("../res/gc_return.png", 500)
+            ClickElement("../res/gc_return.png", 1000)
         }
     }
 }
