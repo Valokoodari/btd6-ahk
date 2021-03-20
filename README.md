@@ -1,4 +1,6 @@
-# Bloons TD 6 with AutoHotkey v2
+# Bloons TD 6 with AutoHotkey v2  
+
+[Download AutoHotkey v2](https://www.autohotkey.com/download/ahk-v2.zip)  
 
 ### Script status  
 - __Experimental__: Might work sometimes but definitely not always  
