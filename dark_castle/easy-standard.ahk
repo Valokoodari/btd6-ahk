@@ -73,14 +73,14 @@ PlayGame() {
 }
 
 ClickElement(picName, sleepTime) {
-    ImageSearch(xCoord, yCoord, 0, 0, 1920, 1080, picName)
+    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, picName)
     clickCoords := xCoord " " yCoord
     Click(clickCoords)
     Sleep(sleepTime)
 }
 
 FindElement(picName) {
-    ImageSearch(xCoord, yCoord, 0, 0, 1920, 1080, picName)
+    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, picName)
     Return xCoord and yCoord
 }
 
@@ -102,32 +102,33 @@ OpenCollections() {
 }
 
 
-^e::
-ExitApp
+^e:: {
+    ExitApp
+}
 
+^j:: {
+    If WinActive("BloonsTD6") {
+        Loop {
+            ClickElement("../res/gc_start.png", 1000)
+            ClickElement("../res/gc_expert.png", 500)
+            ClickElement("../res/gc_expert.png", 1000)
+            ClickElement("../res/gc_dark_castle.png", 500)
+            ClickElement("../res/gc_easy.png", 500)
+            ClickElement("../res/gc_standard.png", 5000)
+            PlayGame()
+            ; ClickElement("../res/gc_next.png", 500)
+            Click("950 900")
+            Sleep(500)
+            ; ClickElement("../res/gc_home.png", 3000)
+            Click("800 850")
+            Sleep(3000)
 
-^j::
-If WinActive("BloonsTD6") {
-    Loop {
-        ClickElement("../res/gc_start.png", 1000)
-        ClickElement("../res/gc_expert.png", 500)
-        ClickElement("../res/gc_expert.png", 1000)
-        ClickElement("../res/gc_dark_castle.png", 500)
-        ClickElement("../res/gc_easy.png", 500)
-        ClickElement("../res/gc_standard.png", 5000)
-        PlayGame()
-        ; ClickElement("../res/gc_next.png", 500)
-        Click("950 900")
-        Sleep(500)
-        ; ClickElement("../res/gc_home.png", 3000)
-        Click("800 850")
-        Sleep(3000)
-
-        If FindElement("../res/gc_event.png") {
-            ClickElement("../res/gc_collect.png", 2000)
-            OpenCollections()
-            ClickElement("../res/gc_return.png", 1000)
+            If FindElement("../res/gc_event.png") {
+                ClickElement("../res/gc_collect.png", 2000)
+                OpenCollections()
+                ClickElement("../res/gc_return.png", 1000)
+            }
         }
     }
+    Return
 }
-Return
