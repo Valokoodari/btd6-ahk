@@ -129,7 +129,7 @@ OpenBoxes() {
 
             PlayGame()
             
-            ClickElement("../res/gc_next.png", 500)
+            ClickElement("../res/gc_next.png", 1000)
             ClickElement("../res/gc_home.png", 3000)
             
             CheckForDefeat()
