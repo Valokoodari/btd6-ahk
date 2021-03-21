@@ -73,14 +73,14 @@ PlayGame() {
 }
 
 ClickElement(picName, sleepTime) {
-    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, picName)
+    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*25 " picName)
     clickCoords := xCoord " " yCoord
     Click(clickCoords)
     Sleep(sleepTime)
 }
 
 FindElement(picName) {
-    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, picName)
+    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*25 " picName)
     Return xCoord and yCoord
 }
 
@@ -120,32 +120,18 @@ OpenBoxes() {
 ^j:: {
     If WinActive("BloonsTD6") {
         Loop {
-            ;ClickElement("../res/gc_start.png", 1000)
-            Click("830 930")
-            Sleep(1000)
-            ;ClickElement("../res/gc_expert.png", 500)
-            Click("1350 975")
-            Sleep(500)
-            ;ClickElement("../res/gc_expert.png", 1000)
-            Click("1350 975")
-            Sleep(1000)
-            ;ClickElement("../res/gc_dark_castle.png", 500)
-            Click("530 260")
-            Sleep(500)
-            ;ClickElement("../res/gc_easy.png", 500)
-            Click("630 400")
-            Sleep(500)
-            ;ClickElement("../res/gc_standard.png", 5000)
-            Click("630 590")
-            Sleep(5000)
+            ClickElement("../res/gc_play.png", 1000)
+            ClickElement("../res/gc_expert.png", 500)
+            ClickElement("../res/gc_expert.png", 1000)
+            ClickElement("../res/gc_dark_castle.png", 500)
+            ClickElement("../res/gc_easy.png", 500)
+            ClickElement("../res/gc_standard.png", 5000)
 
             PlayGame()
-            ; ClickElement("../res/gc_next.png", 500)
-            Click("950 900")
-            Sleep(500)
-            ; ClickElement("../res/gc_home.png", 3000)
-            Click("800 850")
-            Sleep(3000)
+            
+            ClickElement("../res/gc_next.png", 500)
+            ClickElement("../res/gc_home.png", 3000)
+            
             CheckForDefeat()
             OpenBoxes()
         }
