@@ -1,7 +1,7 @@
 ; Author: Valokoodari
-; Script status: Unstable
+; Script status: Stable
 ; Game version: v24.1.3723
-; Display resolution: 1920 x 1080
+; Game resolution: 1920 x 1080
 
 
 PlayGame() {
@@ -73,27 +73,27 @@ PlayGame() {
 }
 
 ClickElement(picName, sleepTime) {
-    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*25 " picName)
+    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*25 ../res/gc_" picName ".png")
     clickCoords := xCoord " " yCoord
     Click(clickCoords)
     Sleep(sleepTime)
 }
 
 FindElement(picName) {
-    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*25 " picName)
+    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*25 ../res/gc_" picName ".png")
     Return xCoord and yCoord
 }
 
 CheckForDefeat() {
-    If FindElement("../res/gc_defeat.png") {
+    If FindElement("defeat") {
         Click("700 810")
         Sleep(3000)
     }
 }
 
 OpenBoxes() {
-    If FindElement("../res/gc_event.png") {
-        ClickElement("../res/gc_collect.png", 2000)
+    If FindElement("event") {
+        ClickElement("collect", 2000)
         Click("683 535")
         Sleep(1000)
         Click("900, 550")
@@ -108,7 +108,7 @@ OpenBoxes() {
         Sleep(500)
         Click("950 930")
         Sleep(500)
-        ClickElement("../res/gc_return.png", 1000)
+        ClickElement("return", 1000)
     }
 }
 
@@ -120,17 +120,17 @@ OpenBoxes() {
 ^j:: {
     If WinActive("BloonsTD6") {
         Loop {
-            ClickElement("../res/gc_play.png", 1000)
-            ClickElement("../res/gc_expert.png", 500)
-            ClickElement("../res/gc_expert.png", 1000)
-            ClickElement("../res/gc_dark_castle.png", 500)
-            ClickElement("../res/gc_easy.png", 500)
-            ClickElement("../res/gc_standard.png", 5000)
+            ClickElement("play", 1000)
+            ClickElement("expert", 500)
+            ClickElement("expert", 1000)
+            ClickElement("dark_castle", 500)
+            ClickElement("easy", 500)
+            ClickElement("standard", 5000)
 
             PlayGame()
             
-            ClickElement("../res/gc_next.png", 1000)
-            ClickElement("../res/gc_home.png", 3000)
+            ClickElement("next", 1000)
+            ClickElement("home", 3000)
             
             CheckForDefeat()
             OpenBoxes()
