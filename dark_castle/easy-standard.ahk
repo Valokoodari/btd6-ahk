@@ -3,6 +3,7 @@
 ; Game version: v24.1.3723
 ; Game resolution: 1920 x 1080
 
+#MaxThreadsPerHotkey 3
 
 PlayGame() {
     Send(" ")           ; Start game
@@ -114,7 +115,8 @@ OpenBoxes() {
 
 
 ^e:: {
-    ExitApp
+    Run(A_ScriptFullPath)
+    ExitApp()
 }
 
 ^j:: {
