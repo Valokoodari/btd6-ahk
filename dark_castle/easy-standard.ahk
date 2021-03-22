@@ -74,14 +74,14 @@ PlayGame() {
 }
 
 ClickElement(picName, sleepTime) {
-    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*25 ../res/gc_" picName ".png")
+    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*35 ../res/gc_" picName ".png")
     clickCoords := xCoord " " yCoord
     Click(clickCoords)
     Sleep(sleepTime)
 }
 
 FindElement(picName) {
-    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*25 ../res/gc_" picName ".png")
+    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*35 ../res/gc_" picName ".png")
     Return xCoord and yCoord
 }
 
