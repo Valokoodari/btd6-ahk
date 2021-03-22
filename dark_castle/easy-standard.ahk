@@ -74,14 +74,14 @@ PlayGame() {
 }
 
 ClickElement(picName, sleepTime) {
-    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*35 ../res/gc_" picName ".png")
+    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*30 ../res/gc_" picName ".png")
     clickCoords := xCoord " " yCoord
     Click(clickCoords)
     Sleep(sleepTime)
 }
 
 FindElement(picName) {
-    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*35 ../res/gc_" picName ".png")
+    ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*30 ../res/gc_" picName ".png")
     Return xCoord and yCoord
 }
 
@@ -120,8 +120,8 @@ OpenBoxes() {
 }
 
 ^j:: {
-    If WinActive("BloonsTD6") {
-        Loop {
+    Loop {
+        If WinActive("BloonsTD6") {
             ClickElement("play", 1000)
             ClickElement("expert", 500)
             ClickElement("expert", 1000)
