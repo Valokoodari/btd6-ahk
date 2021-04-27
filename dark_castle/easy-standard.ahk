@@ -1,6 +1,6 @@
 ; Author: Valokoodari
-; Script status: Stable
-; Game version: v24.1.3723
+; Script status: Experimental
+; Game version: v25.1.3828
 ; Game resolution: 1920 x 1080
 
 #MaxThreadsPerHotkey 3
@@ -122,18 +122,40 @@ OpenBoxes() {
 ^j:: {
     Loop {
         If WinActive("BloonsTD6") {
+            /*
             ClickElement("play", 1000)
             ClickElement("expert", 500)
             ClickElement("expert", 1000)
             ClickElement("dark_castle", 500)
             ClickElement("easy", 500)
             ClickElement("standard", 5000)
+            */
+
+            Click("840 970")
+            Sleep(1000)
+            Click("1340 1010")
+            Sleep(500)
+            Click("1340 1010")
+            Sleep(1000)
+            Click("530 290")
+            Sleep(500)
+            Click("630 440")
+            Sleep(500)
+            Click("630 620")
+            Sleep(5000)
 
             PlayGame()
-            
+
+            /*
             ClickElement("next", 1000)
             ClickElement("home", 3000)
-            
+            */
+
+            Click("970 940")
+            Sleep(1000)
+            Click("800 880")
+            Sleep(3000)
+
             CheckForDefeat()
             OpenBoxes()
         }
