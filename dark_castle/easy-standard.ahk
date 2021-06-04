@@ -1,6 +1,6 @@
 ; Author: Valokoodari
 ; Script status: Experimental
-; Game version: v25.1.3828
+; Game version: v26.0.4029
 ; Game resolution: 1920 x 1080
 
 #MaxThreadsPerHotkey 3
@@ -70,7 +70,7 @@ PlayGame() {
     Send("-")           ; Sub -> 2-0-4
     Sleep(100)
     Click("1500 1000")
-    Sleep(135000)
+    Sleep(165000)
 }
 
 ClickElement(picName, sleepTime) {
@@ -137,7 +137,8 @@ OpenBoxes() {
             Sleep(500)
             Click("1340 1010")
             Sleep(1000)
-            Click("530 290")
+            ; Click("530 290")
+            Click("850 300") ; 
             Sleep(500)
             Click("630 440")
             Sleep(500)
