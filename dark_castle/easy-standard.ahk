@@ -5,6 +5,31 @@
 
 #MaxThreadsPerHotkey 3
 
+StartGame() {
+    /*
+    ClickElement("play", 1000)
+    ClickElement("expert", 500)
+    ClickElement("expert", 1000)
+    ClickElement("dark_castle", 500)
+    ClickElement("easy", 500)
+    ClickElement("standard", 5000)
+    */
+
+    Click("840 970")    ; Play
+    Sleep(1000)
+    Click("1340 1010")  ; Expert
+    Sleep(500)
+    Click("1340 1010")  ; Expert
+    Sleep(1000)
+    ; Click("530 290")
+    Click("850 300")    ; Dark Castle 
+    Sleep(500)
+    Click("630 440")    ; Easy
+    Sleep(500)
+    Click("630 620")    ; Standard
+    Sleep(5000)
+}
+
 PlayGame() {
     Send(" ")           ; Start game
     Sleep(100)
@@ -70,7 +95,7 @@ PlayGame() {
     Send("-")           ; Sub -> 2-0-4
     Sleep(100)
     Click("1500 1000")
-    Sleep(165000)
+    Sleep(155000)
 }
 
 ClickElement(picName, sleepTime) {
@@ -120,31 +145,11 @@ OpenBoxes() {
 }
 
 ^j:: {
+    StartGame()
+
     Loop {
         If WinActive("BloonsTD6") {
-            /*
-            ClickElement("play", 1000)
-            ClickElement("expert", 500)
-            ClickElement("expert", 1000)
-            ClickElement("dark_castle", 500)
-            ClickElement("easy", 500)
-            ClickElement("standard", 5000)
-            */
-
-            Click("840 970")
-            Sleep(1000)
-            Click("1340 1010")
-            Sleep(500)
-            Click("1340 1010")
-            Sleep(1000)
-            ; Click("530 290")
-            Click("850 300") ; 
-            Sleep(500)
-            Click("630 440")
-            Sleep(500)
-            Click("630 620")
-            Sleep(5000)
-
+            ; StartGame()
             PlayGame()
 
             /*
@@ -152,13 +157,27 @@ OpenBoxes() {
             ClickElement("home", 3000)
             */
 
-            Click("970 940")
+            Click("970 940")    ; Next
             Sleep(1000)
-            Click("800 880")
+            /*
+            Click("800 880")    ; Home
             Sleep(3000)
+            */
+            Click("1100 850")   ; Freeplay
+            Sleep(1000)
+            Click("950 750")
+            Sleep(1000)
+            Send("{Esc}")       ; Open the menu
+            Sleep(500)
+            Click("1200 850")   ; Restart
+            Sleep(500)
+            Click("1130 720")   ; Restart (Confirm)
+            Sleep(1000)
 
+            /*
             CheckForDefeat()
             OpenBoxes()
+            */
         }
     }
     Return
