@@ -31,24 +31,24 @@ StartGame() {
 }
 
 PlayGame() {
-    Send(" ")           ; Start game
+    Send("{sc039}")     ; Start game
     Sleep(100)
-    Send(" ")           ; Increase Speed
-    Send("u")           ; Hero (Adora)
+    Send("{sc039}")     ; Increase Speed
+    Send("{sc016}")     ; Hero (Adora)
     MouseMove(549, 617)
     Sleep(100)
     Click("549 617")
     Sleep(100)
-    Send("q")           ; Dart Monkey
+    Send("{sc010}")     ; Dart Monkey
     MouseMove(549, 500)
     Sleep(100)
     Click("549 489")
     Sleep(100)
     Click("549 489")
     Sleep(200)
-    Send("-")           ; Dart -> 0-0-1
+    Send("{sc035}")     ; Dart -> 0-0-1
     Sleep(22000)
-    Send("-")           ; Dart -> 0-0-2
+    Send("{sc035}")     ; Dart -> 0-0-2
     Sleep(300)
     Click("785 555")
     Sleep(100)
@@ -56,7 +56,7 @@ PlayGame() {
     Sleep(14000)
     MouseMove(1140, 400)
     Sleep(100)
-    Send("x")           ; Monkey Sub
+    Send("{sc02d}")     ; Monkey Sub
     Sleep(100)
     Click("1140 400")
     Sleep(100)
@@ -66,33 +66,33 @@ PlayGame() {
     Sleep(28800)
     Click("1150 390")
     Sleep(100)
-    Send(",")           ; Sub -> 1-0-0
+    Send("{sc033}")     ; Sub -> 1-0-0
     Sleep(100)
-    Send(",")           ; Sub -> 2-0-0
+    Send("{sc033}")     ; Sub -> 2-0-0
     Sleep(100)
     Click("1500 1000")
     Sleep(20800)
     Click("1150 390")
     Sleep(100)
-    Send("-")           ; Sub -> 2-0-1
+    Send("{sc035}")     ; Sub -> 2-0-1
     Sleep(100)
     Click("1500 1000")
     Sleep(48800)
     Click("1150 390")
     Sleep(100)
-    Send("-")           ; Sub -> 2-0-2
+    Send("{sc035}")     ; Sub -> 2-0-2
     Sleep(100)
     Click("1500 1000")
     Sleep(40800)
     Click("1150 390")
     Sleep(100)
-    Send("-")           ; Sub -> 2-0-3
+    Send("{sc035}")     ; Sub -> 2-0-3
     Sleep(100)
     Click("1500 1000")
     Sleep(59800)
     Click("1150 390")
     Sleep(100)
-    Send("-")           ; Sub -> 2-0-4
+    Send("{sc035}")     ; Sub -> 2-0-4
     Sleep(100)
     Click("1500 1000")
     Sleep(155000)
