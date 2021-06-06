@@ -1,5 +1,9 @@
 # Bloons TD 6 with AutoHotkey v2  
 
+AutoHotkey 2 scripts for Bloons TD 6 to help during collection events. 
+Eventually the goal is to have a script for every game mode on every map but 
+at the moment I don't have enough time for that.  
+
 ### Script status  
 - __Experimental__: Might work sometimes but definitely not always  
 - __Unstable__: Will work most of the time but does require assistance to recover  
