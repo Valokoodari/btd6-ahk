@@ -1,7 +1,7 @@
 ; Author: Valokoodari
 ; Script status: Experimental
-; Game version: v26.0.4029
-; Game resolution: 1920 x 1080
+; Game version: v26.2.4058
+; Game resolution: 1920 x 1080 (fullscreen)
 
 #MaxThreadsPerHotkey 3
 
@@ -169,7 +169,7 @@ OpenBoxes() {
             Sleep(1000)
             Send("{Esc}")       ; Open the menu
             Sleep(500)
-            Click("1200 850")   ; Restart
+            Click("1140 900")   ; Restart
             Sleep(500)
             Click("1130 720")   ; Restart (Confirm)
             Sleep(1000)
