@@ -46,7 +46,7 @@ global y := ""
 
 ^!+p:: {
 	Pause
-	ExitApp()
+	ExitApp
 }
 
 searchImage(picName) {
