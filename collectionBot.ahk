@@ -44,11 +44,6 @@ global y := ""
 	}
 }
 
-^!+a:: {
-	;debug hotkey
-	openBoxes(1000)
-}
-
 ^!+p:: {
 	Pause
 	ExitApp()
