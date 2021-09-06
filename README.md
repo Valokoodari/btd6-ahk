@@ -12,7 +12,7 @@ The script will run continuously until a level up. If you level up, you will nee
 - [Download](https://www.autohotkey.com/download/ahk-v2.zip)  
 - [Documentation](https://lexikos.github.io/v2/docs/AutoHotkey.htm)
 
-##Requirements:
+## Requirements:
 - Full monkey knowledge. (You don't actually need all, but I programmed it with all knowledge on.)
 - Benjamin Hero selected
 - All expert maps unlocked. (Not sure on this one, but better safe than sorry.)
