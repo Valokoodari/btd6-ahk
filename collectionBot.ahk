@@ -1,5 +1,5 @@
 ;Author: OreoCupcakes
-;Script status: Experimental
+;Script status: 
 ;Game version: v27.3.4285
 ;Game resolution: 1920 x 1080 (fullscreen)
 
@@ -21,9 +21,7 @@ global mapIndicators := ["sanc_map", "ravine_map", "flooded_map", "infernal_map"
 global mapState := ""
 global bonusMenuOne := ["bonus_sanc", "bonus_ravine", "bonus_flooded", "bonus_infernal", "bonus_bloody", "bonus_workshop"]
 global bonusMenuTwo := ["bonus_quad", "bonus_ouch", "bonus_dark", "bonus_muddy"]
-global rewardColors := [0xC1D7E5, 0x21B916, 0x00BCFE, 0xAD2EE4, 0xFFD011]
-global x := ""
-global y := ""
+;global rewardColors := [0xC1D7E5, 0x21B916, 0x00BCFE, 0xAD2EE4, 0xFFD011]
 
 ^!+j:: {
 	while WinActive("BloonsTD6") {
@@ -59,9 +57,7 @@ searchImage(picName) {
 	
 clickElement(picName, sleepTime) {
 	if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*30 " A_ScriptDir "\res\gc_" picName ".png") {
-		global x := xCoord
-		global y := yCoord
-		Click(x,y)
+		Click(xCoord,yCoord)
 		Sleep(sleepTime)
 		return true
 	} else {
