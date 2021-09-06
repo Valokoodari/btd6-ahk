@@ -1,8 +1,7 @@
 # Bloons TD 6 with AutoHotkey v2  
 
-AutoHotkey 2 scripts for Bloons TD 6 to help during collection events. 
-Eventually the goal is to have a script for every game mode on every map but 
-at the moment I don't have enough time for that.  
+AutoHotkey 2 script for Bloons TD 6 to help during collection events. Plays through Expert, Easy, Standard maps with the collection bonus active.
+The script will run continuously until a level up. If you level up, you will need to manually restart the script as it will break and get stuck.
 
 ### Script status  
 - __Experimental__: Might work sometimes but definitely not always  
@@ -13,7 +12,12 @@ at the moment I don't have enough time for that.
 - [Download](https://www.autohotkey.com/download/ahk-v2.zip)  
 - [Documentation](https://lexikos.github.io/v2/docs/AutoHotkey.htm)
 
+##Requirements:
+- Full monkey knowledge. (You don't actually need all, but I programmed it with all knowledge on.)
+- Benjamin Hero selected
+- All expert maps unlocked. (Not sure on this one, but better safe than sorry.)
+
+
 ## Usage
-The script should be started while on the main menu by pressing Ctrl+J.  
-The script can be stopped by pressing Ctrl+E.  
-The Dark Castle script uses Adora as the hero.  
+Start the script on the home menu, stage selection menu, collection menu, or in an expert easy/standard map, using hot key Ctrl+Alt+Shift+J.
+The script can be stopped by pressing Ctrl+Alt+Shift+P.  
