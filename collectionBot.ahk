@@ -22,7 +22,6 @@ global mapIndicators := ["sanc_map", "ravine_map", "flooded_map", "infernal_map"
 global mapState := ""
 global bonusMenuOne := ["sanc", "ravine", "flooded", "infernal", "bloody", "workshop"]
 global bonusMenuTwo := ["quad", "ouch", "dark", "muddy"]
-global rewardColors := [0xC1D7E5, 0x21B916, 0x00BCFE, 0xAD2EE4, 0xFFD011]
 global x := ""
 global y := ""
 
@@ -47,7 +46,6 @@ global y := ""
 
 ^!+a:: {
 	;debug hotkey
-	openBoxes(1000)
 }
 
 ^!+p:: {
@@ -203,25 +201,7 @@ selectGameScript() {
 
 openBoxes(sleepTime) {
 	clickElement("collect", sleepTime)
-	
-;	while !searchImage("event") {
-;		clickElement("t5_reward", sleepTime)
-;		clickElement("t4_reward", sleepTime)
-;		clickElement("t3_reward", sleepTime)
-;		clickElement("t2_reward", sleepTime)
-;		clickElement("t1_reward", sleepTime)
-		
-;		Click("960,540")
-;		Sleep(sleepTime)
-		
-;		for pixelColor in rewardColors {
-;			if clickPixel(pixelColor, sleepTime) {		
-;				Click("960,540")
-;				Sleep(sleepTime)
-;			}
-;			break
-;		}
-;	}
+
 	while !searchImage("event") {
 		Click("683 535")
 		Sleep(sleepTime)
