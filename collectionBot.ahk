@@ -1,5 +1,5 @@
 ;Author: OreoCupcakes
-;Script status: 
+;Script status: Experimental
 ;Game version: v27.3.4285
 ;Game resolution: 1920 x 1080 (fullscreen)
 
@@ -15,13 +15,16 @@
 #Include "%A_ScriptDir%\maps\sanctuary_easy.ahk"
 #Include "%A_ScriptDir%\maps\workshop_easy.ahk"
 
+global eventType := "halloween"
 global stateIndicators := ["play_home", "stage_select", "in_game", "collect", "event"]
 global menuState := ""
 global mapIndicators := ["sanc_map", "ravine_map", "flooded_map", "infernal_map", "bloody_map", "workshop_map", "quad_map", "dark_map", "muddy_map", "ouch_map"]
 global mapState := ""
-global bonusMenuOne := ["bonus_sanc", "bonus_ravine", "bonus_flooded", "bonus_infernal", "bonus_bloody", "bonus_workshop"]
-global bonusMenuTwo := ["bonus_quad", "bonus_ouch", "bonus_dark", "bonus_muddy"]
-;global rewardColors := [0xC1D7E5, 0x21B916, 0x00BCFE, 0xAD2EE4, 0xFFD011]
+global bonusMenuOne := ["sanc", "ravine", "flooded", "infernal", "bloody", "workshop"]
+global bonusMenuTwo := ["quad", "ouch", "dark", "muddy"]
+global rewardColors := [0xC1D7E5, 0x21B916, 0x00BCFE, 0xAD2EE4, 0xFFD011]
+global x := ""
+global y := ""
 
 ^!+j:: {
 	while WinActive("BloonsTD6") {
@@ -31,7 +34,7 @@ global bonusMenuTwo := ["bonus_quad", "bonus_ouch", "bonus_dark", "bonus_muddy"]
 			case "Home":
 				clickElement("play_home", 1000)
 			case "Stage Selection":
-				selectExpertMap(1000, 4000)
+				selectExpertMap(1000, 5000)
 			case "In Game":
 				selectGameScript()
 			case "Collect Event Boxes":
@@ -42,9 +45,14 @@ global bonusMenuTwo := ["bonus_quad", "bonus_ouch", "bonus_dark", "bonus_muddy"]
 	}
 }
 
+^!+a:: {
+	;debug hotkey
+	openBoxes(1000)
+}
+
 ^!+p:: {
 	Pause
-	ExitApp
+	ExitApp()
 }
 
 searchImage(picName) {
@@ -57,7 +65,9 @@ searchImage(picName) {
 	
 clickElement(picName, sleepTime) {
 	if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*30 " A_ScriptDir "\res\gc_" picName ".png") {
-		Click(xCoord,yCoord)
+		global x := xCoord
+		global y := yCoord
+		Click(x,y)
 		Sleep(sleepTime)
 		return true
 	} else {
@@ -101,9 +111,11 @@ selectExpertMap(sleepTime, loadTime) {
 	}
 	
 	foundMap := false
+	eventBonusName := ""
 	
 	for bonusNameOne in bonusMenuOne {
-		if clickElement(bonusNameOne, sleepTime) {
+		eventBonusName := eventType "_" bonusNameOne
+		if clickElement(eventBonusName, sleepTime) {
 			clickElement("easy", sleepTime)
 			clickElement("standard", loadTime)
 			foundMap := true
@@ -115,7 +127,8 @@ selectExpertMap(sleepTime, loadTime) {
 		clickElement("expert", sleepTime)
 		
 		for bonusNameTwo in bonusMenuTwo {
-			if clickElement(bonusNameTwo, sleepTime) {			
+			eventBonusName := eventType "_" bonusNameTwo
+			if clickElement(eventBonusName, sleepTime) {			
 				clickElement("easy", sleepTime)
 				clickElement("standard", loadTime)
 				foundMap := true
