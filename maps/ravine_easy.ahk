@@ -39,10 +39,10 @@ ravineGameScript(timeScale) {
 			Click("316,735")	; Click Plane 1
 			Sleep(12000)
 			
-			Send("{vkBF}")		; Plane 1 001
+			Send("{sc035}")		; Plane 1 001
 			Sleep(8300)
 			
-			Send("{vkBF}")		; Plane 1 002
+			Send("{sc035}")		; Plane 1 002
 			Sleep(100)
 			
 			Send("^{vk09}")		; Change Target Priotity to Figure Eight
@@ -51,7 +51,7 @@ ravineGameScript(timeScale) {
 			Send("^{vk09}")		; Change Target Priotity to Figure Infinite
 			Sleep(55400)
 			
-			Send("{vkBF}")		; Plane 1 003
+			Send("{sc035}")		; Plane 1 003
 			Sleep(10400)
 			
 			Send("{vkBC}")		; Plane 1 103
@@ -82,7 +82,7 @@ ravineGameScript(timeScale) {
 			Send("{vkBC}")		; Alch 400
 			Sleep(7500)
 			
-			Send("{vkBF}")		; Alch 401
+			Send("{sc035}")		; Alch 401
 			Sleep(8000)
 			
 			Send("{vk56}")		; Plane 2
@@ -95,13 +95,13 @@ ravineGameScript(timeScale) {
 			Click("453,835")	; Click Plane 2
 			Sleep(4800)
 			
-			Send("{vkBF}")		; Plane 2 001
+			Send("{sc035}")		; Plane 2 001
 			Sleep(1800)
 			
-			Send("{vkBF}")		; Plane 2 002
+			Send("{sc035}")		; Plane 2 002
 			Sleep(14300)
 			
-			Send("{vkBF}")		; Plane 2 003
+			Send("{sc035}")		; Plane 2 003
 			Sleep(4500)
 			
 			Send("{vkBC}")		; Plane 2 103
@@ -135,13 +135,13 @@ ravineGameScript(timeScale) {
 			Click("330,923")	; Click Plane 3
 			Sleep(3200)
 			
-			Send("{vkBF}")		; Plane 3 001
+			Send("{sc035}")		; Plane 3 001
 			Sleep(1600)
 			
-			Send("{vkBF}")		; Plane 3 002
+			Send("{sc035}")		; Plane 3 002
 			Sleep(18700)
 			
-			Send("{vkBF}")		; Plane 3 003
+			Send("{sc035}")		; Plane 3 003
 			Sleep(2600)
 			
 			Send("{vkBC}")		; Plane 3 103

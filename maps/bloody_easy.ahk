@@ -38,13 +38,13 @@ bloodyGameScript(timeScale) {
 			Send("{vkBC}")	;sub 200
 			Sleep(7700)
 			
-			Send("{vkBF}")	;sub 201
+			Send("{sc035}")	;sub 201
 			Sleep(21000)
 			
-			Send("{vkBF}")	;sub 202
+			Send("{sc035}")	;sub 202
 			Sleep(31000)
 			
-			Send("{vkBF}")	;sub 203
+			Send("{sc035}")	;sub 203
 			Sleep(3400)
 			
 			Send("{vk5A}")	;sniper
@@ -63,10 +63,10 @@ bloodyGameScript(timeScale) {
 			Send("{vkBC}")	;sniper 100
 			Sleep(6000)
 			
-			Send("{vkBF}")	;sniper 101
+			Send("{sc035}")	;sniper 101
 			Sleep(9400)
 			
-			Send("{vkBF}")	;sniper 102
+			Send("{sc035}")	;sniper 102
 			Sleep(8300)
 			
 			Send("{vk43}")	;boat
@@ -94,13 +94,13 @@ bloodyGameScript(timeScale) {
 			Click("326,178")	;click dart
 			Sleep(100)
 			
-			Send("{vkBF}")	;dart 001
+			Send("{sc035}")	;dart 001
 			Sleep(1300)
 			
-			Send("{vkBF}")	;dart 002
+			Send("{sc035}")	;dart 002
 			Sleep(7500)
 			
-			Send("{vkBF}")	;dart 003
+			Send("{sc035}")	;dart 003
 			Sleep(2600)
 			
 			Send("{vkBE}")	;dart 013
@@ -109,13 +109,13 @@ bloodyGameScript(timeScale) {
 			Send("{vkBE}")	;dart 023
 			Sleep(11000)
 			
-			Send("{vkBF}")	;dart 024
+			Send("{sc035}")	;dart 024
 			Sleep(27300)
 			
 			Click("1186,193")	;click sub
 			Sleep(100)
 			
-			Send("{vkBF}")	;sub 204
+			Send("{sc035}")	;sub 204
 			Sleep(24000)
 			
 			Click("600,605")	;click boat
@@ -127,13 +127,13 @@ bloodyGameScript(timeScale) {
 			Click("835,180")	;click sniper
 			Sleep(100)
 			
-			Send("{vkBF}")	;sniper 103
+			Send("{sc035}")	;sniper 103
 			Sleep(11700)
 			
 			Send("{vkBC}")	;sniper 203
 			Sleep(30500)
 			
-			Send("{vkBF}")	;sniper 204
+			Send("{sc035}")	;sniper 204
 			Sleep(4000)	;wait victory
 		}
 }

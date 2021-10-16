@@ -32,7 +32,7 @@ infernalGameScript(timeScale) {
 			Click("471,789")	; Click on Ship
 			Sleep(9800)
 			
-			Send("{vkBF}")		; Ship 001
+			Send("{sc035}")		; Ship 001
 			Sleep(7900)
 			
 			Send("{vkBE}")		; Ship 011
@@ -41,7 +41,7 @@ infernalGameScript(timeScale) {
 			Send("{vkBE}")		; Ship 021
 			Sleep(10400)
 			
-			Send("{vkBF}")		; Ship 022
+			Send("{sc035}")		; Ship 022
 			Sleep(5000)
 			
 			Send("{vk58}")		; Sub 1
@@ -60,16 +60,16 @@ infernalGameScript(timeScale) {
 			Send("{vkBC}")		; Sub 1 200
 			Sleep(15600)
 			
-			Send("{vkBF}")		; Sub 1 201
+			Send("{sc035}")		; Sub 1 201
 			Sleep(14900)
 			
-			Send("{vkBF}")		; Sub 1 202
+			Send("{sc035}")		; Sub 1 202
 			Sleep(20000)
 			
-			Send("{vkBF}")		; Sub 1 203
+			Send("{sc035}")		; Sub 1 203
 			Sleep(33300)
 			
-			Send("{vkBF}")		; Sub 1 204
+			Send("{sc035}")		; Sub 1 204
 			Sleep(3800)
 			
 			Send("{vk58}")		; Sub 2
@@ -88,28 +88,28 @@ infernalGameScript(timeScale) {
 			Send("{vkBC}")	; Sub 2 200
 			Sleep(2300)
 			
-			Send("{vkBF}")	; Sub 2 201
+			Send("{sc035}")	; Sub 2 201
 			Sleep(5400)
 			
-			Send("{vkBF}")	; Sub 2 202
+			Send("{sc035}")	; Sub 2 202
 			Sleep(12700)
 			
-			Send("{vkBF}")	; Sub 2 203
+			Send("{sc035}")	; Sub 2 203
 			Sleep(24500)
 			
-			Send("{vkBF}")	; Sub 2 204
+			Send("{sc035}")	; Sub 2 204
 			Sleep(100)
 			
 			Click("472,277")	; Click on dart monkey
 			Sleep(6200)
 			
-			Send("{vkBF}")	; dart 001
+			Send("{sc035}")	; dart 001
 			Sleep(1000)
 			
-			Send("{vkBF}")	; dart 002
+			Send("{sc035}")	; dart 002
 			Sleep(1400)
 			
-			Send("{vkBF}")	; dart 003
+			Send("{sc035}")	; dart 003
 			Sleep(2000)
 			
 			Send("{vkBE}")	; dart 013
@@ -118,7 +118,7 @@ infernalGameScript(timeScale) {
 			Send("{vkBE}")	; dart 023
 			Sleep(19400)
 			
-			Send("{vkBF}")	; dart 024
+			Send("{sc035}")	; dart 024
 			Sleep(100)
 			
 			Click("471,789")	; click on boat

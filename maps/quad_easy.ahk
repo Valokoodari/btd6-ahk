@@ -45,10 +45,10 @@ quadGameScript(timeScale) {
 			Send("{vkBE}")	;wizard1 020
 			Sleep(8300)
 			
-			Send("{vkBF}")	;wizard1 021
+			Send("{sc035}")	;wizard1 021
 			Sleep(1800)
 			
-			Send("{vkBF}")	;wizard1 022
+			Send("{sc035}")	;wizard1 022
 			Sleep(16900)
 			
 			Send("{vk41}")	;wizard2
@@ -73,28 +73,28 @@ quadGameScript(timeScale) {
 			Send("{vkBC}")	;spike 100
 			Sleep(2800)
 			
-			Send("{vkBF}")	;spike 101
+			Send("{sc035}")	;spike 101
 			Sleep(5800)
 			
-			Send("{vkBF}")	;spike 102
+			Send("{sc035}")	;spike 102
 			Sleep(9600)
 			
 			Send("{vkBC}")	;spike 202
 			Sleep(16200)
 			
-			Send("{vkBF}")	;spike 203
+			Send("{sc035}")	;spike 203
 			Sleep(38000)
 			
-			Send("{vkBF}")	;spike 204
+			Send("{sc035}")	;spike 204
 			Sleep(100)
 			
 			Click("1344,428")	;click wizard2
 			Sleep(4400)
 			
-			Send("{vkBF}")	;wizard2 021
+			Send("{sc035}")	;wizard2 021
 			Sleep(2600)
 			
-			Send("{vkBF}")	;wizard2 022
+			Send("{sc035}")	;wizard2 022
 			Sleep(31700)
 			
 			Send("{vkBE}")	;wizard2 032
@@ -112,13 +112,13 @@ quadGameScript(timeScale) {
 			Click("713,788")	;click dart
 			Sleep(100)
 			
-			Send("{vkBF}")	;dart 001
+			Send("{sc035}")	;dart 001
 			Sleep(1300)
 			
-			Send("{vkBF}")	;dart 002
+			Send("{sc035}")	;dart 002
 			Sleep(1500)
 			
-			Send("{vkBF}")	;dart 003
+			Send("{sc035}")	;dart 003
 			Sleep(1800)
 			
 			Send("{vkBE}")	;dart 013
@@ -127,7 +127,7 @@ quadGameScript(timeScale) {
 			Send("{vkBE}")	;dart 023
 			Sleep(13400)
 			
-			Send("{vkBF}")	;dart 024
+			Send("{sc035}")	;dart 024
 			Sleep(47000)	;wait for victory
 		}
 }

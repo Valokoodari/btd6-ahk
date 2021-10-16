@@ -50,16 +50,16 @@ ouchGameScript(timeScale) {
 			Click("531,310")	;click dart
 			Sleep(4200)
 			
-			Send("{vkBF}")	;dart 001
+			Send("{sc035}")	;dart 001
 			Sleep(5900)
 			
-			Send("{vkBF}")	;dart 002
+			Send("{sc035}")	;dart 002
 			Sleep(10000)
 			
-			Send("{vkBF}")	;dart 003
+			Send("{sc035}")	;dart 003
 			Sleep(19200)
 			
-			Send("{vkBF}")	;dart 004
+			Send("{sc035}")	;dart 004
 			Sleep(2100)
 			
 			Send("{vkBE}")	;dart 014
@@ -84,7 +84,7 @@ ouchGameScript(timeScale) {
 			Send("{vkBC}")	;ninja 1 200
 			Sleep(1900)
 			
-			Send("{vkBF}")	;ninja 1 201
+			Send("{sc035}")	;ninja 1 201
 			Sleep(4700)
 			
 			Send("{vkBC}")	;ninja 1 301
@@ -106,7 +106,7 @@ ouchGameScript(timeScale) {
 			Send("{vkBC}")	;ninja 2 100
 			Sleep(1900)
 			
-			Send("{vkBF}")	;ninja 2 101
+			Send("{sc035}")	;ninja 2 101
 			Sleep(1700)
 			
 			Send("{vkBC}")	;ninja 2 201

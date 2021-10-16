@@ -54,25 +54,25 @@ darkGameScript(timeScale) {
 			Send("{vkBE}")	;spike 020
 			Sleep(2600)
 			
-			Send("{vkBF}")	;spike 021
+			Send("{sc035}")	;spike 021
 			Sleep(6500)
 			
-			Send("{vkBF}")	;spike 022
+			Send("{sc035}")	;spike 022
 			Sleep(23400)
 			
-			Send("{vkBF}")	;spike 023
+			Send("{sc035}")	;spike 023
 			Sleep(49300)
 			
-			Send("{vkBF}")	;spike 024
+			Send("{sc035}")	;spike 024
 			Sleep(10400)
 			
 			Click("1001,443")	;click wizard
 			Sleep(100)
 			
-			Send("{vkBF}")	;wizard 021
+			Send("{sc035}")	;wizard 021
 			Sleep(2200)
 			
-			Send("{vkBF}")	;wizard 022
+			Send("{sc035}")	;wizard 022
 			Sleep(22800)
 			
 			Send("{vkBE}")	;wizard 032
@@ -94,31 +94,31 @@ darkGameScript(timeScale) {
 			Send("{vkBC}")	;sub 200
 			Sleep(1600)
 			
-			Send("{vkBF}")	;sub 201
+			Send("{sc035}")	;sub 201
 			Sleep(10300)
 			
-			Send("{vkBF}")	;sub 202
+			Send("{sc035}")	;sub 202
 			Sleep(9500)
 			
-			Send("{vkBF}")	;sub 203
+			Send("{sc035}")	;sub 203
 			Sleep(33800)
 			
-			Send("{vkBF}")	;sub 204
+			Send("{sc035}")	;sub 204
 			Sleep(4400)
 			
 			Click("547,477")	;click dart
 			Sleep(100)
 			
-			Send("{vkBF}")	;dart 001
+			Send("{sc035}")	;dart 001
 			Sleep(1300)
 			
-			Send("{vkBF}")	;dart 002
+			Send("{sc035}")	;dart 002
 			Sleep(1400)
 			
-			Send("{vkBF}")	;dart 003
+			Send("{sc035}")	;dart 003
 			Sleep(9900)
 			
-			Send("{vkBF}")	;dart 004
+			Send("{sc035}")	;dart 004
 			Sleep(1300)
 			
 			Send("{vkBE}")	;dart 014

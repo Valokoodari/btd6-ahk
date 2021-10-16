@@ -50,10 +50,10 @@ workshopGameScript(timeScale) {
 			Send("{vkBC}")		; Upgrade Spike Factory A 1-0-0
 			Sleep(5000)
 			
-			Send("{vkBF}")		; Upgrade Spike Factory A 1-0-1
+			Send("{sc035}")		; Upgrade Spike Factory A 1-0-1
 			Sleep(5000)
 			
-			Send("{vkBF}")		; Upgrade Spike Factory A 1-0-2
+			Send("{sc035}")		; Upgrade Spike Factory A 1-0-2
 			Sleep(100)
 			
 			Send("^{vk09}")		; Change Target Priority to Smart (Spike A)
@@ -72,28 +72,28 @@ workshopGameScript(timeScale) {
 			Send("{vkBC}")		; Upgrade Spike Factory B 1-0-0
 			Sleep(5000)
 			
-			Send("{vkBF}")		; Upgrade Spike Factory B 1-0-1
+			Send("{sc035}")		; Upgrade Spike Factory B 1-0-1
 			Sleep(5000)
 			
-			Send("{vkBF}")		; Upgrade Spike Factory B 1-0-2
+			Send("{sc035}")		; Upgrade Spike Factory B 1-0-2
 			Sleep(100)
 			
 			Send("^{vk09}")		; Change Target Priority to Smart (Spike B)
 			Sleep(15000)
 			
-			Send("{vkBF}")		; Upgrade Spike Factory B 1-0-3
+			Send("{sc035}")		; Upgrade Spike Factory B 1-0-3
 			Sleep(10000)
 			
 			Click("1591,633")	; Click Spike Factory A
 			Sleep(10000)
 			
-			Send("{vkBF}")		; Upgrade Spike Factory A 1-0-3
+			Send("{sc035}")		; Upgrade Spike Factory A 1-0-3
 			Sleep(15000)
 			
 			Send("{vkBC}")		; Upgrade Spike Factory A 2-0-3
 			Sleep(15000)
 			
-			Send("{vkBF}")		; Upgrade Spike Factory A 2-0-4
+			Send("{sc035}")		; Upgrade Spike Factory A 2-0-4
 			Sleep(10000)
 			
 			Click("1593,716")	; Click Spike Factory Ben
@@ -102,7 +102,7 @@ workshopGameScript(timeScale) {
 			Send("{vkBC}")		; Upgrade Spike Factory B 2-0-3
 			Sleep(15000)
 			
-			Send("{vkBF}")		; Upgrade Spike Factory B 2-0-4
+			Send("{sc035}")		; Upgrade Spike Factory B 2-0-4
 			Sleep(73000)		; Sleep until victory (72000)
 		}
 }

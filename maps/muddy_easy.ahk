@@ -38,13 +38,13 @@ muddyGameScript(timeScale) {
 			Send("{vkBC}")	;sub 200
 			Sleep(6600)
 			
-			Send("{vkBF}")	;sub 201
+			Send("{sc035}")	;sub 201
 			Sleep(19000)
 			
-			Send("{vkBF}")	;sub 202
+			Send("{sc035}")	;sub 202
 			Sleep(30300)
 			
-			Send("{vkBF}")	;sub 203
+			Send("{sc035}")	;sub 203
 			Sleep(3300)
 			
 			Send("{vk51}")	;dart right
@@ -57,10 +57,10 @@ muddyGameScript(timeScale) {
 			Click("1108,185")	;click dart right
 			Sleep(4900)
 			
-			Send("{vkBF}")	;dart right 001
+			Send("{sc035}")	;dart right 001
 			Sleep(1500)
 			
-			Send("{vkBF}")	;dart right 002
+			Send("{sc035}")	;dart right 002
 			Sleep(3100)
 			
 			Send("{vk5A}")	;sniper
@@ -79,10 +79,10 @@ muddyGameScript(timeScale) {
 			Send("{vkBC}")	;sniper 100
 			Sleep(7200)
 			
-			Send("{vkBF}")	;sniper 101
+			Send("{sc035}")	;sniper 101
 			Sleep(4700)
 			
-			Send("{vkBF}")	;sniper 102
+			Send("{sc035}")	;sniper 102
 			Sleep(100)
 			
 			Click("960,540")	;click center of screen to dismiss menu
@@ -91,25 +91,25 @@ muddyGameScript(timeScale) {
 			Click("403,201")	;click left dart
 			Sleep(9200)
 			
-			Send("{vkBF}")	;left dart 001
+			Send("{sc035}")	;left dart 001
 			Sleep(1700)
 			
-			Send("{vkBF}")	;left dart 002
+			Send("{sc035}")	;left dart 002
 			Sleep(100)
 			
 			Click("1195,470")	;click sub
 			Sleep(24000)
 			
-			Send("{vkBF}")	;sub 204
+			Send("{sc035}")	;sub 204
 			Sleep(100)
 			
 			Click("1017,917")
 			Sleep(27300)
 			
-			Send("{vkBF}")	;sniper 103
+			Send("{sc035}")	;sniper 103
 			Sleep(38200)
 			
-			Send("{vkBF}")	;sniper 104
+			Send("{sc035}")	;sniper 104
 			Sleep(17500)
 			
 			Send("{vkBC}")	;sniper 204
@@ -118,7 +118,7 @@ muddyGameScript(timeScale) {
 			Click("403,201")	;click left dart
 			Sleep(5500)
 			
-			Send("{vkBF}")	;left dart 003
+			Send("{sc035}")	;left dart 003
 			Sleep(1900)
 			
 			Send("{vkBE}")	;left dart 013
@@ -127,13 +127,13 @@ muddyGameScript(timeScale) {
 			Send("{vkBE}")	;left dart 023
 			Sleep(10800)
 			
-			Send("{vkBF}")	;left dart 024
+			Send("{sc035}")	;left dart 024
 			Sleep(100)
 			
 			Click("1108,185")	;click right dart
 			Sleep(3600)
 			
-			Send("{vkBF}")	;right dart 003
+			Send("{sc035}")	;right dart 003
 			Sleep(1600)
 			
 			Send("{vkBE}")	;right dart 013
@@ -142,7 +142,7 @@ muddyGameScript(timeScale) {
 			Send("{vkBE}")	;right dart 023
 			Sleep(10400)
 			
-			Send("{vkBF}")	;right dart 024
+			Send("{sc035}")	;right dart 024
 			Sleep(21400)	;wait for victory
 		}
 }

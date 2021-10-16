@@ -37,10 +37,10 @@ sancGameScript(timeScale) {
 			Send("{vkBC}")	;spike 100
 			Sleep(2100)
 			
-			Send("{vkBF}")	;spike 101
+			Send("{sc035}")	;spike 101
 			Sleep(8400)
 			
-			Send("{vkBF}")	;spike 102
+			Send("{sc035}")	;spike 102
 			Sleep(100)
 			
 			Send("^{vk09}")	;change target to smart

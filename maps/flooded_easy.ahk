@@ -105,10 +105,10 @@ floodedGameScript(timeScale) {
 			Send("{vkBC}")		; Sub 2 4-0-0
 			Sleep(6500)
 			
-			Send("{vkBF}")		; Sub 2 4-0-1
+			Send("{sc035}")		; Sub 2 4-0-1
 			Sleep(12000)
 			
-			Send("{vkBF}")		; Sub 2 4-0-2
+			Send("{sc035}")		; Sub 2 4-0-2
 			Sleep(22000)
 			
 			Click("1134,457")	; Click Sub 1
@@ -117,10 +117,10 @@ floodedGameScript(timeScale) {
 			Send("{vkBC}")		; Sub 1 4-0-0
 			Sleep(2000)
 			
-			Send("{vkBF}")		; Sub 1 4-0-1
+			Send("{sc035}")		; Sub 1 4-0-1
 			Sleep(6000)
 			
-			Send("{vkBF}")		; Sub 1 4-0-2
+			Send("{sc035}")		; Sub 1 4-0-2
 			Sleep(42000)		; Sleep until victory
 		}
 }
