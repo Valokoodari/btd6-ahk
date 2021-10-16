@@ -57,7 +57,7 @@ global y := ""
 }
 
 searchImage(picName) {
-	if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*30 " A_ScriptDir "\res\gc_" picName ".png") {
+	if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*40 " A_ScriptDir "\res\gc_" picName ".png") {
 		return true
 	} else {
 		return false
@@ -65,7 +65,7 @@ searchImage(picName) {
 }
 	
 clickElement(picName, sleepTime) {
-	if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*30 " A_ScriptDir "\res\gc_" picName ".png") {
+	if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*40 " A_ScriptDir "\res\gc_" picName ".png") {
 		global x := xCoord
 		global y := yCoord
 		Click(x,y)
