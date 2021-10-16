@@ -4,7 +4,7 @@
 ;Game resolution: 1920 x 1080 (fullscreen)
 
 ; Config
-global timeScale := 1.25 	; Default 1.00, higher value = slower script
+global timeScale := 1.00 	; Default 1.00, higher value = slower script
 
 #MaxThreadsPerHotkey 3
 #Include "%A_ScriptDir%\maps\bloody_easy.ahk"
