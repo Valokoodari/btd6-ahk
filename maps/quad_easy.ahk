@@ -1,133 +1,133 @@
 quadGameScript(timeScale) {
 		if WinActive("BloonsTD6") {
 			
-			Sleep(100)	;clear hotkey lag
+			Sleep(timeScale * 100)	;clear hotkey lag
 			
 			Send("{vk20}")		; Start game
-			Sleep(100)
+			Sleep(timeScale * 100)
 			Send("{vk20}")		; Increase Speed
-			Sleep(100)
+			Sleep(timeScale * 100)
 			
 			Send("{vk51}")		; Dart monkey
-			Sleep(100)
+			Sleep(timeScale * 100)
 			MouseMove(713,788)
-			Sleep(100)
+			Sleep(timeScale * 100)
 			Click("713,788")
-			Sleep(10000)
+			Sleep(timeScale * 10000)
 			
 			Send("{vk55}")		; Hero (Ben)
-			Sleep(100)
+			Sleep(timeScale * 100)
 			MouseMove(1388,91)
-			Sleep(100)
+			Sleep(timeScale * 100)
 			Click("1388,91")
-			Sleep(32000)
+			Sleep(timeScale * 32000)
 			
 			Send("{vk4A}")	;spike
-			Sleep(100)
+			Sleep(timeScale * 100)
 			MouseMove(1262,284)
-			Sleep(100)
+			Sleep(timeScale * 100)
 			Click("1262,284")
-			Sleep(8100)
+			Sleep(timeScale * 8100)
 			
 			Send("{vk41}")	;wizard1
-			Sleep(100)
+			Sleep(timeScale * 100)
 			MouseMove(326,708)
-			Sleep(100)
+			Sleep(timeScale * 100)
 			Click("326,708")
-			Sleep(100)
+			Sleep(timeScale * 100)
 			
 			Click("326,708")	;click wizard1
-			Sleep(8600)
+			Sleep(timeScale * 8600)
 			
 			Send("{vkBE}")	;wizard1 010
-			Sleep(22800)
+			Sleep(timeScale * 22800)
 			
 			Send("{vkBE}")	;wizard1 020
-			Sleep(8300)
+			Sleep(timeScale * 8300)
 			
 			Send("{sc035}")	;wizard1 021
-			Sleep(1800)
+			Sleep(timeScale * 1800)
 			
 			Send("{sc035}")	;wizard1 022
-			Sleep(16900)
+			Sleep(timeScale * 16900)
 			
 			Send("{vk41}")	;wizard2
-			Sleep(100)
+			Sleep(timeScale * 100)
 			MouseMove(1344,428)
-			Sleep(100)
+			Sleep(timeScale * 100)
 			Click("1344,428")
-			Sleep(100)
+			Sleep(timeScale * 100)
 			
 			Click("1344,428")	;click wizard2
-			Sleep(4500)
+			Sleep(timeScale * 4500)
 			
 			Send("{vkBE}")	;wizard2 010
-			Sleep(16300)
+			Sleep(timeScale * 16300)
 			
 			Send("{vkBE}")	;wizard2 020
-			Sleep(100)
+			Sleep(timeScale * 100)
 			
 			Click("1262,284")	;click spike
-			Sleep(20800)
+			Sleep(timeScale * 20800)
 			
 			Send("{vkBC}")	;spike 100
-			Sleep(2800)
+			Sleep(timeScale * 2800)
 			
 			Send("{sc035}")	;spike 101
-			Sleep(5800)
+			Sleep(timeScale * 5800)
 			
 			Send("{sc035}")	;spike 102
-			Sleep(9600)
+			Sleep(timeScale * 9600)
 			
 			Send("{vkBC}")	;spike 202
-			Sleep(16200)
+			Sleep(timeScale * 16200)
 			
 			Send("{sc035}")	;spike 203
-			Sleep(38000)
+			Sleep(timeScale * 38000)
 			
 			Send("{sc035}")	;spike 204
-			Sleep(100)
+			Sleep(timeScale * 100)
 			
 			Click("1344,428")	;click wizard2
-			Sleep(4400)
+			Sleep(timeScale * 4400)
 			
 			Send("{sc035}")	;wizard2 021
-			Sleep(2600)
+			Sleep(timeScale * 2600)
 			
 			Send("{sc035}")	;wizard2 022
-			Sleep(31700)
+			Sleep(timeScale * 31700)
 			
 			Send("{vkBE}")	;wizard2 032
-			Sleep(100)
+			Sleep(timeScale * 100)
 			
 			Click("960,540")	;click center to clear menu
-			Sleep(34700)
+			Sleep(timeScale * 34700)
 			
 			Click("326,708")	;click wizard1
-			Sleep(100)
+			Sleep(timeScale * 100)
 			
 			Send("{vkBE}")	;wizard1 032
-			Sleep(3600)
+			Sleep(timeScale * 3600)
 			
 			Click("713,788")	;click dart
-			Sleep(100)
+			Sleep(timeScale * 100)
 			
 			Send("{sc035}")	;dart 001
-			Sleep(1300)
+			Sleep(timeScale * 1300)
 			
 			Send("{sc035}")	;dart 002
-			Sleep(1500)
+			Sleep(timeScale * 1500)
 			
 			Send("{sc035}")	;dart 003
-			Sleep(1800)
+			Sleep(timeScale * 1800)
 			
 			Send("{vkBE}")	;dart 013
-			Sleep(1300)
+			Sleep(timeScale * 1300)
 			
 			Send("{vkBE}")	;dart 023
-			Sleep(13400)
+			Sleep(timeScale * 13400)
 			
 			Send("{sc035}")	;dart 024
-			Sleep(47000)	;wait for victory
+			Sleep(timeScale * 47000)	;wait for victory
 		}
 }

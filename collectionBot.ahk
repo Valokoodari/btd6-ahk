@@ -4,7 +4,7 @@
 ;Game resolution: 1920 x 1080 (fullscreen)
 
 ; Config
-global timeScale := 1.00 	; Default 1.00, higher value = slower script
+global timeScale := 1.25 	; Default 1.00, higher value = slower script
 
 #MaxThreadsPerHotkey 3
 #Include "%A_ScriptDir%\maps\bloody_easy.ahk"
@@ -69,7 +69,7 @@ clickElement(picName, sleepTime) {
 		global x := xCoord
 		global y := yCoord
 		Click(x,y)
-		Sleep(sleepTime)
+		Sleep(timeScale * sleepTime)
 		return true
 	} else {
 		return false
@@ -79,7 +79,7 @@ clickElement(picName, sleepTime) {
 clickPixel(pColor, sleepTime) {
 	if PixelSearch(&xPixelOne, &yPixelOne, 0, 0, 1920, 1080, pColor, 30) {
 		Click(xPixelOne,yPixelOne)
-		Sleep(sleepTime)
+		Sleep(timeScale * sleepTime)
 		return true
 	} else {
 		return false
@@ -207,19 +207,19 @@ openBoxes(sleepTime) {
 
 	while !searchImage("event") {
 		Click("683 535")
-		Sleep(sleepTime)
+		Sleep(timeScale * sleepTime)
 		Click("900, 550")
-		Sleep(sleepTime)
+		Sleep(timeScale * sleepTime)
 		Click("897 535")
-		Sleep(sleepTime)
+		Sleep(timeScale * sleepTime)
 		Click("900, 550")
-		Sleep(sleepTime)
+		Sleep(timeScale * sleepTime)
 		Click("1190 535")
-		Sleep(sleepTime)
+		Sleep(timeScale * sleepTime)
 		Click("900, 550")
-		Sleep(sleepTime)
+		Sleep(timeScale * sleepTime)
 		Click("950 930")
-		Sleep(sleepTime)
+		Sleep(timeScale * sleepTime)
 	}
 }
 
