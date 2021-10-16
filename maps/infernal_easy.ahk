@@ -1,4 +1,4 @@
-infernalGameScript() {
+infernalGameScript(timeScale) {
 		if WinActive("BloonsTD6") {
 		
 			Sleep(100)		; Clear hot key lag

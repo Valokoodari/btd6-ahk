@@ -1,4 +1,4 @@
-workshopGameScript() {
+workshopGameScript(timeScale) {
 		if 	WinActive("BloonsTD6") {
 		
 			Sleep(100)			; Sleep to clear hot key lag

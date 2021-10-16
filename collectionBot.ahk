@@ -3,6 +3,9 @@
 ;Game version: v27.3.4285
 ;Game resolution: 1920 x 1080 (fullscreen)
 
+; Config
+global timeScale := 1.00 	; Default 1.00, higher value = slower script
+
 #MaxThreadsPerHotkey 3
 #Include "%A_ScriptDir%\maps\bloody_easy.ahk"
 #Include "%A_ScriptDir%\maps\ouch_easy.ahk"
@@ -35,7 +38,7 @@ global y := ""
 			case "Stage Selection":
 				selectExpertMap(1000, 5000)
 			case "In Game":
-				selectGameScript()
+				selectGameScript(timeScale)
 			case "Collect Event Boxes":
 				openBoxes(1000)
 			case "Collection Event":
@@ -168,31 +171,31 @@ getMapName() {
 	}
 }
 
-selectGameScript() {
+selectGameScript(timeScale) {
 
 	getMapName()
 	
 	switch mapState {
 		case "Sanctuary":
-			sancGameScript()
+			sancGameScript(timeScale)
 		case "Ravine":
-			ravineGameScript()
+			ravineGameScript(timeScale)
 		case "Flooded Valley":
-			floodedGameScript()
+			floodedGameScript(timeScale)
 		case "Infernal":
-			infernalGameScript()
+			infernalGameScript(timeScale)
 		case "Bloody Puddles":
-			bloodyGameScript()
+			bloodyGameScript(timeScale)
 		case "Workshop":
-			workshopGameScript()
+			workshopGameScript(timeScale)
 		case "Quad":
-			quadGameScript()
+			quadGameScript(timeScale)
 		case "Dark Castle":
-			darkGameScript()
+			darkGameScript(timeScale)
 		case "Muddy Puddles":
-			muddyGameScript()
+			muddyGameScript(timeScale)
 		case "Ouch":
-			ouchGameScript()
+			ouchGameScript(timeScale)
 	}
 	
 	global mapState := ""

@@ -1,4 +1,4 @@
-muddyGameScript() {
+muddyGameScript(timeScale) {
 		if WinActive("BloonsTD6") {
 			
 			Sleep(100)	; clear hot key lag
