@@ -1,11 +1,12 @@
-;Author: OreoCupcakes
-;Script status: Experimental
-;Game version: v27.3.4285
+;Authors: OreoCupcakes & Valokoodari
+;Script status: Unstable
+;Game version: v28.1.4590
 ;Game resolution: 1920 x 1080 (fullscreen)
 
 ; Config
-global timeScale := 1.00 	; Default 1.00, higher value = slower script
+global timeScale := 1.00	; Default 1.00, higher value = slower script
 
+#SingleInstance Force
 #MaxThreadsPerHotkey 3
 #Include "%A_ScriptDir%\maps\bloody_easy.ahk"
 #Include "%A_ScriptDir%\maps\ouch_easy.ahk"
@@ -52,12 +53,12 @@ global y := ""
 }
 
 ^!+p:: {
-	Pause
-	ExitApp()
+    Run(A_ScriptFullPath)
+    ExitApp()
 }
 
 searchImage(picName) {
-	if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*45 " A_ScriptDir "\res\gc_" picName ".png") {
+	if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*65 " A_ScriptDir "\res\gc_" picName ".png") {
 		return true
 	} else {
 		return false
@@ -65,7 +66,7 @@ searchImage(picName) {
 }
 	
 clickElement(picName, sleepTime) {
-	if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*45 " A_ScriptDir "\res\gc_" picName ".png") {
+	if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*65 " A_ScriptDir "\res\gc_" picName ".png") {
 		global x := xCoord
 		global y := yCoord
 		Click(x,y)
