@@ -3,6 +3,8 @@ darkGameScript(timeScale) {
 			
 			Sleep(timeScale * 100)	;clear hotkey lag
 			
+			SetTimer checkForLevelUp, 200, 1 ; Level Up checker
+			
 			Send("{vk20}")		; Start game
 			Sleep(timeScale * 100)
 			Send("{vk20}")		; Increase Speed
@@ -126,5 +128,7 @@ darkGameScript(timeScale) {
 			
 			Send("{vkBE}")	;dart 024
 			Sleep(timeScale * 35000)	;wait for victory
+			
+			SetTimer checkForLevelUp, 0 ; Cancel timer
 		}
 }

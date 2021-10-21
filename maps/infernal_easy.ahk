@@ -3,6 +3,8 @@ infernalGameScript(timeScale) {
 		
 			Sleep(timeScale * 100)		; Clear hot key lag
 			
+			SetTimer checkForLevelUp, 200, 1 ; Level Up checker
+			
 			Send("{vk20}")		; Start game
 			Sleep(timeScale * 100)
 			Send("{vk20}")		; Increase Speed
@@ -129,5 +131,7 @@ infernalGameScript(timeScale) {
 			
 			Send("{vkBE}")	; boat 042
 			Sleep(timeScale * 21000)	; victory screen
+			
+			SetTimer checkForLevelUp, 0 ; Cancel timer
 		}
 }

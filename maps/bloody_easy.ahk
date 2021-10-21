@@ -3,6 +3,8 @@ bloodyGameScript(timeScale) {
 			
 			Sleep(timeScale * 100)	;clear hotkey lag
 			
+			SetTimer checkForLevelUp, 200, 1 ; Level Up checker
+			
 			Send("{vk20}")		; Start game
 			Sleep(timeScale * 100)
 			Send("{vk20}")		; Increase Speed
@@ -135,5 +137,7 @@ bloodyGameScript(timeScale) {
 			
 			Send("{sc035}")	;sniper 204
 			Sleep(timeScale * 4000)	;wait victory
+			
+			SetTimer checkForLevelUp, 0 ; Cancel timer
 		}
 }

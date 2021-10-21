@@ -3,6 +3,8 @@ ouchGameScript(timeScale) {
 		
 			Sleep(timeScale * 100) ;clear hotkey lag
 			
+			SetTimer checkForLevelUp, 200, 1 ; Level Up checker
+			
 			Send("{vk20}")		; Start game
 			Sleep(timeScale * 100)
 			Send("{vk20}")		; Increase Speed
@@ -117,5 +119,7 @@ ouchGameScript(timeScale) {
 			
 			Send("{vkBC}")	;ninja 2 401
 			Sleep(timeScale * 62000)	;wait victory
+			
+			SetTimer checkForLevelUp, 0 ; Cancel timer
 		}
 }

@@ -3,6 +3,8 @@ workshopGameScript(timeScale) {
 		
 			Sleep(timeScale * 100)			; Sleep to clear hot key lag
 			
+			SetTimer checkForLevelUp, 200, 1 ; Level Up checker
+			
 			Send("{vk20}")		; Start game
 			Sleep(timeScale * 100)
 			Send("{vk20}")		; Increase Speed
@@ -104,5 +106,7 @@ workshopGameScript(timeScale) {
 			
 			Send("{sc035}")		; Upgrade Spike Factory B 2-0-4
 			Sleep(timeScale * 73000)		; Sleep until victory (72000)
+			
+			SetTimer checkForLevelUp, 0 ; Cancel timer
 		}
 }

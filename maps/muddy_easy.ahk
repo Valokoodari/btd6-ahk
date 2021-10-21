@@ -3,6 +3,8 @@ muddyGameScript(timeScale) {
 			
 			Sleep(timeScale * 100)	; clear hot key lag
 			
+			SetTimer checkForLevelUp, 200, 1 ; Level Up checker
+			
 			Send("{vk20}")		; Start game
 			Sleep(timeScale * 100)
 			Send("{vk20}")		; Increase Speed
@@ -144,5 +146,7 @@ muddyGameScript(timeScale) {
 			
 			Send("{sc035}")	;right dart 024
 			Sleep(timeScale * 21400)	;wait for victory
+			
+			SetTimer checkForLevelUp, 0 ; Cancel timer
 		}
 }

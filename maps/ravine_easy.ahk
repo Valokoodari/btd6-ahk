@@ -3,6 +3,8 @@ ravineGameScript(timeScale) {
 			
 			Sleep(timeScale * 100)	; Clear hot key lag
 			
+			SetTimer checkForLevelUp, 200, 1 ; Level Up checker
+			
 			Send("{vk20}")		; Start game
 			Sleep(timeScale * 100)
 			Send("{vk20}")		; Increase Speed
@@ -149,5 +151,7 @@ ravineGameScript(timeScale) {
 			
 			Send("{vkBC}")		; Plane 3 203
 			Sleep(timeScale * 19000)		; Wait for victory
+			
+			SetTimer checkForLevelUp, 0 ; Cancel timer
 		}
 }

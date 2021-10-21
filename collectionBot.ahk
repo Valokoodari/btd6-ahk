@@ -200,6 +200,7 @@ selectGameScript(timeScale) {
 	}
 	
 	global mapState := ""
+	checkForLevelUp()
 	checkVictoryOrDefeat(2000)
 }
 
@@ -236,5 +237,17 @@ checkVictoryOrDefeat(sleepTime) {
 			clickElement("home", sleepTime)
 			break
 		}
+	}
+}
+
+checkForLevelUp() {
+	if ImageSearch(&xCoord, &yCoord, 0, 842, 341, 1079, "*45 " A_ScriptDir "\res\gc_level_up.png") {
+		Click()
+		Sleep(timeScale * 100)
+		Click()
+		Sleep(timeScale * 100)
+		Click()
+		Sleep(timeScale * 100)
+		SetTimer checkForLevelUp, 0 ; Cancel timer
 	}
 }

@@ -2,6 +2,8 @@ floodedGameScript(timeScale) {
 		if WinActive("BloonsTD6") {
 			Sleep(timeScale * 100)			; Clear hot key lag
 			
+			SetTimer checkForLevelUp, 200, 1 ; Level Up checker
+			
 			Send("{vk20}")		; Start game
 			Sleep(timeScale * 100)
 			Send("{vk20}")		; Increase Speed
@@ -122,5 +124,7 @@ floodedGameScript(timeScale) {
 			
 			Send("{sc035}")		; Sub 1 4-0-2
 			Sleep(timeScale * 42000)		; Sleep until victory
+			
+			SetTimer checkForLevelUp, 0 ; Cancel timer
 		}
 }
