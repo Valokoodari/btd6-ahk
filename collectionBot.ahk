@@ -1,6 +1,6 @@
 ;Authors: OreoCupcakes & Valokoodari
 ;Script status: Unstable
-;Game version: v28.1.4590
+;Game version: v29.2.4839
 ;Game resolution: 1920 x 1080 (fullscreen)
 
 ; Config
@@ -19,7 +19,7 @@ global timeScale := 1.00	; Default 1.00, higher value = slower script
 #Include "%A_ScriptDir%\maps\sanctuary_easy.ahk"
 #Include "%A_ScriptDir%\maps\workshop_easy.ahk"
 
-global eventType := "halloween"
+global eventType := "holiday"
 global stateIndicators := ["play_home", "stage_select", "in_game", "collect", "event"]
 global menuState := ""
 global mapIndicators := ["sanc_map", "ravine_map", "flooded_map", "infernal_map", "bloody_map", "workshop_map", "quad_map", "dark_map", "muddy_map", "ouch_map"]

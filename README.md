@@ -16,7 +16,7 @@ The script will run continuously until a level up. If you level up, you will nee
 - Full monkey knowledge. (You don't actually need all, but I programmed it with all knowledge on.)
 - Benjamin Hero selected
 - All expert maps unlocked. (Not sure on this one, but better safe than sorry.)
-
+- Game running fullscreen on an 1920x1080 display. (Changing the resolution on a higher resolution display might work)
 
 ## Usage
 Start the script on the home menu, stage selection menu, collection menu, or in an expert easy/standard map, using hot key Ctrl+Alt+Shift+J.
