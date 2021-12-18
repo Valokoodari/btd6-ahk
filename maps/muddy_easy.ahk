@@ -62,29 +62,25 @@ muddyGameScript(timeScale) {
 			
 			Send("{sc035}")	;dart right 002
 			Sleep(timeScale * 3100)
-			
+	
 			Send("{vk5A}")	;sniper
 			Sleep(timeScale * 100)
 			MouseMove(1017,917)
 			Sleep(timeScale * 100)
 			Click("1017,917")
-			Sleep(timeScale * 100)
-			
-			Click("1017,917")	;click sniper
-			Sleep(timeScale * 100)
+			Sleep(timeScale * 100)	
 			
 			Send("^{vk09}")	;change target priority to strong
-			Sleep(timeScale * 6000)
-			
+			Sleep(timeScale * 10000)
+			Click("1017,917")
+			Sleep(timeScale * 500)
 			Send("{vkBC}")	;sniper 100
 			Sleep(timeScale * 7200)
-			
 			Send("{sc035}")	;sniper 101
 			Sleep(timeScale * 4700)
-			
 			Send("{sc035}")	;sniper 102
 			Sleep(timeScale * 100)
-			
+	
 			Click("960,540")	;click center of screen to dismiss menu
 			Sleep(timeScale * 100)
 			
