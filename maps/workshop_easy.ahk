@@ -19,7 +19,7 @@ workshopGameScript(timeScale) {
 			MouseMove(1240,325)
 			Sleep(timeScale * 100)
 			Click("1240,325")
-			Sleep(timeScale * 10000)
+			Sleep(timeScale * 15000)
 			
 			Send("{vk41}")		; Wizard
 			Sleep(timeScale * 100)
@@ -28,8 +28,8 @@ workshopGameScript(timeScale) {
 			Click("190,639")
 			Sleep(timeScale * 100)
 			
-			Click("190,639")	; Click Wizard for upgrade menu
-			Sleep(timeScale * 5000)
+			Click("190,639")	; Click Wizard for upgrade menu/
+			Sleep(timeScale * 10000)
 			
 			Send("{vkBE}")		; Upgrade Wizard 0-1-0
 			Sleep(timeScale * 21000)
