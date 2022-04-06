@@ -19,10 +19,10 @@ global timeScale := 1.00	; Default 1.00, higher value = slower script
 #Include "%A_ScriptDir%\maps\sanctuary_easy.ahk"
 #Include "%A_ScriptDir%\maps\workshop_easy.ahk"
 
-global eventType := "holiday"
-global stateIndicators := ["play_home", "stage_select", "in_game", "collect", "event"]
+global eventType := "easter"
+global stateIndicators := ["play_home", "stage_select", "in_game", "collect", eventType "\event"]
 global menuState := ""
-global mapIndicators := ["sanc_map", "ravine_map", "flooded_map", "infernal_map", "bloody_map", "workshop_map", "quad_map", "dark_map", "muddy_map", "ouch_map"]
+global mapIndicators := ["sanc", "ravine", "flooded", "infernal", "bloody", "workshop", "quad", "dark", "muddy", "ouch"]
 global mapState := ""
 global bonusMenuOne := ["sanc", "ravine", "flooded", "infernal", "bloody", "workshop"]
 global bonusMenuTwo := ["quad", "ouch", "dark", "muddy"]
@@ -58,7 +58,7 @@ global y := ""
 }
 
 searchImage(picName) {
-	if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*65 " A_ScriptDir "\res\gc_" picName ".png") {
+	if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*65 " A_ScriptDir "\res\" picName ".png") {
 		return true
 	} else {
 		return false
@@ -66,7 +66,7 @@ searchImage(picName) {
 }
 	
 clickElement(picName, sleepTime) {
-	if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*65 " A_ScriptDir "\res\gc_" picName ".png") {
+	if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*65 " A_ScriptDir "\res\" picName ".png") {
 		global x := xCoord
 		global y := yCoord
 		Click(x,y)
@@ -116,7 +116,7 @@ selectExpertMap(sleepTime, loadTime) {
 	eventBonusName := ""
 	
 	for bonusNameOne in bonusMenuOne {
-		eventBonusName := eventType "_" bonusNameOne
+		eventBonusName := eventType "\" bonusNameOne
 		if clickElement(eventBonusName, sleepTime) {
 			clickElement("easy", sleepTime)
 			clickElement("standard", loadTime)
@@ -129,7 +129,7 @@ selectExpertMap(sleepTime, loadTime) {
 		clickElement("expert", sleepTime)
 		
 		for bonusNameTwo in bonusMenuTwo {
-			eventBonusName := eventType "_" bonusNameTwo
+			eventBonusName := eventType "\" bonusNameTwo
 			if clickElement(eventBonusName, sleepTime) {			
 				clickElement("easy", sleepTime)
 				clickElement("standard", loadTime)
@@ -143,27 +143,27 @@ selectExpertMap(sleepTime, loadTime) {
 getMapName() {
 	while mapState == "" {
 		for mapName in mapIndicators {
-			if searchImage(mapName) {
+			if searchImage("maps/" mapName) {
 				switch mapName {
-					case "sanc_map":
+					case "sanc":
 						global mapState := "Sanctuary"
-					case "ravine_map":
+					case "ravine":
 						global mapState := "Ravine"
-					case "flooded_map":
+					case "flooded":
 						global mapState := "Flooded Valley"
-					case "infernal_map":
+					case "infernal":
 						global mapState := "Infernal"
-					case "bloody_map":
+					case "bloody":
 						global mapState := "Bloody Puddles"
-					case "workshop_map":
+					case "workshop":
 						global mapState := "Workshop"
-					case "quad_map":
+					case "quad":
 						global mapState := "Quad"
-					case "dark_map":
+					case "dark":
 						global mapState := "Dark Castle"
-					case "muddy_map":
+					case "muddy":
 						global mapState := "Muddy Puddles"
-					case "ouch_map":
+					case "ouch":
 						global mapState := "Ouch"
 				}
 				break
