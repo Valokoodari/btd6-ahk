@@ -99,7 +99,7 @@ CheckMenuState() {
 					global menuState := "In Game"
 				case "collect":
 					global menuState := "Collect Event Boxes"
-				case "event":
+				case eventType "\event":
 					global menuState := "Collection Event"
 			}
 			break
