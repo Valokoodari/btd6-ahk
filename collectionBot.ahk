@@ -1,6 +1,6 @@
 ;Authors: OreoCupcakes & Valokoodari
 ;Script status: Unstable
-;Game version: v29.2.4839
+;Game version: v30.2.5112
 ;Game resolution: 1920 x 1080 (fullscreen)
 
 ; Config
@@ -206,7 +206,7 @@ selectGameScript(timeScale) {
 openBoxes(sleepTime) {
 	clickElement("collect", sleepTime)
 
-	while !searchImage("event") {
+	while !searchImage(eventType "\event") {
 		Click("683 535")
 		Sleep(timeScale * sleepTime)
 		Click("900, 550")
