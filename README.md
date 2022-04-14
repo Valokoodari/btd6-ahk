@@ -1,5 +1,5 @@
 # Bloons TD 6 with AutoHotkey v2  
-
+![Logo](https://i.imgur.com/TeBO6q1.png)
 AutoHotkey 2 script for Bloons TD 6 to help during collection events. Plays through Expert, Easy, Standard maps with the collection bonus active.
 The script will run continuously until a level up. If you level up, you will need to manually restart the script as it will break and get stuck.
 
