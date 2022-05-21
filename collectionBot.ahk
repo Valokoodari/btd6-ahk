@@ -19,7 +19,7 @@ global timeScale := 1.00	; Default 1.00, higher value = slower script
 #Include "%A_ScriptDir%\maps\sanctuary_easy.ahk"
 #Include "%A_ScriptDir%\maps\workshop_easy.ahk"
 
-global eventType := "easter"
+global eventType := "totem_collection"
 global stateIndicators := ["play_home", "stage_select", "in_game", "collect", eventType "\event"]
 global menuState := ""
 global mapIndicators := ["sanc", "ravine", "flooded", "infernal", "bloody", "workshop", "quad", "dark", "muddy", "ouch"]
