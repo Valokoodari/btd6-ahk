@@ -1,7 +1,7 @@
-;Authors: OreoCupcakes & Valokoodari
-;Script status: Unstable
-;Game version: v30.2.5112
-;Game resolution: 1920 x 1080 (fullscreen)
+; Authors: OreoCupcakes & Valokoodari
+; Script status: Unstable
+; Game version: v31.2.5337
+; Game resolution: 1920 x 1080 (fullscreen)
 
 ; Config
 global timeScale := 1.00	; Default 1.00, higher value = slower script
@@ -19,13 +19,11 @@ global timeScale := 1.00	; Default 1.00, higher value = slower script
 #Include "%A_ScriptDir%\maps\sanctuary_easy.ahk"
 #Include "%A_ScriptDir%\maps\workshop_easy.ahk"
 
-global eventType := "totem_collection"
+global eventType := "fireworks"
 global stateIndicators := ["play_home", "stage_select", "in_game", "collect", eventType "\event"]
 global menuState := ""
 global mapIndicators := ["sanc", "ravine", "flooded", "infernal", "bloody", "workshop", "quad", "dark", "muddy", "ouch"]
 global mapState := ""
-global bonusMenuOne := ["sanc", "ravine", "flooded", "infernal", "bloody", "workshop"]
-global bonusMenuTwo := ["quad", "ouch", "dark", "muddy"]
 global x := ""
 global y := ""
 
@@ -114,29 +112,19 @@ selectExpertMap(sleepTime, loadTime) {
 	
 	foundMap := false
 	eventBonusName := ""
-	
-	for bonusNameOne in bonusMenuOne {
-		eventBonusName := eventType "\" bonusNameOne
-		if clickElement(eventBonusName, sleepTime) {
-			clickElement("easy", sleepTime)
-			clickElement("standard", loadTime)
-			foundMap := true
-			break
-		}
-	}
-	
-	if (foundMap == false) {
-		clickElement("expert", sleepTime)
-		
-		for bonusNameTwo in bonusMenuTwo {
-			eventBonusName := eventType "\" bonusNameTwo
-			if clickElement(eventBonusName, sleepTime) {			
+
+	while !foundMap {
+		for tileNumber in [0, 1, 2, 3, 4, 5] {
+			eventBonusName := eventType "\" tileNumber
+			if clickElement(eventBonusName, sleepTime) {
 				clickElement("easy", sleepTime)
 				clickElement("standard", loadTime)
 				foundMap := true
 				break
 			}
 		}
+
+		clickElement("expert", sleepTime)
 	}
 }
 
