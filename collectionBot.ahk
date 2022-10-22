@@ -1,6 +1,6 @@
-; Authors: OreoCupcakes & Valokoodari
-; Script status: Unstable
-; Game version: v31.2.5337
+; Authors: Valokoodari & OreoCupcakes
+; Script status: Experimental
+; Game version: v33.1.5882
 ; Game resolution: 1920 x 1080 (fullscreen)
 
 ; Config
@@ -19,7 +19,7 @@ global timeScale := 1.00	; Default 1.00, higher value = slower script
 #Include "%A_ScriptDir%\maps\sanctuary_easy.ahk"
 #Include "%A_ScriptDir%\maps\workshop_easy.ahk"
 
-global eventType := "fireworks"
+global eventType := "halloween"
 global stateIndicators := ["play_home", "stage_select", "in_game", "collect", eventType "\event"]
 global menuState := ""
 global mapIndicators := ["sanc", "ravine", "flooded", "infernal", "bloody", "workshop", "quad", "dark", "muddy", "ouch"]
@@ -30,7 +30,7 @@ global y := ""
 ^!+j:: {
 	while WinActive("BloonsTD6") {
 		CheckMenuState()
-		
+
 		switch menuState {
 			case "Home":
 				clickElement("play_home", 1000)
