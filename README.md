@@ -8,6 +8,11 @@ The script will run continuously until a level up. If you level up, you will nee
 - __Unstable__: Will work most of the time but does require assistance to recover  
 - __Stable__: May not be perfect but will almost always recover without assistance  
 
+```
+Script status: Experimental
+Game version: v33.1.5882
+```
+
 ## AutoHotkey v2
 - [Download](https://www.autohotkey.com/download/ahk-v2.zip)  
 - [Documentation](https://lexikos.github.io/v2/docs/AutoHotkey.htm)
