@@ -99,14 +99,12 @@ CheckMenuState() {
 }
 
 selectExpertMap(sleepTime, loadTime) {
-	if !searchImage("expert_selected") {
-		clickElement("expert", sleepTime)
-	}
-	
 	foundMap := false
 	eventBonusName := ""
 
 	while !foundMap {
+		clickElement("expert", sleepTime)
+
 		for tileNumber in [0, 1, 2, 3, 4, 5] {
 			eventBonusName := eventType "\" tileNumber
 			if clickElement(eventBonusName, sleepTime) {
@@ -116,8 +114,6 @@ selectExpertMap(sleepTime, loadTime) {
 				break
 			}
 		}
-
-		clickElement("expert", sleepTime)
 	}
 }
 
