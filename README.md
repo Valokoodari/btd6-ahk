@@ -9,7 +9,7 @@ The script will run continuously until a level up. If you level up, you will nee
 - __Stable__: May not be perfect but will almost always recover without assistance  
 
 ```
-Script status: Experimental
+Script status: Unstable
 Game version: v33.1.5882
 ```
 
