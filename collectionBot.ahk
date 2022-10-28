@@ -79,6 +79,8 @@ clickPixel(pColor, sleepTime) {
 }
 
 CheckMenuState() {
+	global menuState := ""
+
 	for picName in stateIndicators {
 		if searchImage(picName) {
 			switch picName {
@@ -150,7 +152,6 @@ getMapName() {
 }
 
 selectGameScript(timeScale) {
-
 	getMapName()
 	
 	switch mapState {
