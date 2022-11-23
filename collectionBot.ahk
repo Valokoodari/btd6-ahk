@@ -12,7 +12,7 @@
 #Include "%A_ScriptDir%\maps\sanctuary_easy.ahk"
 
 global timeScale := IniRead("config.ini", "settings", "timeScale", 1.00)
-global eventType := IniRead("config.ini", "settings", "eventType", "halloween")
+global eventType := IniRead("config.ini", "settings", "eventType", "totem")
 global stateIndicators := ["play_home", "stage_select", "in_game", "collect", eventType "\event"]
 global mapIndicators := ["sanc", "ravine", "flooded", "infernal", "bloody", "workshop", "quad", "dark", "muddy", "ouch"]
 global menuState := ""

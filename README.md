@@ -10,7 +10,7 @@ The script will run continuously until a level up. If you level up, you will nee
 
 ```
 Script status: Unstable
-Game version: v33.1.5882
+Game version: v33.3.5909
 ```
 
 ## AutoHotkey v2
