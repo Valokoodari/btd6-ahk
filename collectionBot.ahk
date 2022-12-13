@@ -205,7 +205,7 @@ openBoxes(sleepTime) {
 checkVictoryOrDefeat(sleepTime) {
 	Loop {
 		if searchImage("defeat") {
-			clickElement("home", sleepTime)
+			clickElement("home_defeat", sleepTime)
 			break
 		}
 		
