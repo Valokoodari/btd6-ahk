@@ -1,16 +1,19 @@
 # Bloons TD 6 with AutoHotkey v2  
 
-AutoHotkey 2 script for Bloons TD 6 to help during collection events. Plays through Expert, Easy, Standard maps with the collection bonus active.
-The script will run continuously until a level up. If you level up, you will need to manually restart the script as it will break and get stuck.
+An AutoHotkey 2 script for Bloons TD 6 to help during collection events. Plays through Expert maps
+on easy, standard difficulty with the collection bonus active.  
+
+The script will run continuously until a level up. If you level up, you may need to manually
+restart the script as it might break and get stuck.  
 
 ### Script status  
-- __Experimental__: Might work sometimes but definitely not always  
-- __Unstable__: Will work most of the time but does require assistance to recover  
+- __Experimental__: May work properly even most of the time but has not been tested yet  
+- __Unstable__: Will work most of the time but does usually require assistance to recover  
 - __Stable__: May not be perfect but will almost always recover without assistance  
 
 ```
-Script status: Unstable
-Game version: v33.3.5909
+Script status: Experimental
+Game version: v34.2
 ```
 
 ## AutoHotkey v2
@@ -18,11 +21,14 @@ Game version: v33.3.5909
 - [Documentation](https://lexikos.github.io/v2/docs/AutoHotkey.htm)
 
 ## Requirements:
-- Full monkey knowledge. (You don't actually need all, but I programmed it with all knowledge on.)
-- Benjamin Hero selected
-- All expert maps unlocked. (Not sure on this one, but better safe than sorry.)
-- Game running fullscreen on an 1920x1080 display. (Changing the resolution on a higher resolution display might work)
+- _Full monkey knowledge (the script has only been tested with all knowledge on)._  
+- Game running **fullscreen** on an **1920x1080** display.  
+- **Benjamin** selected as the Hero  
+- Game language set to **English**  
+- _All expert maps unlocked. (?)_  
 
 ## Usage
-Start the script on the home menu, stage selection menu, collection menu, or in an expert easy/standard map, using hot key Ctrl+Alt+Shift+J.
-The script can be stopped by pressing Ctrl+Alt+Shift+P.  
+Start the script on the home menu, stage selection menu, collection menu, or in an expert
+easy/standard map, using the hotkey _Ctrl + Alt + Shift + J_.  
+
+The script can be stopped (and reloaded) by pressing _Ctrl + Alt + Shift + P_.  
