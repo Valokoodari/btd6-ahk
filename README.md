@@ -26,6 +26,7 @@ Game version: v34.2
 - **Benjamin** selected as the Hero  
 - Game language set to **English**  
 - _All expert maps unlocked. (?)_  
+- **Default hotkeys**  
 
 ## Usage
 Start the script on the home menu, stage selection menu, collection menu, or in an expert
