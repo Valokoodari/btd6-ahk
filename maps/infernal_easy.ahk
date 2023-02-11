@@ -1,109 +1,109 @@
 infernalGameScript(timeScale) {
     if WinActive("BloonsTD6") {
-        Sleep(timeScale * 100)      ; Clear hot key lag
+        ScaledSleep(100)            ; Clear hot key lag
 
         Send("{vk20}")              ; Start game
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         Send("{vk20}")              ; Increase Speed
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
 
         Send("{vk51}")              ; Dart
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         MouseMove(472,277)
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         Click("472,277")
-        Sleep(timeScale * 8500)
+        ScaledSleep(8500)
 
         Send("{vk55}")              ; Hero (Ben)
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         MouseMove(1587,573)
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         Click("1587,573")
-        Sleep(timeScale * 14500)
+        ScaledSleep(14500)
 
         Send("{vk43}")              ; Boat
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         MouseMove(471,789)
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         Click("471,789")
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
 
         Click("471,789")            ; Click on Boat
-        Sleep(timeScale * 9800)
+        ScaledSleep(9800)
         Send("{sc035}")             ; Boat 001
-        Sleep(timeScale * 7900)
+        ScaledSleep(7900)
         Send("{vkBE}")              ; Boat 011
-        Sleep(timeScale * 13800)
+        ScaledSleep(13800)
         Send("{vkBE}")              ; Boat 021
-        Sleep(timeScale * 10400)
+        ScaledSleep(10400)
         Send("{sc035}")             ; Boat 022
-        Sleep(timeScale * 5000)
+        ScaledSleep(5000)
 
         Send("{vk58}")              ; Sub 1
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         MouseMove(1194,268)
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         Click("1194,268")
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
 
         Click("1194,268")           ; Click Sub 1
-        Sleep(timeScale * 6700)
+        ScaledSleep(6700)
         Send("{vkBC}")              ; Sub 1 100
-        Sleep(timeScale * 6200)
+        ScaledSleep(6200)
         Send("{vkBC}")              ; Sub 1 200
-        Sleep(timeScale * 15600)
+        ScaledSleep(15600)
         Send("{sc035}")             ; Sub 1 201
-        Sleep(timeScale * 14900)
+        ScaledSleep(14900)
         Send("{sc035}")             ; Sub 1 202
-        Sleep(timeScale * 20000)
+        ScaledSleep(20000)
         Send("{sc035}")             ; Sub 1 203
-        Sleep(timeScale * 33300)
+        ScaledSleep(33300)
         Send("{sc035}")             ; Sub 1 204
-        Sleep(timeScale * 3800)
+        ScaledSleep(3800)
 
         Send("{vk58}")              ; Sub 2
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         MouseMove(1195,176)
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         Click("1195,176")
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
 
         Click("1195,176")           ; Click Sub 2
-        Sleep(timeScale * 3500)
+        ScaledSleep(3500)
         Send("{vkBC}")              ; Sub 2 100
-        Sleep(timeScale * 2500)
+        ScaledSleep(2500)
         Send("{vkBC}")              ; Sub 2 200
-        Sleep(timeScale * 2300)
+        ScaledSleep(2300)
         Send("{sc035}")             ; Sub 2 201
-        Sleep(timeScale * 5400)
+        ScaledSleep(5400)
         Send("{sc035}")             ; Sub 2 202
-        Sleep(timeScale * 12700)
+        ScaledSleep(12700)
         Send("{sc035}")             ; Sub 2 203
-        Sleep(timeScale * 24500)
+        ScaledSleep(24500)
         Send("{sc035}")             ; Sub 2 204
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
 
         Click("472,277")            ; Click Dart
-        Sleep(timeScale * 6200)
+        ScaledSleep(6200)
         Send("{sc035}")             ; Dart 001
-        Sleep(timeScale * 1000)
+        ScaledSleep(1000)
         Send("{sc035}")             ; Dart 002
-        Sleep(timeScale * 1400)
+        ScaledSleep(1400)
         Send("{sc035}")             ; Dart 003
-        Sleep(timeScale * 2000)
+        ScaledSleep(2000)
         Send("{vkBE}")              ; Dart 013
-        Sleep(timeScale * 1500)
+        ScaledSleep(1500)
         Send("{vkBE}")              ; Dart 023
-        Sleep(timeScale * 19400)
+        ScaledSleep(19400)
         Send("{sc035}")             ; Dart 024
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
 
         Click("471,789")            ; Click Boat
-        Sleep(timeScale * 7600)
+        ScaledSleep(7600)
         Send("{vkBE}")              ; Boat 032
-        Sleep(timeScale * 32200)
+        ScaledSleep(32200)
         Send("{vkBE}")              ; Boat 042
 
-        Sleep(timeScale * 21000)    ; Wait for victory
+        ScaledSleep(21000)          ; Wait for victory
     }
 }
