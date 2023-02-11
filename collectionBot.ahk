@@ -1,18 +1,18 @@
 #SingleInstance Force
 #MaxThreadsPerHotkey 3
+#Include %A_ScriptDir%
 
-#Include "%A_ScriptDir%\utils.ahk"
-
-#Include "%A_ScriptDir%\maps\dark_easy.ahk"
-#Include "%A_ScriptDir%\maps\ouch_easy.ahk"
-#Include "%A_ScriptDir%\maps\quad_easy.ahk"
-#Include "%A_ScriptDir%\maps\muddy_easy.ahk"
-#Include "%A_ScriptDir%\maps\bloody_easy.ahk"
-#Include "%A_ScriptDir%\maps\ravine_easy.ahk"
-#Include "%A_ScriptDir%\maps\flooded_easy.ahk"
-#Include "%A_ScriptDir%\maps\infernal_easy.ahk"
-#Include "%A_ScriptDir%\maps\workshop_easy.ahk"
-#Include "%A_ScriptDir%\maps\sanctuary_easy.ahk"
+#Include utils.ahk
+#Include maps\dark_easy.ahk
+#Include maps\ouch_easy.ahk
+#Include maps\quad_easy.ahk
+#Include maps\muddy_easy.ahk
+#Include maps\bloody_easy.ahk
+#Include maps\ravine_easy.ahk
+#Include maps\flooded_easy.ahk
+#Include maps\infernal_easy.ahk
+#Include maps\workshop_easy.ahk
+#Include maps\sanctuary_easy.ahk
 
 maps := Map(
     "sanc", sancGameScript,
