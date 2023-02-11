@@ -125,7 +125,5 @@ ravineGameScript() {
         Send("{vkBC}")              ; Plane 3 103
         ScaledSleep(1900)
         Send("{vkBC}")              ; Plane 3 203
-
-        ScaledSleep(19000)          ; Wait for victory
     }
 }

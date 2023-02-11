@@ -101,7 +101,5 @@ darkGameScript() {
         Send("{vkBE}")              ; Dart 014
         ScaledSleep(1300)
         Send("{vkBE}")              ; Dart 024
-
-        ScaledSleep(35000)          ; Wait for victory
     }
 }

@@ -117,7 +117,5 @@ muddyGameScript() {
         Send("{vkBE}")              ; Dart 2 023
         ScaledSleep(10400)
         Send("{sc035}")             ; Dart 2 024
-
-        ScaledSleep(21400)          ; Wait for victory
     }
 }

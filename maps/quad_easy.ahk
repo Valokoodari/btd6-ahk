@@ -105,7 +105,5 @@ quadGameScript() {
         Send("{vkBE}")              ; Dart 023
         ScaledSleep(13400)
         Send("{sc035}")             ; Dart 024
-
-        ScaledSleep(47000)          ; Wait for victory
     }
 }

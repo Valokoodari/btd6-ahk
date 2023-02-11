@@ -103,7 +103,5 @@ infernalGameScript() {
         Send("{vkBE}")              ; Boat 032
         ScaledSleep(32200)
         Send("{vkBE}")              ; Boat 042
-
-        ScaledSleep(21000)          ; Wait for victory
     }
 }

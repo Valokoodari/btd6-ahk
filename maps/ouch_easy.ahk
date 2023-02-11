@@ -94,7 +94,5 @@ ouchGameScript() {
         Send("{vkBC}")              ; Ninja 2 301
         ScaledSleep(29300)
         Send("{vkBC}")              ; Ninja 2 401
-
-        ScaledSleep(62000)          ; Wait for victory
     }
 }

@@ -110,7 +110,5 @@ bloodyGameScript() {
         Send("{vkBC}")              ; Sniper 203
         ScaledSleep(30500)
         Send("{sc035}")             ; Sniper 204
-
-        ScaledSleep(4000)           ; Wait for victory
     }
 }

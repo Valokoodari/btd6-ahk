@@ -86,7 +86,5 @@ workshopGameScript() {
         Send("{vkBC}")              ; Spike 2 203
         ScaledSleep(15000)
         Send("{sc035}")             ; Spike 2 204
-
-        ScaledSleep(73000)          ; Wait for victory
     }
 }

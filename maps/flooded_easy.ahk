@@ -99,7 +99,5 @@ floodedGameScript() {
         Send("{sc035}")             ; Sub 1 401
         ScaledSleep(6000)
         Send("{sc035}")             ; Sub 1 402
-
-        ScaledSleep(42000)          ; Wait for victory
     }
 }

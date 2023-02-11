@@ -160,6 +160,7 @@ selectGameScript() {
     }
 
     global mapState := ""
+    LogMsg("Waiting for the game to end...")
     checkVictoryOrDefeat()
 }
 
@@ -189,5 +190,7 @@ checkVictoryOrDefeat() {
             LogMsg("Victory")
             break
         }
+
+        ScaledSleep()
     }
 }

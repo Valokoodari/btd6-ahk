@@ -80,7 +80,5 @@ sancGameScript() {
         Send("{vkBE}")              ; Wizard 2 010
         ScaledSleep(12000)
         Send("{vkBE}")              ; Wizard 2 020
-
-        ScaledSleep(178500)         ; Wait for victory
     }
 }
