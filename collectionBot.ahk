@@ -34,7 +34,7 @@ global mapState := ""
             case "In Game":
                 selectGameScript()
             case "Collect Event Boxes":
-                openBoxes()
+                OpenBoxes()
             case "Collection Event":
                 ClickImage("play_collect")
         }
@@ -163,25 +163,15 @@ selectGameScript() {
     checkVictoryOrDefeat()
 }
 
-openBoxes() {
+OpenBoxes() {
     ClickImage("collect")
     LogMsg("Opening boxes")
 
     while !SearchImage(eventType "\event") {
-        Click("683 535")
-        ScaledSleep()
-        Click("900, 550")
-        ScaledSleep()
-        Click("897 535")
-        ScaledSleep()
-        Click("900, 550")
-        ScaledSleep()
-        Click("1190 535")
-        ScaledSleep()
-        Click("900, 550")
-        ScaledSleep()
-        Click("950 930")
-        ScaledSleep()
+        for coords in ["683,535","900,550","897,535","900,550","1190,535","900,550","950,930"] {
+            Click(coords)
+            ScaledSleep()
+        }
     }
 }
 
