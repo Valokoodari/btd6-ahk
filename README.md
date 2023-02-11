@@ -22,11 +22,16 @@ Game version: v34.3
 
 ## Requirements:
 - _Full monkey knowledge (the script has only been tested with all knowledge on)_  
-- Game running **fullscreen** on an **1920x1080** display  
+- Game running **fullscreen** on a **1920x1080** display  
 - **Benjamin** selected as the Hero  
 - Game language set to **English**  
 - _All expert maps unlocked. (?)_  
-- **Default hotkeys**  
+- **Default game hotkeys**  
+
+### Note on the display resolution
+You can change the display resolution to 1920x1080 in **Windows settings** if
+you have a higher resolution display. Setting the resolution in the game
+settings is not enough altough it must also be set correctly.
 
 ## Usage
 Start the script on the home menu, stage selection menu, collection menu, or in an expert

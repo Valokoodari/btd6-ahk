@@ -14,29 +14,36 @@
 #Include "%A_ScriptDir%\maps\workshop_easy.ahk"
 #Include "%A_ScriptDir%\maps\sanctuary_easy.ahk"
 
-global eventType := IniRead("config.ini", "settings", "eventType", "none")
-global mapIndicators := ["sanc", "ravine", "flooded", "infernal", "bloody", "workshop", "quad", "dark", "muddy", "ouch"]
-global menuState := ""
-global mapState := ""
+maps := Map(
+    "sanc", sancGameScript,
+    "ravine", ravineGameScript,
+    "flooded", floodedgameScript,
+    "infernal", infernalGameScript,
+    "bloody", bloodyGameScript,
+    "workshop", workshopGameScript,
+    "quad", quadGameScript,
+    "dark", darkGameScript,
+    "muddy", muddyGameScript,
+    "ouch", ouchGameScript,
+)
 
+eventType := IniRead("config.ini", "settings", "eventType", "none")
 states := ["play_home", "stage_select", "in_game"]
 if eventType != "none" {
     states.Push("collect", eventType "\event")
 }
 
 ^!+j:: {
+    ClearLogFile()
     LogMsg("Script started")
-
     while WinActive("BloonsTD6") {
-        CheckMenuState()
-
-        switch menuState {
+        switch CheckMenuState() {
             case "play_home":
                 ClickImage("play_home")
             case "stage_select":
-                selectExpertMap()
+                SelectExpertMap()
             case "in_game":
-                selectGameScript()
+                SelectGameScript()
             case "collect":
                 OpenBoxes()
             case eventType "\event":
@@ -52,115 +59,60 @@ if eventType != "none" {
 }
 
 CheckMenuState() {
-    global menuState := ""
-
     for state in states {
         if SearchImage(state) {
-            global menuState := state
-            break
+            LogMsg(state)
+            return state
         }
     }
-
-    LogMsg(menuState)
+    LogMsg("Menu state not recognized")
 }
 
-selectExpertMap() {
-    foundMap := false
-
-    while !foundMap {
+FindExpertMap() {
+    while true {
         ClickImage("expert")
-
         if eventType == "none" {
-            if ClickImage("dark") {
-                foundMap := true
+            if clickImage("dark") {
+                return
             }
         } else {
             for tileNumber in [0, 1, 2, 3, 4, 5] {
                 if ClickImage(eventType "\" tileNumber) {
-                    foundMap := true
-                    break
+                    return
                 }
             }
         }
     }
+}
 
+SelectExpertMap() {
+    FindExpertMap()
     ClickImage("easy")
     ClickImage("standard", 5000)
 }
 
-getMapName() {
-    while mapState == "" {
-        for mapName in mapIndicators {
-            if SearchImage("maps/" mapName) {
-                switch mapName {
-                    case "sanc":
-                        global mapState := "Sanctuary"
-                    case "ravine":
-                        global mapState := "Ravine"
-                    case "flooded":
-                        global mapState := "Flooded Valley"
-                    case "infernal":
-                        global mapState := "Infernal"
-                    case "bloody":
-                        global mapState := "Bloody Puddles"
-                    case "workshop":
-                        global mapState := "Workshop"
-                    case "quad":
-                        global mapState := "Quad"
-                    case "dark":
-                        global mapState := "Dark Castle"
-                    case "muddy":
-                        global mapState := "Muddy Puddles"
-                    case "ouch":
-                        global mapState := "Ouch"
-                }
-                break
+GetMapName() {
+    while true {
+        for map, _ in maps {
+            if SearchImage("maps/" map) {
+                LogMsg("Map recognized: " map)
+                return map
             }
         }
-
-        if mapState == "" {
-            LogMsg("Map not recognized")
-        } else {
-            LogMsg("Map recognized: " mapState)
-        }
+        LogMsg("Map not recognized")
     }
 }
 
-selectGameScript() {
-    getMapName()
-
-    switch mapState {
-        case "Sanctuary":
-            sancGameScript()
-        case "Ravine":
-            ravineGameScript()
-        case "Flooded Valley":
-            floodedGameScript()
-        case "Infernal":
-            infernalGameScript()
-        case "Bloody Puddles":
-            bloodyGameScript()
-        case "Workshop":
-            workshopGameScript()
-        case "Quad":
-            quadGameScript()
-        case "Dark Castle":
-            darkGameScript()
-        case "Muddy Puddles":
-            muddyGameScript()
-        case "Ouch":
-            ouchGameScript()
-    }
-
-    global mapState := ""
+SelectGameScript() {
+    map := GetMapName()
+    maps[map]()
     LogMsg("Waiting for the game to end...")
-    checkVictoryOrDefeat()
+    CheckVictoryOrDefeat()
 }
 
 OpenBoxes() {
     ClickImage("collect")
     LogMsg("Opening boxes")
-
     while !SearchImage(eventType "\event") {
         for coords in ["683,535","900,550","897,535","900,550","1190,535","900,550","950,930"] {
             Click(coords)
@@ -169,21 +121,19 @@ OpenBoxes() {
     }
 }
 
-checkVictoryOrDefeat() {
+CheckVictoryOrDefeat() {
     Loop {
         if SearchImage("defeat") {
             ClickImage("home_defeat", 2000)
             LogMsg("Defeat")
             break
         }
-
         if SearchImage("victory") {
             ClickImage("next")
             ClickImage("home", 2000)
             LogMsg("Victory")
             break
         }
-
         ScaledSleep()
     }
 }
