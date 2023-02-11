@@ -8,6 +8,15 @@ LogMsg(msg) {
     }
 }
 
+LogArr(array) {
+    arrayStr := "["
+    for value in array {
+        arrayStr .= value ", "
+    }
+    arrayStr := RTrim(arrayStr, ", ")
+    LogMsg(arrayStr "]")
+}
+
 ScaledSleep(delay := 1000) {
     Sleep(timeScale * delay)
 }

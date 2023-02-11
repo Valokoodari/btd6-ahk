@@ -14,11 +14,15 @@
 #Include "%A_ScriptDir%\maps\workshop_easy.ahk"
 #Include "%A_ScriptDir%\maps\sanctuary_easy.ahk"
 
-global eventType := IniRead("config.ini", "settings", "eventType", "holiday")
-global stateIndicators := ["play_home", "stage_select", "in_game", "collect", eventType "\event"]
+global eventType := IniRead("config.ini", "settings", "eventType", "none")
 global mapIndicators := ["sanc", "ravine", "flooded", "infernal", "bloody", "workshop", "quad", "dark", "muddy", "ouch"]
 global menuState := ""
 global mapState := ""
+
+states := ["play_home", "stage_select", "in_game"]
+if eventType != "none" {
+    states.Push("collect", eventType "\event")
+}
 
 ^!+j:: {
     LogMsg("Script started")
@@ -27,15 +31,15 @@ global mapState := ""
         CheckMenuState()
 
         switch menuState {
-            case "Home":
+            case "play_home":
                 ClickImage("play_home")
-            case "Stage Selection":
+            case "stage_select":
                 selectExpertMap()
-            case "In Game":
+            case "in_game":
                 selectGameScript()
-            case "Collect Event Boxes":
+            case "collect":
                 OpenBoxes()
-            case "Collection Event":
+            case eventType "\event":
                 ClickImage("play_collect")
         }
     }
@@ -50,20 +54,9 @@ global mapState := ""
 CheckMenuState() {
     global menuState := ""
 
-    for picName in stateIndicators {
-        if SearchImage(picName) {
-            switch picName {
-                case "play_home":
-                    global menuState := "Home"
-                case "stage_select":
-                    global menuState := "Stage Selection"
-                case "in_game":
-                    global menuState := "In Game"
-                case "collect":
-                    global menuState := "Collect Event Boxes"
-                case eventType "\event":
-                    global menuState := "Collection Event"
-            }
+    for state in states {
+        if SearchImage(state) {
+            global menuState := state
             break
         }
     }
