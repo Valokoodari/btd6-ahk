@@ -1,4 +1,4 @@
-quadGameScript(timeScale) {
+quadGameScript() {
     if WinActive("BloonsTD6") {
         ScaledSleep(100)            ; Clear hotkey lag
 

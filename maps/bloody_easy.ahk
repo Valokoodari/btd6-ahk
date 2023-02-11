@@ -1,4 +1,4 @@
-bloodyGameScript(timeScale) {
+bloodyGameScript() {
     if WinActive("BloonsTD6") {
         ScaledSleep(100)            ; Clear hotkey lag
 

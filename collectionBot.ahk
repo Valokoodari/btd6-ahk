@@ -14,7 +14,6 @@
 #Include "%A_ScriptDir%\maps\workshop_easy.ahk"
 #Include "%A_ScriptDir%\maps\sanctuary_easy.ahk"
 
-global timeScale := IniRead("config.ini", "settings", "timeScale", 1.00)
 global eventType := IniRead("config.ini", "settings", "eventType", "holiday")
 global stateIndicators := ["play_home", "stage_select", "in_game", "collect", eventType "\event"]
 global mapIndicators := ["sanc", "ravine", "flooded", "infernal", "bloody", "workshop", "quad", "dark", "muddy", "ouch"]
@@ -171,25 +170,25 @@ selectGameScript() {
 
     switch mapState {
         case "Sanctuary":
-            sancGameScript(timeScale)
+            sancGameScript()
         case "Ravine":
-            ravineGameScript(timeScale)
+            ravineGameScript()
         case "Flooded Valley":
-            floodedGameScript(timeScale)
+            floodedGameScript()
         case "Infernal":
-            infernalGameScript(timeScale)
+            infernalGameScript()
         case "Bloody Puddles":
-            bloodyGameScript(timeScale)
+            bloodyGameScript()
         case "Workshop":
-            workshopGameScript(timeScale)
+            workshopGameScript()
         case "Quad":
-            quadGameScript(timeScale)
+            quadGameScript()
         case "Dark Castle":
-            darkGameScript(timeScale)
+            darkGameScript()
         case "Muddy Puddles":
-            muddyGameScript(timeScale)
+            muddyGameScript()
         case "Ouch":
-            ouchGameScript(timeScale)
+            ouchGameScript()
     }
 
     global mapState := ""
