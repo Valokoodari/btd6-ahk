@@ -66,6 +66,7 @@ CheckMenuState() {
         }
     }
     LogMsg("Menu state not recognized")
+    ScaledSleep(10000)
 }
 
 FindExpertMap() {
