@@ -1,131 +1,131 @@
 ravineGameScript(timeScale) {
     if WinActive("BloonsTD6") {
-        Sleep(timeScale * 100)      ; Clear hotkey lag
+        ScaledSleep(100)            ; Clear hotkey lag
 
         Send("{vk20}")              ; Start game
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         Send("{vk20}")              ; Increase speed
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
 
         Send("{vk51}")              ; Dart
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         MouseMove(184,475)
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         Click("184,475")
-        Sleep(timeScale * 12000)
+        ScaledSleep(12000)
 
         Send("{vk55}")              ; Hero (Ben)
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         MouseMove(1208,399)
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         Click("1208,399")
-        Sleep(timeScale * 30700)
+        ScaledSleep(30700)
 
         Send("{vk4A}")              ; Spike Factory
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         MouseMove(711,814)
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         Click("711,814")
-        Sleep(timeScale * 9300)
+        ScaledSleep(9300)
 
         Send("{vk56}")              ; Plane 1
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         MouseMove(316,735)
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         Click("316,735")
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
 
         Click("316,735")            ; Click Plane 1
-        Sleep(timeScale * 12000)
+        ScaledSleep(12000)
         Send("{sc035}")             ; Plane 1 001
-        Sleep(timeScale * 8300)
+        ScaledSleep(8300)
         Send("{sc035}")             ; Plane 1 002
-        Sleep(timeScale * 200)
+        ScaledSleep(200)
 
         Send("{vk09}")              ; Change targeting to figure infinite
-        Sleep(timeScale * 200)
+        ScaledSleep(200)
         Send("{vk09}")
-        Sleep(timeScale * 200)
+        ScaledSleep(200)
         Send("{vk09}")
-        Sleep(timeScale * 55400)
+        ScaledSleep(55400)
 
         Send("{sc035}")             ; Plane 1 003
-        Sleep(timeScale * 10400)
+        ScaledSleep(10400)
         Send("{vkBC}")              ; Plane 1 103
-        Sleep(timeScale * 8600)
+        ScaledSleep(8600)
         Send("{vkBC}")              ; Plane 1 203
-        Sleep(timeScale * 10400)
+        ScaledSleep(10400)
 
         Send("{vk46}")              ; Alch
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         MouseMove(207,848)
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         Click("207,848")
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
 
         Click("207,848")            ; Click Alch
-        Sleep(timeScale * 4500)
+        ScaledSleep(4500)
         Send("{vkBC}")              ; Alch 100
-        Sleep(timeScale * 1500)
+        ScaledSleep(1500)
         Send("{vkBC}")              ; Alch 200
-        Sleep(timeScale * 12000)
+        ScaledSleep(12000)
         Send("{vkBC}")              ; Alch 300
-        Sleep(timeScale * 20700)
+        ScaledSleep(20700)
         Send("{vkBC}")              ; Alch 400
-        Sleep(timeScale * 7500)
+        ScaledSleep(7500)
         Send("{sc035}")             ; Alch 401
-        Sleep(timeScale * 8000)
+        ScaledSleep(8000)
 
         Send("{vk56}")              ; Plane 2
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         MouseMove(453,835)
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         Click("453,835")
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
 
         Click("453,835")            ; Click Plane 2
-        Sleep(timeScale * 4800)
+        ScaledSleep(4800)
         Send("{sc035}")             ; Plane 2 001
-        Sleep(timeScale * 1800)
+        ScaledSleep(1800)
         Send("{sc035}")             ; Plane 2 002
-        Sleep(timeScale * 14300)
+        ScaledSleep(14300)
         Send("{sc035}")             ; Plane 2 003
-        Sleep(timeScale * 4500)
+        ScaledSleep(4500)
         Send("{vkBC}")              ; Plane 2 103
-        Sleep(timeScale * 8200)
+        ScaledSleep(8200)
         Send("{vkBC}")              ; Plane 2 203
-        Sleep(timeScale * 10000)
+        ScaledSleep(10000)
 
         Click("711,814")            ; Click Spike Factory
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         Send("{vkBE}")              ; Spike 010
-        Sleep(timeScale * 6400)
+        ScaledSleep(6400)
         Send("{vkBE}")              ; Spike 020
-        Sleep(timeScale * 6000)
+        ScaledSleep(6000)
         Send("{vkBC}")              ; Spike 120
-        Sleep(timeScale * 6500)
+        ScaledSleep(6500)
         Send("{vkBC}")              ; Spike 220
-        Sleep(timeScale * 4600)
+        ScaledSleep(4600)
 
         Send("{vk56}")              ; Plane 3
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         MouseMove(330,923)
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
         Click("330,923")
-        Sleep(timeScale * 100)
+        ScaledSleep(100)
 
         Click("330,923")            ; Click Plane 3
-        Sleep(timeScale * 3200)
+        ScaledSleep(3200)
         Send("{sc035}")             ; Plane 3 001
-        Sleep(timeScale * 1600)
+        ScaledSleep(1600)
         Send("{sc035}")             ; Plane 3 002
-        Sleep(timeScale * 18700)
+        ScaledSleep(18700)
         Send("{sc035}")             ; Plane 3 003
-        Sleep(timeScale * 2600)
+        ScaledSleep(2600)
         Send("{vkBC}")              ; Plane 3 103
-        Sleep(timeScale * 1900)
+        ScaledSleep(1900)
         Send("{vkBC}")              ; Plane 3 203
 
-        Sleep(timeScale * 19000)    ; Wait for victory
+        ScaledSleep(19000)          ; Wait for victory
     }
 }
