@@ -12,8 +12,8 @@ restart the script as it might break and get stuck.
 - __Stable__: May not be perfect but will almost always recover without assistance  
 
 ```
-Script status: Experimental
-Game version: v34.2
+Script status: Unstable
+Game version: v34.3
 ```
 
 ## AutoHotkey v2
@@ -21,8 +21,8 @@ Game version: v34.2
 - [Documentation](https://lexikos.github.io/v2/docs/AutoHotkey.htm)
 
 ## Requirements:
-- _Full monkey knowledge (the script has only been tested with all knowledge on)._  
-- Game running **fullscreen** on an **1920x1080** display.  
+- _Full monkey knowledge (the script has only been tested with all knowledge on)_  
+- Game running **fullscreen** on an **1920x1080** display  
 - **Benjamin** selected as the Hero  
 - Game language set to **English**  
 - _All expert maps unlocked. (?)_  

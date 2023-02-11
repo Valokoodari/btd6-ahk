@@ -1,5 +1,8 @@
 #SingleInstance Force
 #MaxThreadsPerHotkey 3
+
+#Include "%A_ScriptDir%\utils.ahk"
+
 #Include "%A_ScriptDir%\maps\dark_easy.ahk"
 #Include "%A_ScriptDir%\maps\ouch_easy.ahk"
 #Include "%A_ScriptDir%\maps\quad_easy.ahk"
@@ -11,7 +14,6 @@
 #Include "%A_ScriptDir%\maps\workshop_easy.ahk"
 #Include "%A_ScriptDir%\maps\sanctuary_easy.ahk"
 
-global logging := IniRead("config.ini", "settings", "logging", false)
 global timeScale := IniRead("config.ini", "settings", "timeScale", 1.00)
 global eventType := IniRead("config.ini", "settings", "eventType", "holiday")
 global stateIndicators := ["play_home", "stage_select", "in_game", "collect", eventType "\event"]
@@ -22,7 +24,7 @@ global x := ""
 global y := ""
 
 ^!+j:: {
-    logMsg("Script started")
+    LogMsg("Script started")
 
     while WinActive("BloonsTD6") {
         CheckMenuState()
@@ -33,7 +35,7 @@ global y := ""
             case "Stage Selection":
                 selectExpertMap(1000, 5000)
             case "In Game":
-                selectGameScript(timeScale)
+                selectGameScript()
             case "Collect Event Boxes":
                 openBoxes(1000)
             case "Collection Event":
@@ -43,15 +45,9 @@ global y := ""
 }
 
 ^!+p:: {
-    logMsg("Script stopped")
+    LogMsg("Script stopped")
     Run(A_ScriptFullPath)
     ExitApp()
-}
-
-logMsg(msg) {
-    if logging {
-        FileAppend("[" FormatTime(, "HH:mm:ss") "] " msg "`n", "log.txt")
-    }
 }
 
 searchImage(picName) {
@@ -67,7 +63,7 @@ clickElement(picName, sleepTime) {
         global x := xCoord
         global y := yCoord
         Click(x,y)
-        Sleep(timeScale * sleepTime)
+        ScaledSleep(sleepTime)
         return true
     } else {
         return false
@@ -77,7 +73,7 @@ clickElement(picName, sleepTime) {
 clickPixel(pColor, sleepTime) {
     if PixelSearch(&xPixelOne, &yPixelOne, 0, 0, 1920, 1080, pColor, 30) {
         Click(xPixelOne,yPixelOne)
-        Sleep(timeScale * sleepTime)
+        ScaledSleep(sleepTime)
         return true
     } else {
         return false
@@ -105,26 +101,31 @@ CheckMenuState() {
         }
     }
 
-    logMsg(menuState)
+    LogMsg(menuState)
 }
 
 selectExpertMap(sleepTime, loadTime) {
     foundMap := false
-    eventBonusName := ""
 
     while !foundMap {
         clickElement("expert", sleepTime)
 
-        for tileNumber in [0, 1, 2, 3, 4, 5] {
-            eventBonusName := eventType "\" tileNumber
-            if clickElement(eventBonusName, sleepTime) {
-                clickElement("easy", sleepTime)
-                clickElement("standard", loadTime)
+        if eventType == "none" {
+            if clickElement("dark", sleepTime) {
                 foundMap := true
-                break
+            }
+        } else {
+            for tileNumber in [0, 1, 2, 3, 4, 5] {
+                if clickElement(eventType "\" tileNumber, sleepTime) {
+                    foundMap := true
+                    break
+                }
             }
         }
     }
+
+    clickElement("easy", sleepTime)
+    clickElement("standard", loadTime)
 }
 
 getMapName() {
@@ -158,14 +159,14 @@ getMapName() {
         }
 
         if mapState == "" {
-            logMsg("Map not recognized")
+            LogMsg("Map not recognized")
         } else {
-            logMsg("Map recognized: " mapState)
+            LogMsg("Map recognized: " mapState)
         }
     }
 }
 
-selectGameScript(timeScale) {
+selectGameScript() {
     getMapName()
 
     switch mapState {
@@ -197,23 +198,23 @@ selectGameScript(timeScale) {
 
 openBoxes(sleepTime) {
     clickElement("collect", sleepTime)
-    logMsg("Opening boxes")
+    LogMsg("Opening boxes")
 
     while !searchImage(eventType "\event") {
         Click("683 535")
-        Sleep(timeScale * sleepTime)
+        ScaledSleep(sleepTime)
         Click("900, 550")
-        Sleep(timeScale * sleepTime)
+        ScaledSleep(sleepTime)
         Click("897 535")
-        Sleep(timeScale * sleepTime)
+        ScaledSleep(sleepTime)
         Click("900, 550")
-        Sleep(timeScale * sleepTime)
+        ScaledSleep(sleepTime)
         Click("1190 535")
-        Sleep(timeScale * sleepTime)
+        ScaledSleep(sleepTime)
         Click("900, 550")
-        Sleep(timeScale * sleepTime)
+        ScaledSleep(sleepTime)
         Click("950 930")
-        Sleep(timeScale * sleepTime)
+        ScaledSleep(sleepTime)
     }
 }
 
@@ -221,14 +222,14 @@ checkVictoryOrDefeat(sleepTime) {
     Loop {
         if searchImage("defeat") {
             clickElement("home_defeat", sleepTime)
-            logMsg("Defeat")
+            LogMsg("Defeat")
             break
         }
 
         if searchImage("victory") {
             clickElement("next", sleepTime)
             clickElement("home", sleepTime)
-            logMsg("Victory")
+            LogMsg("Victory")
             break
         }
     }
