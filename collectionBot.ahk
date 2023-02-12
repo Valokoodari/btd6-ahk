@@ -27,7 +27,6 @@ maps := Map(
     "ouch", ouchGameScript,
 )
 
-eventType := IniRead("config.ini", "settings", "eventType", "none")
 states := ["play_home", "stage_select", "in_game"]
 if eventType != "none" {
     states.Push("collect", eventType "\event")
@@ -54,6 +53,10 @@ if eventType != "none" {
 
 ^!+p:: {
     LogMsg("Script stopped")
+    Reload()
+}
+
+Reload() {
     Run(A_ScriptFullPath)
     ExitApp()
 }
@@ -86,10 +89,23 @@ FindExpertMap() {
     }
 }
 
+CheckOwerwrite() {
+    if SearchImage("overwrite") {
+        if overwriteSave {
+            ClickImage("overwrite_ok")
+        } else {
+            LogMsg("Script stopped to protect an existing save")
+            Reload()
+        }
+    }
+}
+
 SelectExpertMap() {
     FindExpertMap()
     ClickImage("easy")
-    ClickImage("standard", 5000)
+    ClickImage("standard")
+    CheckOwerwrite()
+    ScaledSleep(4000)
 }
 
 GetMapName() {
