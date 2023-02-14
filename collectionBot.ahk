@@ -56,11 +56,6 @@ if eventType != "none" {
     Reload()
 }
 
-Reload() {
-    Run(A_ScriptFullPath)
-    ExitApp()
-}
-
 CheckMenuState() {
     for state in states {
         if SearchImage(state) {
