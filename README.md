@@ -11,7 +11,6 @@ script manually.
 ## Requirements:
 - _Full monkey knowledge (the script has only been tested with all knowledge on)_  
 - Game running **fullscreen** on a **1920x1080** display  
-- **Benjamin** selected as the Hero  
 - Game language set to **English**  
 - _All expert maps unlocked (?)_  
 - **Default game hotkeys**  
