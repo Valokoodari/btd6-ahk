@@ -1,29 +1,6 @@
 timeScale := IniRead("config.ini", "settings", "timeScale", 1.00)
 eventType := IniRead("config.ini", "settings", "eventType", "none")
-logging := IniRead("config.ini", "settings", "logging", false) == "true"
 overwriteSave := IniRead("config.ini", "settings", "overwriteSave", false) == "true"
-logFile := IniRead("config.ini", "settings", "logFile", "logs\" FormatTime(, "yyyyMMdd-HHmmss") ".log")
-
-ClearLogFile() {
-    if logging && logFile == "logs\log.txt" {
-        FileRecycle(logFile)
-    }
-}
-
-LogMsg(msg) {
-    if logging {
-        FileAppend("[" FormatTime(, "HH:mm:ss") "] " msg "`n", logFile)
-    }
-}
-
-LogArr(array) {
-    arrayStr := "["
-    for value in array {
-        arrayStr .= value ", "
-    }
-    arrayStr := RTrim(arrayStr, ", ")
-    LogMsg(arrayStr "]")
-}
 
 Reload() {
     Run(A_ScriptFullPath)
