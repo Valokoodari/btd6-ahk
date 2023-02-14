@@ -8,7 +8,7 @@ ScaledSleep(delay := 1000) {
 }
 
 SearchImage(imageName) {
-    if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*65 " A_ScriptDir "\res\" imageName ".png") {
+    if ImageSearch(&xCoord, &yCoord, 0, 0, 1920, 1080, "*65 " A_ScriptDir "\img\" imageName ".png") {
         global x := xCoord
         global y := yCoord
         return true
