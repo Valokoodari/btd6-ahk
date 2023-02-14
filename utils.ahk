@@ -1,7 +1,3 @@
-timeScale := IniRead("config.ini", "settings", "timeScale", 1.00)
-eventType := IniRead("config.ini", "settings", "eventType", "none")
-overwriteSave := IniRead("config.ini", "settings", "overwriteSave", false) == "true"
-
 Reload() {
     Run(A_ScriptFullPath)
     ExitApp()

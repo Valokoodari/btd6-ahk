@@ -1,6 +1,3 @@
-logFile := IniRead("config.ini", "settings", "logFile", "logs\" FormatTime(, "yyyyMMdd-HHmmss") ".log")
-logging := IniRead("config.ini", "settings", "logging", false) == "true"
-
 ClearLogFile() {
     if logging && logFile == "logs\log.txt" {
         FileRecycle(logFile)

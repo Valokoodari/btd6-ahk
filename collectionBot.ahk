@@ -3,7 +3,9 @@
 #Include %A_ScriptDir%
 
 #Include utils.ahk
+#Include config.ahk
 #Include logger.ahk
+#Include globals.ahk
 #Include maps\dark_easy.ahk
 #Include maps\ouch_easy.ahk
 #Include maps\quad_easy.ahk
@@ -15,27 +17,18 @@
 #Include maps\workshop_easy.ahk
 #Include maps\sanctuary_easy.ahk
 
-maps := Map(
-    "sanc", sancGameScript,
-    "ravine", ravineGameScript,
-    "flooded", floodedgameScript,
-    "infernal", infernalGameScript,
-    "bloody", bloodyGameScript,
-    "workshop", workshopGameScript,
-    "quad", quadGameScript,
-    "dark", darkGameScript,
-    "muddy", muddyGameScript,
-    "ouch", ouchGameScript,
-)
-
-states := ["play_home", "stage_select", "in_game"]
-if eventType != "none" {
-    states.Push("collect", eventType "\event")
-}
-
 ^!+j:: {
     ClearLogFile()
     LogMsg("Script started")
+    Start()
+}
+
+^!+p:: {
+    LogMsg("Script stopped")
+    Reload()
+}
+
+Start() {
     while WinActive("BloonsTD6") {
         switch CheckMenuState() {
             case "play_home":
@@ -50,11 +43,6 @@ if eventType != "none" {
                 ClickImage("play_collect")
         }
     }
-}
-
-^!+p:: {
-    LogMsg("Script stopped")
-    Reload()
 }
 
 CheckMenuState() {
