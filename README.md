@@ -14,6 +14,7 @@ script manually.
 - Game language set to **English**  
 - _All expert maps unlocked (?)_  
 - **Default game hotkeys**  
+- **Benjamin unlocked**
 - [AutoHotkey v2.0](https://www.autohotkey.com/)
 
 > **Note**  
