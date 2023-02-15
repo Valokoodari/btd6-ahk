@@ -8,6 +8,16 @@ The most likely reason for the script to break and get stuck is a level up. In m
 should only result as a single defeat but you may need to finish the current game and restart the
 script manually.
 
+> **Warning**  
+> Read the [Ninja Kiwi Terms of Service](https://ninjakiwi.com/terms) before using this script
+> **_at your own risk!_**  
+>
+> The script **should** be safe to use in **private games** but there is always the chance of being
+> flagged for cheating:  
+> _"–– use of modified clients is tolerated for private single player use and private co-op games
+> but you understand that such use may also lead to automated segregation and/or suspension of your
+> Ninja Kiwi account, ––"_
+
 ## Requirements:
 - _Full monkey knowledge (the script has only been tested with all knowledge on)_  
 - Game running **fullscreen** on a **1920x1080** display  
