@@ -152,12 +152,14 @@ CheckVictoryOrDefeat() {
     Loop {
         if SearchImage("defeat") {
             ClickImage("home_defeat", 2000)
+            global defeats := defeats + 1
             LogMsg("Defeat")
             break
         }
         if SearchImage("victory") {
             ClickImage("next")
             ClickImage("home", 2000)
+            global victories := victories + 1
             LogMsg("Victory")
             break
         }

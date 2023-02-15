@@ -1,3 +1,6 @@
+victories := 0
+defeats := 0
+
 maps := Map(
     "sanc", sancGameScript,
     "ravine", ravineGameScript,
