@@ -90,7 +90,7 @@ FindExpertMap() {
             }
         } else {
             for tileNumber in [0, 1, 2, 3, 4, 5] {
-                if ClickImage(eventType "\" tileNumber) {
+                if ClickImage("events\" eventType "\" tileNumber) {
                     return
                 }
             }
@@ -140,7 +140,7 @@ SelectGameScript() {
 OpenBoxes() {
     ClickImage("collect")
     LogMsg("Opening boxes")
-    while !SearchImage(eventType "\event") {
+    while !SearchImage("events\" eventType "\event") {
         for coords in ["683,535","900,550","897,535","900,550","1190,535","900,550","950,930"] {
             Click(coords)
             ScaledSleep()
