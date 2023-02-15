@@ -3,16 +3,7 @@
 #Include %A_ScriptDir%
 
 #Include utils\_include.ahk
-#Include maps\dark_easy.ahk
-#Include maps\ouch_easy.ahk
-#Include maps\quad_easy.ahk
-#Include maps\muddy_easy.ahk
-#Include maps\bloody_easy.ahk
-#Include maps\ravine_easy.ahk
-#Include maps\flooded_easy.ahk
-#Include maps\infernal_easy.ahk
-#Include maps\workshop_easy.ahk
-#Include maps\sanctuary_easy.ahk
+#Include maps\_include.ahk
 
 ^!+j:: {
     ClearLogFile()
