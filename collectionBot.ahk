@@ -31,15 +31,15 @@
 Start() {
     while WinActive("BloonsTD6") {
         switch CheckMenuState() {
-            case "play_home":
+            case "home":
                 ClickImage("play_home")
-            case "stage_select":
+            case "map_selection":
                 SelectExpertMap()
             case "in_game":
                 SelectGameScript()
             case "collect":
                 OpenBoxes()
-            case eventType "\event":
+            case "event":
                 ClickImage("play_collect")
         }
     }
@@ -47,7 +47,7 @@ Start() {
 
 CheckMenuState() {
     for state in states {
-        if SearchImage(state) {
+        if SearchImage("states\" state) {
             LogMsg(state)
             return state
         }
@@ -99,7 +99,7 @@ FindExpertMap() {
 }
 
 CheckOwerwrite() {
-    if SearchImage("overwrite") {
+    if SearchImage("states/overwrite") {
         if overwriteSave {
             ClickImage("overwrite_ok")
         } else {
@@ -150,14 +150,14 @@ OpenBoxes() {
 
 CheckVictoryOrDefeat() {
     Loop {
-        if SearchImage("victory") {
+        if SearchImage("states/victory") {
             ClickImage("next")
             ClickImage("home", 2000)
             global victories := victories + 1
             LogMsg("Victory")
             break
         }
-        if SearchImage("defeat") {
+        if SearchImage("states/defeat") {
             ClickImage("home_defeat", 2000)
             global defeats := defeats + 1
             LogMsg("Defeat")

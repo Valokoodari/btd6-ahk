@@ -14,7 +14,7 @@ maps := Map(
     "ouch", ouchGameScript,
 )
 
-states := ["play_home", "stage_select", "in_game"]
+states := ["home", "map_selection", "in_game"]
 if eventType != "none" {
-    states.Push("collect", eventType "\event")
+    states.Push("collect", "event")
 }
