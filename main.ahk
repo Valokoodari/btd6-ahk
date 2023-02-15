@@ -20,7 +20,7 @@ Start() {
     while WinActive("BloonsTD6") {
         switch CheckMenuState() {
             case "home":
-                ClickImage("play_home")
+                ClickImage("buttons\play_home")
             case "map_selection":
                 SelectExpertMap()
             case "in_game":
@@ -28,7 +28,7 @@ Start() {
             case "collect":
                 OpenBoxes()
             case "event":
-                ClickImage("play_collect")
+                ClickImage("buttons\play_collect")
         }
     }
 }
@@ -53,13 +53,13 @@ CheckHero() {
         }
     }
     LogMsg("Benjamin not selected, changing the hero")
-    clickImage("hero\change")
+    ClickImage("hero\change")
 
     changed := false
     for style in styles {
         if ClickImage("hero\select_" style) {
-            clickImage("hero\select")
-            clickImage("hero\back")
+            ClickImage("hero\select")
+            ClickImage("hero\back")
             changed := true
         }
     }
@@ -71,9 +71,9 @@ CheckHero() {
 
 FindExpertMap() {
     while true {
-        ClickImage("expert")
+        ClickImage("buttons\expert")
         if eventType == "none" {
-            if clickImage("dark") {
+            if ClickImage("buttons\dark") {
                 return
             }
         } else {
@@ -87,9 +87,9 @@ FindExpertMap() {
 }
 
 CheckOwerwrite() {
-    if SearchImage("states/overwrite") {
+    if SearchImage("states\overwrite") {
         if overwriteSave {
-            ClickImage("overwrite_ok")
+            ClickImage("buttons\ok_overwrite")
         } else {
             LogMsg("Script stopped to protect an existing save")
             Reload()
@@ -100,8 +100,8 @@ CheckOwerwrite() {
 SelectExpertMap() {
     CheckHero()
     FindExpertMap()
-    ClickImage("easy")
-    ClickImage("standard")
+    ClickImage("buttons\easy")
+    ClickImage("buttons\standard")
     CheckOwerwrite()
     ScaledSleep(4000)
 }
@@ -109,7 +109,7 @@ SelectExpertMap() {
 GetMapName() {
     while true {
         for map, _ in maps {
-            if SearchImage("maps/" map) {
+            if SearchImage("maps\" map) {
                 LogMsg("Map recognized: " map)
                 return map
             }
@@ -126,7 +126,7 @@ SelectGameScript() {
 }
 
 OpenBoxes() {
-    ClickImage("collect")
+    ClickImage("buttons\collect")
     LogMsg("Opening boxes")
     while !SearchImage("events\" eventType "\event") {
         for coords in ["683,535","900,550","897,535","900,550","1190,535","900,550","950,930"] {
@@ -138,15 +138,15 @@ OpenBoxes() {
 
 CheckVictoryOrDefeat() {
     Loop {
-        if SearchImage("states/victory") {
-            ClickImage("next")
-            ClickImage("home", 2000)
+        if SearchImage("states\victory") {
+            ClickImage("buttons\next")
+            ClickImage("buttons\home", 2000)
             global victories := victories + 1
             LogMsg("Victory")
             break
         }
-        if SearchImage("states/defeat") {
-            ClickImage("home_defeat", 2000)
+        if SearchImage("states\defeat") {
+            ClickImage("buttons\home_defeat", 2000)
             global defeats := defeats + 1
             LogMsg("Defeat")
             break
