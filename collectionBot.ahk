@@ -2,10 +2,7 @@
 #MaxThreadsPerHotkey 3
 #Include %A_ScriptDir%
 
-#Include utils.ahk
-#Include config.ahk
-#Include logger.ahk
-#Include globals.ahk
+#Include utils\_include.ahk
 #Include maps\dark_easy.ahk
 #Include maps\ouch_easy.ahk
 #Include maps\quad_easy.ahk
