@@ -21,20 +21,28 @@ global x := ""
 global y := ""
 
 ^!+j:: {
-	while WinActive("BloonsTD6") {
-		CheckMenuState()
+	Loop {
+		if (WinActive("BloonsTD6")) {
+			OutputDebug A_NOW " [Main] Checking Menu State"
+			CheckMenuState()
+			OutputDebug A_NOW " [Main] Menu State: " menuState
 
-		switch menuState {
-			case "Home":
-				clickElement("play_home", 1000)
-			case "Stage Selection":
-				selectExpertMap(1000, 5000)
-			case "In Game":
-				selectGameScript(timeScale)
-			case "Collect Event Boxes":
-				openBoxes(1000)
-			case "Collection Event":
-				clickElement("play_collect", 1000)
+			switch menuState {
+				case "Home":
+					clickElement("play_home", 1000)
+				case "Stage Selection":
+					selectExpertMap(1000, 5000)
+				case "In Game":
+					selectGameScript(timeScale)
+				case "Collect Event Boxes":
+					openBoxes(1000)
+				case "Collection Event":
+					clickElement("play_collect", 1000)
+			}
+		}
+		else {
+			OutputDebug A_NOW " [Main] Window not active"
+			Sleep(1000)
 		}
 	}
 }
@@ -93,9 +101,11 @@ CheckMenuState() {
 				case eventType "\event":
 					global menuState := "Collection Event"
 			}
-			break
+			return
 		}
 	}
+
+	checkVictoryOrDefeatOnce(1000)
 }
 
 selectExpertMap(sleepTime, loadTime) {
@@ -105,6 +115,7 @@ selectExpertMap(sleepTime, loadTime) {
 	
 	foundMap := false
 	eventBonusName := ""
+	retries := 0
 
 	while !foundMap {
 		for tileNumber in [0, 1, 2, 3, 4, 5] {
@@ -118,6 +129,10 @@ selectExpertMap(sleepTime, loadTime) {
 		}
 
 		clickElement("expert", sleepTime)
+		retries := retries + 1
+		if (retries > 10) {
+			break
+		}
 	}
 }
 
@@ -156,6 +171,8 @@ getMapName() {
 selectGameScript(timeScale) {
 
 	getMapName()
+
+	OutputDebug A_NOW " [Main] MapState: " mapState
 	
 	switch mapState {
 		case "Sanctuary":
@@ -181,7 +198,8 @@ selectGameScript(timeScale) {
 	}
 	
 	global mapState := ""
-	checkVictoryOrDefeat(2000)
+
+	Sleep(1000 * timeScale)
 }
 
 openBoxes(sleepTime) {
@@ -205,17 +223,53 @@ openBoxes(sleepTime) {
 	}
 }
 
+checkVictoryOrDefeatOnce(sleepTime) {
+	if searchImage("defeat") {
+		OutputDebug A_NOW " [Main] Defeat"
+		while (!clickElement("home_defeat", sleepTime)) {
+			OutputDebug A_NOW " [Main] Couldn't click home"
+			Sleep(sleepTime * timeScale)
+		}
+		return true
+	}
+	
+	if searchImage("victory") {
+		OutputDebug A_NOW " [Main] Victory"
+		clickElement("next", sleepTime)
+		clickElement("home", sleepTime)
+		return true
+	}
+
+	if (searchImage("level-up")) {
+		OutputDebug A_NOW " [Main] Level Up!"
+
+		Click("500, 500")
+		Sleep(100)
+
+		Click("500, 500")
+		Sleep(sleepTime * timeScale)
+	}
+
+	return false
+}
+
 checkVictoryOrDefeat(sleepTime) {
 	Loop {
-		if searchImage("defeat") {
-			clickElement("home", sleepTime)
+		if (checkVictoryOrDefeatOnce(sleepTime))
 			break
-		}
-		
-		if searchImage("victory") {
-			clickElement("next", sleepTime)
-			clickElement("home", sleepTime)
-			break
-		}
 	}
+}
+
+sleepAndCheckForLevels(sleepTime) {
+	OutputDebug A_NOW " [Main] Sleeping for " sleepTime
+	Sleep(sleepTime)
+	if (searchImage("level-up")) {
+		OutputDebug A_NOW " [Main] Level Up!"
+
+		Click("500, 500")
+		Sleep(100)
+
+		Click("500, 500")
+	}
+	OutputDebug A_NOW " [Main] After check for level-up"
 }

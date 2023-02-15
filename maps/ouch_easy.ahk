@@ -1,121 +1,156 @@
 ouchGameScript(timeScale) {
 		if WinActive("BloonsTD6") {
 		
-			Sleep(timeScale * 100) ;clear hotkey lag
+			sleepAndCheckForLevels(timeScale * 100) 
+			OutputDebug A_NOW " [Ouch] clear hotkey lag"
 			
-			Send("{vk20}")		; Start game
-			Sleep(timeScale * 100)
-			Send("{vk20}")		; Increase Speed
-			Sleep(timeScale * 100)
+			Send("{vk20}")		
+			OutputDebug A_NOW " [Ouch]  Start game"
+			sleepAndCheckForLevels(timeScale * 100)
+			Send("{vk20}")		
+			OutputDebug A_NOW " [Ouch]  Increase Speed"
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Send("{vk51}")	;dart
-			Sleep(timeScale * 100)
+			Send("{vk51}")	
+			OutputDebug A_NOW " [Ouch] dart"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(531,310)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("531,310")
-			Sleep(timeScale * 10900)
+			sleepAndCheckForLevels(timeScale * 10900)
 			
-			Send("{vk55}")	;ben
-			Sleep(timeScale * 100)
+			Send("{vk55}")	
+			OutputDebug A_NOW " [Ouch] ben"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(1273,251)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("1273,251")
-			Sleep(timeScale * 9800)
+			sleepAndCheckForLevels(timeScale * 9800)
 			
-			Send("{vk43}")	;boat
-			Sleep(timeScale * 100)
+			Send("{vk43}")	
+			OutputDebug A_NOW " [Ouch] boat"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(840,571)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("840,571")
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("840,571")	;click boat
-			Sleep(timeScale * 14000)
+			Click("840,571")	
+			OutputDebug A_NOW " [Ouch] click boat"
+			sleepAndCheckForLevels(timeScale * 14000)
 			
-			Send("{vkBE}")	;boat 010
-			Sleep(timeScale * 7500)
+			Send("{vkBE}")	
+			OutputDebug A_NOW " [Ouch] boat 010"
+			sleepAndCheckForLevels(timeScale * 7500)
 			
-			Send("{vkBC}")	;boat 110
-			Sleep(timeScale * 6900)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Ouch] boat 110"
+			sleepAndCheckForLevels(timeScale * 6900)
 			
-			Send("{vkBC}")	;boat 210
-			Sleep(timeScale * 62200)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Ouch] boat 210"
+			sleepAndCheckForLevels(timeScale * 62200)
 			
-			Send("{vkBC}")	;boat 310
-			Sleep(timeScale * 7500)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Ouch] boat 310"
+			sleepAndCheckForLevels(timeScale * 7500)
 			
-			Send("{vkBE}")	;boat 320
-			Sleep(timeScale * 100)
+			Send("{vkBE}")	
+			OutputDebug A_NOW " [Ouch] boat 320"
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("531,310")	;click dart
-			Sleep(timeScale * 4200)
+			Click("531,310")	
+			OutputDebug A_NOW " [Ouch] click dart"
+			sleepAndCheckForLevels(timeScale * 4200)
 			
-			Send("{sc035}")	;dart 001
-			Sleep(timeScale * 5900)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Ouch] dart 001"
+			sleepAndCheckForLevels(timeScale * 5900)
 			
-			Send("{sc035}")	;dart 002
-			Sleep(timeScale * 10000)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Ouch] dart 002"
+			sleepAndCheckForLevels(timeScale * 10000)
 			
-			Send("{sc035}")	;dart 003
-			Sleep(timeScale * 19200)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Ouch] dart 003"
+			sleepAndCheckForLevels(timeScale * 19200)
 			
-			Send("{sc035}")	;dart 004
-			Sleep(timeScale * 2100)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Ouch] dart 004"
+			sleepAndCheckForLevels(timeScale * 2100)
 			
-			Send("{vkBE}")	;dart 014
-			Sleep(timeScale * 2100)
+			Send("{vkBE}")	
+			OutputDebug A_NOW " [Ouch] dart 014"
+			sleepAndCheckForLevels(timeScale * 2100)
 			
-			Send("{vkBE}")	;dart 024
-			Sleep(timeScale * 4400)
+			Send("{vkBE}")	
+			OutputDebug A_NOW " [Ouch] dart 024"
+			sleepAndCheckForLevels(timeScale * 4400)
 			
-			Send("{vk44}")	;ninja 1
-			Sleep(timeScale * 100)
+			Send("{vk44}")	
+			OutputDebug A_NOW " [Ouch] ninja 1"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(995,187)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("995,187")
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("995,187")	;click ninja 1
-			Sleep(timeScale * 3600)
+			Click("995,187")	
+			OutputDebug A_NOW " [Ouch] click ninja 1"
+			sleepAndCheckForLevels(timeScale * 3600)
 			
-			Send("{vkBC}")	;ninja 1 100
-			Sleep(timeScale * 1500)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Ouch] ninja 1 100"
+			sleepAndCheckForLevels(timeScale * 1500)
 			
-			Send("{vkBC}")	;ninja 1 200
-			Sleep(timeScale * 1900)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Ouch] ninja 1 200"
+			sleepAndCheckForLevels(timeScale * 1900)
 			
-			Send("{sc035}")	;ninja 1 201
-			Sleep(timeScale * 4700)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Ouch] ninja 1 201"
+			sleepAndCheckForLevels(timeScale * 4700)
 			
-			Send("{vkBC}")	;ninja 1 301
-			Sleep(timeScale * 28700)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Ouch] ninja 1 301"
+			sleepAndCheckForLevels(timeScale * 28700)
 			
-			Send("{vkBC}")	;ninja 1 401
-			Sleep(timeScale * 6900)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Ouch] ninja 1 401"
+			sleepAndCheckForLevels(timeScale * 6900)
 			
-			Send("{vk44}")	;ninja 2
-			Sleep(timeScale * 100)
+			Send("{vk44}")	
+			OutputDebug A_NOW " [Ouch] ninja 2"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(528,542)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("528,542")
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("528,542")	;click ninja 2
-			Sleep(timeScale * 3200)
+			Click("528,542")	
+			OutputDebug A_NOW " [Ouch] click ninja 2"
+			sleepAndCheckForLevels(timeScale * 3200)
 			
-			Send("{vkBC}")	;ninja 2 100
-			Sleep(timeScale * 1900)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Ouch] ninja 2 100"
+			sleepAndCheckForLevels(timeScale * 1900)
 			
-			Send("{sc035}")	;ninja 2 101
-			Sleep(timeScale * 1700)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Ouch] ninja 2 101"
+			sleepAndCheckForLevels(timeScale * 1700)
 			
-			Send("{vkBC}")	;ninja 2 201
-			Sleep(timeScale * 1800)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Ouch] ninja 2 201"
+			sleepAndCheckForLevels(timeScale * 1800)
 			
-			Send("{vkBC}")	;ninja 2 301
-			Sleep(timeScale * 29300)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Ouch] ninja 2 301"
+			sleepAndCheckForLevels(timeScale * 29300)
 			
-			Send("{vkBC}")	;ninja 2 401
-			Sleep(timeScale * 62000)	;wait victory
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Ouch] ninja 2 401"
+			OutputDebug A_NOW " [Ouch] wait victory"
+			checkVictoryOrDefeat(timeScale * 1000)
+			
 		}
 }

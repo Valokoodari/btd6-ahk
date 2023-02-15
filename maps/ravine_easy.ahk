@@ -1,153 +1,196 @@
 ravineGameScript(timeScale) {
 		if WinActive("BloonsTD6") {
 			
-			Sleep(timeScale * 100)	; Clear hot key lag
+			sleepAndCheckForLevels(timeScale * 100)	
+			OutputDebug A_NOW " [Ravine]  Clear hot key lag"
 			
-			Send("{vk20}")		; Start game
-			Sleep(timeScale * 100)
-			Send("{vk20}")		; Increase Speed
-			Sleep(timeScale * 100)
+			Send("{vk20}")		
+			OutputDebug A_NOW " [Ravine]  Start game"
+			sleepAndCheckForLevels(timeScale * 100)
+			Send("{vk20}")		
+			OutputDebug A_NOW " [Ravine]  Increase Speed"
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Send("{vk51}")		; Dart monkey
-			Sleep(timeScale * 100)
+			Send("{vk51}")		
+			OutputDebug A_NOW " [Ravine]  Dart monkey"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(184,475)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("184,475")
-			Sleep(timeScale * 12000)
+			sleepAndCheckForLevels(timeScale * 12000)
 			
-			Send("{vk55}")		; Hero (Ben)
-			Sleep(timeScale * 100)
+			Send("{vk55}")		
+			OutputDebug A_NOW " [Ravine]  Hero (Ben)"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(1208,399)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("1208,399")
-			Sleep(timeScale * 30700)
+			sleepAndCheckForLevels(timeScale * 30700)
 			
-			Send("{vk4A}")		; Spike Factory
-			Sleep(timeScale * 100)
+			Send("{vk4A}")		
+			OutputDebug A_NOW " [Ravine]  Spike Factory"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(711,814)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("711,814")
-			Sleep(timeScale * 9300)
+			sleepAndCheckForLevels(timeScale * 9300)
 			
-			Send("{vk56}")		; Plane 1
-			Sleep(timeScale * 100)
+			Send("{vk56}")		
+			OutputDebug A_NOW " [Ravine]  Plane 1"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(316,735)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("316,735")
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("316,735")	; Click Plane 1
-			Sleep(timeScale * 12000)
+			Click("316,735")	
+			OutputDebug A_NOW " [Ravine]  Click Plane 1"
+			sleepAndCheckForLevels(timeScale * 12000)
 			
-			Send("{sc035}")		; Plane 1 001
-			Sleep(timeScale * 8300)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Ravine]  Plane 1 001"
+			sleepAndCheckForLevels(timeScale * 8300)
 			
-			Send("{sc035}")		; Plane 1 002
-			Sleep(timeScale * 100)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Ravine]  Plane 1 002"
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Send("^{vk09}")		; Change Target Priotity to Figure Eight
-			Sleep(timeScale * 100)
+			Send("{vk09}")		
+			sleepAndCheckForLevels(timeScale * 100)
+			Send("{vk09}")		
+			sleepAndCheckForLevels(timeScale * 100)
+			Send("{vk09}")		
+			OutputDebug A_NOW " [Ravine]  Change Target Priority to Figure Infinite"			
+			sleepAndCheckForLevels(timeScale * 55400)
 			
-			Send("^{vk09}")		; Change Target Priotity to Figure Infinite
-			Sleep(timeScale * 55400)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Ravine]  Plane 1 003"
+			sleepAndCheckForLevels(timeScale * 10400)
 			
-			Send("{sc035}")		; Plane 1 003
-			Sleep(timeScale * 10400)
+			Send("{vkBC}")		
+			OutputDebug A_NOW " [Ravine]  Plane 1 103"
+			sleepAndCheckForLevels(timeScale * 8600)
 			
-			Send("{vkBC}")		; Plane 1 103
-			Sleep(timeScale * 8600)
+			Send("{vkBC}")		
+			OutputDebug A_NOW " [Ravine]  Plane 1 203"
+			sleepAndCheckForLevels(timeScale * 10400)
 			
-			Send("{vkBC}")		; Plane 1 203
-			Sleep(timeScale * 10400)
-			
-			Send("{vk46}")		; Alch
-			Sleep(timeScale * 100)
+			Send("{vk46}")		
+			OutputDebug A_NOW " [Ravine]  Alch"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(207,848)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("207,848")
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("207,848")	; Click Alch
-			Sleep(timeScale * 4500)
+			Click("207,848")	
+			OutputDebug A_NOW " [Ravine]  Click Alch"
+			sleepAndCheckForLevels(timeScale * 4500)
 			
-			Send("{vkBC}")		; Alch 100
-			Sleep(timeScale * 1500)
+			Send("{vkBC}")		
+			OutputDebug A_NOW " [Ravine]  Alch 100"
+			sleepAndCheckForLevels(timeScale * 1500)
 			
-			Send("{vkBC}")		; Alch 200
-			Sleep(timeScale * 12000)
+			Send("{vkBC}")		
+			OutputDebug A_NOW " [Ravine]  Alch 200"
+			sleepAndCheckForLevels(timeScale * 12000)
 			
-			Send("{vkBC}")		; Alch 300
-			Sleep(timeScale * 20700)
+			Send("{vkBC}")		
+			OutputDebug A_NOW " [Ravine]  Alch 300"
+			sleepAndCheckForLevels(timeScale * 20700)
 			
-			Send("{vkBC}")		; Alch 400
-			Sleep(timeScale * 7500)
+			Send("{vkBC}")		
+			OutputDebug A_NOW " [Ravine]  Alch 400"
+			sleepAndCheckForLevels(timeScale * 7500)
 			
-			Send("{sc035}")		; Alch 401
-			Sleep(timeScale * 8000)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Ravine]  Alch 401"
+			sleepAndCheckForLevels(timeScale * 8000)
 			
-			Send("{vk56}")		; Plane 2
-			Sleep(timeScale * 100)
+			Send("{vk56}")		
+			OutputDebug A_NOW " [Ravine]  Plane 2"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(453,835)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("453,835")
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("453,835")	; Click Plane 2
-			Sleep(timeScale * 4800)
+			Click("453,835")	
+			OutputDebug A_NOW " [Ravine]  Click Plane 2"
+			sleepAndCheckForLevels(timeScale * 4800)
 			
-			Send("{sc035}")		; Plane 2 001
-			Sleep(timeScale * 1800)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Ravine]  Plane 2 001"
+			sleepAndCheckForLevels(timeScale * 1800)
 			
-			Send("{sc035}")		; Plane 2 002
-			Sleep(timeScale * 14300)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Ravine]  Plane 2 002"
+			sleepAndCheckForLevels(timeScale * 14300)
 			
-			Send("{sc035}")		; Plane 2 003
-			Sleep(timeScale * 4500)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Ravine]  Plane 2 003"
+			sleepAndCheckForLevels(timeScale * 4500)
 			
-			Send("{vkBC}")		; Plane 2 103
-			Sleep(timeScale * 8200)
+			Send("{vkBC}")		
+			OutputDebug A_NOW " [Ravine]  Plane 2 103"
+			sleepAndCheckForLevels(timeScale * 8200)
 			
-			Send("{vkBC}")		; Plane 2 203
-			Sleep(timeScale * 10000)
+			Send("{vkBC}")		
+			OutputDebug A_NOW " [Ravine]  Plane 2 203"
+			sleepAndCheckForLevels(timeScale * 10000)
 			
-			Click("711,814")	; Click Spike Factory
-			Sleep(timeScale * 100)
+			Click("711,814")	
+			OutputDebug A_NOW " [Ravine]  Click Spike Factory"
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Send("{vkBE}")		; Spike 010
-			Sleep(timeScale * 6400)
+			Send("{vkBE}")		
+			OutputDebug A_NOW " [Ravine]  Spike 010"
+			sleepAndCheckForLevels(timeScale * 6400)
 			
-			Send("{vkBE}")		; Spike 020
-			Sleep(timeScale * 6000)
+			Send("{vkBE}")		
+			OutputDebug A_NOW " [Ravine]  Spike 020"
+			sleepAndCheckForLevels(timeScale * 6000)
 			
-			Send("{vkBC}")		; Spike 120
-			Sleep(timeScale * 6500)
+			Send("{vkBC}")		
+			OutputDebug A_NOW " [Ravine]  Spike 120"
+			sleepAndCheckForLevels(timeScale * 6500)
 			
-			Send("{vkBC}")		; Spike 220
-			Sleep(timeScale * 4600)
+			Send("{vkBC}")		
+			OutputDebug A_NOW " [Ravine]  Spike 220"
+			sleepAndCheckForLevels(timeScale * 4600)
 			
-			Send("{vk56}")		; Plane 3
-			Sleep(timeScale * 100)
+			Send("{vk56}")		
+			OutputDebug A_NOW " [Ravine]  Plane 3"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(330,923)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("330,923")
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("330,923")	; Click Plane 3
-			Sleep(timeScale * 3200)
+			Click("330,923")	
+			OutputDebug A_NOW " [Ravine]  Click Plane 3"
+			sleepAndCheckForLevels(timeScale * 3200)
 			
-			Send("{sc035}")		; Plane 3 001
-			Sleep(timeScale * 1600)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Ravine]  Plane 3 001"
+			sleepAndCheckForLevels(timeScale * 1600)
 			
-			Send("{sc035}")		; Plane 3 002
-			Sleep(timeScale * 18700)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Ravine]  Plane 3 002"
+			sleepAndCheckForLevels(timeScale * 18700)
 			
-			Send("{sc035}")		; Plane 3 003
-			Sleep(timeScale * 2600)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Ravine]  Plane 3 003"
+			sleepAndCheckForLevels(timeScale * 2600)
 			
-			Send("{vkBC}")		; Plane 3 103
-			Sleep(timeScale * 1900)
+			Send("{vkBC}")		
+			OutputDebug A_NOW " [Ravine]  Plane 3 103"
+			sleepAndCheckForLevels(timeScale * 1900)
 			
-			Send("{vkBC}")		; Plane 3 203
-			Sleep(timeScale * 19000)		; Wait for victory
+			Send("{vkBC}")		
+			OutputDebug A_NOW " [Ravine]  Plane 3 203"
+			OutputDebug A_NOW " [Ravine]  Wait for victory"
+			checkVictoryOrDefeat(timeScale * 1000)
+			
 		}
 }

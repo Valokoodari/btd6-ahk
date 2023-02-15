@@ -1,133 +1,173 @@
 infernalGameScript(timeScale) {
 		if WinActive("BloonsTD6") {
 		
-			Sleep(timeScale * 100)		; Clear hot key lag
+			sleepAndCheckForLevels(timeScale * 100)		
+			OutputDebug A_NOW " [Infernal]  Clear hot key lag"
 			
-			Send("{vk20}")		; Start game
-			Sleep(timeScale * 100)
-			Send("{vk20}")		; Increase Speed
-			Sleep(timeScale * 100)
+			Send("{vk20}")		
+			OutputDebug A_NOW " [Infernal]  Start game"
+			sleepAndCheckForLevels(timeScale * 100)
+			Send("{vk20}")		
+			OutputDebug A_NOW " [Infernal]  Increase Speed"
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Send("{vk51}")		; Dart monkey
-			Sleep(timeScale * 100)
+			Send("{vk51}")		
+			OutputDebug A_NOW " [Infernal]  Dart monkey"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(472,277)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("472,277")
-			Sleep(timeScale * 8500)
+			sleepAndCheckForLevels(timeScale * 8500)
 			
-			Send("{vk55}")		; Ben
-			Sleep(timeScale * 100)
+			Send("{vk55}")		
+			OutputDebug A_NOW " [Infernal]  Ben"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(1587,573)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("1587,573")
-			Sleep(timeScale * 14500)
+			sleepAndCheckForLevels(timeScale * 14500)
 			
-			Send("{vk43}")	; Ship
-			Sleep(timeScale * 100)
+			Send("{vk43}")	
+			OutputDebug A_NOW " [Infernal]  Ship"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(471,789)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("471,789")
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("471,789")	; Click on Ship
-			Sleep(timeScale * 9800)
+			Click("471,789")	
+			OutputDebug A_NOW " [Infernal]  Click on Ship"
+			sleepAndCheckForLevels(timeScale * 9800)
 			
-			Send("{sc035}")		; Ship 001
-			Sleep(timeScale * 7900)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Infernal]  Ship 001"
+			sleepAndCheckForLevels(timeScale * 7900)
 			
-			Send("{vkBE}")		; Ship 011
-			Sleep(timeScale * 13800)
+			Send("{vkBE}")		
+			OutputDebug A_NOW " [Infernal]  Ship 011"
+			sleepAndCheckForLevels(timeScale * 13800)
 			
-			Send("{vkBE}")		; Ship 021
-			Sleep(timeScale * 10400)
+			Send("{vkBE}")		
+			OutputDebug A_NOW " [Infernal]  Ship 021"
+			sleepAndCheckForLevels(timeScale * 10400)
 			
-			Send("{sc035}")		; Ship 022
-			Sleep(timeScale * 5000)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Infernal]  Ship 022"
+			sleepAndCheckForLevels(timeScale * 5000)
 			
-			Send("{vk58}")		; Sub 1
-			Sleep(timeScale * 100)
+			Send("{vk58}")		
+			OutputDebug A_NOW " [Infernal]  Sub 1"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(1194,268)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("1194,268")
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("1194,268")	; Click sub 1
-			Sleep(timeScale * 6700)
+			Click("1194,268")	
+			OutputDebug A_NOW " [Infernal]  Click sub 1"
+			sleepAndCheckForLevels(timeScale * 6700)
 			
-			Send("{vkBC}")		; Sub 1 100
-			Sleep(timeScale * 6200)
+			Send("{vkBC}")		
+			OutputDebug A_NOW " [Infernal]  Sub 1 100"
+			sleepAndCheckForLevels(timeScale * 6200)
 			
-			Send("{vkBC}")		; Sub 1 200
-			Sleep(timeScale * 15600)
+			Send("{vkBC}")		
+			OutputDebug A_NOW " [Infernal]  Sub 1 200"
+			sleepAndCheckForLevels(timeScale * 15600)
 			
-			Send("{sc035}")		; Sub 1 201
-			Sleep(timeScale * 14900)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Infernal]  Sub 1 201"
+			sleepAndCheckForLevels(timeScale * 14900)
 			
-			Send("{sc035}")		; Sub 1 202
-			Sleep(timeScale * 20000)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Infernal]  Sub 1 202"
+			sleepAndCheckForLevels(timeScale * 20000)
 			
-			Send("{sc035}")		; Sub 1 203
-			Sleep(timeScale * 33300)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Infernal]  Sub 1 203"
+			sleepAndCheckForLevels(timeScale * 33300)
 			
-			Send("{sc035}")		; Sub 1 204
-			Sleep(timeScale * 3800)
+			Send("{sc035}")		
+			OutputDebug A_NOW " [Infernal]  Sub 1 204"
+			sleepAndCheckForLevels(timeScale * 3800)
 			
-			Send("{vk58}")		; Sub 2
-			Sleep(timeScale * 100)
+			Send("{vk58}")		
+			OutputDebug A_NOW " [Infernal]  Sub 2"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(1195,176)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("1195,176")
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("1195,176")	; Click Sub 2
-			Sleep(timeScale * 3500)
+			Click("1195,176")	
+			OutputDebug A_NOW " [Infernal]  Click Sub 2"
+			sleepAndCheckForLevels(timeScale * 3500)
 			
-			Send("{vkBC}")	; Sub 2 100
-			Sleep(timeScale * 2500)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Infernal]  Sub 2 100"
+			sleepAndCheckForLevels(timeScale * 2500)
 			
-			Send("{vkBC}")	; Sub 2 200
-			Sleep(timeScale * 2300)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Infernal]  Sub 2 200"
+			sleepAndCheckForLevels(timeScale * 2300)
 			
-			Send("{sc035}")	; Sub 2 201
-			Sleep(timeScale * 5400)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Infernal]  Sub 2 201"
+			sleepAndCheckForLevels(timeScale * 5400)
 			
-			Send("{sc035}")	; Sub 2 202
-			Sleep(timeScale * 12700)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Infernal]  Sub 2 202"
+			sleepAndCheckForLevels(timeScale * 12700)
 			
-			Send("{sc035}")	; Sub 2 203
-			Sleep(timeScale * 24500)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Infernal]  Sub 2 203"
+			sleepAndCheckForLevels(timeScale * 24500)
 			
-			Send("{sc035}")	; Sub 2 204
-			Sleep(timeScale * 100)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Infernal]  Sub 2 204"
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("472,277")	; Click on dart monkey
-			Sleep(timeScale * 6200)
+			Click("472,277")	
+			OutputDebug A_NOW " [Infernal]  Click on dart monkey"
+			sleepAndCheckForLevels(timeScale * 6200)
 			
-			Send("{sc035}")	; dart 001
-			Sleep(timeScale * 1000)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Infernal]  dart 001"
+			sleepAndCheckForLevels(timeScale * 1000)
 			
-			Send("{sc035}")	; dart 002
-			Sleep(timeScale * 1400)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Infernal]  dart 002"
+			sleepAndCheckForLevels(timeScale * 1400)
 			
-			Send("{sc035}")	; dart 003
-			Sleep(timeScale * 2000)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Infernal]  dart 003"
+			sleepAndCheckForLevels(timeScale * 2000)
 			
-			Send("{vkBE}")	; dart 013
-			Sleep(timeScale * 1500)
+			Send("{vkBE}")	
+			OutputDebug A_NOW " [Infernal]  dart 013"
+			sleepAndCheckForLevels(timeScale * 1500)
 			
-			Send("{vkBE}")	; dart 023
-			Sleep(timeScale * 19400)
+			Send("{vkBE}")	
+			OutputDebug A_NOW " [Infernal]  dart 023"
+			sleepAndCheckForLevels(timeScale * 19400)
 			
-			Send("{sc035}")	; dart 024
-			Sleep(timeScale * 100)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Infernal]  dart 024"
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("471,789")	; click on boat
-			Sleep(timeScale * 7600)
+			Click("471,789")	
+			OutputDebug A_NOW " [Infernal]  click on boat"
+			sleepAndCheckForLevels(timeScale * 7600)
 			
-			Send("{vkBE}")	; boat 032
-			Sleep(timeScale * 32200)
+			Send("{vkBE}")	
+			OutputDebug A_NOW " [Infernal]  boat 032"
+			sleepAndCheckForLevels(timeScale * 32200)
 			
-			Send("{vkBE}")	; boat 042
-			Sleep(timeScale * 21000)	; victory screen
+			Send("{vkBE}")	
+			OutputDebug A_NOW " [Infernal]  boat 042"
+			OutputDebug A_NOW " [Infernal]  victory screen"
+			
+			checkVictoryOrDefeat(timeScale * 1000)
+			
 		}
 }

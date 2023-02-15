@@ -1,139 +1,184 @@
 bloodyGameScript(timeScale) {
 		if WinActive("BloonsTD6") {
 			
-			Sleep(timeScale * 100)	;clear hotkey lag
+			sleepAndCheckForLevels(timeScale * 100)	
+			OutputDebug A_NOW " [Bloody] clear hotkey lag"
 			
-			Send("{vk20}")		; Start game
-			Sleep(timeScale * 100)
-			Send("{vk20}")		; Increase Speed
-			Sleep(timeScale * 100)
+			Send("{vk20}")		
+			OutputDebug A_NOW " [Bloody]  Start game"
+			sleepAndCheckForLevels(timeScale * 100)
+			Send("{vk20}")		
+			OutputDebug A_NOW " [Bloody]  Increase Speed"
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Send("{vk51}")	;dart
-			Sleep(timeScale * 100)
+			Send("{vk51}")	
+			OutputDebug A_NOW " [Bloody] dart"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(326,178)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("326,178")
-			Sleep(timeScale * 10000)
+			sleepAndCheckForLevels(timeScale * 10000)
 			
-			Send("{vk55}")	;ben
-			Sleep(timeScale * 100)
+			Send("{vk55}")	
+			OutputDebug A_NOW " [Bloody] ben"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(834,416)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("834,416")
-			Sleep(timeScale * 9500)
+			sleepAndCheckForLevels(timeScale * 9500)
 			
-			Send("{vk58}")	;sub
-			Sleep(timeScale * 100)
+			Send("{vk58}")	
+			OutputDebug A_NOW " [Bloody] sub"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(1186,193)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("1186,193")
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("1186,193")	;click sub
-			Sleep(timeScale * 4000)
+			Click("1186,193")	
+			OutputDebug A_NOW " [Bloody] click sub"
+			sleepAndCheckForLevels(timeScale * 4000)
 			
-			Send("{vkBC}")	;sub 100
-			Sleep(timeScale * 9400)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Bloody] sub 100"
+			sleepAndCheckForLevels(timeScale * 9400)
 			
-			Send("{vkBC}")	;sub 200
-			Sleep(timeScale * 7700)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Bloody] sub 200"
+			sleepAndCheckForLevels(timeScale * 7700)
 			
-			Send("{sc035}")	;sub 201
-			Sleep(timeScale * 21000)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Bloody] sub 201"
+			sleepAndCheckForLevels(timeScale * 21000)
 			
-			Send("{sc035}")	;sub 202
-			Sleep(timeScale * 31000)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Bloody] sub 202"
+			sleepAndCheckForLevels(timeScale * 31000)
 			
-			Send("{sc035}")	;sub 203
-			Sleep(timeScale * 3400)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Bloody] sub 203"
+			sleepAndCheckForLevels(timeScale * 3400)
 			
-			Send("{vk5A}")	;sniper
-			Sleep(timeScale * 100)
+			Send("{vk5A}")	
+			OutputDebug A_NOW " [Bloody] sniper"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(835,180)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("835,180")
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("835,180")	;click sniper
-			Sleep(timeScale * 100)
+			Click("835,180")	
+			OutputDebug A_NOW " [Bloody] click sniper"
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Send("^{vk09}")	;change priority to strong
-			Sleep(timeScale * 7100)
+			Send("{vk09}")
+			sleepAndCheckForLevels(timeScale * 100)
+			Send("{vk09}")
+			sleepAndCheckForLevels(timeScale * 100)
+			Send("{vk09}")
+			OutputDebug A_NOW " [Bloody] change priority to strong"
+			sleepAndCheckForLevels(timeScale * 6900)
 			
-			Send("{vkBC}")	;sniper 100
-			Sleep(timeScale * 6000)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Bloody] sniper 100"
+			sleepAndCheckForLevels(timeScale * 6000)
 			
-			Send("{sc035}")	;sniper 101
-			Sleep(timeScale * 9400)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Bloody] sniper 101"
+			sleepAndCheckForLevels(timeScale * 9400)
 			
-			Send("{sc035}")	;sniper 102
-			Sleep(timeScale * 8300)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Bloody] sniper 102"
+			sleepAndCheckForLevels(timeScale * 8300)
 			
-			Send("{vk43}")	;boat
-			Sleep(timeScale * 100)
+			Send("{vk43}")	
+			OutputDebug A_NOW " [Bloody] boat"
+			sleepAndCheckForLevels(timeScale * 100)
 			MouseMove(600,605)
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			Click("600,605")
-			Sleep(timeScale * 100)
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Click("600,605")	;click boat
-			Sleep(timeScale * 6900)
+			Click("600,605")	
+			OutputDebug A_NOW " [Bloody] click boat"
+			sleepAndCheckForLevels(timeScale * 6900)
 			
-			Send("{vkBE}")	;boat 010
-			Sleep(timeScale * 4800)
+			Send("{vkBE}")	
+			OutputDebug A_NOW " [Bloody] boat 010"
+			sleepAndCheckForLevels(timeScale * 4800)
 			
-			Send("{vkBC}")	;boat 110
-			Sleep(timeScale * 5600)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Bloody] boat 110"
+			sleepAndCheckForLevels(timeScale * 5600)
 			
-			Send("{vkBC}")	;boat 210
-			Sleep(timeScale * 2700)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Bloody] boat 210"
+			sleepAndCheckForLevels(timeScale * 2700)
 			
-			Send("{vkBE}")	;boat 220
-			Sleep(timeScale * 6200)
+			Send("{vkBE}")	
+			OutputDebug A_NOW " [Bloody] boat 220"
+			sleepAndCheckForLevels(timeScale * 6200)
 			
-			Click("326,178")	;click dart
-			Sleep(timeScale * 100)
+			Click("326,178")	
+			OutputDebug A_NOW " [Bloody] click dart"
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Send("{sc035}")	;dart 001
-			Sleep(timeScale * 1300)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Bloody] dart 001"
+			sleepAndCheckForLevels(timeScale * 1300)
 			
-			Send("{sc035}")	;dart 002
-			Sleep(timeScale * 7500)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Bloody] dart 002"
+			sleepAndCheckForLevels(timeScale * 7500)
 			
-			Send("{sc035}")	;dart 003
-			Sleep(timeScale * 2600)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Bloody] dart 003"
+			sleepAndCheckForLevels(timeScale * 2600)
 			
-			Send("{vkBE}")	;dart 013
-			Sleep(timeScale * 1600)
+			Send("{vkBE}")	
+			OutputDebug A_NOW " [Bloody] dart 013"
+			sleepAndCheckForLevels(timeScale * 1600)
 			
-			Send("{vkBE}")	;dart 023
-			Sleep(timeScale * 11000)
+			Send("{vkBE}")	
+			OutputDebug A_NOW " [Bloody] dart 023"
+			sleepAndCheckForLevels(timeScale * 11000)
 			
-			Send("{sc035}")	;dart 024
-			Sleep(timeScale * 27300)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Bloody] dart 024"
+			sleepAndCheckForLevels(timeScale * 27300)
 			
-			Click("1186,193")	;click sub
-			Sleep(timeScale * 100)
+			Click("1186,193")	
+			OutputDebug A_NOW " [Bloody] click sub"
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Send("{sc035}")	;sub 204
-			Sleep(timeScale * 24000)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Bloody] sub 204"
+			sleepAndCheckForLevels(timeScale * 24000)
 			
-			Click("600,605")	;click boat
-			Sleep(timeScale * 100)
+			Click("600,605")	
+			OutputDebug A_NOW " [Bloody] click boat"
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Send("{vkBC}")	;boat 320
-			Sleep(timeScale * 35400)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Bloody] boat 320"
+			sleepAndCheckForLevels(timeScale * 35400)
 			
-			Click("835,180")	;click sniper
-			Sleep(timeScale * 100)
+			Click("835,180")	
+			OutputDebug A_NOW " [Bloody] click sniper"
+			sleepAndCheckForLevels(timeScale * 100)
 			
-			Send("{sc035}")	;sniper 103
-			Sleep(timeScale * 11700)
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Bloody] sniper 103"
+			sleepAndCheckForLevels(timeScale * 11700)
 			
-			Send("{vkBC}")	;sniper 203
-			Sleep(timeScale * 30500)
+			Send("{vkBC}")	
+			OutputDebug A_NOW " [Bloody] sniper 203"
+			sleepAndCheckForLevels(timeScale * 30500)
 			
-			Send("{sc035}")	;sniper 204
-			Sleep(timeScale * 4000)	;wait victory
+			Send("{sc035}")	
+			OutputDebug A_NOW " [Bloody] sniper 204"
+			OutputDebug A_NOW " [Bloody] wait victory"
+			checkVictoryOrDefeat(timeScale * 1000)
+			
 		}
 }
