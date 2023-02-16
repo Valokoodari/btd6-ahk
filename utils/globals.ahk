@@ -9,9 +9,10 @@ maps := Map(
     "bloody", bloodyGameScript,
     "workshop", workshopGameScript,
     "quad", quadGameScript,
-    "dark_castle", DarkGameScript,
+    "dark_castle", DarkCastleGameScript,
     "muddy", muddyGameScript,
     "ouch", ouchGameScript,
+    "dark_dungeons", DarkDungeonsGameScript,
 )
 
 states := ["home", "map_selection", "in_game"]
