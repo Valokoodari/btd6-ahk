@@ -9,7 +9,7 @@ maps := Map(
     "bloody", bloodyGameScript,
     "workshop", workshopGameScript,
     "quad", quadGameScript,
-    "dark", darkGameScript,
+    "dark_castle", DarkGameScript,
     "muddy", muddyGameScript,
     "ouch", ouchGameScript,
 )

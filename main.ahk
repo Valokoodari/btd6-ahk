@@ -73,7 +73,7 @@ FindExpertMap() {
     while true {
         ClickImage("buttons\expert")
         if eventType == "none" {
-            if ClickImage("buttons\dark") {
+            if ClickImage("buttons\dark_castle") {
                 return
             }
         } else {
