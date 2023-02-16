@@ -2,16 +2,16 @@ sancGameScript() {
     if WinActive("BloonsTD6") {
         ScaledSleep(100)            ; Clear hotkey lag
 
-        Send("{vk20}")              ; Start game
-        ScaledSleep(100)
-        Send("{vk20}")              ; Increase speed
-        ScaledSleep(100)
-
         Send("{vk51}")              ; Dart
         ScaledSleep(100)
         MouseMove(750,263)
         ScaledSleep(100)
         Click("750,263")
+        ScaledSleep(100)
+
+        Send("{vk20}")              ; Start game
+        ScaledSleep(100)
+        Send("{vk20}")              ; Increase speed
         ScaledSleep(11600)
 
         Send("{vk55}")              ; Hero (Ben)
@@ -36,7 +36,11 @@ sancGameScript() {
         ScaledSleep(8400)
         Send("{sc035}")             ; Spike 102
         ScaledSleep(100)
-        Send("^{vk09}")             ; Change targeting to smart
+        Send("{vk09}")              ; Change targeting to smart
+        ScaledSleep(100)
+        Send("{vk09}")
+        ScaledSleep(100)
+        Send("{vk09}")
         ScaledSleep(11500)
 
         Send("{vk5A}")              ; Sniper
