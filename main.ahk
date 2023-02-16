@@ -140,7 +140,7 @@ CheckVictoryOrDefeat() {
     Loop {
         if SearchImage("states\victory") {
             ClickImage("buttons\next")
-            ClickImage("buttons\home", 2000)
+            ClickImage("buttons\home_victory", 2000)
             global victories := victories + 1
             LogMsg("Victory")
             break
