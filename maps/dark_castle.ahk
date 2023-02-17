@@ -1,105 +1,144 @@
 darkCastleGameScript() {
     if WinActive("BloonsTD6") {
-        ScaledSleep(100)            ; Clear hotkey lag
-
+        Sleep(100)
         Send("{vk20}")              ; Start game
-        ScaledSleep(100)
+        Sleep(100)
         Send("{vk20}")              ; Increase speed
-        ScaledSleep(100)
+        Sleep(100)
 
         Send("{vk51}")              ; Dart
-        ScaledSleep(100)
+        Sleep(100)
         MouseMove(547,477)
-        ScaledSleep(100)
+        Sleep(100)
         Click("547,477")
-        ScaledSleep(11200)
+
+        waitForRound(2)             ; Round 2
 
         Send("{vk55}")              ; Hero (Ben)
-        ScaledSleep(100)
+        Sleep(100)
         MouseMove(1446,247)
-        ScaledSleep(100)
+        Sleep(100)
         Click("1446,247")
-        ScaledSleep(18700)
+
+        waitForRound(3)             ; Round 3
 
         Send("{vk41}")              ; Wizard
-        ScaledSleep(100)
+        Sleep(100)
         MouseMove(1001,443)
-        ScaledSleep(100)
+        Sleep(100)
         Click("1001,443")
-        ScaledSleep(100)
+        Sleep(100)
+
+        waitForRound(4)             ; Round 4
 
         Click("1001,443")           ; Click Wizard
-        ScaledSleep(3600)
+        Sleep(100)
         Send("{vkBE}")              ; Wizard 010
-        ScaledSleep(20600)
+        Sleep(100)
+
+        waitForRound(7)             ; Round 7
+
         Send("{vkBE}")              ; Wizard 020
-        ScaledSleep(23200)
+        Sleep(100)
+
+        waitForRound(9)             ; Round 9
 
         Send("{vk4A}")              ; Spike
-        ScaledSleep(100)
+        Sleep(100)
         MouseMove(1521,550)
-        ScaledSleep(100)
+        Sleep(100)
         Click("1521,550")
-        ScaledSleep(100)
+        Sleep(100)
+
+        waitForRound(0)             ; Round 10
 
         Click("1521,550")           ; Click Spike
-        ScaledSleep(8600)
+        Sleep(100)
         Send("{vkBE}")              ; Spike 010
-        ScaledSleep(22400)
+        Sleep(100)
+
+        waitForRound(2)             ; Round 12
+
         Send("{vkBE}")              ; Spike 020
-        ScaledSleep(2600)
+        Sleep(100)
         Send("{sc035}")             ; Spike 021
-        ScaledSleep(6500)
+        Sleep(100)
+
+        waitForRound(3)             ; Round 13
+
         Send("{sc035}")             ; Spike 022
-        ScaledSleep(23400)
+        Sleep(100)
+
+        waitForRound(6)             ; Round 16
+
         Send("{sc035}")             ; Spike 023
-        ScaledSleep(49300)
+        Sleep(100)
+
+        waitForRound(2)             ; Round 22
+
         Send("{sc035}")             ; Spike 024
-        ScaledSleep(10400)
+        Sleep(100)
+
+        waitForRound(3)             ; Round 23
 
         Click("1001,443")           ; Click Wizard
-        ScaledSleep(100)
+        Sleep(100)
         Send("{sc035}")             ; Wizard 021
-        ScaledSleep(2200)
+        Sleep(100)
         Send("{sc035}")             ; Wizard 022
-        ScaledSleep(22800)
+        Sleep(100)
+
+        waitForRound(8)             ; Round 28
+
         Send("{vkBE}")              ; Wizard 032
-        ScaledSleep(4000)
+        Sleep(100)
 
         Send("{vk58}")              ; Sub
-        ScaledSleep(100)
+        Sleep(100)
         MouseMove(1103,420)
-        ScaledSleep(100)
+        Sleep(100)
         Click("1103,420")
-        ScaledSleep(100)
+        Sleep(100)
 
         Click("1103,420")           ; Click Sub
-        ScaledSleep(2800)
+        Sleep(100)
         Send("{vkBC}")              ; Sub 100
-        ScaledSleep(1400)
+        Sleep(100)
+
+        waitForRound(1)             ; Round 31
+
         Send("{vkBC}")              ; Sub 200
-        ScaledSleep(1600)
+        Sleep(100)
         Send("{sc035}")             ; Sub 201
-        ScaledSleep(10300)
+        Sleep(100)
         Send("{sc035}")             ; Sub 202
-        ScaledSleep(9500)
+        Sleep(100)
+
+        waitForRound(3)             ; Round 33
+
         Send("{sc035}")             ; Sub 203
-        ScaledSleep(33800)
+        Sleep(100)
+
+        waitForRound(6)             ; Round 36
+
         Send("{sc035}")             ; Sub 204
-        ScaledSleep(4400)
+        Sleep(100)
 
         Click("547,477")            ; Click Dart
-        ScaledSleep(100)
+        Sleep(100)
         Send("{sc035}")             ; Dart 001
-        ScaledSleep(1300)
+        Sleep(100)
         Send("{sc035}")             ; Dart 002
-        ScaledSleep(1400)
+        Sleep(100)
         Send("{sc035}")             ; Dart 003
-        ScaledSleep(9900)
+        Sleep(100)
+
+        waitForRound(8)             ; Round 38
+
         Send("{sc035}")             ; Dart 004
-        ScaledSleep(1300)
+        Sleep(100)
         Send("{vkBE}")              ; Dart 014
-        ScaledSleep(1300)
+        Sleep(100)
         Send("{vkBE}")              ; Dart 024
     }
 }
