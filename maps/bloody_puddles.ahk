@@ -13,7 +13,6 @@ BloodyPuddlesGameScript() {
         Click(326,178)
         Sleep(10000)
 
-
         WaitForRound(2)             ; Round 2
 
         Send("{vk55}")              ; Place Hero (Ben)
@@ -22,7 +21,6 @@ BloodyPuddlesGameScript() {
         Sleep(100)
         Click(834,416)
         Sleep(100)
-
 
         WaitForRound(3)             ; Round 3
 
@@ -40,7 +38,6 @@ BloodyPuddlesGameScript() {
         Click(1186,193)             ; Close Sub
         Sleep(100)
 
-
         WaitForRound(6)             ; Round 6
 
         Click(1186,193)             ; Open Sub
@@ -52,7 +49,6 @@ BloodyPuddlesGameScript() {
         Click(1186,193)             ; Close Sub
         Sleep(100)
 
-
         WaitForRound(9)             ; Round 9
 
         Click(1186,193)             ; Open Sub
@@ -61,7 +57,6 @@ BloodyPuddlesGameScript() {
         Sleep(100)
         Click(1186,193)             ; Close Sub
         Sleep(100)
-
 
         WaitForRound(1)             ; Round 11
 
@@ -90,7 +85,6 @@ BloodyPuddlesGameScript() {
         Click(835,180)              ; Close Sniper
         Sleep(100)
 
-
         WaitForRound(4)             ; Round 14
 
         Click(835,180)              ; Open Sniper
@@ -104,7 +98,6 @@ BloodyPuddlesGameScript() {
         Click(835,180)              ; Close Sniper
         Sleep(100)
 
-
         WaitForRound(5)             ; Round 15
 
         Send("{vk43}")              ; Place Boat
@@ -113,7 +106,6 @@ BloodyPuddlesGameScript() {
         Sleep(100)
         Click(600,605)
         Sleep(100)
-
 
         WaitForRound(6)             ; Round 16
 
@@ -126,7 +118,6 @@ BloodyPuddlesGameScript() {
         Click(600,605)              ; Close Boat
         Sleep(100)
 
-
         WaitForRound(8)             ; Round 18
 
         Click(600,605)              ; Open Boat
@@ -138,7 +129,6 @@ BloodyPuddlesGameScript() {
         Click(600,605)              ; Close Boat
         Sleep(100)
 
-
         WaitForRound(9)             ; Round 19
 
         Click(326,178)              ; Open Dart
@@ -149,7 +139,6 @@ BloodyPuddlesGameScript() {
         Sleep(100)
         Click(326,178)              ; Close Dart
         Sleep(100)
-
 
         WaitForRound(0)             ; Round 20
 
@@ -164,7 +153,6 @@ BloodyPuddlesGameScript() {
         Click(326,178)              ; Close Dart
         Sleep(100)
 
-
         WaitForRound(4)             ; Round 24
 
         Click(326,178)              ; Open Dart
@@ -173,7 +161,6 @@ BloodyPuddlesGameScript() {
         Sleep(100)
         Click(326,178)              ; Close Dart
         Sleep(100)
-
 
         WaitForRound(8)             ; Round 28
 
@@ -184,7 +171,6 @@ BloodyPuddlesGameScript() {
         Click(1186,193)             ; Close Sub
         Sleep(100)
 
-
         WaitForRound(3)             ; Round 33
 
         Click(600,605)              ; Open Boat
@@ -194,7 +180,6 @@ BloodyPuddlesGameScript() {
         Click(600,605)              ; Close Boat
         Sleep(100)
 
-
         WaitForRound(6)             ; Round 36
 
         Click(835,180)              ; Open Sniper
@@ -203,7 +188,6 @@ BloodyPuddlesGameScript() {
         Sleep(100)
         Click(835,180)              ; Close Sniper
         Sleep(100)
-
 
         WaitForRound(7)             ; Round 37
 
