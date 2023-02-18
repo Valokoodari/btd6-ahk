@@ -7,29 +7,17 @@ BloodyPuddlesGameScript() {
         Sleep(100)
 
         Send("{vk51}")              ; Place Dart
-        Sleep(100)
-        MouseMove(326,178)
-        Sleep(100)
-        Click(326,178)
-        Sleep(10000)
+        SlowClick(326,178)
 
         WaitForRound(2)             ; Round 2
 
         Send("{vk55}")              ; Place Hero (Ben)
-        Sleep(100)
-        MouseMove(834,416)
-        Sleep(100)
-        Click(834,416)
-        Sleep(100)
+        SlowClick(834,416)
 
         WaitForRound(3)             ; Round 3
 
         Send("{vk58}")              ; Place Sub
-        Sleep(100)
-        MouseMove(1186,193)
-        Sleep(100)
-        Click(1186,193)
-        Sleep(100)
+        SlowClick(1186,193)
 
         Click(1186,193)             ; Open Sub
         Sleep(100)
@@ -68,11 +56,7 @@ BloodyPuddlesGameScript() {
         Sleep(100)
 
         Send("{vk5A}")              ; Place Sniper
-        Sleep(100)
-        MouseMove(835,180)
-        Sleep(100)
-        Click(835,180)
-        Sleep(100)
+        SlowClick(835,180)
 
         Click(835,180)              ; Open Sniper
         Sleep(100)
@@ -101,11 +85,7 @@ BloodyPuddlesGameScript() {
         WaitForRound(5)             ; Round 15
 
         Send("{vk43}")              ; Place Boat
-        Sleep(100)
-        MouseMove(600,605)
-        Sleep(100)
-        Click(600,605)
-        Sleep(100)
+        SlowClick(600,605)
 
         WaitForRound(6)             ; Round 16
 
