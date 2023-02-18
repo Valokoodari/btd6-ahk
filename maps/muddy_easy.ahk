@@ -1,121 +1,148 @@
-muddyGameScript() {
+MuddyPuddlesGameScript() {
     if WinActive("BloonsTD6") {
-        ScaledSleep(100)            ; Clear hotkey lag
-
+        Sleep(100)
         Send("{vk20}")              ; Start game
-        ScaledSleep(100)
+        Sleep(100)
         Send("{vk20}")              ; Increase speed
-        ScaledSleep(100)
+        Sleep(100)
 
-        Send("{vk51}")              ; Dart 1
-        ScaledSleep(100)
-        MouseMove(403,201)
-        ScaledSleep(100)
-        Click("403,201")
-        ScaledSleep(7500)
+        Send("{vk51}")              ; Place Dart 1
+        SlowClick(403,201)
 
-        Send("{vk55}")              ; Hero (Ben)
-        ScaledSleep(100)
-        MouseMove(647,908)
-        ScaledSleep(100)
-        Click("647,908")
-        ScaledSleep(10200)
+        WaitForRound(2)             ; Round 2
 
-        Send("{vk58}")              ; Sub
-        ScaledSleep(100)
-        MouseMove(1195,470)
-        ScaledSleep(100)
-        Click("1195,470")
-        ScaledSleep(100)
+        Send("{vk55}")              ; Place Hero (Ben)
+        SlowClick(647,908)
 
-        Click("1195,470")           ; Click Sub
-        ScaledSleep(5400)
+        WaitForRound(3)             ; Round 3
+
+        Send("{vk58}")              ; Place Sub
+        SlowClick(1195,470)
+
+        Click(1195,470)             ; Open Sub
+        Sleep(100)
         Send("{vkBC}")              ; Sub 100
-        ScaledSleep(7800)
+        Sleep(100)
+        Click(1195,470)             ; Close Sub
+        Sleep(100)
+
+        WaitForRound(6)             ; Round 6
+
+        Click(1195,470)             ; Open Sub
+        Sleep(100)
         Send("{vkBC}")              ; Sub 200
-        ScaledSleep(6600)
+        Sleep(100)
         Send("{sc035}")             ; Sub 201
-        ScaledSleep(19000)
+        Sleep(100)
+        Click(1195,470)             ; Close Sub
+        Sleep(100)
+
+        WaitForRound(9)             ; Round 9
+
+        Click(1195,470)             ; Open Sub
+        Sleep(100)
         Send("{sc035}")             ; Sub 202
-        ScaledSleep(30300)
+        Sleep(100)
+        Click(1195,470)             ; Close Sub
+        Sleep(100)
+
+        WaitForRound(1)             ; Round 11
+
+        Click(1195,470)             ; Open Sub
+        Sleep(100)
         Send("{sc035}")             ; Sub 203
-        ScaledSleep(3300)
+        Sleep(100)
+        Click(1195,470)             ; Close Sub
+        Sleep(100)
 
-        Send("{vk51}")              ; Dart 2
-        ScaledSleep(100)
-        MouseMove(1108,185)
-        ScaledSleep(100)
-        Click("1108,185")
-        ScaledSleep(100)
+        Send("{vk51}")              ; Place Dart 2
+        SlowClick(1108,185)
 
-        Click("1108,185")           ; Dart 2
-        ScaledSleep(4900)
+        WaitForRound(2)             ; Round 12
+
+        Click(1108,185)             ; Open Dart 2
+        Sleep(100)
         Send("{sc035}")             ; Dart 2 001
-        ScaledSleep(1500)
+        Sleep(100)
         Send("{sc035}")             ; Dart 2 002
-        ScaledSleep(3100)
+        Sleep(100)
+        Click(1108,185)             ; Close Dart 2
+        Sleep(100)
 
-        Send("{vk5A}")              ; Sniper
-        ScaledSleep(100)
-        MouseMove(1017,917)
-        ScaledSleep(100)
-        Click("1017,917")
-        ScaledSleep(100)
+        WaitForRound(3)             ; Round 13
 
-        Click("1017,917")           ; Click Sniper
-        ScaledSleep(100)
-        Send("^{vk09}")             ; Change targeting to strong
-        ScaledSleep(6000)
+        Send("{vk5A}")              ; Place Sniper
+        SlowClick(1017,917)
+
+        Click(1017,917)             ; Open Sniper
+        Sleep(100)
+        Send("{vk09}")              ; Change targeting to strong
+        Sleep(100)
+        Send("{vk09}")
+        Sleep(100)
+        Send("{vk09}")
+        Sleep(100)
         Send("{vkBC}")              ; Sniper 100
-        ScaledSleep(7200)
+        Sleep(100)
+        Click(1017,917)             ; Close Sniper
+        Sleep(100)
+
+        WaitForRound(5)             ; Round 15
+
+        Click(1017,917)             ; Open Sniper
+        Sleep(100)
         Send("{sc035}")             ; Sniper 101
-        ScaledSleep(4700)
+        Sleep(100)
         Send("{sc035}")             ; Sniper 102
-        ScaledSleep(100)
+        Sleep(100)
+        Click(1017,917)             ; Close Sniper
+        Sleep(100)
 
-        Click("960,540")            ; Click to dismiss menu
-        ScaledSleep(100)
+        WaitForRound(6)             ; Round 16
 
-        Click("403,201")            ; Click Dart 1
-        ScaledSleep(9200)
+        Click(403,201)              ; Open Dart 1
+        Sleep(100)
         Send("{sc035}")             ; Dart 1 001
-        ScaledSleep(1700)
+        Sleep(100)
         Send("{sc035}")             ; Dart 1 002
-        ScaledSleep(100)
+        Sleep(100)
+        Click(403,201)              ; Close Dart 1
+        Sleep(100)
 
-        Click("1195,470")           ; Click Sub
-        ScaledSleep(24000)
+        WaitForRound(1)             ; Round 21
+
+        Click(1195,470)             ; Open Sub
+        Sleep(100)
         Send("{sc035}")             ; Sub 204
-        ScaledSleep(100)
+        Sleep(100)
+        Click(1195,470)             ; Close Sub
+        Sleep(100)
 
-        Click("1017,917")           ; Click Sniper
-        ScaledSleep(27300)
+        WaitForRound(7)             ; Round 27
+
+        Click(1017,917)             ; Open Sniper
+        Sleep(100)
         Send("{sc035}")             ; Sniper 103
-        ScaledSleep(38200)
+        Sleep(100)
+        Click(1017,917)             ; Close Sniper
+        Sleep(100)
+
+        WaitForRound(2)             ; Round 32
+
+        Click(1017,917)             ; Open Sniper
+        Sleep(100)
         Send("{sc035}")             ; Sniper 104
-        ScaledSleep(17500)
+        Sleep(100)
+        Click(1017,917)             ; Close Sniper
+        Sleep(100)
+
+        WaitForRound(4)             ; Round 34
+
+        Click(1017,917)             ; Open Sniper
+        Sleep(100)
         Send("{vkBC}")              ; Sniper 204
-        ScaledSleep(100)
-
-        Click("403,201")            ; Click Dart 1
-        ScaledSleep(5500)
-        Send("{sc035}")             ; Dart 1 003
-        ScaledSleep(1900)
-        Send("{vkBE}")              ; Dart 1 013
-        ScaledSleep(1700)
-        Send("{vkBE}")              ; Dart 1 023
-        ScaledSleep(10800)
-        Send("{sc035}")             ; Dart 1 024
-        ScaledSleep(100)
-
-        Click("1108,185")           ; Click Dart 2
-        ScaledSleep(3600)
-        Send("{sc035}")             ; Dart 2 003
-        ScaledSleep(1600)
-        Send("{vkBE}")              ; Dart 2 013
-        ScaledSleep(1500)
-        Send("{vkBE}")              ; Dart 2 023
-        ScaledSleep(10400)
-        Send("{sc035}")             ; Dart 2 024
+        Sleep(100)
+        Click(1017,917)             ; Close Sniper
+        Sleep(100)
     }
 }
