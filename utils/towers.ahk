@@ -2,7 +2,9 @@ towers := Map(
     "hero", "{vk55}",
     "dart", "{vk51}",
     "tack", "{vk52}",
+    "sniper", "{vk5A}",
     "sub", "{vk58}",
+    "boat", "{vk43}",
     "ace", "{vk56}",
     "alch", "{vk46}"
 )
@@ -13,6 +15,16 @@ Place(tower, x, y) {
     MouseMove(x,y)
     Sleep(100)
     Click(x,y)
+    Sleep(100)
+}
+
+Targeting(x, y, tabCount) {
+    Click(x,y)          ; Open Tower
+    Sleep(100)
+    Loop tabCount {
+        Send("{vk09}")
+    }
+    Click(x,y)          ; Close Tower
     Sleep(100)
 }
 
