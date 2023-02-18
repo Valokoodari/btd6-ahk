@@ -1,129 +1,168 @@
-ravineGameScript() {
+RavineGameScript() {
     if WinActive("BloonsTD6") {
-        ScaledSleep(100)            ; Clear hotkey lag
-
+        Sleep(100)
         Send("{vk20}")              ; Start game
-        ScaledSleep(100)
+        Sleep(100)
         Send("{vk20}")              ; Increase speed
-        ScaledSleep(100)
+        Sleep(100)
 
-        Send("{vk51}")              ; Dart
-        ScaledSleep(100)
-        MouseMove(184,475)
-        ScaledSleep(100)
-        Click("184,475")
-        ScaledSleep(12000)
+        Send("{vk51}")              ; Place Dart
+        SlowClick(184,475)
 
-        Send("{vk55}")              ; Hero (Ben)
-        ScaledSleep(100)
-        MouseMove(1208,399)
-        ScaledSleep(100)
-        Click("1208,399")
-        ScaledSleep(30700)
+        WaitForRound(2)             ; Round 2
 
-        Send("{vk4A}")              ; Spike Factory
-        ScaledSleep(100)
-        MouseMove(711,814)
-        ScaledSleep(100)
-        Click("711,814")
-        ScaledSleep(9300)
+        Send("{vk55}")              ; Place Hero (Ben)
+        SlowClick(1208,399)
 
-        Send("{vk56}")              ; Plane 1
-        ScaledSleep(100)
-        MouseMove(316,735)
-        ScaledSleep(100)
-        Click("316,735")
-        ScaledSleep(100)
+        WaitForRound(5)             ; Round 5
 
-        Click("316,735")            ; Click Plane 1
-        ScaledSleep(12000)
+        Send("{vk4A}")              ; Place Spike
+        SlowClick(711,814)
+
+        WaitForRound(6)             ; Round 6
+
+        Send("{vk56}")              ; Place Plane 1
+        SlowClick(316,735)
+
+        WaitForRound(8)
+
+        Click(316,735)              ; Open Plane 1
+        Sleep(100)
         Send("{sc035}")             ; Plane 1 001
-        ScaledSleep(8300)
+        Sleep(100)
         Send("{sc035}")             ; Plane 1 002
-        ScaledSleep(200)
-
+        Sleep(100)
         Send("{vk09}")              ; Change targeting to figure infinite
-        ScaledSleep(200)
+        Sleep(100)
         Send("{vk09}")
-        ScaledSleep(200)
+        Sleep(100)
         Send("{vk09}")
-        ScaledSleep(55400)
+        Sleep(100)
+        Click(316,735)              ; Close Plane 1
+        Sleep(100)
 
+        WaitForRound(4)             ; Round 14
+
+        Click(316,735)              ; Open Plane 1
+        Sleep(100)
         Send("{sc035}")             ; Plane 1 003
-        ScaledSleep(10400)
+        Sleep(100)
+        Click(316,735)              ; Open Plane 1
+        Sleep(100)
+
+        WaitForRound(6)             ; Round 16
+
+        Click(316,735)              ; Open Plane 1
+        Sleep(100)
         Send("{vkBC}")              ; Plane 1 103
-        ScaledSleep(8600)
+        Sleep(100)
         Send("{vkBC}")              ; Plane 1 203
-        ScaledSleep(10400)
+        Sleep(100)
+        Click(316,735)              ; Close Plane 1
+        Sleep(100)
 
-        Send("{vk46}")              ; Alch
-        ScaledSleep(100)
-        MouseMove(207,848)
-        ScaledSleep(100)
-        Click("207,848")
-        ScaledSleep(100)
+        WaitForRound(7)             ; Round 17
 
-        Click("207,848")            ; Click Alch
-        ScaledSleep(4500)
+        Send("{vk46}")              ; Place Alch
+        SlowClick(207,848)
+
+        WaitForRound(9)             ; Round 19
+
+        Click(207,848)              ; Open Alch
+        Sleep(100)
         Send("{vkBC}")              ; Alch 100
-        ScaledSleep(1500)
+        Sleep(100)
         Send("{vkBC}")              ; Alch 200
-        ScaledSleep(12000)
+        Sleep(100)
+        Click(207,848)              ; Close Alch
+        Sleep(100)
+
+        WaitForRound(1)             ; Round 21
+
+        Click(207,848)              ; Open Alch
+        Sleep(100)
         Send("{vkBC}")              ; Alch 300
-        ScaledSleep(20700)
+        Sleep(100)
+        Click(207,848)              ; Close Alch
+        Sleep(100)
+
+        WaitForRound(7)             ; Round 27
+
+        Click(207,848)              ; Open Alch
+        Sleep(100)
         Send("{vkBC}")              ; Alch 400
-        ScaledSleep(7500)
+        Sleep(100)
+        Click(207,848)              ; Close Alch
+        Sleep(100)
+        
+        WaitForRound(8)             ; Round 28
+
+        Click(207,848)              ; Open Alch
+        Sleep(100)
         Send("{sc035}")             ; Alch 401
-        ScaledSleep(8000)
+        Sleep(100)
+        Click(207,848)              ; Close Alch
+        Sleep(100)
 
-        Send("{vk56}")              ; Plane 2
-        ScaledSleep(100)
-        MouseMove(453,835)
-        ScaledSleep(100)
-        Click("453,835")
-        ScaledSleep(100)
+        Send("{vk56}")              ; Place Plane 2
+        SlowClick(453,835)
 
-        Click("453,835")            ; Click Plane 2
-        ScaledSleep(4800)
+        WaitForRound(9)             ; Round 29
+
+        Click(453,835)              ; Open Plane 2
+        Sleep(100)
         Send("{sc035}")             ; Plane 2 001
-        ScaledSleep(1800)
+        Sleep(100)
         Send("{sc035}")             ; Plane 2 002
-        ScaledSleep(14300)
+        Sleep(100)
+        Click(453,835)              ; Close Plane 2
+        Sleep(100)
+
+        WaitForRound(3)             ; Round 33
+
+        Click(453,835)              ; Open Plane 2
+        Sleep(100)
         Send("{sc035}")             ; Plane 2 003
-        ScaledSleep(4500)
+        Sleep(100)
+        Click(453,835)              ; Close Plane 2
+        Sleep(100)
+
+        WaitForRound(5)             ; Round 35
+
+        Click(453,835)              ; Open Plane 2
+        Sleep(100)
         Send("{vkBC}")              ; Plane 2 103
-        ScaledSleep(8200)
+        Sleep(100)
         Send("{vkBC}")              ; Plane 2 203
-        ScaledSleep(10000)
+        Sleep(100)
+        Click(453,835)              ; Close Plane 2
+        Sleep(100)
 
-        Click("711,814")            ; Click Spike Factory
-        ScaledSleep(100)
+        Click(711,814)              ; Open Spike
+        Sleep(100)
         Send("{vkBE}")              ; Spike 010
-        ScaledSleep(6400)
+        Sleep(100)
+        Click(711,814)              ; Close Spike
+        Sleep(100)
+
+        WaitForRound(6)             ; Round 36
+
+        Click(711,814)              ; Open Spike
+        Sleep(100)
         Send("{vkBE}")              ; Spike 020
-        ScaledSleep(6000)
+        Sleep(100)
         Send("{vkBC}")              ; Spike 120
-        ScaledSleep(6500)
+        Sleep(100)
+        Click(711,814)              ; Close Spike
+        Sleep(100)
+
+        WaitForRound(7)             ; Round 37
+
+        Click(711,814)              ; Open Spike
+        Sleep(100)
         Send("{vkBC}")              ; Spike 220
-        ScaledSleep(4600)
-
-        Send("{vk56}")              ; Plane 3
-        ScaledSleep(100)
-        MouseMove(330,923)
-        ScaledSleep(100)
-        Click("330,923")
-        ScaledSleep(100)
-
-        Click("330,923")            ; Click Plane 3
-        ScaledSleep(3200)
-        Send("{sc035}")             ; Plane 3 001
-        ScaledSleep(1600)
-        Send("{sc035}")             ; Plane 3 002
-        ScaledSleep(18700)
-        Send("{sc035}")             ; Plane 3 003
-        ScaledSleep(2600)
-        Send("{vkBC}")              ; Plane 3 103
-        ScaledSleep(1900)
-        Send("{vkBC}")              ; Plane 3 203
+        Sleep(100)
+        Click(711,814)              ; Close Spike
+        Sleep(100)
     }
 }
