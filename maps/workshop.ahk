@@ -1,142 +1,48 @@
 WorkshopGameScript() {
-    if WinActive("BloonsTD6") {
-        Sleep(100)
-        Send("{vk20}")              ; Start game
-        Sleep(100)
-        Send("{vk20}")              ; Increase speed
-        Sleep(100)
+    StartGame()                 ; Round 1
+    Place("dart",1010,496)      ; Place Dart
 
-        Send("{vk51}")              ; Place Dart
-        SlowClick(1010,496)
+    WaitForRound(2)             ; Round 2
+    Place("hero",1240,325)      ; Place Hero (Ben)
 
-        WaitForRound(2)             ; Round 2
+    WaitForRound(3)             ; Round 3
+    Place("wizard",190,639)     ; Place Wizard
 
-        Send("{vk55}")              ; Place Hero (Ben)
-        SlowClick(1240,325)
+    WaitForRound(4)             ; Round 4
+    Upgrade(190,639,0,1,0)      ; Wizard: 000 -> 010
 
-        WaitForRound(3)             ; Round 3
+    WaitForRound(7)             ; Round 7
+    Upgrade(190,639,0,1,0)      ; Wizard: 010 -> 020
 
-        Send("{vk41}")              ; Place Wizard
-        SlowClick(190,639)
+    WaitForRound(9)             ; Round 9
+    Place("spike",1591,633)     ; Place Spike 1
 
-        WaitForRound(4)             ; Round 4
+    WaitForRound(1)             ; Round 11
+    Upgrade(1591,633,1,0,1)     ; Spike 1: 000 -> 101
 
-        Click(190,639)              ; Open Wizard
-        Sleep(100)
-        Send("{vkBE}")              ; Wizard 010
-        Sleep(100)
-        Click(190,639)              ; Close Wizard
-        Sleep(100)
+    WaitForRound(2)             ; Round 12
+    Upgrade(1591,633,0,0,1)     ; Spike 1: 101 -> 102
+    Targeting(1591,633,3)       ; Spike 1: Normal -> Smart
 
-        WaitForRound(7)             ; Round 7
+    WaitForRound(4)             ; Round 14
+    Place("spike",1593,716)     ; Place Spike 2
 
-        Click(190,639)              ; Open Wizard
-        Sleep(100)
-        Send("{vkBE}")              ; Wizard 020
-        Sleep(100)
-        Click(190,639)              ; Close Wizard
-        Sleep(100)
+    WaitForRound(5)             ; Round 15
+    Upgrade(1593,716,1,0,1)     ; Spike 2: 000 -> 101
 
-        WaitForRound(9)             ; Round 9
+    WaitForRound(6)             ; Round 16
+    Upgrade(1593,716,0,0,1)     ; Spike 2: 101 -> 102
+    Targeting(1593,716,3)       ; Spike 2: Normal -> Smart
 
-        Send("{vk4A}")              ; Place Spike 1
-        SlowClick(1591,633)
+    WaitForRound(9)             ; Round 19
+    Upgrade(1593,716,0,0,1)     ; Spike 2: 102 -> 103
 
-        WaitForRound(1)             ; Round 11
+    WaitForRound(2)             ; Round 22
+    Upgrade(1591,633,1,0,1)     ; Spike 1: 102 -> 203
 
-        Click(1591,633)             ; Open Spike 1
-        Sleep(100)
-        Send("{vkBC}")              ; Spike 1 100
-        Sleep(100)
-        Send("{sc035}")             ; Spike 1 101
-        Sleep(100)
-        Click(1591,633)             ; Close Spike 1
-        Sleep(100)
+    WaitForRound(8)             ; Round 28
+    Upgrade(1591,633,0,0,1)     ; Spike 1: 203 -> 204
 
-        WaitForRound(2)             ; Round 12
-
-        Click(1591,633)             ; Open Spike 1
-        Sleep(100)
-        Send("{sc035}")             ; Spike 1 102
-        Sleep(100)
-        Send("{vk09}")              ; Change targeting to smart
-        Sleep(100)
-        Send("{vk09}")
-        Sleep(100)
-        Send("{vk09}")
-        Sleep(100)
-        Click(1591,633)             ; Close Spike 1
-        Sleep(100)
-
-        WaitForRound(4)             ; Round 14
-
-        Send("{vk4A}")              ; Place Spike 2
-        SlowClick(1593,716)
-
-        WaitForRound(5)             ; Round 15
-
-        Click(1593,716)             ; Open Spike 2
-        Sleep(100)
-        Send("{vkBC}")              ; Spike 2 100
-        Sleep(100)
-        Send("{sc035}")             ; Spike 2 101
-        Sleep(100)
-        Click(1593,716)             ; Close Spike 2
-        Sleep(100)
-
-        WaitForRound(6)             ; Round 16
-
-        Click(1593,716)             ; Open Spike 2
-        Sleep(100)
-        Send("{sc035}")             ; Spike 2 102
-        Sleep(100)
-        Send("{vk09}")              ; Change targeting to smart
-        Sleep(100)
-        Send("{vk09}")
-        Sleep(100)
-        Send("{vk09}")
-        Sleep(100)
-        Click(1593,716)             ; Close Spike 2
-        Sleep(100)
-
-        WaitForRound(9)             ; Round 19
-
-        Click(1593,716)             ; Open Spike 2
-        Sleep(100)
-        Send("{sc035}")             ; Spike 2 103
-        Sleep(100)
-        Click(1593,716)             ; Close Spike 2
-        Sleep(100)
-
-        WaitForRound(2)             ; Round 22
-
-        Click(1591,633)             ; Open Spike 1
-        Sleep(100)
-        Send("{sc035}")             ; Spike 1 103
-        Sleep(100)
-        Send("{vkBC}")              ; Spike 1 203
-        Sleep(100)
-        Click(1591,633)             ; Close Spike 1
-        Sleep(100)
-
-        WaitForRound(8)             ; Round 28
-
-        Click(1591,633)             ; Open Spike 1
-        Sleep(100)
-        Send("{sc035}")             ; Spike 1 204
-        Sleep(100)
-        Click(1591,633)             ; Close Spike 1
-        Sleep(100)
-
-        WaitForRound(4)             ; Round 34
-
-        Click(1593,716)             ; Open Spike 2
-        Sleep(100)
-        Send("{vkBC}")              ; Spike 2 203
-        Sleep(100)
-        Send("{sc035}")             ; Spike 2 204
-        Sleep(100)
-        Click(1593,716)             ; Open Spike 2
-        Sleep(100)
-    }
+    WaitForRound(4)             ; Round 34
+    Upgrade(1591,716,1,0,1)     ; Spike 2: 103 -> 204
 }
