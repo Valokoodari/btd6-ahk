@@ -41,7 +41,7 @@ CheckMenuState() {
         }
     }
     LogMsg("Menu state not recognized")
-    ScaledSleep(10000)
+    Sleep(10000)
 }
 
 CheckHero() {
@@ -103,7 +103,7 @@ SelectExpertMap() {
     ClickImage("buttons\easy")
     ClickImage("buttons\standard")
     CheckOwerwrite()
-    ScaledSleep(4000)
+    Sleep(4000)
 }
 
 GetMapName() {
@@ -131,7 +131,7 @@ OpenBoxes() {
     while !SearchImage("events\" eventType "\event") {
         for coords in ["683,535","900,550","897,535","900,550","1190,535","900,550","950,930"] {
             Click(coords)
-            ScaledSleep()
+            Sleep(1000)
         }
     }
 }
@@ -151,6 +151,6 @@ CheckVictoryOrDefeat() {
             LogMsg("Defeat")
             break
         }
-        ScaledSleep()
+        Sleep(1000)
     }
 }

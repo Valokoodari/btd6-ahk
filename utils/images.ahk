@@ -9,7 +9,7 @@ SearchImage(imageName, options := "", xMin := 0, yMin := 0, xMax := 1920, yMax :
 ClickImage(imageName, delay := 1000) {
     if SearchImage(imageName) {
         Click(x,y)
-        ScaledSleep(delay)
+        Sleep(delay)
         return true
     }
 }
