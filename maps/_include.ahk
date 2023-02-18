@@ -1,5 +1,5 @@
+#Include quad.ahk
 #Include infernal.ahk
-#Include quad_easy.ahk
 #Include dark_castle.ahk
 #Include ravine_easy.ahk
 #Include hashtag_ouch.ahk
