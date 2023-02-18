@@ -6,7 +6,9 @@ towers := Map(
     "sub", "{vk58}",
     "boat", "{vk43}",
     "ace", "{vk56}",
-    "alch", "{vk46}"
+    "wizard", "{vk41}",
+    "alch", "{vk46}",
+    "spike", "{vk4A}"
 )
 
 Place(tower, x, y) {

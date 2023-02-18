@@ -1,177 +1,55 @@
-darkCastleGameScript() {
-    if WinActive("BloonsTD6") {
-        Sleep(100)
-        Send("{vk20}")              ; Start game
-        Sleep(100)
-        Send("{vk20}")              ; Increase speed
-        Sleep(100)
+DarkCastleGameScript() {
+    StartGame()                 ; Round 1
+    Place("dart",547,477)       ; Place Dart
 
-        Send("{vk51}")              ; Place Dart
-        SlowClick(547,477)
+    WaitForRound(2)             ; Round 2
+    Place("hero",1446,247)      ; Place Hero (Ben)
 
-        waitForRound(2)             ; Round 2
+    WaitForRound(3)             ; Round 3
+    Place("wizard",1001,443)    ; Place Wizard
 
-        Send("{vk55}")              ; Place Hero (Ben)
-        SlowClick(1446,247)
+    WaitForRound(4)             ; Round 4
+    Upgrade(1001,443,0,1,0)     ; Wizard: 000 -> 010
 
-        waitForRound(3)             ; Round 3
+    WaitForRound(7)             ; Round 7
+    Upgrade(1001,443,0,1,0)     ; Wizard: 010 -> 020
 
-        Send("{vk41}")              ; Place Wizard
-        SlowClick(1001,443)
+    WaitForRound(9)             ; Round 9
+    Place("spike",1521,550)     ; Place Spike
 
-        waitForRound(4)             ; Round 4
+    WaitForRound(0)             ; Round 10
+    Upgrade(1521,550,0,1,0)     ; Spike: 000 -> 010
 
-        Click(1001,443)             ; Open Wizard
-        Sleep(100)
-        Send("{vkBE}")              ; Wizard 010
-        Sleep(100)
-        Click(1001,443)             ; Close Wizard
-        Sleep(100)
+    WaitForRound(2)             ; Round 12
+    Upgrade(1521,550,0,1,1)     ; Spike: 010 -> 021
 
-        waitForRound(7)             ; Round 7
+    WaitForRound(3)             ; Round 13
+    Upgrade(1521,550,0,0,1)     ; Spike: 021 -> 022
 
-        Click(1001,443)             ; Open Wizard
-        Sleep(100)
-        Send("{vkBE}")              ; Wizard 020
-        Sleep(100)
-        Click(1001,443)             ; Close Wizard
-        Sleep(100)
+    WaitForRound(6)             ; Round 16
+    Upgrade(1521,550,0,0,1)     ; Spike: 022 -> 023
 
-        waitForRound(9)             ; Round 9
+    WaitForRound(2)             ; Round 22
+    Upgrade(1521,550,0,0,1)     ; Spike: 023 -> 024
 
-        Send("{vk4A}")              ; Place Spike
-        SlowClick(1521,550)
+    WaitForRound(3)             ; Round 23
+    Upgrade(1001,443,0,0,2)     ; Wizard: 020 -> 022
 
-        waitForRound(0)             ; Round 10
+    WaitForRound(8)             ; Round 28
+    Upgrade(1001,443,0,1,0)     ; Wizard: 022 -> 032
+    Place("sub",1103,420)       ; Place Sub
+    Upgrade(1103,420,1,0,0)     ; Sub: 000 -> 100
 
-        Click(1521,550)             ; Open Spike
-        Sleep(100)
-        Send("{vkBE}")              ; Spike 010
-        Sleep(100)
-        Click(1521,550)             ; Close Spike
-        Sleep(100)
+    WaitForRound(1)             ; Round 31
+    Upgrade(1103,420,1,0,2)     ; Sub: 100 -> 202
 
-        waitForRound(2)             ; Round 12
+    WaitForRound(3)             ; Round 33
+    Upgrade(1103,420,0,0,1)     ; Sub: 202 -> 203
 
-        Click(1521,550)             ; Open Spike
-        Sleep(100)
-        Send("{vkBE}")              ; Spike 020
-        Sleep(100)
-        Send("{sc035}")             ; Spike 021
-        Sleep(100)
-        Click(1521,550)             ; Close Spike
-        Sleep(100)
+    WaitForRound(6)             ; Round 36
+    Upgrade(1103,420,0,0,1)     ; Sub: 203 -> 204
+    Upgrade(547,477,0,0,3)      ; Dart: 000 -> 003
 
-        waitForRound(3)             ; Round 13
-
-        Click(1521,550)             ; Open Spike
-        Sleep(100)
-        Send("{sc035}")             ; Spike 022
-        Sleep(100)
-        Click(1521,550)             ; Close Spike
-        Sleep(100)
-
-        waitForRound(6)             ; Round 16
-
-        Click(1521,550)             ; Open Spike
-        Sleep(100)
-        Send("{sc035}")             ; Spike 023
-        Sleep(100)
-        Click(1521,550)             ; Close Spike
-        Sleep(100)
-
-        waitForRound(2)             ; Round 22
-
-        Click(1521,550)             ; Open Spike
-        Sleep(100)
-        Send("{sc035}")             ; Spike 024
-        Sleep(100)
-        Click(1521,550)             ; Close Spike
-        Sleep(100)
-
-        waitForRound(3)             ; Round 23
-
-        Click(1001,443)             ; Open Wizard
-        Sleep(100)
-        Send("{sc035}")             ; Wizard 021
-        Sleep(100)
-        Send("{sc035}")             ; Wizard 022
-        Sleep(100)
-        Click(1001,443)             ; Close Wizard
-        Sleep(100)
-
-        waitForRound(8)             ; Round 28
-
-        Click(1001,443)             ; Open Wizard
-        Sleep(100)
-        Send("{vkBE}")              ; Wizard 032
-        Sleep(100)
-        Click(1001,443)             ; Close Wizard
-        Sleep(100)
-
-        Send("{vk58}")              ; Place Sub
-        SlowClick(1103,420)
-
-        Click(1103,420)             ; Open Sub
-        Sleep(100)
-        Send("{vkBC}")              ; Sub 100
-        Sleep(100)
-        Click(1103,420)             ; Close Sub
-        Sleep(100)
-
-        waitForRound(1)             ; Round 31
-
-        Click(1103,420)             ; Open Sub
-        Sleep(100)
-        Send("{vkBC}")              ; Sub 200
-        Sleep(100)
-        Send("{sc035}")             ; Sub 201
-        Sleep(100)
-        Send("{sc035}")             ; Sub 202
-        Sleep(100)
-        Click(1103,420)             ; Close Sub
-        Sleep(100)
-
-        waitForRound(3)             ; Round 33
-
-        Click(1103,420)             ; Open Sub
-        Sleep(100)
-        Send("{sc035}")             ; Sub 203
-        Sleep(100)
-        Click(1103,420)             ; Close Sub
-        Sleep(100)
-
-        waitForRound(6)             ; Round 36
-
-        Click(1103,420)             ; Open Sub
-        Sleep(100)
-        Send("{sc035}")             ; Sub 204
-        Sleep(100)
-        Click(1103,420)             ; Close Sub
-        Sleep(100)
-
-        Click(547,477)              ; Open Dart
-        Sleep(100)
-        Send("{sc035}")             ; Dart 001
-        Sleep(100)
-        Send("{sc035}")             ; Dart 002
-        Sleep(100)
-        Send("{sc035}")             ; Dart 003
-        Sleep(100)
-        Click(547,477)              ; Close Dart
-        Sleep(100)
-
-        waitForRound(8)             ; Round 38
-
-        Click(547,477)              ; Open Dart
-        Sleep(100)
-        Send("{sc035}")             ; Dart 004
-        Sleep(100)
-        Send("{vkBE}")              ; Dart 014
-        Sleep(100)
-        Send("{vkBE}")              ; Dart 024
-        Sleep(100)
-        Click(547,477)              ; Close Dart
-        Sleep(100)
-    }
+    WaitForRound(8)             ; Round 38
+    Upgrade(547,477,0,2,1)      ; Dart: 003 -> 024
 }
