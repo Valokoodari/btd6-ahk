@@ -11,7 +11,7 @@ maps := Map(
     "quad", quadGameScript,
     "dark_castle", DarkCastleGameScript,
     "muddy_puddles", MuddyPuddlesGameScript,
-    "ouch", HashtagOuchGameScript,
+    "hashtag_ouch", HashtagOuchGameScript,
     "dark_dungeons", DarkDungeonsGameScript,
 )
 

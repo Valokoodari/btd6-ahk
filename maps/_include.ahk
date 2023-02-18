@@ -1,8 +1,8 @@
 #Include infernal.ahk
-#Include ouch_easy.ahk
 #Include quad_easy.ahk
 #Include dark_castle.ahk
 #Include ravine_easy.ahk
+#Include hashtag_ouch.ahk
 #Include dark_dungeons.ahk
 #Include muddy_puddles.ahk
 #Include workshop_easy.ahk
