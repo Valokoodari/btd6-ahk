@@ -110,7 +110,7 @@ GetMapName() {
     while true {
         for map, _ in maps {
             if SearchImage("maps\" map) {
-                LogMsg("Map recognized: " map)
+                LogMap(map)
                 return map
             }
         }

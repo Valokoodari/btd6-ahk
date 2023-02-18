@@ -15,6 +15,20 @@ maps := Map(
     "dark_dungeons", DarkDungeonsGameScript,
 )
 
+mapNames := Map(
+    "quad", "Quad",
+    "ravine", "Ravine",
+    "infernal", "Infernal",
+    "workshop", "Workshop",
+    "hashtag_ouch", "#Ouch",
+    "sanctuary", "Sanctuary",
+    "dark_castle", "Dark Castle",
+    "dark_dungeons", "Dark Dungeons",
+    "muddy_puddles", "Muddy Puddles",
+    "bloody_puddles", "Bloody Puddles",
+    "flooded_valley", "Flooded Valley",
+)
+
 states := ["home", "map_selection", "in_game"]
 if eventType != "none" {
     states.Push("collect", "event")
