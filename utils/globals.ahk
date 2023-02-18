@@ -8,7 +8,7 @@ maps := Map(
     "infernal", InfernalGameScript,
     "bloody_puddles", BloodyPuddlesGameScript,
     "workshop", workshopGameScript,
-    "quad", quadGameScript,
+    "quad", QuadGameScript,
     "dark_castle", DarkCastleGameScript,
     "muddy_puddles", MuddyPuddlesGameScript,
     "hashtag_ouch", HashtagOuchGameScript,
