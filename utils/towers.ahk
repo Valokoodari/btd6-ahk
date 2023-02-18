@@ -7,6 +7,7 @@ towers := Map(
     "boat", "{vk43}",
     "ace", "{vk56}",
     "wizard", "{vk41}",
+    "ninja", "{vk44}",
     "alch", "{vk46}",
     "spike", "{vk4A}"
 )
