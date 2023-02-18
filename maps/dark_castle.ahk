@@ -7,31 +7,21 @@ darkCastleGameScript() {
         Sleep(100)
 
         Send("{vk51}")              ; Dart
-        Sleep(100)
-        MouseMove(547,477)
-        Sleep(100)
-        Click("547,477")
+        SlowClick(547,477)
 
         waitForRound(2)             ; Round 2
 
         Send("{vk55}")              ; Hero (Ben)
-        Sleep(100)
-        MouseMove(1446,247)
-        Sleep(100)
-        Click("1446,247")
+        SlowClick(1446,247)
 
         waitForRound(3)             ; Round 3
 
         Send("{vk41}")              ; Wizard
-        Sleep(100)
-        MouseMove(1001,443)
-        Sleep(100)
-        Click("1001,443")
-        Sleep(100)
+        SlowClick(1001,443)
 
         waitForRound(4)             ; Round 4
 
-        Click("1001,443")           ; Click Wizard
+        Click(1001,443)             ; Click Wizard
         Sleep(100)
         Send("{vkBE}")              ; Wizard 010
         Sleep(100)
@@ -44,15 +34,11 @@ darkCastleGameScript() {
         waitForRound(9)             ; Round 9
 
         Send("{vk4A}")              ; Spike
-        Sleep(100)
-        MouseMove(1521,550)
-        Sleep(100)
-        Click("1521,550")
-        Sleep(100)
+        SlowClick(1521,550)
 
         waitForRound(0)             ; Round 10
 
-        Click("1521,550")           ; Click Spike
+        Click(1521,550)             ; Click Spike
         Sleep(100)
         Send("{vkBE}")              ; Spike 010
         Sleep(100)
@@ -81,7 +67,7 @@ darkCastleGameScript() {
 
         waitForRound(3)             ; Round 23
 
-        Click("1001,443")           ; Click Wizard
+        Click(1001,443)             ; Click Wizard
         Sleep(100)
         Send("{sc035}")             ; Wizard 021
         Sleep(100)
@@ -94,13 +80,9 @@ darkCastleGameScript() {
         Sleep(100)
 
         Send("{vk58}")              ; Sub
-        Sleep(100)
-        MouseMove(1103,420)
-        Sleep(100)
-        Click("1103,420")
-        Sleep(100)
+        SlowClick(1103,420)
 
-        Click("1103,420")           ; Click Sub
+        Click(1103,420)             ; Click Sub
         Sleep(100)
         Send("{vkBC}")              ; Sub 100
         Sleep(100)
@@ -124,7 +106,7 @@ darkCastleGameScript() {
         Send("{sc035}")             ; Sub 204
         Sleep(100)
 
-        Click("547,477")            ; Click Dart
+        Click(547,477)              ; Click Dart
         Sleep(100)
         Send("{sc035}")             ; Dart 001
         Sleep(100)
