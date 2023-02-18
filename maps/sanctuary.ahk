@@ -1,104 +1,38 @@
 SanctuaryGameScript() {
-    if WinActive("BloonsTD6") {
-        Sleep(100)
-        Send("{vk51}")              ; Dart
-        SlowClick(750,263)
+    Sleep(100)
+    Place("dart",750,263)       ; Place Dart
+    StartGame()                 ; Round 1
 
-        Send("{vk20}")              ; Start game
-        Sleep(100)
-        Send("{vk20}")              ; Increase speed
-        Sleep(100)
+    WaitForRound(2,200)         ; Round 2
+    Place("hero",1345,550)      ; Place Hero (Ben)
 
-        WaitForRound(2,200)         ; Round 2
+    WaitForRound(5,200)         ; Round 5
+    Place("spike",980,266)      ; Place Spike
 
-        Send("{vk55}")              ; Hero (Ben)
-        SlowClick(1345,550)
+    WaitForRound(7,200)         ; Round 7
+    Upgrade(689,265,1,0,1)      ; Spike: 000 -> 101
 
-        WaitForRound(5,200)         ; Round 5
+    WaitForRound(8,200)         ; Round 8
+    Upgrade(689,265,0,0,1)      ; Spike: 101 -> 102
+    Targeting(689,265,3)        ; Spike: Normal -> Smart
 
-        Send("{vk4A}")              ; Place Spike
-        SlowClick(980,266)
+    WaitForRound(9,200)         ; Round 9
+    Place("sniper",911,960)     ; Place Sniper
 
-        WaitForRound(7,200)         ; Round 7
+    WaitForRound(0,200)         ; Round 10
+    Upgrade(750,964,1,0,0)      ; Sniper: 000 -> 100
 
-        Click(689,265)              ; Open Spike
-        Sleep(100)
-        Send("{vkBC}")              ; Spike 100
-        Sleep(100)
-        Send("{sc035}")             ; Spike 101
-        Sleep(100)
-        Click(689,265)              ; Close Spike
-        Sleep(100)
+    WaitForRound(1,200)         ; Round 11
+    Place("wizard",227,136)     ; Place Wizard 1
+    Upgrade(227,136,0,1,0)      ; Wizard 1: 000 -> 010
 
-        WaitForRound(8,200)         ; Round 8
+    WaitForRound(3,200)         ; Round 13
+    Upgrade(294,361,0,1,0)      ; Wizard 1: 010 -> 020
 
-        Click(832,282)              ; Open Spike
-        Sleep(100)
-        Send("{sc035}")             ; Spike 102
-        Sleep(100)
-        Send("{vk09}")              ; Change targeting to smart
-        Sleep(100)
-        Send("{vk09}")
-        Sleep(100)
-        Send("{vk09}")
-        Sleep(100)
-        Click(832,282)              ; Close Spike
-        Sleep(100)
+    WaitForRound(4,200)         ; Round 14
+    Place("wizard",1400,282)    ; Place Wizard 2
+    Upgrade(1400,282,0,1,0)     ; Wizard 2: 000 -> 010
 
-        WaitForRound(9,200)         ; Round 9
-
-        Send("{vk5A}")              ; Sniper
-        SlowClick(911,960)
-
-        WaitForRound(0,200)         ; Round 10
-
-        Click(750,964)              ; Open Sniper
-        Sleep(100)
-        Send("{vkBC}")              ; Sniper 100
-        Sleep(100)
-        Click(750,964)              ; Close Sniper
-        Sleep(100)
-
-        WaitForRound(1,200)         ; Round 11
-
-        Send("{vk41}")              ; Wizard 1
-        SlowClick(227,136)
-
-        Click(227,136)              ; Open Wizard 1
-        Sleep(100)
-        Send("{vkBE}")              ; Wizard 1 010
-        Sleep(100)
-        Click(227,136)              ; Close Wizard 1
-        Sleep(100)
-
-        WaitForRound(3,200)         ; Round 13
-
-        Click(294,361)              ; Open Wizard 1
-        Sleep(100)
-        Send("{vkBE}")              ; Wizard 1 020
-        Sleep(100)
-        Click(294,361)              ; Close Wizard 1
-        Sleep(100)
-
-        WaitForRound(4,200)         ; Round 14
-
-        Send("{vk41}")              ; Wizard 2
-        SlowClick(1400,282)
-
-        Click(1400,282)             ; Open Wizard 2
-        Sleep(100)
-        Send("{vkBE}")              ; Wizard 2 010
-        Sleep(100)
-        Click(1400,282)             ; Close Wizard 2
-        Sleep(100)
-
-        WaitForRound(6,200)         ; Round 16
-
-        Click(1235,427)             ; Open Wizard 2
-        Sleep(100)
-        Send("{vkBE}")              ; Wizard 2 020
-        Sleep(100)
-        Click(1235,427)             ; Close Wizard 2
-        Sleep(100)
-    }
+    WaitForRound(6,200)         ; Round 16
+    Upgrade(1235,427,0,1,0)     ; Wizard 2: 010 -> 020
 }
