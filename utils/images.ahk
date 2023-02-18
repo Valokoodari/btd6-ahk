@@ -1,5 +1,5 @@
-SearchImage(imageName, options := "", yMin := 0, xMin := 0, yMax := 1920, xMax := 1080) {
-    if ImageSearch(&yCoord, &xCoord, yMin, xMin, yMax, xMax, options " *65 " A_ScriptDir "\img\" imageName ".png") {
+SearchImage(imageName, options := "", xMin := 0, yMin := 0, xMax := 1920, yMax := 1080) {
+    if ImageSearch(&xCoord, &yCoord, xMin, yMin, xMax, yMax, options " *65 " A_ScriptDir "\img\" imageName ".png") {
         global x := xCoord
         global y := yCoord
         return true
@@ -8,7 +8,7 @@ SearchImage(imageName, options := "", yMin := 0, xMin := 0, yMax := 1920, xMax :
 
 ClickImage(imageName, delay := 1000) {
     if SearchImage(imageName) {
-        Click(y,x)
+        Click(x,y)
         ScaledSleep(delay)
         return true
     }
