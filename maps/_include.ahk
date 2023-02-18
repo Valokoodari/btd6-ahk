@@ -1,7 +1,7 @@
 #Include quad.ahk
+#Include ravine.ahk
 #Include infernal.ahk
 #Include dark_castle.ahk
-#Include ravine_easy.ahk
 #Include hashtag_ouch.ahk
 #Include dark_dungeons.ahk
 #Include muddy_puddles.ahk
