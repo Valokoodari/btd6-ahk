@@ -2,7 +2,7 @@ victories := 0
 defeats := 0
 
 maps := Map(
-    "sanc", sancGameScript,
+    "sanctuary", sancGameScript,
     "ravine", RavineGameScript,
     "flooded_valley", FloodedValleyGameScript,
     "infernal", InfernalGameScript,
