@@ -1,128 +1,40 @@
 DarkDungeonsGameScript() {
-    if WinActive("BloonsTD6") {
-        Sleep(100)
-        Send("{vk20}")              ; Start game
-        Sleep(100)
-        Send("{vk20}")              ; Increase speed
-        Sleep(100)
+    StartGame()                 ; Round 1
+    Place("dart",269,938)       ; Place Dart 1
+    Place("dart",740,943)       ; Place Dart 2
+    Place("sub",1429,866)       ; Place Sub
 
-        Send("{vk51}")              ; Place Dart 1
-        SlowClick(269,938)
+    WaitForRound(5)             ; Round 5
+    Place("hero",123,235)       ; Place Hero (Ben)
 
-        Send("{vk51}")              ; Place Dart 2
-        SlowClick(740,943)
+    WaitForRound(7)             ; Round 7
+    Place("ace",1075,460)       ; Place Ace 1
 
-        Send("{vk58}")              ; Place Sub
-        SlowClick(1429,866)
+    WaitForRound(9)             ; Round 9
+    Upgrade(1075,460,0,0,2)     ; Ace 1: 000 -> 002
 
-        WaitForRound(5)             ; Round 5
+    WaitForRound(6)             ; Round 16
+    Upgrade(1075,460,0,2,1)     ; Ace 1: 002 -> 023
 
-        Send("{vk55}")              ; Place Hero (Ben)
-        SlowClick(123,235)
+    WaitForRound(7)             ; Round 17
+    Place("alch",891,546)       ; Place Alch
 
-        WaitForRound(7)             ; Round 7
+    WaitForRound(9)             ; Round 19
+    Upgrade(891,546,2,0,1)      ; Alch: 000 -> 201
 
-        Send("{vk56}")              ; Place Plane 1
-        SlowClick(1075,460)
+    WaitForRound(1)             ; Round 21
+    Place("ace",1075,545)       ; Place Ace 2
 
-        WaitForRound(9)             ; Round 9
+    WaitForRound(4)             ; Round 24
+    Upgrade(1075,545,0,0,2)     ; Ace 2: 000 -> 002
 
-        Click(1075,460)             ; Open Plane 1
-        Sleep(100)
-        Send("{sc035}")             ; Plane 1 001
-        Sleep(100)
-        Send("{sc035}")             ; Plane 1 002
-        Sleep(100)
-        Click(1075,460)             ; Close Plane 1
-        Sleep(100)
+    WaitForRound(8)             ; Round 28
+    Upgrade(1075,545,0,2,1)     ; Ace 2: 002 -> 023
 
-        WaitForRound(6)             ; Round 16
+    WaitForRound(1)             ; Round 31
+    Place("tack",928,975)       ; Place Tack
+    Upgrade(928,975,3,0,0)      ; Tack: 000 -> 300
 
-        Click(1075,460)             ; Open Plane 1
-        Sleep(100)
-        Send("{sc035}")             ; Plane 1 003
-        Sleep(100)
-        Send("{vkBE}")              ; Plane 1 013
-        Sleep(100)
-        Send("{vkBE}")              ; Plane 1 023
-        Sleep(100)
-        Click(1075,460)             ; Close Plane 1
-        Sleep(100)
-
-        WaitForRound(7)             ; Round 17
-
-        Send("{vk46}")              ; Place Alch
-        SlowClick(891,546)
-
-        WaitForRound(9)             ; Round 19
-
-        Click(891,546)              ; Open Alch
-        Sleep(100)
-        Send("{vkBC}")              ; Alch 100
-        Sleep(100)
-        Send("{vkBC}")              ; Alch 200
-        Sleep(100)
-        Send("{sc035}")             ; Alch 201
-        Sleep(100)
-        Click(891,546)              ; Close Alch
-        Sleep(100)
-
-        WaitForRound(1)             ; Round 21
-
-        Send("{vk56}")              ; Place Plane 2
-        SlowClick(1075,545)
-
-        WaitForRound(4)             ; Round 24
-
-        Click(1075,545)             ; Open Plane 2
-        Sleep(100)
-        Send("{sc035}")             ; Plane 2 001
-        Sleep(100)
-        Send("{sc035}")             ; Plane 2 002
-        Sleep(100)
-        Click(1075,545)             ; Close Plane 2
-        Sleep(100)
-
-        WaitForRound(8)             ; Round 28
-
-        Click(1075,545)             ; Open Plane 2
-        Sleep(100)
-        Send("{sc035}")             ; Plane 2 003
-        Sleep(100)
-        Send("{vkBE}")              ; Plane 2 013
-        Sleep(100)
-        Send("{vkBE}")              ; Plane 2 023
-        Sleep(100)
-        Click(1075,545)             ; Close Plane 2
-        Sleep(100)
-
-        WaitForRound(1)             ; Round 31
-
-        Send("{vk52}")              ; Place Tack
-        SlowClick(928,975)
-
-        Click(928,975)              ; Open Tack
-        Sleep(100)
-        Send("{vkBC}")              ; Tack 100
-        Sleep(100)
-        Send("{vkBC}")              ; Tack 200
-        Sleep(100)
-        Send("{vkBC}")              ; Tack 300
-        Sleep(100)
-        Click(928,975)              ; Close Tack
-        Sleep(100)
-
-        WaitForRound(5)             ; Round 35
-
-        Click(928,975)              ; Open Tack
-        Sleep(100)
-        Send("{vkBC}")              ; Tack 400
-        Sleep(100)
-        Send("{sc035}")             ; Tack 401
-        Sleep(100)
-        Send("{sc035}")             ; Tack 402
-        Sleep(100)
-        Click(928,975)              ; Close Tack
-        Sleep(100)
-    }
+    WaitForRound(5)             ; Round 35
+    Upgrade(928,975,1,0,2)      ; Tack: 300 -> 402
 }
