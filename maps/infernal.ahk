@@ -1,190 +1,59 @@
 InfernalGameScript() {
-    if WinActive("BloonsTD6") {
-        Sleep(100)
-        Send("{vk20}")              ; Start game
-        Sleep(100)
-        Send("{vk20}")              ; Increase Speed
-        Sleep(100)
+    StartGame()                 ; Round 1
+    Place("dart",472,277)       ; Place Dart
 
-        Send("{vk51}")              ; Place Dart
-        SlowClick(472,277)
+    WaitForRound(2)             ; Round 2
+    Place("hero",1587,573)      ; Place Hero (Ben)
 
-        WaitForRound(2)             ; Round 2
+    WaitForRound(3)             ; Round 3
+    Place("boat",471,789)       ; Place Boat
 
-        Send("{vk55}")              ; Place Hero (Ben)
-        SlowClick(1587,573)
+    WaitForRound(4)             ; Round 4
+    Upgrade(471,789,0,0,1)      ; Boat: 000 -> 001
 
-        WaitForRound(3)             ; Round 3
+    WaitForRound(5)             ; Round 5
+    Upgrade(471,789,0,1,0)      ; Boat: 001 -> 011
 
-        Send("{vk43}")              ; Place Boat
-        SlowClick(471,789)
+    WaitForRound(8)             ; Round 8
+    Upgrade(471,789,0,1,1)      ; Boat: 011 -> 022
 
-        WaitForRound(4)             ; Round 4
+    WaitForRound(9)             ; Round 9
+    Place("sub",1194,268)       ; Place Sub 1
+    Upgrade(1194,268,1,0,0)     ; Sub 1: 000 -> 100
 
-        Click(471,789)              ; Open Boat
-        Sleep(100)
-        Send("{sc035}")             ; Boat 001
-        Sleep(100)
-        Click(471,789)              ; Close Boat
-        Sleep(100)
+    WaitForRound(1)             ; Round 11
+    Upgrade(1194,268,1,0,1)     ; Sub 1: 100 -> 201
 
-        WaitForRound(5)             ; Round 5
+    WaitForRound(3)             ; Round 13
+    Upgrade(1194,268,0,0,1)     ; Sub 1: 201 -> 202
 
-        Click(471,789)              ; Open Boat
-        Sleep(100)
-        Send("{vkBE}")              ; Boat 011
-        Sleep(100)
-        Click(471,789)              ; Close Boat
-        Sleep(100)
+    WaitForRound(5)             ; Round 15
+    Upgrade(1194,268,0,0,1)     ; Sub 1: 202 -> 203
 
-        WaitForRound(8)             ; Round 8
+    WaitForRound(0)             ; Round 20
+    Upgrade(1194,268,0,0,1)     ; Sub 1: 203 -> 204
 
-        Click(471,789)              ; Open Boat
-        Sleep(100)
-        Send("{vkBE}")              ; Boat 021
-        Sleep(100)
-        Send("{sc035}")             ; Boat 022
-        Sleep(100)
-        Click(471,789)              ; Close Boat
-        Sleep(100)
+    WaitForRound(1)             ; Round 21
+    Place("sub",1195,176)       ; Place Sub 2
+    Upgrade(1195,176,1,0,0)     ; Sub 2: 000 -> 100
 
-        WaitForRound(9)             ; Round 9
+    WaitForRound(3)             ; Round 23
+    Upgrade(1195,176,1,0,1)     ; Sub 2: 100 -> 201
 
-        Send("{vk58}")              ; Place Sub 1
-        SlowClick(1194,268)
+    WaitForRound(5)             ; Round 25
+    Upgrade(1195,176,0,0,1)     ; Sub 2: 201 -> 202
 
-        Click(1194,268)             ; Open Sub 1
-        Sleep(100)
-        Send("{vkBC}")              ; Sub 1 100
-        Sleep(100)
-        Click(1194,268)             ; Close Sub 1
-        Sleep(100)
+    WaitForRound(7)             ; Round 27
+    Upgrade(1195,176,0,0,1)     ; Sub 2: 202 -> 203
 
-        WaitForRound(1)             ; Round 11
+    WaitForRound(1)             ; Round 31
+    Upgrade(1195,176,0,0,1)     ; Sub 2: 203 -> 204
+    Upgrade(472,277,0,0,2)      ; Dart: 000 -> 002
 
-        Click(1194,268)             ; Open Sub 1
-        Sleep(100)
-        Send("{vkBC}")              ; Sub 1 200
-        Sleep(100)
-        Send("{sc035}")             ; Sub 1 201
-        Sleep(100)
-        Click(1194,268)             ; Close Sub 1
-        Sleep(100)
+    WaitForRound(2)             ; Round 32
+    Upgrade(472,277,0,1,1)      ; Dart: 002 -> 013
 
-        WaitForRound(3)             ; Round 13
-
-        Click(1194,268)             ; Open Sub 1
-        Sleep(100)
-        Send("{sc035}")             ; Sub 1 202
-        Sleep(100)
-        Click(1194,268)             ; Close Sub 1
-        Sleep(100)
-
-        WaitForRound(5)             ; Round 15
-
-        Click(1194,268)             ; Open Sub 1
-        Sleep(100)
-        Send("{sc035}")             ; Sub 1 203
-        Sleep(100)
-        Click(1194,268)             ; Close Sub 1
-        Sleep(100)
-
-        WaitForRound(0)             ; Round 20
-
-        Click(1194,268)             ; Open Sub 1
-        Sleep(100)
-        Send("{sc035}")             ; Sub 1 204
-        Sleep(100)
-        Click(1194,268)             ; Close Sub 1
-        Sleep(100)
-
-        WaitForRound(1)             ; Round 21
-
-        Send("{vk58}")              ; Place Sub 2
-        SlowClick(1195,176)
-
-        Click(1195,176)             ; Open Sub 2
-        Sleep(100)
-        Send("{vkBC}")              ; Sub 2 100
-        Sleep(100)
-        Click(1195,176)             ; Close Sub 2
-        Sleep(100)
-
-
-        WaitForRound(3)             ; Round 23
-
-        Click(1195,176)             ; Open Sub 2
-        Sleep(100)
-        Send("{vkBC}")              ; Sub 2 200
-        Sleep(100)
-        Send("{sc035}")             ; Sub 2 201
-        Sleep(100)
-        Click(1195,176)             ; Close Sub 2
-        Sleep(100)
-
-        WaitForRound(5)             ; Round 25
-
-        Click(1195,176)             ; Open Sub 2
-        Sleep(100)
-        Send("{sc035}")             ; Sub 2 202
-        Sleep(100)
-        Click(1195,176)             ; Close Sub 2
-        Sleep(100)
-
-        WaitForRound(7)             ; Round 27
-
-        Click(1195,176)             ; Open Sub 2
-        Sleep(100)
-        Send("{sc035}")             ; Sub 2 203
-        Sleep(100)
-        Click(1195,176)             ; Close Sub 2
-        Sleep(100)
-
-        WaitForRound(1)             ; Round 31
-
-        Click(1195,176)             ; Open Sub 2
-        Sleep(100)
-        Send("{sc035}")             ; Sub 2 204
-        Sleep(100)
-        Click(1195,176)             ; Close Sub 2
-        Sleep(100)
-
-        Click(472,277)              ; Open Dart
-        Sleep(100)
-        Send("{sc035}")             ; Dart 001
-        Sleep(100)
-        Send("{sc035}")             ; Dart 002
-        Sleep(100)
-        Click(472,277)              ; Close Dart
-        Sleep(100)
-
-        WaitForRound(2)             ; Round 32
-
-        Click(472,277)              ; Open Dart
-        Sleep(100)
-        Send("{sc035}")             ; Dart 003
-        Sleep(100)
-        Send("{vkBE}")              ; Dart 013
-        Sleep(100)
-        Click(472,277)              ; Close Dart
-        Sleep(100)
-
-        WaitForRound(5)             ; Round 35
-
-        Click(472,277)              ; Open Dart
-        Sleep(100)
-        Send("{vkBE}")              ; Dart 023
-        Sleep(100)
-        Send("{sc035}")             ; Dart 024
-        Sleep(100)
-        Click(472,277)              ; Close Dart
-        Sleep(100)
-
-        Click(471,789)              ; Open Boat
-        Sleep(100)
-        Send("{vkBE}")              ; Boat 032
-        Sleep(100)
-        Click(471,789)              ; Close Boat
-        Sleep(100)
-    }
+    WaitForRound(5)             ; Round 35
+    Upgrade(472,277,0,1,1)      ; Dart: 013 -> 024
+    Upgrade(471,789,0,1,0)      ; Boat: 022 -> 032
 }
