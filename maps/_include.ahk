@@ -1,10 +1,10 @@
+#Include infernal.ahk
 #Include ouch_easy.ahk
 #Include quad_easy.ahk
 #Include muddy_easy.ahk
 #Include dark_castle.ahk
 #Include ravine_easy.ahk
 #Include dark_dungeons.ahk
-#Include infernal_easy.ahk
 #Include workshop_easy.ahk
 #Include bloody_puddles.ahk
 #Include flooded_valley.ahk
