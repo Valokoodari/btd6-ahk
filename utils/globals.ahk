@@ -7,7 +7,7 @@ maps := Map(
     "flooded_valley", FloodedValleyGameScript,
     "infernal", InfernalGameScript,
     "bloody_puddles", BloodyPuddlesGameScript,
-    "workshop", workshopGameScript,
+    "workshop", WorkshopGameScript,
     "quad", QuadGameScript,
     "dark_castle", DarkCastleGameScript,
     "muddy_puddles", MuddyPuddlesGameScript,
