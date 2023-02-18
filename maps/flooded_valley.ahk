@@ -9,20 +9,12 @@ FloodedValleyGameScript() {
         WaitForRound(2)             ; Round 2
 
         Send("{vk55}")              ; Place Hero (Ben)
-        Sleep(100)
-        MouseMove(529,492)
-        Sleep(100)
-        Click(529,492)
-        Sleep(100)
+        SlowClick(529,492)
 
         WaitForRound(3)             ; Round 3
 
         Send("{vk43}")              ; Place Boat 1
-        Sleep(100)
-        MouseMove(1075,657)
-        Sleep(100)
-        Click(1075,657)
-        Sleep(100)
+        SlowClick(1075,657)
 
         WaitForRound(5)             ; Round 5
 
@@ -70,11 +62,7 @@ FloodedValleyGameScript() {
         Sleep(100)
 
         Send("{vk58}")              ; Place Sub 1
-        Sleep(100)
-        MouseMove(1134,457)
-        Sleep(100)
-        Click(1134,457)
-        Sleep(100)
+        SlowClick(1134,457)
 
         Click(1134,457)             ; Open Sub 1
         Sleep(100)
@@ -104,11 +92,7 @@ FloodedValleyGameScript() {
         WaitForRound(8)             ; Round 18
 
         Send("{vk43}")              ; Place Boat 2
-        Sleep(100)
-        MouseMove(1057,239)
-        Sleep(100)
-        Click(1057,239)
-        Sleep(100)
+        SlowClick(1057,239)
 
         WaitForRound(0)             ; Round 20
 
@@ -144,11 +128,7 @@ FloodedValleyGameScript() {
         WaitForRound(8)             ; Round 28
 
         Send("{vk58}")              ; Place Sub 2
-        Sleep(100)
-        MouseMove(1132,1002)
-        Sleep(100)
-        Click(1132,1002)
-        Sleep(100)
+        SlowClick(1132,1002)
 
         Click(1132,1002)            ; Open Sub 2
         Sleep(100)
