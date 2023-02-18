@@ -1,98 +1,149 @@
-ouchGameScript() {
+HashtagOuchGameScript() {
     if WinActive("BloonsTD6") {
-        ScaledSleep(100)            ; Clear hotkey lag
-
+        Sleep(100)
         Send("{vk20}")              ; Start game
-        ScaledSleep(100)
+        Sleep(100)
         Send("{vk20}")              ; Increase speed
-        ScaledSleep(100)
+        Sleep(100)
 
-        Send("{vk51}")              ; Dart
-        ScaledSleep(100)
-        MouseMove(531,310)
-        ScaledSleep(100)
-        Click("531,310")
-        ScaledSleep(10900)
+        Send("{vk51}")              ; Place Dart
+        SlowClick(531,310)
 
-        Send("{vk55}")              ; Hero (Ben)
-        ScaledSleep(100)
-        MouseMove(1273,251)
-        ScaledSleep(100)
-        Click("1273,251")
-        ScaledSleep(9800)
+        WaitForRound(2)             ; Round 2
 
-        Send("{vk43}")              ; Boat
-        ScaledSleep(100)
-        MouseMove(840,571)
-        ScaledSleep(100)
-        Click("840,571")
-        ScaledSleep(100)
+        Send("{vk55}")              ; Place Hero (Ben)
+        SlowClick(1273,251)
 
-        Click("840,571")            ; Click Boat
-        ScaledSleep(14000)
+        WaitForRound(3)             ; Round 3
+
+        Send("{vk43}")              ; Place Boat
+        SlowClick(840,571)
+
+        WaitForRound(5)             ; Round 5
+
+        Click(840,571)              ; Open Boat
+        Sleep(100)
         Send("{vkBE}")              ; Boat 010
-        ScaledSleep(7500)
+        Sleep(100)
+        Click(840,571)              ; Close Boat
+        Sleep(100)
+
+        WaitForRound(7)             ; Round 7
+
+        Click(840,571)              ; Open Boat
+        Sleep(100)
         Send("{vkBC}")              ; Boat 110
-        ScaledSleep(6900)
+        Sleep(100)
         Send("{vkBC}")              ; Boat 210
-        ScaledSleep(62200)
+        Sleep(100)
+        Click(840,571)              ; Close Boat
+        Sleep(100)
+
+        WaitForRound(4)             ; Round 14
+
+        Click(840,571)              ; Open Boat
+        Sleep(100)
         Send("{vkBC}")              ; Boat 310
-        ScaledSleep(7500)
+        Sleep(100)
         Send("{vkBE}")              ; Boat 320
-        ScaledSleep(100)
+        Sleep(100)
+        Click(840,571)              ; Close Boat
+        Sleep(100)
 
-        Click("531,310")            ; Click Dart
-        ScaledSleep(4200)
+        WaitForRound(6)             ; Round 16
+
+        Click(531,310)              ; Open Dart
+        Sleep(100)
         Send("{sc035}")             ; Dart 001
-        ScaledSleep(5900)
+        Sleep(100)
         Send("{sc035}")             ; Dart 002
-        ScaledSleep(10000)
+        Sleep(100)
         Send("{sc035}")             ; Dart 003
-        ScaledSleep(19200)
+        Sleep(100)
+        Click(531,310)              ; Close Dart
+        Sleep(100)
+
+        WaitForRound(0)             ; Round 20
+
+        Click(531,310)              ; Open Dart
+        Sleep(100)
         Send("{sc035}")             ; Dart 004
-        ScaledSleep(2100)
+        Sleep(100)
         Send("{vkBE}")              ; Dart 014
-        ScaledSleep(2100)
+        Sleep(100)
         Send("{vkBE}")              ; Dart 024
-        ScaledSleep(4400)
+        Sleep(100)
+        Click(531,310)              ; Close Dart
+        Sleep(100)
 
-        Send("{vk44}")              ; Ninja 1
-        ScaledSleep(100)
-        MouseMove(995,187)
-        ScaledSleep(100)
-        Click("995,187")
-        ScaledSleep(100)
+        WaitForRound(2)             ; Round 22
 
-        Click("995,187")            ; Click Ninja 1
-        ScaledSleep(3600)
+        Send("{vk44}")              ; Place Ninja 1
+        SlowClick(995,187)
+
+        Click(995,187)              ; Open Ninja 1
+        Sleep(100)
         Send("{vkBC}")              ; Ninja 1 100
-        ScaledSleep(1500)
+        Sleep(100)
         Send("{vkBC}")              ; Ninja 1 200
-        ScaledSleep(1900)
+        Sleep(100)
+        Click(995,187)              ; Close Ninja 1
+        Sleep(100)
+
+        WaitForRound(4)             ; Round 24
+
+        Click(995,187)              ; Open Ninja 1
+        Sleep(100)
         Send("{sc035}")             ; Ninja 1 201
-        ScaledSleep(4700)
+        Sleep(100)
         Send("{vkBC}")              ; Ninja 1 301
-        ScaledSleep(28700)
+        Sleep(100)
+        Click(995,187)              ; Close Ninja 1
+        Sleep(100)
+
+        WaitForRound(8)             ; Round 28
+
+        Click(995,187)              ; Open Ninja 1
+        Sleep(100)
         Send("{vkBC}")              ; Ninja 1 401
-        ScaledSleep(6900)
+        Sleep(100)
+        Click(995,187)              ; Close Ninja 1
+        Sleep(100)
 
-        Send("{vk44}")              ; Ninja 2
-        ScaledSleep(100)
-        MouseMove(528,542)
-        ScaledSleep(100)
-        Click("528,542")
-        ScaledSleep(100)
+        WaitForRound(9)             ; Round 29
 
-        Click("528,542")            ; Click Ninja 2
-        ScaledSleep(3200)
+        Send("{vk44}")              ; Place Ninja 2
+        SlowClick(528,542)
+
+        WaitForRound(0)             ; Round 30
+
+        Click(528,542)              ; Open Ninja 2
+        Sleep(100)
         Send("{vkBC}")              ; Ninja 2 100
-        ScaledSleep(1900)
+        Sleep(100)
         Send("{sc035}")             ; Ninja 2 101
-        ScaledSleep(1700)
+        Sleep(100)
         Send("{vkBC}")              ; Ninja 2 201
-        ScaledSleep(1800)
+        Sleep(100)
+        Click(528,542)              ; Close Ninja 2
+        Sleep(100)
+
+        WaitForRound(2)             ; Round 32
+
+        Click(528,542)              ; Open Ninja 2
+        Sleep(100)
         Send("{vkBC}")              ; Ninja 2 301
-        ScaledSleep(29300)
+        Sleep(100)
+        Click(528,542)              ; Close Ninja 2
+        Sleep(100)
+
+        WaitForRound(5)             ; Round 35
+
+        Click(528,542)              ; Open Ninja 2
+        Sleep(100)
         Send("{vkBC}")              ; Ninja 2 401
+        Sleep(100)
+        Click(528,542)              ; Open Ninja 2
+        Sleep(100)
     }
 }
