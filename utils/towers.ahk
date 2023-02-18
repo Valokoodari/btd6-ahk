@@ -26,6 +26,7 @@ Targeting(x, y, tabCount) {
     Sleep(100)
     Loop tabCount {
         Send("{vk09}")
+        Sleep(100)
     }
     Click(x,y)          ; Close Tower
     Sleep(100)
@@ -35,29 +36,17 @@ Upgrade(x, y, topCount, middleCount, bottomCount) {
     Click(x,y)          ; Open Tower
     Sleep(100)
     Loop topCount {
-        UpgradeTop()
+        Send("{vkBC}")
+        Sleep(100)
     }
     Loop middleCount {
-        UpgradeMiddle()
+        Send("{vkBE}")
+        Sleep(100)
     }
     Loop bottomCount {
-        UpgradeBottom()
+        Send("{sc035}")
+        Sleep(100)
     }
     Click(x,y)          ; Close Tower
-    Sleep(100)
-}
-
-UpgradeTop() {
-    Send("{vkBC}")
-    Sleep(100)
-}
-
-UpgradeMiddle() {
-    Send("{vkBE}")
-    Sleep(100)
-}
-
-UpgradeBottom() {
-    Send("{sc035}")
     Sleep(100)
 }
