@@ -8,47 +8,27 @@ DarkDungeonsGameScript() {
         Sleep(100)
 
         Send("{vk51}")              ; Dart 1
-        Sleep(100)
-        MouseMove(269,938)
-        Sleep(100)
-        Click("269,938")
-        Sleep(100)
+        SlowClick(269,938)
 
         Send("{vk51}")              ; Dart 2
-        Sleep(100)
-        MouseMove(740,943)
-        Sleep(100)
-        Click("740,943")
-        Sleep(100)
+        SlowClick(740,943)
 
         Send("{vk58}")              ; Sub
-        Sleep(100)
-        MouseMove(1429,866)
-        Sleep(100)
-        Click("1429,866")
-        Sleep(100)
+        SlowClick(1429,866)
 
         WaitForRound(5)             ; Round 5
 
         Send("{vk55}")              ; Hero (Ben)
-        Sleep(100)
-        MouseMove(123,235)
-        Sleep(100)
-        Click("123,235")
-        Sleep(100)
+        SlowClick(123,235)
 
         WaitForRound(7)             ; Round 7
 
         Send("{vk56}")              ; Plane 1
-        Sleep(100)
-        MouseMove(1075,460)
-        Sleep(100)
-        Click("1075,460")
-        Sleep(100)
+        SlowClick(1075,460)
 
         WaitForRound(9)             ; Round 9
 
-        Click("1075,460")           ; Click Plane 1
+        Click(1075,460)             ; Click Plane 1
         Sleep(100)
         Send("{sc035}")             ; Plane 1 001
         Sleep(100)
@@ -67,15 +47,11 @@ DarkDungeonsGameScript() {
         WaitForRound(7)             ; Round 17
 
         Send("{vk46}")              ; Alch
-        Sleep(100)
-        MouseMove(891,546)
-        Sleep(100)
-        Click("891,546")
-        Sleep(100)
+        SlowClick(891,546)
 
         WaitForRound(9)             ; Round 19
 
-        Click("891,546")            ; Click Alch
+        Click(891,546)              ; Click Alch
         Sleep(100)
         Send("{vkBC}")              ; Alch 100
         Sleep(100)
@@ -86,15 +62,11 @@ DarkDungeonsGameScript() {
         WaitForRound(1)             ; Round 21
 
         Send("{vk56}")              ; Plane 2
-        Sleep(100)
-        MouseMove(1075,545)
-        Sleep(100)
-        Click("1075,545")
-        Sleep(100)
+        SlowClick(1075,545)
 
         WaitForRound(4)             ; Round 24
 
-        Click("1075,545")           ; Click Plane 2
+        Click(1075,545)             ; Click Plane 2
         Sleep(100)
         Send("{sc035}")             ; Plane 2 001
         Sleep(100)
@@ -113,13 +85,9 @@ DarkDungeonsGameScript() {
         WaitForRound(1)             ; Round 31
 
         Send("{vk52}")              ; Tack
-        Sleep(100)
-        MouseMove(928,975)
-        Sleep(100)
-        Click("928,975")
-        Sleep(100)
+        SlowClick(928,975)
 
-        Click("928,975")            ; Click Tack
+        Click(928,975)              ; Click Tack
         Sleep(100)
         Send("{vkBC}")              ; Tack 100
         Sleep(100)
