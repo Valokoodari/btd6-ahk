@@ -1,103 +1,212 @@
-floodedGameScript() {
+FloodedValleyGameScript() {
     if WinActive("BloonsTD6") {
-        ScaledSleep(100)            ; Clear hotkey lag
-
+        Sleep(100)
         Send("{vk20}")              ; Start game
-        ScaledSleep(100)
+        Sleep(100)
         Send("{vk20}")              ; Increase Speed
-        ScaledSleep(8500)
+        Sleep(100)
 
-        Send("{vk55}")              ; Hero (Ben)
-        ScaledSleep(100)
+
+        WaitForRound(2)             ; Round 2
+
+        Send("{vk55}")              ; Place Hero (Ben)
+        Sleep(100)
         MouseMove(529,492)
-        ScaledSleep(100)
-        Click("529,492")
-        ScaledSleep(10600)
+        Sleep(100)
+        Click(529,492)
+        Sleep(100)
 
-        Send("{vk43}")              ; Boat 1
-        ScaledSleep(100)
+
+        WaitForRound(3)             ; Round 3
+
+        Send("{vk43}")              ; Place Boat 1
+        Sleep(100)
         MouseMove(1075,657)
-        ScaledSleep(100)
-        Click("1075,657")
-        ScaledSleep(100)
+        Sleep(100)
+        Click(1075,657)
+        Sleep(100)
 
-        Click("1075,657")           ; Click on Boat 1
-        ScaledSleep(14500)
+
+        WaitForRound(5)             ; Round 5
+
+        Click(1075,657)             ; Open Boat 1
+        Sleep(100)
         Send("{vkBE}")              ; Boat 1 010
-        ScaledSleep(6100)
+        Sleep(100)
+        Click(1075,657)             ; Close Boat 1
+        Sleep(100)
+
+
+        WaitForRound(6)             ; Round 6
+
+        Click(1075,657)             ; Open Boat 1
+        Sleep(100)
         Send("{vkBC}")              ; Boat 1 110
-        ScaledSleep(7000)
+        Sleep(100)
+        Click(1075,657)             ; Close Boat 1
+        Sleep(100)
+
+
+        WaitForRound(7)             ; Round 7
+
+        Click(1075,657)             ; Open Boat 1
+        Sleep(100)
         Send("{vkBC}")              ; Boat 1 210
-        ScaledSleep(64000)
+        Sleep(100)
+        Click(1075,657)             ; Close Boat 1
+        Sleep(100)
+
+
+        WaitForRound(4)             ; Round 14
+
+        Click(1075,657)             ; Open Boat 1
+        Sleep(100)
         Send("{vkBC}")              ; Boat 1 310
-        ScaledSleep(8500)
+        Sleep(100)
+        Click(1075,657)             ; Close Boat 1
+        Sleep(100)
+
+
+        WaitForRound(5)             ; Round 15
+
+        Click(1075,657)             ; Open Boat 1
+        Sleep(100)
         Send("{vkBE}")              ; Boat 1 320
-        ScaledSleep(7000)
+        Sleep(100)
+        Click(1075,657)             ; Close Boat 1
+        Sleep(100)
 
-        Send("{vk58}")              ; Sub 1
-        ScaledSleep(100)
+        Send("{vk58}")              ; Place Sub 1
+        Sleep(100)
         MouseMove(1134,457)
-        ScaledSleep(100)
-        Click("1134,457")
-        ScaledSleep(100)
+        Sleep(100)
+        Click(1134,457)
+        Sleep(100)
 
-        Click("1134,457")           ; Click on Sub 1
-        ScaledSleep(5000)
+        Click(1134,457)             ; Open Sub 1
+        Sleep(100)
         Send("{vkBC}")              ; Sub 1 100
-        ScaledSleep(4000)
+        Sleep(100)
+        Click(1134,457)             ; Open Sub 1
+        Sleep(100)
+
+
+        WaitForRound(6)             ; Round 16
+
+        Click(1134,457)             ; Open Sub 1
+        Sleep(100)
         Send("{vkBC}")              ; Sub 1 200
-        ScaledSleep(4500)
+        Sleep(100)
+        Click(1134,457)             ; Open Sub 1
+        Sleep(100)
+
+
+        WaitForRound(7)             ; Round 17
+
+        Click(1134,457)             ; Open Sub 1
+        Sleep(100)
         Send("{vkBC}")              ; Sub 1 300
-        ScaledSleep(12500)
+        Sleep(100)
+        Click(1134,457)             ; Open Sub 1
+        Sleep(100)
 
-        Send("{vk43}")              ; Boat 2
-        ScaledSleep(100)
+
+        WaitForRound(8)             ; Round 18
+
+        Send("{vk43}")              ; Place Boat 2
+        Sleep(100)
         MouseMove(1057,239)
-        ScaledSleep(100)
-        Click("1057,239")
-        ScaledSleep(100)
+        Sleep(100)
+        Click(1057,239)
+        Sleep(100)
 
-        Click("1057,239")           ; Click Boap 2
-        ScaledSleep(4700)
+
+        WaitForRound(0)             ; Round 20
+
+        Click(1057,239)             ; Open Boat 2
+        Sleep(100)
         Send("{vkBE}")              ; Boat 2 010
-        ScaledSleep(2000)
+        Sleep(100)
         Send("{vkBC}")              ; Boat 2 110
-        ScaledSleep(2000)
+        Sleep(100)
+        Click(1057,239)             ; Close Boat 2
+        Sleep(100)
+
+
+        WaitForRound(2)             ; Round 22
+
+        Click(1057,239)             ; Open Boat 2
+        Sleep(100)
         Send("{vkBC}")              ; Boat 2 210
-        ScaledSleep(4500)
+        Sleep(100)
         Send("{vkBE}")              ; Boat 2 220
-        ScaledSleep(21000)
+        Sleep(100)
+        Click(1057,239)             ; Close Boat 2
+        Sleep(100)
+
+
+        WaitForRound(7)             ; Round 27
+
+        Click(1057,239)             ; Open Boat 2
+        Sleep(100)
         Send("{vkBC}")              ; Boat 2 320
-        ScaledSleep(4000)
+        Sleep(100)
+        Click(1057,239)             ; Close Boat 2
+        Sleep(100)
 
-        Send("{vk58}")              ; Sub 2
-        ScaledSleep(100)
+
+        WaitForRound(8)             ; Round 28
+
+        Send("{vk58}")              ; Place Sub 2
+        Sleep(100)
         MouseMove(1132,1002)
-        ScaledSleep(100)
-        Click("1132,1002")
-        ScaledSleep(100)
+        Sleep(100)
+        Click(1132,1002)
+        Sleep(100)
 
-        Click("1132,1002")          ; Click Sub 2
-        ScaledSleep(5000)
+        Click(1132,1002)            ; Open Sub 2
+        Sleep(100)
         Send("{vkBC}")              ; Sub 2 100
-        ScaledSleep(2000)
+        Sleep(100)
         Send("{vkBC}")              ; Sub 2 200
-        ScaledSleep(2000)
+        Sleep(100)
         Send("{vkBC}")              ; Sub 2 300
-        ScaledSleep(16500)
-        Send("{vkBC}")              ; Sub 2 400
-        ScaledSleep(6500)
-        Send("{sc035}")             ; Sub 2 401
-        ScaledSleep(12000)
-        Send("{sc035}")             ; Sub 2 402
-        ScaledSleep(22000)
+        Sleep(100)
+        Click(1132,1002)            ; Close Sub 2
+        Sleep(100)
 
-        Click("1134,457")           ; Click Sub 1
-        ScaledSleep(100)
+
+        WaitForRound(2)             ; Round 32
+
+        Click(1132,1002)            ; Open Sub 2
+        Sleep(100)
+        Send("{vkBC}")              ; Sub 2 400
+        Sleep(100)
+        Click(1132,1002)            ; Close Sub 2
+        Sleep(100)
+
+
+        WaitForRound(4)             ; Round 34
+
+        Click(1132,1002)            ; Open Sub 2
+        Sleep(100)
+        Send("{sc035}")             ; Sub 2 401
+        Sleep(100)
+        Send("{sc035}")             ; Sub 2 402
+        Sleep(100)
+        Click(1132,1002)            ; Close Sub 2
+        Sleep(100)
+
+
+        WaitForRound(6)             ; Round 36
+
+        Click(1134,457)             ; Open Sub 1
+        Sleep(100)
         Send("{vkBC}")              ; Sub 1 400
-        ScaledSleep(2000)
+        Sleep(100)
         Send("{sc035}")             ; Sub 1 401
-        ScaledSleep(6000)
-        Send("{sc035}")             ; Sub 1 402
+        Sleep(100)
+        Click(1134,457)             ; Close Sub 1
+        Sleep(100)
     }
 }

@@ -4,7 +4,7 @@ defeats := 0
 maps := Map(
     "sanc", sancGameScript,
     "ravine", ravineGameScript,
-    "flooded", floodedgameScript,
+    "flooded", FloodedValleyGameScript,
     "infernal", infernalGameScript,
     "bloody_puddles", BloodyPuddlesGameScript,
     "workshop", workshopGameScript,
