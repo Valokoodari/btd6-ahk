@@ -126,7 +126,7 @@ SelectGameScript() {
     map := GetMapName()
     maps[map]()
     LogMsg("Waiting for the game to end...")
-    CheckVictoryOrDefeat()
+    WaitForVictoryOrDefeat()
 }
 
 OpenBoxes() {
@@ -137,24 +137,5 @@ OpenBoxes() {
             Click(coords)
             Sleep(1000)
         }
-    }
-}
-
-CheckVictoryOrDefeat() {
-    Loop {
-        if SearchImage("states\victory") {
-            ClickImage("buttons\next")
-            ClickImage("buttons\home_victory", 2000)
-            global victories := victories + 1
-            LogMsg("Victory")
-            break
-        }
-        if SearchImage("states\defeat") {
-            ClickImage("buttons\home_defeat", 2000)
-            global defeats := defeats + 1
-            LogMsg("Defeat")
-            break
-        }
-        Sleep(1000)
     }
 }
