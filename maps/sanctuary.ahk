@@ -13,8 +13,8 @@ SanctuaryGameScript() {
     Upgrade(689,265,1,0,1)      ; Spike: 000 -> 101
 
     WaitForRound(8,200)         ; Round 8
-    Upgrade(689,265,0,0,1)      ; Spike: 101 -> 102
-    Targeting(689,265,3)        ; Spike: Normal -> Smart
+    Upgrade(837,283,0,0,1)      ; Spike: 101 -> 102
+    Targeting(837,283,3)        ; Spike: Normal -> Smart
 
     WaitForRound(9,200)         ; Round 9
     Place("sniper",911,960)     ; Place Sniper
@@ -35,4 +35,7 @@ SanctuaryGameScript() {
 
     WaitForRound(6,200)         ; Round 16
     Upgrade(1235,427,0,1,0)     ; Wizard 2: 010 -> 020
+
+    WaitForRound(0,200)         ; Round 20
+    Upgrade(837,283,1,0,1)      ; Spike: 102 -> 203
 }
