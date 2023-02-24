@@ -101,7 +101,10 @@ CheckOwerwrite() {
 SelectExpertMap() {
     CheckHero()
     FindExpertMap()
-    ClickImage("buttons\easy")
+    If !ClickImage("buttons\easy") {
+        LogMsg("Something went wrong in map selection")
+        return
+    }
     ClickImage("buttons\standard")
     CheckOwerwrite()
     Sleep(4000)
