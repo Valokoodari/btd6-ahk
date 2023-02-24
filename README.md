@@ -21,16 +21,20 @@ script manually.
 ## Requirements:
 - _Full monkey knowledge (the script has only been tested with all knowledge on)_  
 - Game running **fullscreen** on a **1920x1080** display  
+- **Normal or small cursor** selected  
 - Game language set to **English**  
-- _All expert maps unlocked (?)_  
 - **Default game hotkeys**  
-- **Benjamin unlocked**
+- **Dark Castle** unlocked  
+- **Benjamin** unlocked
 - [AutoHotkey v2.0](https://www.autohotkey.com/)
 
 > **Note**  
 > You can change the display resolution to 1920x1080 in **_Windows settings_** if you have a higher
 > resolution display. Setting the resolution in the game settings is not enough altough that must
 > also be set correctly.
+
+> **Note**  
+> To use optimal map selection in events, you must have all expert maps unlocked!  
 
 ## Usage
 For optimal results set the `eventType` in `config.ini` according to the current event (`none`, 
