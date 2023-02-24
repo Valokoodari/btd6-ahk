@@ -29,7 +29,4 @@ mapNames := Map(
     "flooded_valley", "Flooded Valley",
 )
 
-states := ["home", "map_selection", "in_game"]
-if eventType != "none" {
-    states.Push("collect", "event")
-}
+states := ["home", "map_selection", "in_game", "collect", "event"]
