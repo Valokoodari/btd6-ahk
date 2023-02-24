@@ -73,15 +73,15 @@ CheckHero() {
 FindExpertMap() {
     while true {
         ClickImage("buttons\expert")
-        if eventType == "none" {
-            if ClickImage("buttons\dark_castle") {
-                return
-            }
-        } else {
+        if FileExist("img\events\" eventType) {
             for tileNumber in [0, 1, 2, 3, 4, 5] {
                 if ClickImage("events\" eventType "\" tileNumber) {
                     return
                 }
+            }
+        } else {
+            if ClickImage("buttons\dark_castle") {
+                return
             }
         }
     }
