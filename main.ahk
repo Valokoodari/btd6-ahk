@@ -129,7 +129,7 @@ SelectGameScript() {
 OpenBoxes() {
     ClickImage("buttons\collect")
     LogMsg("Opening boxes")
-    while !SearchImage("events\" eventType "\event") {
+    while !SearchImage("states\event") {
         for coords in ["683,535","900,550","897,535","900,550","1190,535","900,550","950,930"] {
             Click(coords)
             Sleep(1000)
