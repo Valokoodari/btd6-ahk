@@ -33,6 +33,9 @@ script manually.
 > also be set correctly.
 
 ## Usage
+For optimal results set the `eventType` in `config.ini` according to the current event (`none`, 
+`easter`, `fireworks`, `halloween`, `holiday`, `totem`).  
+
 Start the script on the home menu, stage selection menu, collection menu, or in an expert
 easy/standard map, using the hotkey <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> +
 <kbd>J</kbd>.  
