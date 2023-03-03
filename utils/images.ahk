@@ -16,8 +16,8 @@ ClickImage(imageName, delay := 1000) {
 
 GetMapName() {
     while true {
-        for map, _ in maps {
-            if SearchImage("maps\" map) {
+        for map, cs in mapAreas {
+            if SearchImage("maps\" map,, cs[1], cs[2], cs[1]+25, cs[2]+25) {
                 LogMap(map)
                 return map
             }
