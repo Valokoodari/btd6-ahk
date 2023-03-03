@@ -36,7 +36,9 @@ script manually.
 > **Note**  
 > To use optimal map selection in events, you must have all expert maps unlocked!  
 
-#### Required tower upgrades:
+<details>
+<summary><h4>Required tower upgrades</h4></summary>
+
 - Dart Monkey 024
 - Tack Shooter 402
 - Sniper Monkey 204
@@ -50,6 +52,8 @@ script manually.
 
 > **Note**  
 > **Dark Castle**: Dart 024, Wizard 032, Spike 024, Sub 204
+
+</details>
 
 ## Usage
 For optimal results set the `eventType` in `config.ini` according to the current event (`none`, 
