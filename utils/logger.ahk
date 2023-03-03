@@ -1,5 +1,5 @@
 ClearLogFile() {
-    if logging && logFile == "logs\log.txt" {
+    if logging && FileExist(logFile) {
         FileRecycle(logFile)
     }
 }
