@@ -110,18 +110,6 @@ SelectExpertMap() {
     Sleep(4000)
 }
 
-GetMapName() {
-    while true {
-        for map, _ in maps {
-            if SearchImage("maps\" map) {
-                LogMap(map)
-                return map
-            }
-        }
-        LogMsg("Map not recognized")
-    }
-}
-
 SelectGameScript() {
     map := GetMapName()
     maps[map]()

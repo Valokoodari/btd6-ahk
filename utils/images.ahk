@@ -13,3 +13,15 @@ ClickImage(imageName, delay := 1000) {
         return true
     }
 }
+
+GetMapName() {
+    while true {
+        for map, _ in maps {
+            if SearchImage("maps\" map) {
+                LogMap(map)
+                return map
+            }
+        }
+        LogMsg("Map not recognized")
+    }
+}
