@@ -3,7 +3,7 @@ CheckLevelUp() {
         LogMsg("Level up detected")
         Loop 2 {
             Click(6,4)
-            Sleep(100)
+            Sleep(1000)
         }
     }
 }
