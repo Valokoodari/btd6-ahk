@@ -31,7 +31,7 @@ Start() {
                 ClickImage("buttons\play_collect")
         }
     }
-    LogMsg("Script stopped because the game windows wasn't active")
+    LogMsg("Script stopped because the game window wasn't active")
 }
 
 CheckMenuState() {
