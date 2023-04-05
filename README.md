@@ -8,6 +8,8 @@ The most likely reason for the script to break and get stuck is a level up. In m
 should only result as a single defeat but you may need to finish the current game and restart the
 script manually.
 
+Testing of the script is (hopefully) always live at [Twitch](https://www.twitch.tv/valobotti)
+
 > **Warning**  
 > Read the [Ninja Kiwi Terms of Service](https://ninjakiwi.com/terms) before using this script
 > **_at your own risk!_**  
