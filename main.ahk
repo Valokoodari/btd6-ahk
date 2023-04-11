@@ -6,7 +6,7 @@
 #Include maps\_include.ahk
 
 ^!+j:: {
-    ClearLogFile()
+    ;ClearLogFile()
     LogMsg("Script started")
     Start()
 }
@@ -99,18 +99,19 @@ CheckOwerwrite() {
 }
 
 SelectExpertMap() {
-    CheckHero()
+    ; CheckHero()
     FindExpertMap()
     If !ClickImage("buttons\easy") {
         LogMsg("Something went wrong in map selection")
         return
     }
-    ClickImage("buttons\standard")
+    ClickImage("buttons\deflation")
     CheckOwerwrite()
     Sleep(4000)
 }
 
 SelectGameScript() {
+    ClickImage("buttons\deflation_ok")
     map := GetMapName()
     maps[map]()
     LogMsg("Waiting for the game to end...")
