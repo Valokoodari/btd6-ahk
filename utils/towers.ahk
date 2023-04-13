@@ -7,10 +7,10 @@ towers := Map(
     "boat", "{vk43}",
     "ace", "{vk56}",
     "wizard", "{vk41}",
-    "ninja", "{vk44}",
+    "druid", "{vk47}",
     "alch", "{vk46}",
     "spike", "{vk4A}"
-)
+) 
 
 Place(tower, x, y) {
     Send(towers[tower])
