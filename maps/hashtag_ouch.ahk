@@ -1,47 +1,43 @@
 HashtagOuchGameScript() {
     StartGame()                 ; Round 1
-    Place("dart",531,310)       ; Place Dart
+    Place("dart",555,545)       ; Place Dart 1
+    Place("sub",980,540)        ; Place Sub
+    Place("dart",1135,545)      ; Place Dart 2 
 
-    WaitForRound(2)             ; Round 2
-    Place("hero",1273,251)      ; Place Hero (Ben)
-
-    WaitForRound(3)             ; Round 3
-    Place("boat",840,571)       ; Place Boat
-
-    WaitForRound(5)             ; Round 5
-    Upgrade(840,571,0,1,0)      ; Boat: 000 -> 010
+    WaitForRound(4)             ; Round 4
+    Upgrade(980,540,0,0,1)      ; Sub: 000 -> 001
 
     WaitForRound(7)             ; Round 7
-    Upgrade(840,571,2,0,0)      ; Boat: 010 -> 210
+    Upgrade(980,540,2,0,0)      ; Sub: 001 -> 201
 
-    WaitForRound(4)             ; Round 14
-    Upgrade(840,571,1,1,0)      ; Boat: 210 -> 320
+    WaitForRound(1)             ; Round 11
+    Upgrade(980,540,0,0,1)      ; Sub: 201 -> 202
 
-    WaitForRound(6)             ; Round 16
-    Upgrade(531,310,0,0,3)      ; Dart: 000 -> 003
+    WaitForRound(5)             ; Round 15
+    Upgrade(980,540,0,0,1)      ; Sub: 202 -> 203
 
-    WaitForRound(0)             ; Round 20
-    Upgrade(531,310,0,2,1)      ; Dart: 003 -> 024
+    WaitForRound(9)             ; Round 19
+    Upgrade(555,545,0,2,3)      ; Dart 1: 000 -> 023
 
-    WaitForRound(2)             ; Round 22
-    Place("ninja",995,187)      ; Place Ninja 1
-    Upgrade(995,187,2,0,0)      ; Ninja 1: 000 -> 200
+    WaitForRound(3)             ; Round 23
+    Upgrade(1135,545,0,2,3)     ; Dart 2: 000 -> 023
 
     WaitForRound(4)             ; Round 24
-    Upgrade(995,187,1,0,1)      ; Ninja 1: 200 -> 301
+    Place("sniper",670,90)      ; Place Sniper
+    Targeting(670,90,3)         ; Sniper: First -> Strong
 
     WaitForRound(8)             ; Round 28
-    Upgrade(995,187,1,0,0)      ; Ninja 1: 301 -> 401
-
-    WaitForRound(9)             ; Round 29
-    Place("ninja",528,542)      ; Place Ninja 2
+    Upgrade(670,90,1,0,2)       ; Sniper: 000 -> 102
 
     WaitForRound(0)             ; Round 30
-    Upgrade(528,542,2,0,1)      ; Ninja 2: 000 -> 201
-
-    WaitForRound(2)             ; Round 32
-    Upgrade(528,542,1,0,0)      ; Ninja 2: 201 -> 301
+    Upgrade(670,90,1,0,0)       ; Sniper: 102 -> 202
 
     WaitForRound(5)             ; Round 35
-    Upgrade(528,542,1,0,0)      ; Ninja 2: 301 -> 401
+    Upgrade(670,90,1,0,0)       ; Sniper: 202 -> 302
+
+    WaitForRound(7)             ; Round 37
+    Upgrade(555,545,0,0,1)      ; Dart 1: 023 -> 024
+
+    WaitForRound(8)             ; Round 38
+    Upgrade(1135,545,0,0,1)     ; Dart 2: 023 -> 024
 }
