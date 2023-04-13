@@ -8,8 +8,6 @@ The most likely reason for the script to break and get stuck is a level up. In m
 should only result as a single defeat but you may need to finish the current game and restart the
 script manually.
 
-Testing of the script is (hopefully) always live at [Twitch](https://www.twitch.tv/valobotti)
-
 > **Warning**  
 > Read the [Ninja Kiwi Terms of Service](https://ninjakiwi.com/terms) before using this script
 > **_at your own risk!_**  
@@ -21,13 +19,13 @@ Testing of the script is (hopefully) always live at [Twitch](https://www.twitch.
 > Ninja Kiwi account, ––"_
 
 ## Requirements:
-- _Full monkey knowledge (the script has only been tested with all knowledge on)_  
+- _ZERO monkey knowledge (the script has been tested with 0 knowledge on)_  
 - Game running **fullscreen** on a **1920x1080** display  
 - **Normal or small cursor** selected  
 - Game language set to **English**  
 - **Default game hotkeys**  
 - **Dark Castle** unlocked  
-- **Benjamin** unlocked
+- No hero, no MK, all units up to tier 3 (except dart monkey x-x-4)
 - [AutoHotkey v2.0](https://www.autohotkey.com/)
 
 > **Note**  
@@ -42,18 +40,15 @@ Testing of the script is (hopefully) always live at [Twitch](https://www.twitch.
 <summary><h4>Required tower upgrades</h4></summary>
 
 - Dart Monkey 024
-- Tack Shooter 402
-- Sniper Monkey 204
-- Monkey Sub 404
-- Monkey Buccaneer 322
-- Monkey Ace 223
+- Sniper Monkey 302
+- Monkey Sub 223
+- Monkey Buccaneer 032
 - Wizard Monkey 032
-- Ninja Monkey 401
-- Alchemist 401
-- Spike Factory 224
+- Druid 130
+- Spike Factory 023
 
 > **Note**  
-> **Dark Castle**: Dart 024, Wizard 032, Spike 024, Sub 204
+> **Dark Castle**: Dart 023, Wizard 032, Spike 023, Sub 203
 
 </details>
 
@@ -62,8 +57,6 @@ For optimal results set the `eventType` in `config.ini` according to the current
 `easter`, `fireworks`, `halloween`, `holiday`, `totem`).  
 
 Start the script on the home menu, stage selection menu, collection menu, or in an expert
-easy/standard map, using the hotkey <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> +
-<kbd>J</kbd>.  
+easy/standard map, using the hotkey <kbd>Ctrl</kbd> + <kbd>Z</kbd>.  
 
-The script can be stopped (and reloaded) by pressing <kbd>Ctrl</kbd> + <kbd>Alt</kbd> +
-<kbd>Shift</kbd> + <kbd>P</kbd>.  
+The script can be stopped (and reloaded) by pressing <kbd>Ctrl</kbd> + <kbd>X</kbd>.  
