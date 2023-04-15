@@ -4,7 +4,7 @@ BloodyPuddlesGameScript() {
     Place("sub",1180,190)       ; Place Sub
 
     WaitForRound(3)             ; Round 3
-    Place("druid",666,333)	; Place Druid
+    Place("druid",666,333)      ; Place Druid
 
     WaitForRound(4)             ; Round 4
     Upgrade(1180,190,0,0,1)     ; Sub: 000 -> 001

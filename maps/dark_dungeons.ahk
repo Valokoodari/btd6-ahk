@@ -1,7 +1,7 @@
 DarkDungeonsGameScript() {
     StartGame()                 ; Round 1
     Place("dart",260,905)       ; Place Dart 1
-    Place("druid",780,1000)	; Place Druid 1
+    Place("druid",780,1000)     ; Place Druid 1
 
     WaitForRound(2)             ; Round 2
     Place("dart",1565,865)      ; Place Dart 2
@@ -28,7 +28,7 @@ DarkDungeonsGameScript() {
     Upgrade(780,1000,1,2,0)     ; Druid 1: 010 -> 130
 
     WaitForRound(0)             ; Round 20
-    Place("druid",790,910)	; Place Druid 2
+    Place("druid",790,910)      ; Place Druid 2
 
     WaitForRound(7)             ; Round 27
     Upgrade(790,910,1,3,0)      ; Druid 2: 000 -> 130

@@ -10,7 +10,7 @@ towers := Map(
     "druid", "{vk47}",
     "alch", "{vk46}",
     "spike", "{vk4A}"
-) 
+)
 
 Place(tower, x, y) {
     Send(towers[tower])

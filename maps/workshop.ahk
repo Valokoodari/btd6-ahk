@@ -1,7 +1,7 @@
 WorkshopGameScript() {
     StartGame()                 ; Round 1
     Place("dart",1020,500)      ; Place Dart
-    Place("druid",930,495)	; Place Druid
+    Place("druid",930,495)      ; Place Druid
 
     WaitForRound(6)             ; Round 6
     Place("spike",1600,630)     ; Place Spike

@@ -2,7 +2,7 @@ HashtagOuchGameScript() {
     StartGame()                 ; Round 1
     Place("dart",555,545)       ; Place Dart 1
     Place("sub",980,540)        ; Place Sub
-    Place("dart",1135,545)      ; Place Dart 2 
+    Place("dart",1135,545)      ; Place Dart 2
 
     WaitForRound(4)             ; Round 4
     Upgrade(980,540,0,0,1)      ; Sub: 000 -> 001

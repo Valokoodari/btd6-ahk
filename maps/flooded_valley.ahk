@@ -34,4 +34,4 @@ FloodedValleyGameScript() {
 
     WaitForRound(6)             ; Round 36
     Upgrade(250,760,1,0,0)      ; Sniper: 202 -> 302
-} 
+}

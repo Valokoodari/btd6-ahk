@@ -5,7 +5,7 @@ QuadGameScript() {
     Place("sniper",830,840)     ; Place Sniper
 
     WaitForRound(4)             ; Round 4
-    Place("druid",790,260)	; Place Druid
+    Place("druid",790,260)      ; Place Druid
 
     WaitForRound(7)             ; Round 7
     Upgrade(790,260,1,1,0)      ; Druid: 000 -> 110

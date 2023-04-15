@@ -1,10 +1,10 @@
 RavineGameScript() {
     StartGame()                 ; Round 1
     Place("dart",204,494)       ; Place Dart
-    Place("druid",840,980)	; Place Druid 1
+    Place("druid",840,980)      ; Place Druid 1
 
     WaitForRound(4)             ; Round 4
-    Place("druid",700,120)	; Place Druid 2
+    Place("druid",700,120)      ; Place Druid 2
 
     WaitForRound(8)             ; Round 8
     Place("spike",740,810)      ; Place Spike

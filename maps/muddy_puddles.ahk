@@ -25,12 +25,12 @@ MuddyPuddlesGameScript() {
     Upgrade(1160,280,0,2,3)     ; Dart 2: 000 -> 023
 
     WaitForRound(8)             ; Round 28
-    Place("sniper",1340,930)	; Place Sniper
+    Place("sniper",1340,930)    ; Place Sniper
     Upgrade(1340,930,1,0,2)     ; Sniper: 000 -> 102
     Targeting(1340,930,3)       ; Sniper: Normal -> Strong
 
     WaitForRound(3)             ; Round 33
-    Place("druid",520,800)	; Place Druid
+    Place("druid",520,800)      ; Place Druid
     Upgrade(520,800,1,3,0)      ; Druid: 000 -> 130
 
     WaitForRound(5)             ; Round 35

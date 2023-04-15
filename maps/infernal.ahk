@@ -10,7 +10,7 @@ InfernalGameScript() {
     Upgrade(833,693,0,1,0)      ; Dart: 013 -> 023
 
     WaitForRound(7)             ; Round 7
-    Place("druid",840,790)	; Place Druid
+    Place("druid",840,790)      ; Place Druid
 
     WaitForRound(4)             ; Round 14
     Upgrade(840,790,0,3,0)      ; Druid: 000 -> 030
