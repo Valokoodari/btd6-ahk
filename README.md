@@ -38,15 +38,15 @@ script manually.
 <summary><h4>Required tower upgrades</h4></summary>
 
 - Dart Monkey 024
-- Sniper Monkey 302
+- Sniper Monkey 322
 - Monkey Sub 223
 - Monkey Buccaneer 032
 - Wizard Monkey 032
 - Druid 130
-- Spike Factory 023
+- Spike Factory 003
 
 > **Note**  
-> **Dark Castle**: Dart 023, Wizard 032, Spike 023, Sub 203
+> **Dark Castle**: Dart 023, Wizard 032, Spike 003, Sub 202
 
 </details>
 
