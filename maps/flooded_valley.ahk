@@ -1,19 +1,19 @@
 FloodedValleyGameScript() {
     StartGame()                 ; Round 1
-    Place("sub",1000,770)       ; Place Sub 1
+    Place("sub",1000,770)       ; Place Sub
 
     WaitForRound(2)             ; Round 2
-    Upgrade(1000,770,0,0,1)     ; Sub 1: 000 -> 001
+    Upgrade(1000,770,0,0,1)     ; Sub: 000 -> 001
 
     WaitForRound(4)             ; Round 4
-    Upgrade(1000,770,0,1,0)     ; Sub 1: 001 -> 011
-    Targeting(1000,770,3)       ; Sub 1: First -> Strong
+    Upgrade(1000,770,0,1,0)     ; Sub: 001 -> 011
+    Targeting(1000,770,3)       ; Sub: First -> Strong
 
     WaitForRound(9)             ; Round 9
-    Upgrade(1000,770,0,0,1)     ; Sub 1: 011 -> 012
+    Upgrade(1000,770,0,0,1)     ; Sub: 011 -> 012
 
     WaitForRound(4)             ; Round 14
-    Upgrade(1000,770,0,1,1)     ; Sub 1: 012 -> 023
+    Upgrade(1000,770,0,1,1)     ; Sub: 012 -> 023
 
     WaitForRound(6)             ; Round 16
     Place("boat",1060,670)      ; Place Boat
