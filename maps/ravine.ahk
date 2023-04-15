@@ -28,7 +28,7 @@ RavineGameScript() {
     WaitForRound(2)             ; Round 32
     Place("sniper",1030,185)    ; Place Sniper
     Upgrade(1030,185,1,0,2)     ; Sniper: 000 -> 102
-    Targeting(1030,185,3)        ; Sniper: Normal -> Strong
+    Targeting(1030,185,3)       ; Sniper: Normal -> Strong
 
     WaitForRound(5)             ; Round 35
     Upgrade(1030,185,1,0,0)     ; Sniper: 102 -> 202
