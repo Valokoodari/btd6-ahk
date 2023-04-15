@@ -19,13 +19,11 @@ script manually.
 > Ninja Kiwi account, ––"_
 
 ## Requirements:
-- _ZERO monkey knowledge (the script has been tested with 0 knowledge on)_  
 - Game running **fullscreen** on a **1920x1080** display  
 - **Normal or small cursor** selected  
 - Game language set to **English**  
 - **Default game hotkeys**  
 - **Dark Castle** unlocked  
-- No hero, no MK, all units up to tier 3 (except dart monkey x-x-4)
 - [AutoHotkey v2.0](https://www.autohotkey.com/)
 
 > **Note**  
@@ -57,6 +55,8 @@ For optimal results set the `eventType` in `config.ini` according to the current
 `easter`, `fireworks`, `halloween`, `holiday`, `totem`).  
 
 Start the script on the home menu, stage selection menu, collection menu, or in an expert
-easy/standard map, using the hotkey <kbd>Ctrl</kbd> + <kbd>Z</kbd>.  
+easy/standard map, using the hotkey <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> +
+<kbd>J</kbd>.  
 
-The script can be stopped (and reloaded) by pressing <kbd>Ctrl</kbd> + <kbd>X</kbd>.  
+The script can be stopped (and reloaded) by pressing <kbd>Ctrl</kbd> + <kbd>Alt</kbd> +
+<kbd>Shift</kbd> + <kbd>P</kbd>.  
