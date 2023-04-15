@@ -6,9 +6,6 @@ BloodyPuddlesGameScript() {
     WaitForRound(3)             ; Round 3
     Place("druid",666,333)      ; Place Druid
 
-    WaitForRound(4)             ; Round 4
-    Upgrade(1180,190,0,0,1)     ; Sub: 000 -> 001
-
     WaitForRound(6)             ; Round 6
     Upgrade(1180,190,2,0,0)     ; Sub: 000 -> 200
 
@@ -25,10 +22,10 @@ BloodyPuddlesGameScript() {
     Upgrade(666,333,1,3,0)      ; Druid: 000 -> 130
 
     WaitForRound(4)             ; Round 24
-    Upgrade(385,290,0,2,2)      ; Dart: 000 -> 022
+    Upgrade(385,290,0,2,2)      ; Dart 1: 000 -> 022
 
     WaitForRound(6)             ; Round 26
-    Upgrade(385,290,0,0,1)      ; Dart: 022 -> 023
+    Upgrade(385,290,0,0,1)      ; Dart 1: 022 -> 023
 
     WaitForRound(9)             ; Round 29
     Place("dart",1245,820)      ; Place Dart 2
@@ -43,7 +40,7 @@ BloodyPuddlesGameScript() {
     Upgrade(700,75,1,0,0)       ; Sniper: 102 -> 202
 
     WaitForRound(7)             ; Round 37
-    Upgrade(700,75,1,0,0)       ; Dart: 202 -> 302
+    Upgrade(700,75,1,0,0)       ; Sniper: 202 -> 302
 
     WaitForRound(8)             ; Round 38
     Place("boat",510,710)       ; Place Boat
