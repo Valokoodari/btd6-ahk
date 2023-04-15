@@ -5,13 +5,13 @@
 #Include utils\_include.ahk
 #Include maps\_include.ahk
 
-^z:: {
+^!+j:: {
     ClearLogFile()
     LogMsg("Script started")
     Start()
 }
 
-^x:: {
+^!+p:: {
     LogMsg("Script stopped")
     Reload()
 }
@@ -42,7 +42,7 @@ CheckMenuState() {
         }
     }
     LogMsg("Menu state not recognized")
-    Sleep(2000)
+    Sleep(10000)
 }
 
 CheckHero() {
@@ -99,7 +99,7 @@ CheckOwerwrite() {
 }
 
 SelectExpertMap() {
-   ; CheckHero()
+    CheckHero()
     FindExpertMap()
     If !ClickImage("buttons\easy") {
         LogMsg("Something went wrong in map selection")
@@ -107,7 +107,7 @@ SelectExpertMap() {
     }
     ClickImage("buttons\standard")
     CheckOwerwrite()
-    Sleep(2000)
+    Sleep(4000)
 }
 
 SelectGameScript() {
