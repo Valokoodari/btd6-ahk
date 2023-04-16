@@ -1,55 +1,38 @@
 DarkCastleGameScript() {
     StartGame()                 ; Round 1
-    Place("dart",547,477)       ; Place Dart
-
-    WaitForRound(2)             ; Round 2
-    Place("hero",1446,247)      ; Place Hero (Ben)
+    Place("dart",580,490)       ; Place Dart
+    Place("wizard",1020,440)    ; Place Wizard
 
     WaitForRound(3)             ; Round 3
-    Place("wizard",1001,443)    ; Place Wizard
+    Place("sub",1130,430)       ; Place Sub
+    Targeting(1130,430,3)       ; Sub: Normal -> Strong
 
     WaitForRound(4)             ; Round 4
-    Upgrade(1001,443,0,1,0)     ; Wizard: 000 -> 010
-
-    WaitForRound(7)             ; Round 7
-    Upgrade(1001,443,0,1,0)     ; Wizard: 010 -> 020
+    Upgrade(1020,440,0,1,0)     ; Wizard: 000 -> 010
 
     WaitForRound(9)             ; Round 9
-    Place("spike",1521,550)     ; Place Spike
+    Upgrade(1020,440,0,1,0)     ; Wizard: 010 -> 020
 
-    WaitForRound(0)             ; Round 10
-    Upgrade(1521,550,0,1,0)     ; Spike: 000 -> 010
+    WaitForRound(1)             ; Round 11
+    Upgrade(1020,440,0,0,2)     ; Wizard: 020 -> 022
 
-    WaitForRound(2)             ; Round 12
-    Upgrade(1521,550,0,1,1)     ; Spike: 010 -> 021
+    WaitForRound(4)             ; Round 14
+    Upgrade(1130,430,2,0,0)     ; Sub: 000 -> 200
 
-    WaitForRound(3)             ; Round 13
-    Upgrade(1521,550,0,0,1)     ; Spike: 021 -> 022
+    WaitForRound(5)             ; Round 15
+    Upgrade(1130,430,0,0,1)     ; Sub: 200 -> 201
 
-    WaitForRound(6)             ; Round 16
-    Upgrade(1521,550,0,0,1)     ; Spike: 022 -> 023
-
-    WaitForRound(2)             ; Round 22
-    Upgrade(1521,550,0,0,1)     ; Spike: 023 -> 024
-
-    WaitForRound(3)             ; Round 23
-    Upgrade(1001,443,0,0,2)     ; Wizard: 020 -> 022
+    WaitForRound(9)             ; Round 19
+    Upgrade(1130,430,0,0,1)     ; Sub: 201 -> 202
 
     WaitForRound(8)             ; Round 28
-    Upgrade(1001,443,0,1,0)     ; Wizard: 022 -> 032
-    Place("sub",1103,420)       ; Place Sub
-    Upgrade(1103,420,1,0,0)     ; Sub: 000 -> 100
+    Upgrade(1020,440,0,1,0)     ; Wizard: 022 -> 032
 
-    WaitForRound(1)             ; Round 31
-    Upgrade(1103,420,1,0,2)     ; Sub: 100 -> 202
+    WaitForRound(0)             ; Round 30
+    Upgrade(580,490,0,2,3)      ; Dart: 000 -> 023
 
-    WaitForRound(3)             ; Round 33
-    Upgrade(1103,420,0,0,1)     ; Sub: 202 -> 203
-
-    WaitForRound(6)             ; Round 36
-    Upgrade(1103,420,0,0,1)     ; Sub: 203 -> 204
-    Upgrade(547,477,0,0,3)      ; Dart: 000 -> 003
-
-    WaitForRound(8)             ; Round 38
-    Upgrade(547,477,0,2,1)      ; Dart: 003 -> 024
+    WaitForRound(5)             ; Round 35
+    Place("spike",1520,560)     ; Place Spike
+    Upgrade(1520,560,0,0,3)     ; Spike: 000 -> 003
+    Targeting(1520,560,1)       ; Spike: Normal -> Close
 }

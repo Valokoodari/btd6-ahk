@@ -1,41 +1,44 @@
 SanctuaryGameScript() {
     Sleep(100)
-    Place("dart",750,263)       ; Place Dart
+    Place("dart",425,430)       ; Place Dart 1
+    Place("sub",740,185)        ; Place Sub
+    Place("dart",1250,430)      ; Place Dart 2
+
     StartGame()                 ; Round 1
 
     WaitForRound(2,200)         ; Round 2
-    Place("hero",1345,550)      ; Place Hero (Ben)
+    Upgrade(740,210,1,0,0)      ; Sub: 000 -> 100
 
     WaitForRound(5,200)         ; Round 5
-    Place("spike",980,266)      ; Place Spike
-
-    WaitForRound(7,200)         ; Round 7
-    Upgrade(689,265,1,0,1)      ; Spike: 000 -> 101
-
-    WaitForRound(8,200)         ; Round 8
-    Upgrade(837,283,0,0,1)      ; Spike: 101 -> 102
-    Targeting(837,283,3)        ; Spike: Normal -> Smart
-
-    WaitForRound(9,200)         ; Round 9
-    Place("sniper",911,960)     ; Place Sniper
-
-    WaitForRound(0,200)         ; Round 10
-    Upgrade(750,964,1,0,0)      ; Sniper: 000 -> 100
+    Upgrade(875,165,1,0,0)      ; Sub: 100 -> 200
 
     WaitForRound(1,200)         ; Round 11
-    Place("wizard",227,136)     ; Place Wizard 1
-    Upgrade(227,136,0,1,0)      ; Wizard 1: 000 -> 010
+    Upgrade(585,165,0,0,2)      ; Sub: 200 -> 202
 
-    WaitForRound(3,200)         ; Round 13
-    Upgrade(294,361,0,1,0)      ; Wizard 1: 010 -> 020
+    WaitForRound(5,200)         ; Round 15
+    Upgrade(585,165,0,0,1)      ; Sub: 202 -> 203
 
-    WaitForRound(4,200)         ; Round 14
-    Place("wizard",1400,282)    ; Place Wizard 2
-    Upgrade(1400,282,0,1,0)     ; Wizard 2: 000 -> 010
+    WaitForRound(9,200)         ; Round 19
+    Upgrade(240,135,0,2,3)      ; Dart 1: 000 -> 023
 
-    WaitForRound(6,200)         ; Round 16
-    Upgrade(1235,427,0,1,0)     ; Wizard 2: 010 -> 020
+    WaitForRound(3,200)         ; Round 23
+    Upgrade(1375,370,0,2,3)     ; Dart 2: 000 -> 023
 
-    WaitForRound(0,200)         ; Round 20
-    Upgrade(837,283,1,0,1)      ; Spike: 102 -> 203
+    WaitForRound(8,200)         ; Round 28
+    Place("sniper",730,940)     ; Place Sniper
+    Upgrade(730,940,1,0,2)      ; Sniper: 000 -> 102
+    Targeting(730,940,3)        ; Sniper: Normal -> Strong
+
+    WaitForRound(1,200)         ; Round 31
+    Upgrade(900,940,1,0,0)      ; Sniper: 102 -> 202
+
+    WaitForRound(2,200)         ; Round 32
+    Place("spike",830,280)      ; Place Spike
+
+    WaitForRound(5,200)         ; Round 35
+    Upgrade(680,275,0,0,3)      ; Spike: 000 -> 003
+    Targeting(680,275,3)        ; Spike: Normal -> Smart
+
+    WaitForRound(8,200)         ; Round 38
+    Upgrade(730,940,1,0,0)      ; Sniper: 202 -> 302
 }
