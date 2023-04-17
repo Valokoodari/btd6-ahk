@@ -3,11 +3,11 @@ WorkshopGameScript() {
     Place("dart",1020,500)      ; Place Dart
     Place("druid",930,495)      ; Place Druid
 
-    WaitForRound(6)             ; Round 6
-    Place("spike",1600,630)     ; Place Spike
+    WaitForRound(2)             ; Round 2
+    Upgrade(930,495,0,1,0)      ; Druid: 000 -> 010
 
     WaitForRound(8)             ; Round 8
-    Upgrade(930,495,0,1,0)      ; Druid: 000 -> 010
+    Place("spike",1600,630)     ; Place Spike
 
     WaitForRound(4)             ; Round 14
     Upgrade(930,495,1,2,0)      ; Druid: 010 -> 130
