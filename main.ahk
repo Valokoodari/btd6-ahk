@@ -29,6 +29,13 @@ Start() {
                 OpenBoxes()
             case "event":
                 ClickImage("buttons\play_collect")
+            case "victory":
+                ClickImage("buttons\next")
+            case "victory_menu":
+                ClickImage("buttons\home_victory", 2000)
+            case "defeat":
+                ClickImage("buttons\home_defeat", 2000)
+
         }
     }
     LogMsg("Script stopped because the game window wasn't active")

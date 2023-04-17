@@ -43,4 +43,13 @@ mapAreas := Map(
     "flooded_valley", [741,699],
 )
 
-states := ["home", "map_selection", "in_game", "collect", "event"]
+states := [
+    "home",
+    "map_selection",
+    "in_game",
+    "collect",
+    "event",
+    "victory",
+    "victory_menu",
+    "defeat"
+]
