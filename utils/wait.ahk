@@ -25,6 +25,7 @@ WaitForRound(round, delay := 0) {
 WaitForVictoryOrDefeat() {
     Loop {
         if SearchImage("states\victory") {
+            Sleep(500)
             ClickImage("buttons\next")
             ClickImage("buttons\home_victory", 2000)
             global victories := victories + 1
@@ -32,6 +33,7 @@ WaitForVictoryOrDefeat() {
             break
         }
         if SearchImage("states\defeat") {
+            Sleep(500)
             ClickImage("buttons\home_defeat", 2000)
             global defeats := defeats + 1
             LogMsg("Defeat")
