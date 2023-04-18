@@ -24,6 +24,7 @@ script manually.
 - Game language set to **English**  
 - **Default game hotkeys**  
 - **Dark Castle** unlocked  
+- Game hints off
 - [AutoHotkey v2.0](https://www.autohotkey.com/)
 
 > **Note**  
