@@ -5,19 +5,19 @@
 #Include utils\_include.ahk
 #Include maps\_include.ahk
 
-^!+j:: {
+^z:: {
     ;ClearLogFile()
     LogMsg("Script started")
     Start()
 }
 
-^!+p:: {
+^x:: {
     LogMsg("Script stopped")
     Reload()
 }
 
 Start() {
-    while WinActive("BloonsTD6") {
+    while (1=1) { ;WinActive("BloonsTD6") { ;personal issue with windows 10 popup
         switch CheckMenuState() {
             case "home":
                 ClickImage("buttons\play_home")
@@ -29,6 +29,12 @@ Start() {
                 OpenBoxes()
             case "event":
                 ClickImage("buttons\play_collect")
+            case "victory":
+                ClickImage("buttons\next")
+            case "victory_menu":
+                ClickImage("buttons\home_victory", 2000)
+            case "defeat":
+                ClickImage("buttons\home_defeat", 2000)
         }
     }
     LogMsg("Script stopped because the game window wasn't active")
@@ -43,31 +49,6 @@ CheckMenuState() {
     }
     LogMsg("Menu state not recognized")
     Sleep(10000)
-}
-
-CheckHero() {
-    styles := ["normal", "dj", "sushi"]
-
-    for style in styles {
-        if SearchImage("hero\" style) {
-            return
-        }
-    }
-    LogMsg("Benjamin not selected, changing the hero")
-    ClickImage("hero\change")
-
-    changed := false
-    for style in styles {
-        if ClickImage("hero\select_" style) {
-            ClickImage("hero\select")
-            ClickImage("hero\back")
-            changed := true
-        }
-    }
-    if !changed {
-        LogMsg("Couldn't change the hero, stopping the script...")
-        Reload()
-    }
 }
 
 FindExpertMap() {
@@ -99,7 +80,6 @@ CheckOwerwrite() {
 }
 
 SelectExpertMap() {
-    ; CheckHero()
     FindExpertMap()
     If !ClickImage("buttons\easy") {
         LogMsg("Something went wrong in map selection")
