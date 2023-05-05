@@ -3,7 +3,7 @@ expUnit := "L"
 ;----------config.ini-------------
 
 CommenceLevelUp() {
-  if (expUnit = "C" OR expUnit = "X") {
+  if (expUnit = "C" OR expUnit = "X") { ; Check for boat(C) or sub(X)
     LevelUpWho(expUnit, 1170, 710)
     Upgrade(1170, 710, 0, 2, 4)
   }
