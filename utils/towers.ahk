@@ -67,3 +67,12 @@ Upgrade(x, y, topCount, middleCount, bottomCount) {
     Click(x,y)          ; Close Tower
     Sleep(100)
 }
+
+Merge(x, y, sx, sy) {
+    Click(x,y)          ; Open Tower
+    Sleep(500)
+    ClickImage("buttons\merge", 500, "*TransBlack", 420, 420, 1645, 875)
+    Click(sx,sy)
+    Sleep(500)
+    Click(x,y)          ; Close Tower
+}
