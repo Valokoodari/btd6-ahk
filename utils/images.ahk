@@ -6,8 +6,8 @@ SearchImage(imageName, options := "", xMin := 0, yMin := 0, xMax := 1920, yMax :
     }
 }
 
-ClickImage(imageName, delay := 1000) {
-    if SearchImage(imageName) {
+ClickImage(imageName, delay := 1000, options := "", xMin := 0, yMin := 0, xMax := 1920, yMax := 1080) {
+    if SearchImage(imageName, options, xMin, yMin, xMax, yMax) {
         Click(x,y)
         Sleep(delay)
         return true
