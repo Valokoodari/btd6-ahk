@@ -1,3 +1,4 @@
+difficulty := ""
 victories := 0
 defeats := 0
 
@@ -9,7 +10,7 @@ maps := Map(
     "bloody_puddles", BloodyPuddlesGameScript,
     "workshop", WorkshopGameScript,
     "quad", QuadGameScript,
-    "dark_castle", DarkCastleGameScript,
+    "dark_castle", DarkCastleRun,
     "muddy_puddles", MuddyPuddlesGameScript,
     "hashtag_ouch", HashtagOuchGameScript,
     "dark_dungeons", DarkDungeonsGameScript,

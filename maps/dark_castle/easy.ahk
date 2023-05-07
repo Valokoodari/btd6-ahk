@@ -1,4 +1,4 @@
-DarkCastleGameScript() {
+DarkCastleEasy() {
     StartGame()                 ; Round 1
     Place("dart",580,490)       ; Place Dart
     Place("wizard",1020,440)    ; Place Wizard
