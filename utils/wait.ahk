@@ -10,9 +10,13 @@ CheckLevelUp() {
 
 WaitForRound(round, delay := 0) {
     while true {
-        if SearchImage("rounds\" round, "*TransBlack", 1443, 21, 1520, 80) {
-            Sleep(delay)
-            return
+        if not (round = 3) or (round = 3) and not SearchRound(8) {
+            if (round = 7) or not (round = 7) and not SearchRound(7) {
+                if SearchRound(round) {
+                    Sleep(delay)
+                    return
+                }
+            }
         }
         if SearchImage("states\defeat") {
             LogMsg("Found defeat instead of the round x" round)

@@ -25,3 +25,7 @@ GetMapName() {
         LogMsg("Map not recognized")
     }
 }
+
+SearchRound(round) {
+    return SearchImage("rounds\" round, "*TransBlack", 1443, 21, 1520, 80)
+}
