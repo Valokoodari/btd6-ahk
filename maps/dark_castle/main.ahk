@@ -1,0 +1,1 @@
+#Include easy.ahk

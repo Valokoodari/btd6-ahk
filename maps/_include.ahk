@@ -3,7 +3,7 @@
 #Include infernal.ahk
 #Include workshop.ahk
 #Include sanctuary.ahk
-#Include dark_castle.ahk
+#Include dark_castle\main.ahk
 #Include hashtag_ouch.ahk
 #Include dark_dungeons.ahk
 #Include muddy_puddles.ahk
