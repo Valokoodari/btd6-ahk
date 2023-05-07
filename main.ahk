@@ -93,8 +93,12 @@ SelectImpoppable() {
         LogMsg("Something went wrong in map selection")
         return
     }
-    ClickImage("buttons\hard_standard")
-    global difficulty := "hard"
+    if !ClickImage("buttons\alternate") {
+        ClickImage("buttons\hard_standard")
+        global difficulty := "hard"
+        return
+    }
+    global difficulty := "alternate"
 }
 
 SelectExpertMap() {
