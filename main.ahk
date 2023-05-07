@@ -80,13 +80,33 @@ CheckOwerwrite() {
     }
 }
 
-SelectExpertMap() {
-    FindExpertMap()
-    If !ClickImage("buttons\easy") {
+SelectEasy() {
+    if !ClickImage("buttons\easy") {
         LogMsg("Something went wrong in map selection")
         return
     }
-    ClickImage("buttons\standard")
+    ClickImage("buttons\easy_standard")
+}
+
+SelectImpoppable() {
+    if !ClickImage("buttons\hard") {
+        LogMsg("Something went wrong in map selection")
+        return
+    }
+    ClickImage("buttons\hard_standard")
+    global difficulty := "hard"
+}
+
+SelectExpertMap() {
+    FindExpertMap()
+
+    Switch userDifficulty {
+        Case "impoppable":
+            SelectImpoppable()
+        Default:
+            SelectEasy()
+    }
+
     CheckOwerwrite()
     Sleep(4000)
 }
@@ -96,6 +116,7 @@ SelectGameScript() {
     maps[map]()
     LogMsg("Waiting for the game to end...")
     WaitForVictoryOrDefeat()
+    global difficulty := ""
 }
 
 OpenBoxes() {
