@@ -101,4 +101,8 @@ DarkCastleAlternate() {
 
     WaitForRound(7)             ; Round 77
     Upgrade(897,743,0,1,0)      ; Village 220 -> 230
+
+    WaitForRound(9)             ; Round 79
+    Place("boomer",1011,446)    ; Place Boomer
+    Upgrade(1011,446,4,2,0)     ; Boomer 000 -> 420
 }
