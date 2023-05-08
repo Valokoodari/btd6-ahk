@@ -111,4 +111,8 @@ DarkCastleAlternate() {
     WaitForRound(9)             ; Round 79
     Place("boomer",1011,446)    ; Place Boomer
     Upgrade(1011,446,4,2,0)     ; Boomer 000 -> 420
+
+    WaitForRound(0)             ; Round 80
+    Place("sub",1084,832)       ; Place Sub C
+    Upgrade(1084,832,2,0,4)     ; Sub C 000 -> 204
 }
