@@ -1,7 +1,7 @@
 DarkCastleAlternate() {
     StartGame()                 ; Round 3
     Place("ninja",724,661)      ; Place Ninja
-    Place("dart",591,493)       ; Place Dart
+    Place("dart",591,493)       ; Place Dart A
 
     WaitForRound(4)             ; Round 4
     Upgrade(724,661,1,0,0)      ; Ninja 000 -> 100
@@ -49,7 +49,7 @@ DarkCastleAlternate() {
 
     WaitForRound(0)             ; Round 40
     Upgrade(724,661,1,0,0)      ; Ninja 301 -> 401
-    Upgrade(591,493,0,1,3)      ; Dart 000 -> 013
+    Upgrade(591,493,0,1,3)      ; Dart A 000 -> 013
 
     WaitForRound(2)             ; Round 42
     Upgrade(1021,669,1,1,0)     ; Sniper 110 -> 220
@@ -101,6 +101,12 @@ DarkCastleAlternate() {
 
     WaitForRound(7)             ; Round 77
     Upgrade(897,743,0,1,0)      ; Village 220 -> 230
+
+    WaitForRound(8)             ; Round 78
+    Place("dart",472,331)       ; Place Dart B
+    Upgrade(472,331,0,0,2)      ; Dart B 000 -> 002
+    Place("dart",472,773)       ; Place Dart C
+    Upgrade(472,773,0,0,2)      ; Dart C 000 -> 002
 
     WaitForRound(9)             ; Round 79
     Place("boomer",1011,446)    ; Place Boomer
