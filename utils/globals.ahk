@@ -1,6 +1,8 @@
 victories := 0
 defeats := 0
 
+defeated := false
+
 maps := Map(
     "sanctuary", SanctuaryGameScript,
     "ravine", RavineGameScript,
