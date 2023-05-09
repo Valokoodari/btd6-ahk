@@ -90,3 +90,14 @@ Remove(x, y) {
     Click(950,620)      ; Click Confirm
     Sleep(100)
 }
+
+GetRandom() {
+    allTowers := [
+        "dart","boomer","bomb","tack","ice","glue",
+        "sniper","sub","boat","ace","heli","mortar","dartling",
+        "wizard","super","ninja","alch","druid",
+        "spike","village","engineer","beast"
+    ]
+
+    return allTowers[Random(1, 22)]
+}
