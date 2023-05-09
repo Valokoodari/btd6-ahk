@@ -120,6 +120,7 @@ SelectGameScript() {
     maps[map]()
     LogMsg("Waiting for the game to end...")
     WaitForVictoryOrDefeat()
+    global defeated := false
     global difficulty := ""
 }
 

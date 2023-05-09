@@ -18,8 +18,9 @@ WaitForRound(round, delay := 0) {
                 }
             }
         }
-        if SearchImage("states\defeat") {
+        if defeated or SearchImage("states\defeat") {
             LogMsg("Found defeat instead of the round x" round)
+            global defeated := true
             return
         }
         CheckLevelUp()

@@ -30,6 +30,9 @@ towers := Map(
 )
 
 Place(tower, x, y) {
+    if defeated {
+        return
+    }
     Send(towers[tower])
     Sleep(100)
     MouseMove(x,y)
@@ -39,6 +42,9 @@ Place(tower, x, y) {
 }
 
 Targeting(x, y, tabCount) {
+    if defeated {
+        return
+    }
     Click(x,y)          ; Open Tower
     Sleep(100)
     Loop tabCount {
@@ -50,6 +56,9 @@ Targeting(x, y, tabCount) {
 }
 
 Upgrade(x, y, topCount, middleCount, bottomCount) {
+    if defeated {
+        return
+    }
     Click(x,y)          ; Open Tower
     Sleep(100)
     Loop topCount {
@@ -69,6 +78,9 @@ Upgrade(x, y, topCount, middleCount, bottomCount) {
 }
 
 Merge(x, y, sx, sy) {
+    if defeated {
+        return
+    }
     Click(x,y)          ; Open Tower
     Sleep(500)
     ClickImage("buttons\merge", 500, "*TransBlack", 420, 420, 1645, 875)
