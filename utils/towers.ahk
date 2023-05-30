@@ -41,6 +41,13 @@ Place(tower, x, y) {
     Sleep(100)
 }
 
+Sell(x, y){
+    Click(x, y)
+    Sleep(100)
+    Send("{Backspace}")
+}
+
+
 Targeting(x, y, tabCount) {
     if defeated {
         return

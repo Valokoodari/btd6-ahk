@@ -9,3 +9,7 @@
 #Include muddy_puddles.ahk
 #Include bloody_puddles.ahk
 #Include flooded_valley.ahk
+#Include dart_farm.ahk
+#Include boomerang_farm.ahk
+#Include ninja_farm.ahk
+#Include engineer_farm.ahk

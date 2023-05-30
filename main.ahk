@@ -1,9 +1,23 @@
+#Requires AutoHotkey v2.0
+
 #SingleInstance Force
 #MaxThreadsPerHotkey 3
 #Include %A_ScriptDir%
 
 #Include utils\_include.ahk
 #Include maps\_include.ahk
+
+
+GetMousePosition() {
+    MouseGetPos &xpos, &ypos 
+    MsgBox "The cursor is at X" xpos " Y" ypos
+}
+
+; Get the position of your mouse
+F1::{
+    GetMousePosition()
+}
+
 
 ^!+j:: {
     ClearLogFile()
@@ -22,9 +36,19 @@ Start() {
             case "home":
                 ClickImage("buttons\play_home")
             case "map_selection":
-                SelectExpertMap()
+                if(farm != "none"){
+                    SelectFarmMap()
+                }
+                else{
+                    SelectExpertMap()
+                }
             case "in_game":
-                SelectGameScript()
+                if(farm != "none"){
+                    SelectFarmScript()
+                }
+                else{
+                    SelectGameScript()
+                }
             case "collect":
                 OpenBoxes()
             case "event":
@@ -91,6 +115,20 @@ SelectExpertMap() {
     Sleep(4000)
 }
 
+;Map For Farming
+SelectFarmMap() {
+    FindExpertMap()
+    If !ClickImage("buttons\easy") {
+        LogMsg("Something went wrong in map selection")
+        return
+    }
+    ClickImage("buttons\deflation")
+    CheckOwerwrite()
+    Sleep(4000)
+    Send("{Esc}")
+    Sleep(1000)
+}
+
 SelectGameScript() {
     map := GetMapName()
     maps[map]()
@@ -98,6 +136,24 @@ SelectGameScript() {
     WaitForVictoryOrDefeat()
     global defeated := false
 }
+
+;Farm Scripts for map
+SelectFarmScript() {
+    switch farm {
+        case "dart":
+            DartMonkeyFarmScript()
+        case "boomerang":
+            BoomerangMonkeyFarmScript()
+        case "ninja":
+            NinjaMonkeyFarmScript()
+        case "engineer":
+            EngineerMonkeyFarmScript()
+    }
+    LogMsg("Waiting for the game to end...")
+    WaitForVictoryOrDefeat()
+    global defeated := false
+}
+
 
 OpenBoxes() {
     ClickImage("buttons\collect", 2000)
