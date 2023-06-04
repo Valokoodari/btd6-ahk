@@ -27,5 +27,5 @@ GetMapName() {
 }
 
 SearchRound(round) {
-    return SearchImage("rounds\" round, "*TransBlack", 1443, 21, 1520, 80)
+    return SearchImage("rounds\" round, "*TransBlack", 1413, 21, 1520, 80)
 }
