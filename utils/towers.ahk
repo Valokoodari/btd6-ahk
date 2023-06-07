@@ -95,3 +95,17 @@ Merge(x, y, sx, sy) {
     Sleep(500)
     Click(x,y)          ; Close Tower
 }
+
+PositionTarget(x, y, px, py) {
+    if defeated {
+        return
+    }
+    Click(x,y)          ; Open Tower
+    Sleep(500)
+    Click(379, 308)                ; click reposition dinosaur
+    Sleep(500)
+    CLick(px, py)
+    Sleep(500)
+    Click(x,y)          ; Close Tower
+    sleep(100)
+}

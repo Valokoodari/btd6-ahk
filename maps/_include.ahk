@@ -13,3 +13,5 @@
 #Include boomerang_farm.ahk
 #Include ninja_farm.ahk
 #Include engineer_farm.ahk
+#Include beast_farm.ahk
+#Include exp_farm.ahk

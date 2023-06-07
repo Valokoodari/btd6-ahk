@@ -148,6 +148,10 @@ SelectFarmScript() {
             NinjaMonkeyFarmScript()
         case "engineer":
             EngineerMonkeyFarmScript()
+        case "beast":
+            BeastMonkeyFarmScript()
+        case "exp":
+            ExpFarmScript()
     }
     LogMsg("Waiting for the game to end...")
     WaitForVictoryOrDefeat()
