@@ -1,5 +1,10 @@
 # Bloons TD 6 with AutoHotkey v2  
 
+> **Note**  
+> There's a [bug in the game version 37.0](https://www.reddit.com/r/btd6/comments/142y1xm/comment/jncrrdj/?utm_source=share&utm_medium=web2x&context=3)
+> because of which the script doesn't currently work properly without some MK like the road spikes: 
+> _"Map path orders are incorrect on maps that have more than one track"_
+
 An AutoHotkey v2 script for Bloons TD 6 to help during collection events. Plays through expert maps
 on easy, standard difficulty with the collection bonus active or Dark Castle when no collection
 event is active.  
@@ -53,7 +58,7 @@ script manually.
 
 ## Usage
 For optimal results set the `eventType` in `config.ini` according to the current event (`none`, 
-`easter`, `fireworks`, `halloween`, `holiday`, `totem`).  
+`birthday`, `easter`, `fireworks`, `halloween`, `holiday`, `totem`).  
 
 Start the script on the home menu, stage selection menu, collection menu, or in an expert
 easy/standard map, using the hotkey <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> +
