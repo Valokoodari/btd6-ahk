@@ -72,7 +72,7 @@ FindExpertMap() {
 CheckOwerwrite() {
     if SearchImage("states\overwrite") {
         if overwriteSave {
-            ClickImage("buttons\ok_overwrite")
+            ClickImage("buttons\ok", 1000, "*TransBlack", 1080, 700, 1180, 770)
         } else {
             LogMsg("Script stopped to protect an existing save")
             Reload()
@@ -89,16 +89,20 @@ SelectEasy() {
 }
 
 SelectImpoppable() {
-    if !ClickImage("buttons\hard") {
-        LogMsg("Something went wrong in map selection")
+    ClickImage("buttons\hard")
+    if ClickImage("buttons\impoppable") {
+        global difficulty := "impoppable"
         return
     }
-    if !ClickImage("buttons\alternate") {
-        ClickImage("buttons\hard_standard")
+    if ClickImage("buttons\alternate") {
+        global difficulty := "alternate"
+        return
+    }
+    if ClickImage("buttons\hard_standard") {
         global difficulty := "hard"
         return
     }
-    global difficulty := "alternate"
+    LogMsg("Something went wrong in map selection")
 }
 
 SelectExpertMap() {
