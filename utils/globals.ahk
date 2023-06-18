@@ -5,17 +5,17 @@ defeats := 0
 defeated := false
 
 maps := Map(
-    "sanctuary", SanctuaryGameScript,
-    "ravine", RavineGameScript,
-    "flooded_valley", FloodedValleyGameScript,
-    "infernal", InfernalGameScript,
-    "bloody_puddles", BloodyPuddlesGameScript,
-    "workshop", WorkshopGameScript,
-    "quad", QuadGameScript,
+    "sanctuary", SanctuaryRun,
+    "ravine", RavineRun,
+    "flooded_valley", FloodedValleyRun,
+    "infernal", InfernalRun,
+    "bloody_puddles", BloodyPuddlesRun,
+    "workshop", WorkshopRun,
+    "quad", QuadRun,
     "dark_castle", DarkCastleRun,
-    "muddy_puddles", MuddyPuddlesGameScript,
-    "hashtag_ouch", HashtagOuchGameScript,
-    "dark_dungeons", DarkDungeonsGameScript,
+    "muddy_puddles", MuddyPuddlesRun,
+    "hashtag_ouch", HashtagOuchRun,
+    "dark_dungeons", DarkDungeonsRun,
 )
 
 mapNames := Map(
@@ -37,7 +37,7 @@ mapAreas := Map(
     "ravine", [1424,912],
     "infernal", [824,369],
     "workshop", [1330,599],
-    "sanctuary", [1295,612],
+    "sanctuary", [820,420],
     "dark_castle", [1359,415],
     "hashtag_ouch", [1013,311],
     "dark_dungeons", [842,125],
