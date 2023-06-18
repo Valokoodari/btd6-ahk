@@ -95,7 +95,7 @@ Sell(x,y) {
     }
     Click(x,y)          ; Open Tower
     Sleep(100)
-    Send("BS")          ; Sell Tower
+    Send("{Backspace}")          ; Sell Tower
     Sleep(100)
 }
 
