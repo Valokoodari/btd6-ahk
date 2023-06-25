@@ -2,6 +2,7 @@ DarkCastleImpoppable() {
     Place("dart",595,494)		; Place Dart
     Place("sub",1083,690)		; Place Sub
     Place("hero",1607,244)		; Place Hero (Benjamin)
+
     StartGame()					; Round 6
 
     WaitForRound(7)			    ; Round 7
@@ -73,6 +74,4 @@ DarkCastleImpoppable() {
 
     WaitForRound(2)			    ; Round 92
     Upgrade(918,749,1,0,0)		; Alchemist: 420 -> 520
-
-    WaitForRound(0)             ; Round 100
 }

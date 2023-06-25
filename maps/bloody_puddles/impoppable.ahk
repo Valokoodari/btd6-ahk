@@ -1,20 +1,18 @@
 BloodyPuddlesImpoppable() {
-    Click(6,4)
-    Sleep(1000)
-
-    Place("sub",1005,936)		; Place Sub 1
+    Place("sub",1005,936)       ; Place Sub 1
     Place("dart",347,690)		; Place Dart
     Targeting(347,690,3)		; Dart: First -> Strong
-    Place("hero",1607,1048)	    ; Place Hero (Benjamin)
+    Place("hero",1607,1048)     ; Place Hero (Benjamin)
+
     StartGame()					; Round 6
 
     WaitForRound(8)			    ; Round 8
     Place("druid",402,485)		; Place Druid 1
 
-    WaitForRound(9)			    ; Round 9
+    WaitForRound(9)             ; Round 9
     Place("sub",1193,198)		; Place Sub 2
 
-    WaitForRound(0)			    ; Round 10
+    WaitForRound(0)             ; Round 10
     Place("boat",608,597)		; Place Boat
 
     WaitForRound(1)				; Round 11
@@ -41,7 +39,7 @@ BloodyPuddlesImpoppable() {
     Upgrade(430,351,0,0,3)		; Ace: 000 -> 003
 
     WaitForRound(1)				; Round 31
-    Place("alch",433,280)	    ; Place Alchemist
+    Place("alch",433,280)       ; Place Alchemist
     Targeting(433,280,3)		; Alchemist: First -> Strong
     Place("sniper",699,347)		; Place Sniper
     Targeting(699,347,3)		; Sniper: First -> Strong
@@ -88,6 +86,4 @@ BloodyPuddlesImpoppable() {
 
     WaitForRound(7)				; Round 97
     Upgrade(699,347,1,0,0)		; Sniper: 402 -> 502
-
-    WaitForRound(0)             ; Round 100
 }

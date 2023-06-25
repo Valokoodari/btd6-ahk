@@ -1,4 +1,4 @@
-Workshopimpoppable() {
+WorkshopImpoppable() {
     Place("dart",132,622)		; Place Dart 1
     Place("dart",600,502)		; Place Dart 2
     Place("wizard",1020,499)	; Place Wizard
@@ -98,6 +98,4 @@ Workshopimpoppable() {
     WaitForRound(9)			    ; Round 99
     Place("village",1403,689)	; Place Village 2
     Upgrade(1403,689,2,3,0)	    ; Village 2: 000 -> 230
-
-    WaitForRound(0)             ; Round 100
 }

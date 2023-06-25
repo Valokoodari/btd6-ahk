@@ -82,6 +82,4 @@ QuadImpoppable() {
 
     WaitForRound(6)			    ; Round 96
     Upgrade(727,295,1,0,0)		; Sniper: 402 -> 502
-
-    WaitForRound(0)             ; Round 100
 }

@@ -1,10 +1,10 @@
 RavineImpoppable() {
-
     Place("sniper",1026,200)    ; Place Sniper
     Targeting(1026,200,3)       ; Sniper 1: Normal -> Strong
     Place("dart",282,662)       ; Place Dart 1
     Place("druid",852,997)      ; Place Druid 1
     Place("druid",697,103)      ; Place Druid 2
+
     StartGame()                 ; Round 6
 
     WaitForRound(9)             ; Round 9
@@ -78,6 +78,4 @@ RavineImpoppable() {
 
     WaitForRound(6)             ; Round 96
     Upgrade(1026,200,1,0,0)     ; Sniper: 420 -> 520
-
-    WaitForRound(0)             ; Round 100
 }

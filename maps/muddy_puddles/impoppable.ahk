@@ -85,6 +85,4 @@ MuddyPuddlesImpoppable() {
 
     WaitForRound(5)             ; Round 95
     Upgrade(1034,412,1,0,2)     ; Sniper: 400 -> 502
-
-    WaitForRound(0)             ; Round 100
 }

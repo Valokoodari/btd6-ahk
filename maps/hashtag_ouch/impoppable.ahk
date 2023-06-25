@@ -1,9 +1,10 @@
 HashtagOuchImpoppable() {
     Place("boat",921,613)		; Place Boat
     Place("sniper",863,757)		; Place Sniper
-    Targeting(863,757,3)		; Sniper: First -> Strong
-    Place("dart",665,408)		; Place Sniper
+    Place("dart",665,408)		; Place Dart
+
     StartGame()					; Round 6
+    Targeting(863,757,3)		; Sniper: First -> Strong
 
     WaitForRound(8)				; Round 8
     Place("hero",63,30)			; Place Hero (Benjamin)
@@ -82,6 +83,4 @@ HashtagOuchImpoppable() {
 
     WaitForRound(7)				; Round 97
     Upgrade(863,757,1,0,0)		; Sniper: 402 -> 502
-
-    WaitForRound(0)             ; Round 100
 }

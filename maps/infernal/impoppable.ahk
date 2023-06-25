@@ -2,6 +2,7 @@ InfernalImpoppable() {
     Place("druid",458,277)      ; Place Druid 1
     Place("dart",516,241)		; Place Dart
     Place("sub",498,786)		; Place Sub
+
     StartGame()					; Round 6
 
     WaitForRound(8)				; Round 8
@@ -76,6 +77,4 @@ InfernalImpoppable() {
 
     WaitForRound(7)				; Round 97
     Upgrade(1612,459,1,0,0)		; Sniper 420 -> 520
-
-    WaitForRound(0)             ; Round 100
 }

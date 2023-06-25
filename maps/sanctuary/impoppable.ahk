@@ -72,6 +72,4 @@ SanctuaryImpoppable() {
 
     WaitForRound(7,200)		    ; Round 97
     Upgrade(895,102,1,0,0)		; Sniper: 402 -> 502
-
-    WaitForRound(0)             ; Round 100
 }

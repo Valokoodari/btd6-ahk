@@ -2,6 +2,7 @@ DarkDungeonsImpoppable() {
     Place("boat",1361,818)      ; Place Boat
     Place("dart",243,820)       ; Place Dart 1
     Place("druid",771,521)      ; Place Druid 1
+
     StartGame()                 ; Round 6
 
     WaitForRound(8)             ; Round 8
@@ -105,7 +106,7 @@ DarkDungeonsImpoppable() {
     Upgrade(719,888,0,0,2)      ; Sniper 2: 400 -> 402
     Upgrade(296,157,0,0,2)      ; Sniper 1: 400 -> 402
 
-    WaitForRound(8)             ; Round 26
+    WaitForRound(8)             ; Round 98
     Place("sniper",562,245)     ; Place Sniper 3
     Upgrade(562,245,5,2,0)      ; Sniper 3: 000 -> 520
 }

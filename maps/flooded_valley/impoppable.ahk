@@ -64,6 +64,4 @@ FloodedValleyImpoppable() {
     WaitForRound(2)			    ; Round 92
     Place("village",1248,283)	; Place Village
     Upgrade(1248,283,2,3,0)	    ; Village: 000 -> 230
-
-    WaitForRound(0)             ; Round 100
 }
