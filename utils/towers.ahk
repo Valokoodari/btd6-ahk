@@ -104,7 +104,7 @@ Remove(x, y) {
         return
     }
     Click(x,y)          ; Click on Obstacle
-    Sleep(300)
-    ClickImage("buttons\obstacle_confirm")
-    Sleep(300)
+    Sleep(200)
+    Click(950,620)      ; Click Confirm
+    Sleep(100)
 }
