@@ -20,7 +20,7 @@ Start() {
     while WinActive("BloonsTD6") {
         switch CheckMenuState() {
             case "home":
-                ClickImage("buttons\play_home")
+                HomeMenu()
             case "map_selection":
                 SelectExpertMap()
             case "in_game":
@@ -39,6 +39,11 @@ Start() {
         }
     }
     LogMsg("Script stopped because the game window wasn't active")
+}
+
+HomeMenu() {
+    CollectDailyReward()
+    ClickImage("buttons\play_home")
 }
 
 CheckMenuState() {
@@ -107,5 +112,14 @@ OpenBoxes() {
             Click(coords)
             Sleep(1000)
         }
+    }
+}
+
+CollectDailyReward() {
+    if ClickImage("buttons\chest", 3000, "", 563, 639, 588, 664) {
+        LogMsg("Collecting the daily reward")
+        Click(x, y)
+        Sleep(3000)
+        ClickImage("buttons\close_chest", 1000, "", 571, 377, 596, 402)
     }
 }
