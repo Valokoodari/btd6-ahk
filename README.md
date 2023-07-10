@@ -56,6 +56,8 @@ script manually.
 - Monkey Village 234
 - Benjamin
 
+The Impoppable Script has only been tested with Full Monkey Knowledge
+
 > **Note**  
 > **Dark Castle**: Dart 023, Wizard 032, Spike 003, Sub 202
 > **Dark Castle Impoppable**: Dart 002, Sniper 405, Alchemist 420, Druid 130, Farm 424, Village 234
