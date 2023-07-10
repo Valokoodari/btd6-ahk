@@ -52,7 +52,7 @@ Targeting(x, y, tabCount) {
         Sleep(100)
     }
     Click(x,y)          ; Close Tower
-    Sleep(100)
+    Sleep(200)
 }
 
 Upgrade(x, y, topCount, middleCount, bottomCount) {
@@ -74,7 +74,7 @@ Upgrade(x, y, topCount, middleCount, bottomCount) {
         Sleep(100)
     }
     Click(x,y)          ; Close Tower
-    Sleep(100)
+    Sleep(200)
 }
 
 Merge(x, y, sx, sy) {
@@ -87,4 +87,24 @@ Merge(x, y, sx, sy) {
     Click(sx,sy)
     Sleep(500)
     Click(x,y)          ; Close Tower
+}
+
+Sell(x,y) {
+    if defeated {
+        return
+    }
+    Click(x,y)          ; Open Tower
+    Sleep(100)
+    Send("{Backspace}") ; Sell Tower
+    Sleep(100)
+}
+
+Remove(x, y) {
+    if defeated {
+        return
+    }
+    Click(x,y)          ; Click on Obstacle
+    Sleep(200)
+    Click(950,620)      ; Click Confirm
+    Sleep(100)
 }
