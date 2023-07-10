@@ -37,7 +37,7 @@ mapAreas := Map(
     "ravine", [1424,912],
     "infernal", [824,369],
     "workshop", [1330,599],
-    "sanctuary", [1295,612],
+    "sanctuary", [820,420],
     "dark_castle", [1359,415],
     "hashtag_ouch", [1013,311],
     "dark_dungeons", [842,125],
