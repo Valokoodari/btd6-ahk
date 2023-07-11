@@ -35,7 +35,6 @@ Start() {
                 ClickImage("buttons\home_victory", 2000)
             case "defeat":
                 ClickImage("buttons\home_defeat", 2000)
-
         }
     }
     LogMsg("Script stopped because the game window wasn't active")
@@ -88,6 +87,19 @@ SelectEasy() {
     ClickImage("buttons\easy_standard")
 }
 
+SelectAlternate() {
+    ClickImage("buttons\hard")
+    if ClickImage("buttons\alternate") {
+        global difficulty := "alternate"
+        return
+    }
+    if ClickImage("buttons\hard_standard") {
+        global difficulty := "hard"
+        return
+    }
+    LogMsg("Something went wrong in map selection")
+}
+
 SelectImpoppable() {
     ClickImage("buttons\hard")
     if ClickImage("buttons\impoppable") {
@@ -111,16 +123,40 @@ SelectExpertMap() {
     Switch userDifficulty {
         Case "impoppable":
             SelectImpoppable()
+        Case "alternate":
+            SelectAlternate()
         Default:
             SelectEasy()
     }
-
     CheckOwerwrite()
     Sleep(4000)
 }
 
+CheckAutoStart() {
+    Click(1600,40)
+    Sleep(1500)
+    if SearchImage("buttons\auto_start") {
+        Click(1325,305)
+        Sleep(500)
+        LogMsg("Activated auto start")
+        global autoStart := false
+        Send("{vk1B}")
+        return
+    } else {
+        LogMsg("Auto start was already active")
+        global autoStart := false
+        Send("{vk1B}")
+        return
+    }
+    LogMsg("Something went wrong during auto start check")
+}
+
 SelectGameScript() {
     map := GetMapName()
+    if autoStart {
+        CheckAutoStart()
+    }
+
     maps[map]()
     LogMsg("Waiting for the game to end...")
     WaitForVictoryOrDefeat()
