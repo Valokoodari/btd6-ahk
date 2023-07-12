@@ -1,5 +1,7 @@
 # Bloons TD 6 with AutoHotkey v2  
 
+[![](https://dcbadge.vercel.app/api/server/nzJgMjt)](https://discord.gg/nzJgMjt)
+
 An AutoHotkey v2 script for Bloons TD 6 to help during collection events. Plays through expert maps
 on easy, standard difficulty with the collection bonus active or Dark Castle when no collection
 event is active.  
