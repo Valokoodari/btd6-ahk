@@ -1,6 +1,7 @@
 #Include easy.ahk
 #Include hard.ahk
 #Include alternate.ahk
+#Include impoppable.ahk
 
 DarkCastleRun() {
     Switch difficulty {
@@ -8,6 +9,8 @@ DarkCastleRun() {
             DarkCastleHard()
         Case "alternate":
             DarkCastleAlternate()
+        Case "impoppable":
+            DarkCastleImpoppable()
         Default:
             DarkCastleEasy()
     }

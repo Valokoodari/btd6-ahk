@@ -44,15 +44,23 @@ script manually.
 <summary><h4>Required tower upgrades</h4></summary>
 
 - Dart Monkey 024
-- Sniper Monkey 322
+- Sniper Monkey 425
 - Monkey Sub 223
 - Monkey Buccaneer 032
+- Monkey Ace 205
 - Wizard Monkey 032
+- Alchemist 420
 - Druid 130
+- Banana Farm 424
 - Spike Factory 003
+- Monkey Village 234
+- Benjamin
+
+The Impoppable Script has only been tested with Full Monkey Knowledge
 
 > **Note**  
 > **Dark Castle**: Dart 023, Wizard 032, Spike 003, Sub 202
+> **Dark Castle Impoppable**: Dart 002, Sniper 405, Alchemist 420, Druid 130, Farm 424, Village 234
 
 </details>
 
