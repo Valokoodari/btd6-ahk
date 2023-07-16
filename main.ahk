@@ -133,18 +133,18 @@ SelectExpertMap() {
 }
 
 CheckAutoStart() {
-    Send({Esc})
+    Send("{Esc}")
     Sleep(1500)
     if ClickImage("buttons\auto_start") {
-        Sleep(500)
+        Sleep(200)
         LogMsg("Activated auto start")
         global autoStart := false
-        Send({Esc})
+        Send("{Esc}")
         return
     } else {
         LogMsg("Auto start was already active")
         global autoStart := false
-        Send({Esc})
+        Send("{Esc}")
         return
     }
 }
