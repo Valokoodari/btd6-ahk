@@ -89,7 +89,7 @@ Merge(x, y, sx, sy) {
     Click(x,y)          ; Close Tower
 }
 
-Sell(x,y) {
+Sell(x, y) {
     if defeated {
         return
     }

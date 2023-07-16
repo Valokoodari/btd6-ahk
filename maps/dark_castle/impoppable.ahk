@@ -1,11 +1,11 @@
 DarkCastleImpoppable() {
-    Place("dart",595,494)		; Place Dart 1
-    Place("sub",1083,690)		; Place Sub1
-    StartGame()					; Round 6
+    Place("dart",595,494)       ; Place Dart 1
+    Place("sub",1083,690)       ; Place Sub1
+    StartGame()                 ; Round 6
     Targeting(595,494,3)        ; Dart 1: First -> Strong
 
-    WaitForRound(0)			    ; Round 10
-    Place("hero",487,252)		; Place Hero (Benjamin)
+    WaitForRound(0)             ; Round 10
+    Place("hero",487,252)       ; Place Hero (Benjamin)
 
     WaitForRound(1)             ; Round 11
     Upgrade(1083,690,1,0,0)     ; Sub 1: 000 -> 100
@@ -129,11 +129,11 @@ DarkCastleImpoppable() {
     Upgrade(732,889,0,2,0)      ; Village 2: 002 -> 022
     MouseMove(910,1011)         ; Move Mouse between the Farms
 
-    WaitForRound(3)			    ; Round 53
-    Remove(150,180)			    ; Remove Obstacle 1
-    Remove(150,380)			    ; Remove Obstacle 2
-    Remove(150,680)			    ; Remove Obstacle 3
-    Remove(150,930)			    ; Remove Obstacle 4
+    WaitForRound(3)             ; Round 53
+    Remove(150,180)             ; Remove Obstacle 1
+    Remove(150,380)             ; Remove Obstacle 2
+    Remove(150,680)             ; Remove Obstacle 3
+    Remove(150,930)             ; Remove Obstacle 4
     MouseMove(910,1011)         ; Move Mouse between the Farms
 
     WaitForRound(6)             ; Round 56
