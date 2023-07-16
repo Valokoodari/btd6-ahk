@@ -44,7 +44,7 @@ script manually.
 <summary><h4>Required tower upgrades</h4></summary>
 
 
-#### Easy (All maps)
+#### Easy (All expert maps)
 - Dart Monkey 024
 - Sniper Monkey 322
 - Monkey Sub 223
