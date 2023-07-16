@@ -43,25 +43,62 @@ script manually.
 <details>
 <summary><h4>Required tower upgrades</h4></summary>
 
+
+#### Easy (All maps)
 - Dart Monkey 024
-- Sniper Monkey 425
+- Sniper Monkey 322
 - Monkey Sub 223
 - Monkey Buccaneer 032
-- Monkey Ace 205
 - Wizard Monkey 032
+- Druid 130
+- Spike Factory 003
+
+> **Note**  
+> **Dark Castle**: Dart 023, Wizard 032, Spike 003, Sub 202  
+
+<details>
+<summary><h4>Hard (Dark Castle)</h4></summary>
+
+- _Quincy (Hero)_
+- Dart Monkey 000
+- Bomb Shooter 204
+- Monkey Sub 203
+- Wizard Monkey 502
+- Alchemist 401
+- Druid 401
+</details>
+<details>
+<summary><h4>Alternate Bloons Rounds (Dark Castle)</h4></summary>
+
+- _Quincy (Hero)_
+- Dart Monkey 013
+- Bomb Shooter 204
+- Sniper Monkey 320
+- Monkey Sub 204
+- Monkey Ace 203
+- Wizard Monkey 402
+- Ninja Monkey 401
+- Alchemist 401
+- Spike Factory 204
+- Monkey Village 230
+
+</details>
+<details>
+<summary><h4>Impoppable (Dark Castle)</h4></summary>
+
+- _Benjamin (Hero)_
+- Dart Monkey 002
+- Sniper Monkey 505
+- Monkey Sub 203
+- Monkey Ace 205
 - Alchemist 420
 - Druid 130
 - Banana Farm 424
-- Spike Factory 003
 - Monkey Village 234
-- Benjamin
-
-The Impoppable Script has only been tested with Full Monkey Knowledge
 
 > **Note**  
-> **Dark Castle**: Dart 023, Wizard 032, Spike 003, Sub 202
-> **Dark Castle Impoppable**: Dart 002, Sniper 405, Alchemist 420, Druid 130, Farm 424, Village 234
-
+> The Impoppable Script has only been tested with Full Monkey Knowledge
+</details>
 </details>
 
 ## Usage
