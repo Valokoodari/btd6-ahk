@@ -133,22 +133,20 @@ SelectExpertMap() {
 }
 
 CheckAutoStart() {
-    Click(1600,40)
+    Send({Esc})
     Sleep(1500)
-    if SearchImage("buttons\auto_start") {
-        Click(1325,305)
+    if ClickImage("buttons\auto_start") {
         Sleep(500)
         LogMsg("Activated auto start")
         global autoStart := false
-        Send("{vk1B}")
+        Send({Esc})
         return
     } else {
         LogMsg("Auto start was already active")
         global autoStart := false
-        Send("{vk1B}")
+        Send({Esc})
         return
     }
-    LogMsg("Something went wrong during auto start check")
 }
 
 SelectGameScript() {
