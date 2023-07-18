@@ -7,4 +7,4 @@ logFile := IniRead("config.ini", "settings", "logFile", "logs\" FormatTime(, "yy
 
 userDifficulty := IniRead("config.ini", "settings", "difficulty", "")
 
-autoStart := IniRead("config.ini", "settings", "checkAutoStart", false) == "true"
+changeSettings := IniRead("config.ini", "settings", "changeSettings", "true") == "true"

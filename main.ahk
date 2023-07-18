@@ -120,25 +120,30 @@ SelectExpertMap() {
     Sleep(4000)
 }
 
-CheckAutoStart() {
+CheckSettings() {
+    LogMsg("Checking quick settings")
     Send("{Esc}")
     Sleep(1500)
     if ClickImage("buttons\auto_start") {
-        LogMsg("Activated auto start")
-    } else {
-        LogMsg("Auto start was already active")
+        LogMsg("Enabled auto start")
     }
-    global autoStart := false
+    if ClickImage("buttons\game_hints") {
+        LogMsg("Disabled game hints")
+    }
+    if ClickImage("buttons\drag_and_drop") {
+        LogMsg("Enabled drag & drop")
+    }
+    LogMsg("Quick settings checked")
+    global changeSettings := false
     Send("{Esc}")
     return
 }
 
 SelectGameScript() {
     map := GetMapName()
-    if autoStart {
-        CheckAutoStart()
+    if changeSettings {
+        CheckSettings()
     }
-
     maps[map]()
     LogMsg("Waiting for the game to end...")
     WaitForVictoryOrDefeat()
