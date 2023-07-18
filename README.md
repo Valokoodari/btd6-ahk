@@ -56,14 +56,16 @@ script manually.
 > **Note**  
 > **Dark Castle**: Dart 023, Wizard 032, Spike 003, Sub 202  
 
+> **Note**  
+> Difficulties other than Easy have only been tested with Full Monkey Knowledge
+
 <details>
 <summary><h4>Hard (Dark Castle)</h4></summary>
 
-- _Quincy (Hero)_
-- Dart Monkey 000
+- Dart Monkey 024
 - Bomb Shooter 204
 - Monkey Sub 203
-- Wizard Monkey 502
+- Wizard Monkey 522
 - Alchemist 401
 - Druid 401
 </details>
@@ -96,8 +98,6 @@ script manually.
 - Banana Farm 424
 - Monkey Village 234
 
-> **Note**  
-> The Impoppable Script has only been tested with Full Monkey Knowledge
 </details>
 </details>
 
