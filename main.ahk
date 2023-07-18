@@ -87,28 +87,19 @@ SelectEasy() {
     ClickImage("buttons\easy_standard")
 }
 
-SelectAlternate() {
+SelectHard() {
     ClickImage("buttons\hard")
-    if ClickImage("buttons\alternate") {
-        global difficulty := "alternate"
-        return
+    if userDifficulty = "impoppable" {
+        if ClickImage("buttons\impoppable") {
+            global difficulty := "impoppable"
+            return
+        }
     }
-    if ClickImage("buttons\hard_standard") {
-        global difficulty := "hard"
-        return
-    }
-    LogMsg("Something went wrong in map selection")
-}
-
-SelectImpoppable() {
-    ClickImage("buttons\hard")
-    if ClickImage("buttons\impoppable") {
-        global difficulty := "impoppable"
-        return
-    }
-    if ClickImage("buttons\alternate") {
-        global difficulty := "alternate"
-        return
+    if userDifficulty ~= "alternate|impoppable" {
+        if ClickImage("buttons\alternate") {
+            global difficulty := "alternate"
+            return
+        }
     }
     if ClickImage("buttons\hard_standard") {
         global difficulty := "hard"
@@ -119,12 +110,9 @@ SelectImpoppable() {
 
 SelectExpertMap() {
     FindExpertMap()
-
     Switch userDifficulty {
-        Case "impoppable":
-            SelectImpoppable()
-        Case "alternate":
-            SelectAlternate()
+        Case "hard","alternate","impoppable":
+            SelectHard()
         Default:
             SelectEasy()
     }
