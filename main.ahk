@@ -124,7 +124,6 @@ CheckAutoStart() {
     Send("{Esc}")
     Sleep(1500)
     if ClickImage("buttons\auto_start") {
-        Sleep(200)
         LogMsg("Activated auto start")
     } else {
         LogMsg("Auto start was already active")
