@@ -77,6 +77,9 @@ CheckHero() {
 }
 
 FindExpertMap() {
+    if userDifficulty ~= "alternate|impoppable" {
+        CheckHero()
+    }
     while true {
         ClickImage("buttons\expert")
         if FileExist("img\events\" eventType) {
