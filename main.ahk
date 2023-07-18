@@ -138,15 +138,12 @@ CheckAutoStart() {
     if ClickImage("buttons\auto_start") {
         Sleep(200)
         LogMsg("Activated auto start")
-        global autoStart := false
-        Send("{Esc}")
-        return
     } else {
         LogMsg("Auto start was already active")
-        global autoStart := false
-        Send("{Esc}")
-        return
     }
+    global autoStart := false
+    Send("{Esc}")
+    return
 }
 
 SelectGameScript() {
