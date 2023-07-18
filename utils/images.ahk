@@ -16,6 +16,7 @@ ClickImage(imageName, delay := 1000, options := "", xMin := 0, yMin := 0, xMax :
 
 GetMapName() {
     while true {
+        ClickImage("buttons\ok", 1000, "*TransBlack", 850, 710, 1050, 800)
         for map, cs in mapAreas {
             if SearchImage("maps\" map,, cs[1], cs[2], cs[1]+25, cs[2]+25) {
                 LogMap(map)
@@ -23,6 +24,7 @@ GetMapName() {
             }
         }
         LogMsg("Map not recognized")
+        Sleep(1000)
     }
 }
 

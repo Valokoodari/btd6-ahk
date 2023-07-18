@@ -8,6 +8,12 @@ CheckLevelUp() {
     }
 }
 
+CheckInstaMonkey() {
+    if ClickImage("states\insta_monkey") {
+        LogMsg("Insta monkey detected")
+    }
+}
+
 WaitForRound(round, delay := 0) {
     while true {
         if not (round = 3) or (round = 3) and not SearchRound(8) {
@@ -44,6 +50,7 @@ WaitForVictoryOrDefeat() {
             LogMsg("Defeat")
             break
         }
+        CheckInstaMonkey()
         CheckLevelUp()
         Sleep(2000)
     }
