@@ -71,7 +71,7 @@ script manually.
 <details>
 <summary><h4>Alternate Bloons Rounds (Dark Castle)</h4></summary>
 
-- _Quincy (Hero)_
+- _Benjamin (Hero)_
 - Dart Monkey 013
 - Bomb Shooter 204
 - Sniper Monkey 320
