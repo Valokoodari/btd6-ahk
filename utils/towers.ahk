@@ -37,8 +37,8 @@ Place(tower, x, y) {
     Sleep(100)
     MouseMove(x,y)
     Sleep(100)
-    Click(x,y)
-    Sleep(100)
+    Click(x,y)          ; Place Tower
+    Sleep(200)
 }
 
 Targeting(x, y, tabCount) {
@@ -51,7 +51,7 @@ Targeting(x, y, tabCount) {
         Send("{vk09}")
         Sleep(100)
     }
-    Click(x,y)          ; Close Tower
+    Send("{Esc}")       ; Close Tower
     Sleep(200)
 }
 
@@ -73,7 +73,7 @@ Upgrade(x, y, topCount, middleCount, bottomCount) {
         Send("{sc035}")
         Sleep(100)
     }
-    Click(x,y)          ; Close Tower
+    Send("{Esc}")       ; Close Tower
     Sleep(200)
 }
 
@@ -86,7 +86,8 @@ Merge(x, y, sx, sy) {
     ClickImage("buttons\merge", 500, "*TransBlack", 420, 420, 1645, 875)
     Click(sx,sy)
     Sleep(500)
-    Click(x,y)          ; Close Tower
+    Send("{Esc}")       ; Close Tower
+    Sleep(200)
 }
 
 Sell(x, y) {
