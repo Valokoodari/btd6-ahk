@@ -5,14 +5,16 @@ SelectDifficulty() {
         Default:
             SelectEasy()
     }
+    LogDifficulty()
 }
 
 SelectEasy() {
     if !ClickImage("buttons\easy") {
-        LogMsg("Something went wrong in map selection")
+        LogMsg("Something went wrong in difficulty selection")
         return
     }
     ClickImage("buttons\easy_standard")
+    global difficulty := "easy"
 }
 
 SelectHard() {
@@ -33,5 +35,5 @@ SelectHard() {
         global difficulty := "hard"
         return
     }
-    LogMsg("Something went wrong in map selection")
+    LogMsg("Something went wrong in difficulty selection")
 }

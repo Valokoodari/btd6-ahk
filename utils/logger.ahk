@@ -34,3 +34,7 @@ VictoryDefeatText() {
     }
     return text defeats " Defeats)"
 }
+
+LogDifficulty() {
+    LogMsg("Selected difficulty: " difficultyNames[difficulty])
+}

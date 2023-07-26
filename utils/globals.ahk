@@ -15,3 +15,20 @@ states := [
     "victory_menu",
     "defeat"
 ]
+
+difficultyNames := Map(
+    "easy", "Easy",
+    "primary", "Primary Only",
+    "deflation", "Deflation",
+    "medium", "Medium",
+    "military", "Military Only",
+    "apopalypse", "Apopalypse",
+    "reverse", "Reverse",
+    "hard", "Hard",
+    "magic", "Magic Only",
+    "double_hp", "Double HP MOABs",
+    "half_cash", "Half Cash",
+    "alternate", "Alternate Bloons Rounds",
+    "impoppable", "Impoppable",
+    "chimps", "CHIMPS"
+)
