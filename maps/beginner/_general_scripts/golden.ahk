@@ -1,4 +1,6 @@
 GoldenRun() {
+	CheckHero("benjamin")
+
 	Place("druid",Druid1[1],Druid1[2])		; Place Druid 1
 	Upgrade(Druid1[1],Druid1[2],0,1,0)		; Druid 1: 000 -> 010
 

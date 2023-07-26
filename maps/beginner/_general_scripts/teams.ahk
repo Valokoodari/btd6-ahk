@@ -1,4 +1,6 @@
 TeamsRun() {
+	CheckHero("sauda")
+
 	StartGame()						; Round 1
 	Place("hero",Hero[1],Hero[2])	; Place Hero (Sauda)
 	Targeting(Hero[1],Hero[2],3)	; Sauda: First -> Strong
