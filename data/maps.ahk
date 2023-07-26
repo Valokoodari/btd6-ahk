@@ -1,97 +1,97 @@
 global MAPS := [
     [
-        ["Monkey Meadow", Todo],
-        ["Tree Stump", Todo],
-        ["Town Center", Todo],
-        ["Middle oft he road", Todo],
-        ["One Two Tree", Todo],
-        ["Scrapyard", Todo]
+        ["Monkey Meadow", MonkeyMeadowRun],
+        ["Tree Stump", TreeStumpRun],
+        ["Town Center", TownCenterRun],
+        ["Middle of the Road", MiddleOfTheRoadRun],
+        ["One Two Tree", OneTwoTreeRun],
+        ["Scrapyard", ScrapyardRun]
     ],
     [
-        ["The Cabin", Todo],
-        ["Resort", Todo],
-        ["Skates", Todo],
-        ["Lotus Island", Todo],
-        ["Candy Falls", Todo],
-        ["Winter Park", Todo]
+        ["The Cabin", TheCabinRun],
+        ["Resort", ResortRun],
+        ["Skates", SkatesRun],
+        ["Lotus Island", LotusIslandRun],
+        ["Candy Falls", CandyFallsRun],
+        ["Winter Park", WinterParkRun]
     ],
     [
-        ["Carved", Todo],
-        ["Park Path", Todo],
-        ["Alpine Path", Todo],
-        ["Frozen Over", Todo],
-        ["In the Loop", Todo],
-        ["Cubism", Todo]
+        ["Carved", CarvedRun],
+        ["Park Path", ParkPathRun],
+        ["Alpine Path", AlpinePathRun],
+        ["Frozen Over", FrozenOverRun],
+        ["In the Loop", InTheLoopRun],
+        ["Cubism", CubismRun]
     ],
     [
-        ["Four Circles", Todo],
-        ["Hedge", Todo],
-        ["End of the Road", Todo],
-        ["Logs", Todo]
+        ["Four Circles", FourCirclesRun],
+        ["Hedge", HedgeRun],
+        ["End of the Road", EndOfTheRoadRun],
+        ["Logs", LogsRun]
     ],
     [
-        ["Water Park", Todo],
-        ["Polyphemus", Todo],
-        ["Covered Garden", Todo],
-        ["Quarry", Todo],
-        ["Quiet Street", Todo],
-        ["Bloonarius Prime", Todo]
+        ["Water Park", WaterParkRun],
+        ["Polyphemus", PolyphemusRun],
+        ["Covered Garden", CoveredGardenRun],
+        ["Quarry", QuarryRun],
+        ["Quiet Street", QuietStreetRun],
+        ["Bloonarius Prime", BloonariusPrimeRun]
     ],
     [
-        ["Balance", Todo],
-        ["Encrypted", Todo],
-        ["Bazaar", Todo],
-        ["Adora's Temple", Todo],
-        ["Spring Spring", Todo],
-        ["KartsNDarts", Todo]
+        ["Balance", BalanceRun],
+        ["Encrypted", EncryptedRun],
+        ["Bazaar", BazaarRun],
+        ["Adora's Temple", AdorasTempleRun],
+        ["Spring Spring", SpringSpringRun],
+        ["KartsNDarts", KartsNDartsRun]
     ],
     [
-        ["Moon Landing", Todo],
-        ["Haunted", Todo],
-        ["Downstream", Todo],
-        ["Firing Range", Todo],
-        ["Cracked", Todo],
-        ["Streambed", Todo]
+        ["Moon Landing", MoonLandingRun],
+        ["Haunted", HauntedRun],
+        ["Downstream", DownstreamRun],
+        ["Firing Range", FiringRangeRun],
+        ["Cracked", CrackedRun],
+        ["Streambed", StreambedRun]
     ],
     [
-        ["Chutes", Todo],
-        ["Rake", Todo],
-        ["Spice Islands", Todo]
+        ["Chutes", ChutesRun],
+        ["Rake", RakeRun],
+        ["Spice Islands", SpiceIslandsRun]
     ],
     [
-        ["Erosion", Todo],
-        ["Midnight Mansion", Todo],
-        ["Sunken Columns", Todo],
-        ["X Factor", Todo],
-        ["Mesa", Todo],
-        ["Greared", Todo]
+        ["Erosion", ErosionRun],
+        ["Midnight Mansion", MidnightMansionRun],
+        ["Sunken Columns", SunkenColumnsRun],
+        ["X Factor", XFactorRun],
+        ["Mesa", MesaRun],
+        ["Geared", GearedRun]
     ],
     [
-        ["Spillway", Todo],
-        ["Cargo", Todo],
-        ["Pat's Pond", Todo],
-        ["Peninsula", Todo],
-        ["High Finance", Todo],
-        ["Another Brick", Todo]
+        ["Spillway", SpillwayRun],
+        ["Cargo", CargoRun],
+        ["Pat's Pond", PatsPondRun],
+        ["Peninsula", PeninsulaRun],
+        ["High Finance", HighFinanceRun],
+        ["Another Brick", AnotherBrickRun]
     ],
     [
-        ["Off the Coast", Todo],
-        ["Cornfield", Todo],
-        ["Underground", Todo]
+        ["Off the Coast", OffTheCoastRun],
+        ["Cornfield", CornfieldRun],
+        ["Underground", UndergroundRun]
     ],
     [
-        ["Dark Dungeons", DarkDungeonsGameScript],
-        ["Sanctuary", SanctuaryGameScript],
-        ["Ravine", RavineGameScript],
-        ["Flooded Valley", FloodedValleyGameScript],
-        ["Infernal", InfernalGameScript],
-        ["Bloody Puddles", BloodyPuddlesGameScript]
+        ["Dark Dungeons", DarkDungeonsRun],
+        ["Sanctuary", SanctuaryRun],
+        ["Ravine", RavineRun],
+        ["Flooded Valley", FloodedValleyRun],
+        ["Infernal", InfernalRun],
+        ["Bloody Puddles", BloodyPuddlesRun]
     ],
     [
-        ["Workshop", WorkshopGameScript],
-        ["Quad", QuadGameScript],
+        ["Workshop", WorkshopRun],
+        ["Quad", QuadRun],
         ["Dark Castle", DarkCastleRun],
-        ["Muddy Puddles", MuddyPuddlesGameScript],
-        ["#Ouch", HashtagOuchGameScript]
+        ["Muddy Puddles", MuddyPuddlesRun],
+        ["#Ouch", HashtagOuchRun]
     ]
 ]
