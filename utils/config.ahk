@@ -7,4 +7,8 @@ logFile := IniRead("config.ini", "settings", "logFile", "logs\" FormatTime(, "yy
 
 userDifficulty := IniRead("config.ini", "settings", "difficulty", "")
 
+userEvent := IniRead("config.ini", "settings", "eventType", "")
+
+userMapType := IniRead("config.ini", "settings", "map", "")
+
 changeSettings := IniRead("config.ini", "settings", "changeSettings", "true") == "true"

@@ -1,39 +1,190 @@
 SelectDifficulty() {
-    Switch userDifficulty {
-        Case "hard","alternate","impoppable":
-            SelectHard()
+    Switch userEvent {
+        Case "golden":
+            ClickImage("buttons\hard")
+        Case "teams":
+            ClickImage("buttons\easy")
         Default:
-            SelectEasy()
+            Switch userDifficulty{
+                Case "hard","alternate","impoppable","chimps","magic","doublehp","halfcash":
+                    ClickImage("buttons\hard")
+                Case "medium","military","apocalypse","reverse":
+                    ClickImage("buttons\medium")
+                Default:
+                    ClickImage("buttons\easy")
+            }
     }
     LogDifficulty()
 }
 
-SelectEasy() {
-    if !ClickImage("buttons\easy") {
-        LogMsg("Something went wrong in difficulty selection")
+SelectMode() {
+        Switch userEvent {
+        Case "golden":
+            SelectMagic()
+        Case "teams":
+            SelectEasy()
+        Default:
+            Switch userDifficulty{
+                Case "hard":
+                    SelectHard()
+                Case "alternate":
+                    SelectAlternate()
+                Case "impoppable":
+                    SelectImpoppable()
+                Case "chimps":
+                    SelectChimps()
+                Case "magic":
+                    SelectMagic()
+                Case "doublehp":
+                    SelectDoubleHP()
+                Case "halfcash":
+                    SelectHalfCash()
+                Case "medium":
+                    SelectMedium()
+                Case "military":
+                    SelectMilitary()
+                Case "apocalypse":
+                    SelectApocalypse()
+                Case "reverse":
+                    SelectReverse()
+                Case "primary":
+                    SelectPrimary()
+                Case "deflation":
+                    SelectDeflation()
+                Default:
+                    SelectEasy()
+            }
+    }
+}
+
+SelectChimps() {
+    if ClickImage("buttons\chimps") {
+        global difficulty := "chimps"
         return
     }
-    ClickImage("buttons\easy_standard")
-    global difficulty := "easy"
+    SelectImpoppable()
+}
+
+SelectImpoppable() {
+    global HeroShould := "benjamin"
+    SelectHero()
+    if ClickImage("buttons\impoppable") {
+        global difficulty := "impoppable"
+        return
+    }
+    SelectAlternate()
+}
+
+SelectAlternate() {
+    global HeroShould := "benjamin"
+    SelectHero()
+    if ClickImage("buttons\alternate") {
+        global difficulty := "alternate"
+        return
+    }
+    SelectHard()
+}
+
+SelectHalfCash() {
+    if ClickImage("buttons\halfcash") {
+        global difficulty := "halfcash"
+        return
+    }
+    SelectDoubleHP()
+}
+
+SelectDoubleHP() {
+    if ClickImage("buttons\doublehp") {
+        global difficulty := "doublehp"
+        return
+    }
+    SelectMagic()
+}
+
+SelectMagic() {
+    Switch userEvent{
+        Case "golden":
+            global HeroShould := "benjamin"
+            SelectHero()
+        Default:
+        }
+    if ClickImage("buttons\magic") {
+        Switch userEvent{
+            Case "golden":
+                global difficulty := "golden"
+            Default:
+                global difficulty := "magic"
+            }
+        return
+    }
+    SelectHard()
 }
 
 SelectHard() {
-    ClickImage("buttons\hard")
-    if userDifficulty = "impoppable" {
-        if ClickImage("buttons\impoppable") {
-            global difficulty := "impoppable"
-            return
-        }
-    }
-    if userDifficulty ~= "alternate|impoppable" {
-        if ClickImage("buttons\alternate") {
-            global difficulty := "alternate"
-            return
-        }
-    }
     if ClickImage("buttons\hard_standard") {
         global difficulty := "hard"
         return
     }
-    LogMsg("Something went wrong in difficulty selection")
+    LogMsg("Something went wrong in map selection")
+}
+
+SelectApocalypse() {
+    if ClickImage("buttons\apocalypse") {
+        global difficulty := "apocalypse"
+        return
+    }
+    SelectMilitary()
+}
+
+SelectMilitary() {
+    if ClickImage("buttons\military") {
+        global difficulty := "military"
+        return
+    }
+    SelectMedium()
+}
+
+SelectReverse() {
+    if ClickImage("buttons\reverse") {
+        global difficulty := "reverse"
+        return
+    }
+    SelectMedium()
+}
+
+SelectMedium() {
+    if ClickImage("buttons\medium_standard") {
+        global difficulty := "medium"
+        return
+    }
+    LogMsg("Something went wrong in map selection")
+}
+
+SelectDeflation() {
+    if ClickImage("buttons\deflation") {
+        global difficulty := "deflation"
+        return
+    }
+    SelectPrimary()
+}
+
+SelectPrimary() {
+    if ClickImage("buttons\primary") {
+        global difficulty := "primary"
+        return
+    }
+    SelectEasy()
+}
+
+SelectEasy() {
+    if ClickImage("buttons\easy_standard") {
+        Switch userEvent{
+            Case "teams":
+                global difficulty := "teams"
+            Default:
+                global difficulty := "easy"
+        }
+        return
+    }
+    LogMsg("Something went wrong in map selection")
 }

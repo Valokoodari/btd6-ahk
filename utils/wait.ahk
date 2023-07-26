@@ -24,10 +24,14 @@ WaitForRound(round, delay := 0) {
                 }
             }
         }
+
         if defeated or SearchImage("states\defeat") {
-            LogMsg("Found defeat instead of the round x" round)
-            global defeated := true
-            return
+            if no_log = false {
+                LogMsg("Found defeat instead of the round x" round)
+            }
+        global defeated := true
+        return
+
         }
         CheckLevelUp()
     }
@@ -50,8 +54,50 @@ WaitForVictoryOrDefeat() {
             LogMsg("Defeat")
             break
         }
+        if SearchImage("states\home") {
+            break
+        }
         CheckInstaMonkey()
         CheckLevelUp()
         Sleep(2000)
+    }
+}
+
+WaitForUpgrade1() {
+    while true {
+        if SearchUpgrade1() {
+            return
+        }
+        if defeated or SearchImage("states\defeat") {
+            global defeated := true
+            return
+        }
+        CheckLevelUp()
+    }
+}
+
+WaitForUpgrade2() {
+    while true {
+        if SearchUpgrade2() {
+            return
+        }
+        if defeated or SearchImage("states\defeat") {
+            global defeated := true
+            return
+        }
+        CheckLevelUp()
+    }
+}
+
+WaitForUpgrade3() {
+    while true {
+        if SearchUpgrade3() {
+            return
+        }
+        if defeated or SearchImage("states\defeat") {
+            global defeated := true
+            return
+        }
+        CheckLevelUp()
     }
 }

@@ -73,13 +73,16 @@ CheckSettings() {
     LogMsg("Quick settings checked")
     global changeSettings := false
     Send("{Esc}")
+    Sleep(500)
     return
 }
 
 InGame() {
+    ClickImage("buttons\ok", 1000, "*TransBlack", 850, 710, 1050, 800)
     if changeSettings {
         CheckSettings()
     }
+    global no_log := false
     MAPS[currentMap[1]][currentMap[2]][2]()
     LogMsg("Waiting for the game to end...")
     WaitForVictoryOrDefeat()
