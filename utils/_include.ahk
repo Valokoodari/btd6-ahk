@@ -5,4 +5,5 @@
 #Include logger.ahk
 #Include towers.ahk
 #Include globals.ahk
+#Include select_map.ahk
 #Include select_diff.ahk
