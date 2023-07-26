@@ -1,4 +1,6 @@
 DarkCastleHalfCash() {
+	CheckHero("obyn_greenfoot")
+
     Place("glue",595,494)       ; Place Glue
     Place("dart",930,657)       ; Place Dart 1
 

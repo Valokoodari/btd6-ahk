@@ -1,4 +1,6 @@
 DarkCastleImpoppable() {
+	CheckHero("benjamin")
+
     Place("dart",595,494)       ; Place Dart 1
     Place("sub",1083,690)       ; Place Sub1
     StartGame()                 ; Round 6
