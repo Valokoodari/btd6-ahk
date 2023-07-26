@@ -3,6 +3,7 @@
 #Include %A_ScriptDir%
 
 #Include utils\_include.ahk
+#Include data\_include.ahk
 #Include maps\_include.ahk
 
 ^!+j:: {
@@ -22,9 +23,9 @@ Start() {
             case "home":
                 HomeMenu()
             case "map_selection":
-                SelectExpertMap()
+                SelectMap()
             case "in_game":
-                SelectGameScript()
+                InGame()
             case "collect":
                 OpenBoxes()
             case "event":
@@ -75,16 +76,16 @@ CheckSettings() {
     return
 }
 
-SelectGameScript() {
-    map := GetMapName()
+InGame() {
     if changeSettings {
         CheckSettings()
     }
-    maps[map]()
+    MAPS[currentMap[1]][currentMap[2]][2]()
     LogMsg("Waiting for the game to end...")
     WaitForVictoryOrDefeat()
     global defeated := false
     global difficulty := ""
+    global currentMap := [0, 0]
 }
 
 OpenBoxes() {

@@ -18,3 +18,7 @@ StartGame() {
     Send("{vk20}")      ; Increase speed
     Sleep(100)
 }
+
+Todo() {
+    LogMsg("This function is not implemented yet.")
+}

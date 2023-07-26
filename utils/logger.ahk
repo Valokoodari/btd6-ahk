@@ -22,10 +22,6 @@ LogArr(array) {
     LogMsg(arrayStr "]")
 }
 
-LogMap(map) {
-    LogMsg("Map recognized: " mapNames[map])
-}
-
 VictoryDefeatText() {
     text := " (" victories
     if victories == 1 {
