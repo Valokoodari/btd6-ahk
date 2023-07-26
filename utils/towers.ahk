@@ -1,39 +1,8 @@
-towers := Map(
-    "hero",     "{vk55}",
-
-    "dart",     "{vk51}",       ; Primary
-    "boomer",   "{vk57}",
-    "bomb",     "{vk45}",
-    "tack",     "{vk52}",
-    "ice",      "{vk54}",
-    "glue",     "{vk59}",
-
-    "sniper",   "{vk5A}",       ; Military
-    "sub",      "{vk58}",
-    "boat",     "{vk43}",
-    "ace",      "{vk56}",
-    "heli",     "{vk42}",
-    "mortar",   "{vk4E}",
-    "dartling", "{vk4D}",
-
-    "wizard",   "{vk41}",       ; Magic
-    "super",    "{vk53}",
-    "ninja",    "{vk44}",
-    "alch",     "{vk46}",
-    "druid",    "{vk47}",
-
-    "farm",     "{vk48}",       ; Support
-    "spike",    "{vk4A}",
-    "village",  "{vk4B}",
-    "engineer", "{vk4C}",
-    "beast",    "{vk49}"
-)
-
 Place(tower, x, y) {
     if defeated {
         return
     }
-    Send(towers[tower])
+    Send(KEYS[tower])
     Sleep(100)
     MouseMove(x,y)
     Sleep(100)
@@ -48,7 +17,7 @@ Targeting(x, y, tabCount) {
     Click(x,y)          ; Open Tower
     Sleep(100)
     Loop tabCount {
-        Send("{vk09}")
+        Send(KEYS["targeting"])
         Sleep(100)
     }
     Send("{Esc}")       ; Close Tower
@@ -62,15 +31,15 @@ Upgrade(x, y, topCount, middleCount, bottomCount) {
     Click(x,y)          ; Open Tower
     Sleep(100)
     Loop topCount {
-        Send("{vkBC}")
+        Send(KEYS["upgrade_1"])
         Sleep(100)
     }
     Loop middleCount {
-        Send("{vkBE}")
+        Send(KEYS["upgrade_2"])
         Sleep(100)
     }
     Loop bottomCount {
-        Send("{sc035}")
+        Send(KEYS["upgrade_3"])
         Sleep(100)
     }
     Send("{Esc}")       ; Close Tower
@@ -96,7 +65,7 @@ Sell(x, y) {
     }
     Click(x,y)          ; Open Tower
     Sleep(100)
-    Send("{Backspace}") ; Sell Tower
+    Send(KEYS["sell"])  ; Sell Tower
     Sleep(100)
 }
 

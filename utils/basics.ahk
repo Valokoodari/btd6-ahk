@@ -13,9 +13,9 @@ SlowClick(x, y) {
 
 StartGame() {
     Sleep(100)
-    Send("{vk20}")      ; Start game
+    Send(KEYS["play"])      ; Start game
     Sleep(100)
-    Send("{vk20}")      ; Increase speed
+    Send(KEYS["play"])      ; Increase speed
     Sleep(100)
 }
 
