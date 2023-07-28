@@ -1,189 +1,213 @@
 DarkCastleImpoppable() {
-    Place("dart",595,494)       ; Place Dart 1
-    Place("sub",1083,690)       ; Place Sub1
-    StartGame()                 ; Round 6
-    Targeting(595,494,3)        ; Dart 1: First -> Strong
+    global mouseRest := [910, 940]
+    global TS := Map(
+        "Dart A", ["dart", [595, 494]],
+        "Sub A", ["sub", [1083, 690]],
+        "Ben", ["hero", [487, 252]],
+        "Farm A", ["farm", [997, 1011]],
+        "Farm B", ["farm", [834, 1011]],
+        "Alch A", ["alch", [1016, 662]],
+        "Farm C", ["farm", [992, 870]],
+        "Village A", ["village", [851, 889]],
+        "Sub B", ["sub", [1159, 690]],
+        "Village B", ["village", [732, 889]],
+        "Druid A", ["druid", [652, 841]],
+        "Druid B", ["druid", [715, 804]],
+        "Ace", ["ace", [828, 757]],
+        "Sniper A", ["sniper", [720, 743]],
+        "Dart B", ["dart", [210, 285]],
+        "Dart C", ["dart", [210, 815]],
+        "Sniper B", ["sniper", [685, 695]],
+        "Alch B", ["alch", [937, 771]],
+        "Village C", ["village", [855, 851]]
+    )
 
-    WaitForRound(0)             ; Round 10
-    Place("hero",487,252)       ; Place Hero (Benjamin)
+    Place("Dart A")                 ; Place Dart A
+    Place("Sub A")                  ; Place Sub A
 
-    WaitForRound(1)             ; Round 11
-    Upgrade(1083,690,1,0,0)     ; Sub 1: 000 -> 100
+    StartGame()                     ; Round 6
+    Targeting("Dart A", 3)          ; Dart A: First -> Strong
 
-    WaitForRound(2)             ; Round 12
-    Upgrade(1083,690,1,0,0)     ; Sub 1: 100 -> 200
+    WaitForRound(0)                 ; Round 10
+    Place("Ben")                    ; Place Hero (Benjamin)
 
-    WaitForRound(4)             ; Round 14
-    Upgrade(1083,690,0,0,1)     ; Sub 1: 200 -> 201
+    WaitForRound(1)                 ; Round 11
+    Upgrade("Sub A", 1, 0, 0)       ; Sub A: 000 -> 100
 
-    WaitForRound(6)             ; Round 16
-    Upgrade(1083,690,0,0,1)     ; Sub 1: 201 -> 202
+    WaitForRound(2)                 ; Round 12
+    Upgrade("Sub A", 1, 0, 0)       ; Sub A: 100 -> 200
 
-    WaitForRound(9)             ; Round 19
-    Place("farm",997,1011)      ; Place Farm 1
+    WaitForRound(4)                 ; Round 14
+    Upgrade("Sub A", 0, 0, 1)       ; Sub A: 200 -> 201
 
-    WaitForRound(0)             ; Round 20
-    Upgrade(997,1011,1,0,0)     ; Farm 1: 000 -> 100
+    WaitForRound(6)                 ; Round 16
+    Upgrade("Sub A", 0, 0, 1)       ; Sub A: 201 -> 202
 
-    WaitForRound(2)             ; Round 22
-    Upgrade(997,1011,1,0,0)     ; Farm 1: 100 -> 200
-    Upgrade(595,494,0,0,2)      ; Dart 1: 000 -> 002
-    MouseMove(997,1011)         ; Move Mouse onto Farm
+    WaitForRound(9)                 ; Round 19
+    Place("Farm A")                 ; Place Farm A
 
-    WaitForRound(5)             ; Round 25
-    Place("farm",834,1011)      ; Place Farm 2
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(0)                 ; Round 20
+    Upgrade("Farm A", 1, 0, 0)      ; Farm A: 000 -> 100
 
-    WaitForRound(6)             ; Round 26
-    Upgrade(834,1011,1,0,0)     ; Farm 2: 000 -> 100
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(2)                 ; Round 22
+    Upgrade("Farm A", 1, 0, 0)      ; Farm A: 100 -> 200
+    Upgrade("Dart A", 0, 0, 2)      ; Dart A: 000 -> 002
+    MouseMove(997, 1011)            ; Move Mouse onto Farm
 
-    WaitForRound(7)             ; Round 27
-    Upgrade(834,1011,1,0,0)     ; Farm 2: 100 -> 200
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(5)                 ; Round 25
+    Place("Farm B")                 ; Place Farm B
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(8)             ; Round 28
-    Place("alch",1016,662)      ; Place Alchemist 1
-    Upgrade(1016,662,2,0,0)     ; Alchemist 1: 000 -> 200
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(6)                 ; Round 26
+    Upgrade("Farm B", 1, 0, 0)      ; Farm B: 000 -> 100
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(0)             ; Round 30
-    Place("farm",992,870)       ; Place Farm 3
-    Upgrade(992,870,1,0,0)      ; Farm 3: 000 -> 100
-    MouseMove(910,940)          ; Move Mouse between the Farms
+    WaitForRound(7)                 ; Round 27
+    Upgrade("Farm B", 1, 0, 0)      ; Farm B: 100 -> 200
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(1)             ; Round 31
-    Upgrade(992,870,1,0,0)      ; Farm 3: 100 -> 200
-    MouseMove(910,940)          ; Move Mouse between the Farms
+    WaitForRound(8)                 ; Round 28
+    Place("Alch A")                 ; Place Alch A
+    Upgrade("Alch A", 2, 0, 0)      ; Alch A: 000 -> 200
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(2)             ; Round 32
-    Upgrade(1083,690,0,0,1)     ; Sub 1: 202 -> 203
-    MouseMove(910,940)          ; Move Mouse between the Farms
+    WaitForRound(0)                 ; Round 30
+    Place("Farm C")                 ; Place Farm C
+    Upgrade("Farm C", 1, 0, 0)      ; Farm C: 000 -> 100
+    MouseMove(910, 940)             ; Move Mouse between the Farms
 
-    WaitForRound(4)             ; Round 34
-    Upgrade(1016,662,1,0,0)     ; Alchemist 1: 200 -> 300
-    MouseMove(910,940)          ; Move Mouse between the Farms
+    WaitForRound(1)                 ; Round 31
+    Upgrade("Farm C", 1, 0, 0)      ; Farm C: 100 -> 200
+    MouseMove(910, 940)             ; Move Mouse between the Farms
 
-    WaitForRound(5)             ; Round 35
-    Upgrade(1016,662,0,2,0)     ; Alchemist 1: 300 -> 320
-    MouseMove(910,940)          ; Move Mouse between the Farms
+    WaitForRound(2)                 ; Round 32
+    Upgrade("Sub A", 0, 0, 1)       ; Sub A: 202 -> 203
+    MouseMove(910, 940)             ; Move Mouse between the Farms
 
-    WaitForRound(6)             ; Round 36
-    Place("village",851,889)    ; Place Village 1
-    Upgrade(851,889,0,0,2)      ; Village 1: 000 -> 002
-    MouseMove(910,940)          ; Move Mouse between the Farms
+    WaitForRound(4)                 ; Round 34
+    Upgrade("Alch A", 1, 0, 0)      ; Alch A: 200 -> 300
+    MouseMove(910, 940)             ; Move Mouse between the Farms
 
-    WaitForRound(8)             ; Round 38
-    Upgrade(992,870,0,0,3)      ; Farm 3: 200 -> 203
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(5)                 ; Round 35
+    Upgrade("Alch A", 0, 2, 0)      ; Alch A: 300 -> 320
+    MouseMove(910, 940)             ; Move Mouse between the Farms
 
-    WaitForRound(9)             ; Round 39
-    Upgrade(997,1011,1,0,0)     ; Farm 1: 200 -> 300
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(6)                 ; Round 36
+    Place("Village A")              ; Place Village A
+    Upgrade("Village A", 0, 0, 2)   ; Village A: 000 -> 002
+    MouseMove(910, 940)             ; Move Mouse between the Farms
 
-    WaitForRound(0)             ; Round 40
-    Upgrade(997,1011,0,2,0)     ; Farm 1: 300 -> 320
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(8)                 ; Round 38
+    Upgrade("Farm C", 0, 0, 3)      ; Farm C: 200 -> 203
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(1)             ; Round 41
-    Upgrade(834,1011,1,0,0)     ; Farm 2: 200 -> 300
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(9)                 ; Round 39
+    Upgrade("Farm A", 1, 0, 0)      ; Farm A: 200 -> 300
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(2)             ; Round 42
-    Upgrade(834,1011,0,2,0)     ; Farm 2: 300 -> 320
-    Place("sub",1159,690)       ; Place Sub 2
-    Upgrade(1159,690,2,0,2)     ; Sub 2: 000 -> 202
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(0)                 ; Round 40
+    Upgrade("Farm A", 0, 2, 0)      ; Farm 1: 300 -> 320
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(3)             ; Round 43
-    Upgrade(1159,690,0,0,1)     ; Sub 2: 202 -> 203
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(1)                 ; Round 41
+    Upgrade("Farm B", 1, 0, 0)      ; Farm B: 200 -> 300
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(4)             ; Round 44
-    Place("village",732,889)    ; Place Village 2
-    Upgrade(732,889,0,0,2)      ; Village 2: 000 -> 002
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(2)                 ; Round 42
+    Upgrade("Farm B", 0, 2, 0)      ; Farm B: 300 -> 320
+    Place("Sub B")                  ; Place Sub B
+    Upgrade("Sub B", 2, 0, 2)       ; Sub B: 000 -> 202
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(5)             ; Round 45
-    Place("druid",652,841)      ; Place Druid 1
-    Upgrade(652,841,1,3,0)      ; Druid 1: 000 -> 130
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(3)                 ; Round 43
+    Upgrade("Sub B", 0, 0, 1)       ; Sub B: 202 -> 203
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(6)             ; Round 46
-    Place("druid",715,804)      ; Place Druid 2
-    Upgrade(715,804,1,3,0)      ; Druid 2: 000 -> 130
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(4)                 ; Round 44
+    Place("Village B")              ; Place Village 2
+    Upgrade("Village B", 0, 0, 2)   ; Village B: 000 -> 002
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(7)             ; Round 47
-    Upgrade(851,889,0,0,1)      ; Village 1: 002 -> 003
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(5)                 ; Round 45
+    Place("Druid A")                ; Place Druid A
+    Upgrade("Druid A", 1, 3, 0)     ; Druid A: 000 -> 130
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(0)             ; Round 50
-    Place("ace",828,757)        ; Place Ace
-    Upgrade(828,757,2,0,3)      ; Ace: 000 -> 203
-    Upgrade(851,889,0,0,1)      ; Village 1: 003 -> 004
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(6)                 ; Round 46
+    Place("Druid B")                ; Place Druid B
+    Upgrade("Druid B", 1, 3, 0)     ; Druid B: 000 -> 130
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(2)             ; Round 52
-    Upgrade(851,889,2,0,0)      ; Village 1: 004 -> 204
-    Upgrade(732,889,0,2,0)      ; Village 2: 002 -> 022
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(7)                 ; Round 47
+    Upgrade("Village A", 0, 0, 1)   ; Village 1: 002 -> 003
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(3)             ; Round 53
-    Remove(150,180)             ; Remove Obstacle 1
-    Remove(150,380)             ; Remove Obstacle 2
-    Remove(150,680)             ; Remove Obstacle 3
-    Remove(150,930)             ; Remove Obstacle 4
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(0)                 ; Round 50
+    Place("Ace")                    ; Place Ace
+    Upgrade("Ace", 2, 0, 3)         ; Ace: 000 -> 203
+    Upgrade("Village A", 0, 0, 1)   ; Village 1: 003 -> 004
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(6)             ; Round 56
-    Place("sniper",720,743)     ; Place Sniper 1
-    Upgrade(720,743,4,0,0)      ; Sniper 1: 000 -> 400
-    Targeting(720,743,3)        ; Sniper 1: First -> Strong
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(2)                 ; Round 52
+    Upgrade("Village A", 2, 0, 0)   ; Village 1: 004 -> 204
+    Upgrade("Village B", 0, 2, 0)   ; Village 2: 002 -> 022
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(2)             ; Round 62
-    Upgrade(828,757,0,0,1)      ; Ace: 203 -> 204
-    Place("dart",210,285)       ; Place Dart 2
-    Place("dart",210,815)       ; Place Dart 3
-    Upgrade(210,285,0,0,2)      ; Dart 2: 000 -> 002
-    Upgrade(210,815,0,0,2)      ; Dart 3: 000 -> 002
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(3)                 ; Round 53
+    Remove(150, 180)                ; Remove Obstacle A
+    Remove(150, 380)                ; Remove Obstacle B
+    Remove(150, 680)                ; Remove Obstacle C
+    Remove(150, 930)                ; Remove Obstacle D
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(6)             ; Round 66
-    Upgrade(992,870,0,0,1)      ; Farm 3: 203 -> 204
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(6)                 ; Round 56
+    Place("Sniper A")               ; Place Sniper A
+    Upgrade("Sniper A", 4, 0, 0)    ; Sniper A: 000 -> 400
+    Targeting("Sniper A", 3)        ; Sniper A: First -> Strong
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(1)             ; Round 71
-    Upgrade(997,1011,1,0,0)     ; Farm 1: 320 -> 420
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(2)                 ; 62
+    Upgrade("Ace", 0, 0, 1)         ; 203 -> 204
+    Place("Dart B")                 ; Place Dart B
+    Place("Dart C")                 ; Place Dart C
+    Upgrade("Dart B", 0, 0, 2)      ; Dart B: 000 -> 002
+    Upgrade("Dart C", 0, 0, 2)      ; Dart C: 000 -> 002
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(5)             ; Round 75
-    Upgrade(834,1011,1,0,0)     ; Farm 2: 320 -> 420
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(6)                 ; Round 66
+    Upgrade("Farm C", 0, 0, 1)      ; Farm C: 203 -> 204
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(8)             ; Round 78
-    Place("sniper",685,695)     ; Place Sniper 2
-    Upgrade(685,695,2,0,5)      ; Sniper 2: 000 -> 205
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(1)                 ; Round 71
+    Upgrade("Farm A", 1, 0, 0)      ; Farm A: 320 -> 420
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(9)             ; Round 79
-    Place("alch",937,771)       ; Place Alchemist 2
-    Upgrade(937,771,4,2,0)      ; Alchemist 2: 000 -> 420
-    MouseMove(910,1011)         ; Move Mouse between the Farms
+    WaitForRound(5)                 ; Round 75
+    Upgrade("Farm B", 1, 0, 0)      ; Farm B: 320 -> 420
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(1)             ; Round 81
-    Sell(997,1011)              ; Sell Farm 1
-    Sell(834,1011)              ; Sell Farm 2
-    Sell(992,870)               ; Sell Farm 3
-    Sell(851,889)               ; Sell Village 1
-    Sell(732,889)               ; Sell Village 2
-    Upgrade(828,757,0,0,1)      ; Ace: 204 -> 205
-    Upgrade(720,743,0,0,2)      ; Sniper 1: 400 -> 402
-    Place("village",855,851)    ; Place Village 3
-    Upgrade(855,851,2,3,0)      ; Village 3: 000 -> 230
-    Upgrade(1016,662,1,0,0)     ; Alchemist 1: 320 -> 420
+    WaitForRound(8)                 ; Round 78
+    Place("Sniper B")               ; Place Sniper B
+    Upgrade("Sniper B", 2, 0, 5)    ; Sniper B: 000 -> 205
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
 
-    WaitForRound(9)             ; Round 89
-    Upgrade(720,743,1,0,0)      ; Sniper 1: 402 -> 502
+    WaitForRound(9)                 ; Round 79
+    Place("Alch B")                 ; Place Alch B
+    Upgrade("Alch B", 4, 2, 0)      ; Alch B: 000 -> 420
+    MouseMove(910, 1011)            ; Move Mouse between the Farms
+
+    WaitForRound(1)                 ; Round 81
+    Sell("Farm A")                  ; Sell Farm A
+    Sell("Farm B")                  ; Sell Farm B
+    Sell("Farm C")                  ; Sell Farm C
+    Sell("Village A")               ; Sell Village A
+    Sell("Village B")               ; Sell Village B
+    Upgrade("Ace", 0, 0, 1)         ; Ace: 204 -> 205
+    Upgrade("Sniper A", 0, 0, 2)    ; Sniper A: 400 -> 402
+    Place("Village C")              ; Place Village C
+    Upgrade("Village C", 2, 3, 0)   ; Village C: 000 -> 230
+    Upgrade("Alch A", 1, 0, 0)      ; Alch A: 320 -> 420
+
+    WaitForRound(9)                 ; Round 89
+    Upgrade("Sniper A", 1, 0, 0)    ; Sniper A: 402 -> 502
 }
