@@ -24,36 +24,36 @@ DarkDungeonsGameScript() {
     WaitForRound(9)                 ; Round 9
     Upgrade("Dart B", 0, 1, 2)      ; Dart B: 011 -> 023
 
-    WaitForRound(0)                 ; Round 10
+    WaitForRound(10)                ; Round 10
     Upgrade("Dart A", 0, 1, 0)      ; Dart A: 011 -> 021
 
-    WaitForRound(3)                 ; Round 13
+    WaitForRound(13)                ; Round 13
     Upgrade("Dart A", 0, 0, 2)      ; Dart A: 021 -> 023
 
-    WaitForRound(4)                 ; Round 14
+    WaitForRound(14)                ; Round 14
     Upgrade("Druid A", 0, 1, 0)     ; Druid A: 000 -> 010
 
-    WaitForRound(9)                 ; Round 19
+    WaitForRound(19)                ; Round 19
     Upgrade("Druid A", 1, 2, 0)     ; Druid A: 010 -> 130
 
-    WaitForRound(0)                 ; Round 20
+    WaitForRound(20)                ; Round 20
     Place("Druid B")                ; Place Druid B
 
-    WaitForRound(7)                 ; Round 27
+    WaitForRound(27)                ; Round 27
     Upgrade("Druid B", 1, 3, 0)     ; Druid B: 000 -> 130
 
-    WaitForRound(0)                 ; Round 30
+    WaitForRound(30)                ; Round 30
     Place("Sniper A")               ; Place Sniper A
     Upgrade("Sniper A", 0, 2, 2)    ; Sniper A: 000 -> 022
 
-    WaitForRound(3)                 ; Round 33
+    WaitForRound(33)                ; Round 33
     Place("Sniper B")               ; Place Sniper B
     Upgrade("Sniper B", 1, 0, 2)    ; Sniper B: 000 -> 102
     Targeting("Sniper B", 3)        ; Sniper B: Normal -> Strong
 
-    WaitForRound(5)                 ; Round 35
+    WaitForRound(35)                ; Round 35
     Upgrade("Sniper B", 1, 0, 0)    ; Sniper B: 102 -> 202
 
-    WaitForRound(8)                 ; Round 38
+    WaitForRound(38)                ; Round 38
     Upgrade("Sniper B", 1, 0, 0)    ; Sniper B: 202 -> 302
 }
