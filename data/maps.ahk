@@ -3,7 +3,7 @@ global MAPS := [
         ["Monkey Meadow", Todo],
         ["Tree Stump", Todo],
         ["Town Center", Todo],
-        ["Middle oft he road", Todo],
+        ["Middle of the road", Todo],
         ["One Two Tree", Todo],
         ["Scrapyard", Todo]
     ],
@@ -64,7 +64,7 @@ global MAPS := [
         ["Sunken Columns", Todo],
         ["X Factor", Todo],
         ["Mesa", Todo],
-        ["Greared", Todo]
+        ["Geared", Todo]
     ],
     [
         ["Spillway", Todo],
