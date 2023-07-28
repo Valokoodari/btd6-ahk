@@ -4,7 +4,7 @@
 
 #Include utils\_include.ahk
 #Include data\_include.ahk
-#Include maps\_include.ahk
+#Include maps\expert\_include.ahk
 
 ^!+j:: {
     ClearLogFile()
