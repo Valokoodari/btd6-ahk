@@ -1,8 +1,11 @@
-Place(tower, x, y) {
+Place(tower) {
     if defeated {
         return
     }
-    Send(KEYS[tower])
+    type := TS[tower][1]
+    x := TS[tower][2][1], y := TS[tower][2][2]
+
+    Send(KEYS[type])
     Sleep(100)
     MouseMove(x,y)
     Sleep(100)
@@ -10,10 +13,12 @@ Place(tower, x, y) {
     Sleep(200)
 }
 
-Targeting(x, y, tabCount) {
+Targeting(tower, tabCount) {
     if defeated {
         return
     }
+    x := TS[tower][2][1], y := TS[tower][2][2]
+
     Click(x,y)          ; Open Tower
     Sleep(100)
     Loop tabCount {
@@ -24,10 +29,12 @@ Targeting(x, y, tabCount) {
     Sleep(200)
 }
 
-Upgrade(x, y, topCount, middleCount, bottomCount) {
+Upgrade(tower, topCount, middleCount, bottomCount) {
     if defeated {
         return
     }
+    x := TS[tower][2][1], y := TS[tower][2][2]
+
     Click(x,y)          ; Open Tower
     Sleep(100)
     Loop topCount {
@@ -46,10 +53,13 @@ Upgrade(x, y, topCount, middleCount, bottomCount) {
     Sleep(200)
 }
 
-Merge(x, y, sx, sy) {
+Merge(tower_1, tower_2) {
     if defeated {
         return
     }
+    x := TS[tower_1][2][1], y := TS[tower_1][2][2]
+    sx := TS[tower_2][2][1], sy := TS[tower_2][2][2]
+
     Click(x,y)          ; Open Tower
     Sleep(500)
     ClickImage("buttons\merge", 500, "*TransBlack", 420, 420, 1645, 875)
@@ -59,10 +69,12 @@ Merge(x, y, sx, sy) {
     Sleep(200)
 }
 
-Sell(x, y) {
+Sell(tower) {
     if defeated {
         return
     }
+    x := TS[tower][2][1], y := TS[tower][2][2]
+
     Click(x,y)          ; Open Tower
     Sleep(100)
     Send(KEYS["sell"])  ; Sell Tower
