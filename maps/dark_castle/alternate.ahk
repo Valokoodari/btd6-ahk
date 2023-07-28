@@ -35,96 +35,96 @@ DarkCastleAlternate() {
     WaitForRound(9)                 ; Round 9
     Upgrade("Ninja", 0, 0, 1)       ; Ninja: 100 -> 101
 
-    WaitForRound(1)                 ; Round 11
+    WaitForRound(11)                ; Round 11
     Upgrade("Ninja", 1, 0, 0)       ; Ninja: 101 -> 201
 
-    WaitForRound(5)                 ; Round 15
+    WaitForRound(15)                ; Round 15
     Place("Ben")                    ; Place Hero (Benjamin)
 
-    WaitForRound(7)                 ; Round 17
+    WaitForRound(17)                ; Round 17
     Upgrade("Ninja", 1, 0, 0)       ; Ninja: 201 -> 301
 
-    WaitForRound(8)                 ; Round 18
+    WaitForRound(18)                ; Round 18
     Upgrade("Sniper", 0, 1, 0)      ; Sniper: 100 -> 110
 
-    WaitForRound(9)                 ; Round 19
+    WaitForRound(19)                ; Round 19
     Place("Alch")                   ; Place Alch
     Targeting("Alch", 3)            ; Alch: First -> Strong
 
-    WaitForRound(1)                 ; Round 21
+    WaitForRound(21)                ; Round 21
     Upgrade("Alch", 2, 0, 0)        ; Alch: 000 -> 200
 
-    WaitForRound(3)                 ; Round 23
+    WaitForRound(23)                ; Round 23
     Place("Spike")                  ; Place Spike
 
-    WaitForRound(6)                 ; Round 26
+    WaitForRound(26)                ; Round 26
     Upgrade("Spike", 1, 0, 2)       ; Spike: 000 -> 102
 
-    WaitForRound(9)                 ; Round 29
+    WaitForRound(29)                ; Round 29
     Upgrade("Spike", 1, 0, 1)       ; Spike: 102 -> 203
 
-    WaitForRound(5)                 ; Round 35
+    WaitForRound(35)                ; Round 35
     Upgrade("Spike", 0, 0, 1)       ; Spike: 203 -> 204
 
-    WaitForRound(8)                 ; Round 38
+    WaitForRound(38)                ; Round 38
     Upgrade("Ninja", 1, 0, 0)       ; Ninja: 301 -> 401
     Upgrade("Dart A", 0, 1, 3)      ; Dart A: 000 -> 013
 
-    WaitForRound(0)                 ; Round 40
+    WaitForRound(40)                ; Round 40
     Upgrade("Alch", 1, 0, 1)        ; Alch: 200 -> 301
 
-    WaitForRound(1)                 ; Round 41
+    WaitForRound(41)                ; Round 41
     Upgrade("Sniper", 1, 1, 0)      ; Sniper: 110 -> 220
 
-    WaitForRound(2)                 ; Round 42
+    WaitForRound(42)                ; Round 42
     Place("Wizard")                 ; Place Wizard
     Upgrade("Wizard", 3, 0, 2)      ; Wizard: 000 -> 202
 
-    WaitForRound(5)                 ; Round 45
+    WaitForRound(45)                ; Round 45
     Upgrade("Alch", 1, 0, 0)        ; Alch: 301 -> 401
 
-    WaitForRound(0)                 ; Round 50
+    WaitForRound(50)                ; Round 50
     Upgrade("Wizard", 1, 0, 0)      ; Wizard: 302 -> 402
 
-    WaitForRound(2)                 ; Round 52
+    WaitForRound(52)                ; Round 52
     Upgrade("Sniper", 1, 0, 0)      ; Sniper: 220 -> 320
 
-    WaitForRound(6)                 ; Round 56
+    WaitForRound(56)                ; Round 56
     Place("Ace")                    ; Place Ace
     Upgrade("Ace", 2, 0, 3)         ; Ace: 000 -> 203
 
-    WaitForRound(9)                 ; Round 59
+    WaitForRound(59)                ; Round 59
     Place("Bomb")                   ; Place Bomb
     Upgrade("Bomb", 2, 0, 4)        ; Bomb: 000 -> 204
     Place("Village")                ; Place Village
     Upgrade("Village", 1, 1, 0)     ; Village: 000 -> 110
 
-    WaitForRound(0)                 ; Round 60
+    WaitForRound(60)                ; Round 60
     Upgrade("Village", 1, 0, 0)     ; Village: 110 -> 210
 
-    WaitForRound(2)                 ; Round 62
+    WaitForRound(62)                ; Round 62
     Upgrade("Village", 0, 1, 0)     ; Village: 210 -> 220
 
-    WaitForRound(5)                 ; Round 65
+    WaitForRound(65)                ; Round 65
     Place("Sub A")                  ; Place Sub A
     Upgrade("Sub A", 2, 0, 4)       ; Sub A: 000 -> 204
 
-    WaitForRound(8)                 ; Round 68
+    WaitForRound(68)                ; Round 68
     Place("Sub B")                  ; Place Sub B
     Upgrade("Sub B", 2, 0, 4)       ; Sub B: 000 -> 204
 
-    WaitForRound(4)                 ; Round 74
+    WaitForRound(74)                ; Round 74
     Upgrade("Village", 0, 1, 0)     ; Village: 220 -> 230
     Place("Dart B")                 ; Place Dart B
     Upgrade("Dart B", 0, 0, 2)      ; Dart B: 000 -> 002
     Place("Dart C")                 ; Place Dart C
     Upgrade("Dart C", 0, 0, 2)      ; Dart C: 000 -> 002
 
-    WaitForRound(6)                 ; Round 76
+    WaitForRound(76)                ; Round 76
     Place("Boomer")                 ; Place Boomer
     Upgrade("Boomer", 4, 2, 0)      ; Boomer: 000 -> 420
 
-    WaitForRound(8)                 ; Round 78
+    WaitForRound(78)                ; Round 78
     Place("Sub C")                  ; Place Sub C
     Upgrade("Sub C", 2, 0, 4)       ; Sub C: 000 -> 204
 }
