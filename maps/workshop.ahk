@@ -6,39 +6,39 @@ WorkshopGameScript() {
         "Sniper", ["sniper", [1015, 425]]
     )
 
-    StartGame()                     ; Round 1
-    Place("Dart")                   ; Place Dart
-    Place("Druid")                  ; Place Druid
+    StartGame()
+    Place("Dart")
+    Place("Druid")
 
-    WaitForRound(2)                 ; Round 2
-    Upgrade("Druid", 0, 1, 0)       ; Druid: 000 -> 010
+    WaitForRound(2)
+    Upgrade("Druid", 0, 1, 0)       ; 000 -> 010
 
-    WaitForRound(8)                 ; Round 8
-    Place("Spike")                  ; Place Spike
+    WaitForRound(8)
+    Place("Spike")
 
-    WaitForRound(14)                ; Round 14
-    Upgrade("Druid", 1, 2, 0)       ; Druid: 010 -> 130
+    WaitForRound(14)
+    Upgrade("Druid", 1, 2, 0)       ; 010 -> 130
 
-    WaitForRound(18)                ; Round 18
-    Upgrade("Dart", 0, 2, 3)        ; Dart: 000 -> 023
+    WaitForRound(18)
+    Upgrade("Dart", 0, 2, 3)        ; 000 -> 023
 
-    WaitForRound(24)                ; Round 24
-    Upgrade("Spike", 0, 0, 3)       ; Spike: 000 -> 003
-    Targeting("Spike", 1)           ; Spike: Normal -> Close
+    WaitForRound(24)
+    Upgrade("Spike", 0, 0, 3)       ; 000 -> 003
+    Targeting("Spike", 1)           ; Normal -> Close
 
-    WaitForRound(26)                ; Round 26
-    Place("Sniper")                 ; Place Sniper
-    Targeting("Sniper", 3)          ; Sniper: Normal -> Strong
+    WaitForRound(26)
+    Place("Sniper")
+    Targeting("Sniper", 3)          ; Normal -> Strong
 
-    WaitForRound(28)                ; Round 28
-    Upgrade("Sniper", 1, 0, 2)      ; Sniper: 000 -> 102
+    WaitForRound(28)
+    Upgrade("Sniper", 1, 0, 2)      ; 000 -> 102
 
-    WaitForRound(31)                ; Round 31
-    Upgrade("Sniper", 1, 0, 0)      ; Sniper: 102 -> 202
+    WaitForRound(31)
+    Upgrade("Sniper", 1, 0, 0)      ; 102 -> 202
 
-    WaitForRound(36)                ; Round 36
-    Upgrade("Sniper", 1, 0, 0)      ; Sniper: 202 -> 302
+    WaitForRound(36)
+    Upgrade("Sniper", 1, 0, 0)      ; 202 -> 302
 
-    WaitForRound(37)                ; Round 37
-    Upgrade("Dart", 0, 0, 1)        ; Dart: 023 -> 024
+    WaitForRound(37)
+    Upgrade("Dart", 0, 0, 1)        ; 023 -> 024
 }
