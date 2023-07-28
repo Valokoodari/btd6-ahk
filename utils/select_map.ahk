@@ -16,14 +16,14 @@ SelectExpertMap() {
     while true {
         ClickImage("buttons\expert")
         currentMap[1] := GetCurrentMapPage()
-        if eventType == "dark_castle" {
+        if mapSelect == "dark_castle" {
             if ClickImage("buttons\dark_castle") {
                 currentMap[2] := 3
                 return
             }
-        } else if FileExist("img\events\" eventType) {
+        } else if FileExist("img\events\" mapSelect) {
             Loop 6 {
-                if ClickImage("events\" eventType "\" A_Index - 1) {
+                if ClickImage("events\" mapSelect "\" A_Index - 1) {
                     currentMap[2] := A_Index
                     return
                 }

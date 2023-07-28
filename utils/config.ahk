@@ -1,4 +1,4 @@
-eventType := IniRead("config.ini", "settings", "eventType", "none")
+mapSelect := IniRead("config.ini", "settings", "mapSelect", "none")
 
 overwriteSave := IniRead("config.ini", "settings", "overwriteSave", false) == "true"
 

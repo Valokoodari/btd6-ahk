@@ -98,8 +98,10 @@ script manually.
 </details>
 
 ## Usage
-For optimal results set the `eventType` in `config.ini` according to the current event (`none`, 
-`birthday`, `easter`, `fireworks`, `halloween`, `holiday`, `totem`).  
+For optimal results set `mapSelect` in `config.ini` according to the current event (`none`, 
+`birthday`, `easter`, `fireworks`, `halloween`, `holiday`, `totem`). If you don't have all expert,
+maps unlocked you may set it to `dark_castle` to only choose Dark Castle. The default method 
+chooses a random expert map.  
 
 Start the script on the home menu, stage selection menu, collection menu, or in an expert
 easy/standard map, using the hotkey <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> +
