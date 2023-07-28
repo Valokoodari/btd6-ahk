@@ -12,16 +12,14 @@ SelectExpertMap() {
     if userDifficulty ~= "alternate|impoppable" {
         SelectHero()
     }
-    randomMap := Random(1, 11)
+    mapToSelect := Random(1, 11)
+    if mapSelect == "dark_castle" {
+        mapToSelect := 9
+    }
     while true {
         ClickImage("buttons\expert")
         currentMap[1] := GetCurrentMapPage()
-        if mapSelect == "dark_castle" {
-            if ClickImage("buttons\dark_castle") {
-                currentMap[2] := 3
-                return
-            }
-        } else if FileExist("img\events\" mapSelect) {
+        if FileExist("img\events\" mapSelect) {
             Loop 6 {
                 if ClickImage("events\" mapSelect "\" A_Index - 1) {
                     currentMap[2] := A_Index
@@ -29,12 +27,12 @@ SelectExpertMap() {
                 }
             }
         } else {
-            if currentMap[1] != 12 and randomMap < 7 {
+            if currentMap[1] != 12 and mapToSelect < 7 {
                 continue
-            } else if currentMap[1] != 13 and randomMap > 6 {
+            } else if currentMap[1] != 13 and mapToSelect > 6 {
                 continue
             }
-            currentMap[2] := Mod(randomMap, 6) + 1
+            currentMap[2] := Mod(mapToSelect - 1, 6) + 1
             Click(MAP_COORDS[currentMap[2]][1], MAP_COORDS[currentMap[2]][2])
             Sleep(1000)
             return
