@@ -87,6 +87,7 @@ InGame() {
     global defeated := false
     global difficulty := ""
     global currentMap := [0, 0]
+    global mouseRest := [1, 1]
 }
 
 OpenBoxes() {
