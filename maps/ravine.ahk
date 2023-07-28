@@ -20,30 +20,30 @@ RavineGameScript() {
     WaitForRound(6)                 ; Round 6
     Upgrade("Druid B", 0, 1, 0)     ; Druid B: 000 -> 010
 
-    WaitForRound(0)                 ; Round 10
+    WaitForRound(10)                ; Round 10
     Place("Spike")                  ; Place Spike
 
-    WaitForRound(6)                 ; Round 16
+    WaitForRound(16)                ; Round 16
     Upgrade("Druid B", 1, 2, 0)     ; Druid B: 010 -> 130
 
-    WaitForRound(2)                 ; Round 22
+    WaitForRound(22)                ; Round 22
     Upgrade("Druid A", 1, 3, 0)     ; Druid A: 000 -> 130
 
-    WaitForRound(5)                 ; Round 25
+    WaitForRound(25)                ; Round 25
     Upgrade("Dart", 0, 0, 2)        ; Dart: 011 -> 013
 
-    WaitForRound(9)                 ; Round 29
+    WaitForRound(29)                ; Round 29
     Upgrade("Spike", 0, 0, 3)       ; Spike: 000 -> 003
     Targeting("Spike", 3)           ; Spike: Normal -> Smart
 
-    WaitForRound(2)                 ; Round 32
+    WaitForRound(32)                ; Round 32
     Place("Sniper")                 ; Place Sniper
     Upgrade("Sniper", 1, 0, 2)      ; Sniper: 000 -> 102
     Targeting("Sniper", 3)          ; Sniper: Normal -> Strong
 
-    WaitForRound(5)                 ; Round 35
+    WaitForRound(35)                ; Round 35
     Upgrade("Sniper", 1, 0, 0)      ; Sniper: 102 -> 202
 
-    WaitForRound(7)                 ; Round 37
+    WaitForRound(37)                ; Round 37
     Upgrade("Sniper", 1, 0, 0)      ; Sniper: 202 -> 302
 }
