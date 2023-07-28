@@ -24,51 +24,51 @@ DarkCastleHard() {
     WaitForRound(9)                 ; Round 9
     Upgrade("Sub", 0, 0, 1)         ; Sub: 200 -> 201
 
-    WaitForRound(4)                 ; Round 14
+    WaitForRound(14)                ; Round 14
     Upgrade("Sub", 0, 0, 1)         ; Sub: 201 -> 202
 
-    WaitForRound(9)                 ; Round 19
+    WaitForRound(19)                ; Round 19
     Upgrade("Sub", 0, 0, 1)         ; Sub: 202 -> 203
 
-    WaitForRound(0)                 ; Round 20
+    WaitForRound(20)                ; Round 20
     Upgrade("Dart", 0, 0, 2)        ; Dart: 000 -> 002
 
-    WaitForRound(5)                 ; Round 25
+    WaitForRound(25)                ; Round 25
     Place("Alch")                   ; Place Alch
     Upgrade("Alch", 2, 0, 0)        ; Alch: 000 -> 200
 
-    WaitForRound(2)                 ; Round 32
+    WaitForRound(32)                ; Round 32
     Place("Wizard A")               ; Place Wizard A
     Upgrade("Wizard A", 3, 0, 2)    ; Wizard A: 000 -> 302
 
-    WaitForRound(9)                 ; Round 39
+    WaitForRound(39)                ; Round 39
     Upgrade("Alch", 1, 0, 1)        ; Alch: 200 -> 301
     Upgrade("Druid", 3, 0, 1)       ; Druid: 000 -> 301
 
-    WaitForRound(6)                 ; Round 46
+    WaitForRound(46)                ; Round 46
     Upgrade("Wizard A", 1, 0, 0)    ; Wizard A: 302 -> 402
 
-    WaitForRound(0)                 ; Round 50
+    WaitForRound(50)                ; Round 50
     Place("Bomb A")                 ; Place Bomb A
     Upgrade("Bomb A", 2, 0, 4)      ; Bomb A: 000 -> 204
 
-    WaitForRound(4)                 ; Round 54
+    WaitForRound(54)                ; Round 54
     Upgrade("Druid", 1, 0, 0)       ; Druid: 301 -> 401
     Upgrade("Alch", 1, 0, 0)        ; Alch: 301 -> 401
     Upgrade("Dart", 0, 2, 2)        ; Dart: 002 -> 024
 
-    WaitForRound(9)                 ; Round 59
+    WaitForRound(59)                ; Round 59
     Place("Bomb B")                 ; Place Bomb B
     Upgrade("Bomb B", 2, 0, 4)      ; Bomb B: 000 -> 204
 
-    WaitForRound(3)                 ; Round 63
+    WaitForRound(63)                ; Round 63
     Place("Wizard B")               ; Place Wizard B
     Upgrade("Wizard B", 0, 2, 0)    ; Wizard B: 000 -> 020
 
-    WaitForRound(9)                 ; Round 69
+    WaitForRound(69)                ; Round 69
     Sell("Bomb B")                  ; Sell Bomb B
     Sell("Wizard B")                ; Sell Wizard B
 
-    WaitForRound(5)                 ; Round 75
+    WaitForRound(75)                ; Round 75
     Upgrade("Wizard A", 1, 0, 0)    ; Wizard A: 402 -> 502
 }
