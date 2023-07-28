@@ -18,23 +18,23 @@ InfernalGameScript() {
     WaitForRound(7)                 ; Round 7
     Place("Druid")                  ; Place Druid
 
-    WaitForRound(4)                 ; Round 14
+    WaitForRound(14)                ; Round 14
     Upgrade("Druid", 0, 3, 0)       ; Druid: 000 -> 030
 
-    WaitForRound(5)                 ; Round 15
+    WaitForRound(15)                ; Round 15
     Upgrade("Druid", 1, 0, 0)       ; Druid: 030 -> 130
 
-    WaitForRound(1)                 ; Round 21
+    WaitForRound(21)                ; Round 21
     Upgrade("Dart", 0, 0, 1)        ; Dart: 023 -> 024
 
-    WaitForRound(6)                 ; Round 26
+    WaitForRound(26)                ; Round 26
     Place("Sniper")                 ; Place Sniper
     Upgrade("Sniper", 1, 0, 2)      ; Sniper: 000 -> 102
     Targeting("Sniper", 3)          ; Sniper: Normal -> Strong
 
-    WaitForRound(9)                 ; Round 29
+    WaitForRound(29)                ; Round 29
     Upgrade("Sniper", 1, 0, 0)      ; Sniper: 102 -> 202
 
-    WaitForRound(5)                 ; Round 35
+    WaitForRound(35)                ; Round 35
     Upgrade("Sniper", 1, 0, 0)      ; Sniper: 202 -> 302
 }
