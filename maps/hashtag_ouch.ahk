@@ -1,43 +1,50 @@
 HashtagOuchGameScript() {
-    StartGame()                 ; Round 1
-    Place("dart",555,545)       ; Place Dart 1
-    Place("sub",980,540)        ; Place Sub
-    Place("dart",1135,545)      ; Place Dart 2
+    global TS := Map(
+        "Sub", ["sub", [980, 540]],
+        "Dart A", ["dart", [555, 545]],
+        "Dart B", ["dart", [1135, 545]],
+        "Sniper", ["sniper", [670, 90]]
+    )
 
-    WaitForRound(4)             ; Round 4
-    Upgrade(980,540,0,0,1)      ; Sub: 000 -> 001
+    StartGame()                     ; Round 1
+    Place("Sub")                    ; Place Sub
+    Place("Dart A")                 ; Place Dart A
+    Place("Dart B")                 ; Place Dart B
 
-    WaitForRound(7)             ; Round 7
-    Upgrade(980,540,2,0,0)      ; Sub: 001 -> 201
+    WaitForRound(4)                 ; Round 4
+    Upgrade("Sub", 0, 0, 1)         ; Sub: 000 -> 001
 
-    WaitForRound(1)             ; Round 11
-    Upgrade(980,540,0,0,1)      ; Sub: 201 -> 202
+    WaitForRound(7)                 ; Round 7
+    Upgrade("Sub", 2, 0, 0)         ; Sub: 001 -> 201
 
-    WaitForRound(5)             ; Round 15
-    Upgrade(980,540,0,0,1)      ; Sub: 202 -> 203
+    WaitForRound(1)                 ; Round 11
+    Upgrade("Sub", 0, 0, 1)         ; Sub: 201 -> 202
 
-    WaitForRound(9)             ; Round 19
-    Upgrade(555,545,0,2,3)      ; Dart 1: 000 -> 023
+    WaitForRound(5)                 ; Round 15
+    Upgrade("Sub", 0, 0, 1)         ; Sub: 202 -> 203
 
-    WaitForRound(3)             ; Round 23
-    Upgrade(1135,545,0,2,3)     ; Dart 2: 000 -> 023
+    WaitForRound(9)                 ; Round 19
+    Upgrade("Dart A", 0, 2, 3)      ; Dart A: 000 -> 023
 
-    WaitForRound(4)             ; Round 24
-    Place("sniper",670,90)      ; Place Sniper
-    Targeting(670,90,3)         ; Sniper: First -> Strong
+    WaitForRound(3)                 ; Round 23
+    Upgrade("Dart B", 0, 2, 3)      ; Dart B: 000 -> 023
 
-    WaitForRound(8)             ; Round 28
-    Upgrade(670,90,1,0,2)       ; Sniper: 000 -> 102
+    WaitForRound(4)                 ; Round 24
+    Place("Sniper")                 ; Place Sniper
+    Targeting("Sniper", 3)          ; Sniper: First -> Strong
 
-    WaitForRound(0)             ; Round 30
-    Upgrade(670,90,1,0,0)       ; Sniper: 102 -> 202
+    WaitForRound(8)                 ; Round 28
+    Upgrade("Sniper", 1, 0, 2)      ; Sniper: 000 -> 102
 
-    WaitForRound(5)             ; Round 35
-    Upgrade(670,90,1,0,0)       ; Sniper: 202 -> 302
+    WaitForRound(0)                 ; Round 30
+    Upgrade("Sniper", 1, 0, 0)      ; Sniper: 102 -> 202
 
-    WaitForRound(7)             ; Round 37
-    Upgrade(555,545,0,0,1)      ; Dart 1: 023 -> 024
+    WaitForRound(5)                 ; Round 35
+    Upgrade("Sniper", 1, 0, 0)      ; Sniper: 202 -> 302
 
-    WaitForRound(8)             ; Round 38
-    Upgrade(1135,545,0,0,1)     ; Dart 2: 023 -> 024
+    WaitForRound(7)                 ; Round 37
+    Upgrade("Dart A", 0, 0, 1)      ; Dart A: 023 -> 024
+
+    WaitForRound(8)                 ; Round 38
+    Upgrade("Dart B", 0, 0, 1)      ; Dart B: 023 -> 024
 }
