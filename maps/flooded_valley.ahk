@@ -18,26 +18,26 @@ FloodedValleyGameScript() {
     WaitForRound(9)                 ; Round 9
     Upgrade("Sub", 0, 0, 1)         ; Sub: 011 -> 012
 
-    WaitForRound(4)                 ; Round 14
+    WaitForRound(14)                ; Round 14
     Upgrade("Sub", 0, 1, 1)         ; Sub: 012 -> 023
 
-    WaitForRound(6)                 ; Round 16
+    WaitForRound(16)                ; Round 16
     Place("Boat")                   ; Place Boat
 
-    WaitForRound(2)                 ; Round 22
+    WaitForRound(22)                ; Round 22
     Upgrade("Boat", 0, 2, 2)        ; Boat: 000 -> 022
 
-    WaitForRound(4)                 ; Round 24
+    WaitForRound(24)                ; Round 24
     Upgrade("Boat", 0, 1, 0)        ; Boat: 022 -> 032
 
-    WaitForRound(8)                 ; Round 28
+    WaitForRound(28)                ; Round 28
     Place("Sniper")                 ; Place Sniper
     Upgrade("Sniper", 1, 0, 2)      ; Sniper: 000 -> 102
     Targeting("Sniper", 3)          ; Sniper: Normal -> Strong
 
-    WaitForRound(1)                 ; Round 31
+    WaitForRound(31)                ; Round 31
     Upgrade("Sniper", 1, 0, 0)      ; Sniper: 102 -> 202
 
-    WaitForRound(6)                 ; Round 36
+    WaitForRound(36)                ; Round 36
     Upgrade("Sniper", 1, 0, 0)      ; Sniper: 202 -> 302
 }
