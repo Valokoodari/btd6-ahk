@@ -1,4 +1,13 @@
-MuddyPuddlesGameScript() {
+MuddyPuddlesRun() {
+    Switch difficulty {
+        Case "easy":
+            MuddyPuddlesEasy()
+        Default:
+            Todo()
+    }
+}
+
+MuddyPuddlesEasy() {
     global TS := Map(
         "Sub", ["sub", [1195, 470]],
         "Dart A", ["dart", [480, 315]],
