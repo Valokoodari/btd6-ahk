@@ -20,5 +20,9 @@ StartGame() {
 }
 
 Todo() {
-    LogMsg("This function is not implemented yet.")
+    LogMsg("The selected difficulty has not been implemented for this map.")
+    Send("{Esc}")
+    Sleep(1500)
+    global difficulty := ""
+    ClickImage("buttons\home", 4000)
 }

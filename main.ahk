@@ -73,6 +73,7 @@ CheckSettings() {
     LogMsg("Quick settings checked")
     global changeSettings := false
     Send("{Esc}")
+    Sleep(1500)
     return
 }
 
@@ -82,8 +83,10 @@ InGame() {
         CheckSettings()
     }
     MAPS[currentMap[1]][currentMap[2]][2]()
-    LogMsg("Waiting for the game to end...")
-    WaitForVictoryOrDefeat()
+    if difficulty != "" {
+        LogMsg("Waiting for the game to end...")
+        WaitForVictoryOrDefeat()
+    }
     global defeated := false
     global difficulty := ""
     global currentMap := [0, 0]
