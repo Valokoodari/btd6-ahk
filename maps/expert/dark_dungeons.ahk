@@ -1,4 +1,13 @@
-DarkDungeonsGameScript() {
+DarkDungeonsRun() {
+    Switch difficulty {
+        Case "easy":
+            DarkDungeonsEasy()
+        Default:
+            Todo()
+    }
+}
+
+DarkDungeonsEasy() {
     global TS := Map(
         "Dart A", ["dart", [260, 905]],
         "Druid A", ["druid", [780, 1000]],
