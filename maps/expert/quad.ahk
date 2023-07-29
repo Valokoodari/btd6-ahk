@@ -1,4 +1,13 @@
-QuadGameScript() {
+QuadRun() {
+    Switch difficulty {
+        Case "easy":
+            QuadEasy()
+        Default:
+            Todo()
+    }
+}
+
+QuadEasy() {
     global TS := Map(
         "Dart A", ["dart", [470, 640]],
         "Dart B", ["dart", [970, 330]],
