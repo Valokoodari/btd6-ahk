@@ -24,7 +24,7 @@ Start() {
                 HomeMenu()
             case "map_selection":
                 SelectMap()
-            case "in_game":
+            case "in_game","apopalypse":
                 InGame()
             case "collect":
                 OpenBoxes()

@@ -10,6 +10,7 @@ states := [
     "home",
     "map_selection",
     "in_game",
+    "apopalypse",
     "collect",
     "event",
     "victory",

@@ -12,8 +12,10 @@ SlowClick(x, y) {
 }
 
 StartGame() {
-    Sleep(100)
-    Send(KEYS["play"])      ; Start game
+    if difficulty != "apopalypse" {
+        Sleep(100)
+        Send(KEYS["play"])  ; Start game
+    }
     Sleep(100)
     Send(KEYS["play"])      ; Increase speed
     Sleep(100)
