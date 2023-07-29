@@ -85,7 +85,7 @@ global MAPS := [
         ["Ravine", RavineGameScript],
         ["Flooded Valley", FloodedValleyGameScript],
         ["Infernal", InfernalRun],
-        ["Bloody Puddles", BloodyPuddlesGameScript]
+        ["Bloody Puddles", BloodyPuddlesRun]
     ],
     [
         ["Workshop", WorkshopGameScript],

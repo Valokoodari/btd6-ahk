@@ -1,4 +1,13 @@
-BloodyPuddlesGameScript() {
+BloodyPuddlesRun() {
+    Switch difficulty {
+        Case "easy":
+            BloodyPuddlesEasy()
+        Default:
+            Todo()
+    }
+}
+
+BloodyPuddlesEasy() {
     global TS := Map(
         "Dart A", ["dart", [385, 290]],
         "Sub", ["sub", [1180, 190]],
