@@ -81,7 +81,7 @@ global MAPS := [
     ],
     [
         ["Dark Dungeons", DarkDungeonsRun],
-        ["Sanctuary", SanctuaryGameScript],
+        ["Sanctuary", SanctuaryRun],
         ["Ravine", RavineRun],
         ["Flooded Valley", FloodedValleyRun],
         ["Infernal", InfernalRun],

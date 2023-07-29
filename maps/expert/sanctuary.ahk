@@ -1,4 +1,13 @@
-SanctuaryGameScript() {
+SanctuaryRun() {
+    Switch difficulty {
+        Case "easy":
+            SanctuaryEasy()
+        Default:
+            Todo()
+    }
+}
+
+SanctuaryEasy() {
     ; TODO Automatically calculate the moving coordinates based on round
     global TS := Map(
         "Sub", ["sub", [740, 185]],         ; 0 mod 2
