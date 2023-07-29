@@ -9,12 +9,24 @@ SelectDifficulty() {
 }
 
 SelectEasy() {
-    if !ClickImage("difficulty\easy") {
-        LogMsg("Something went wrong in difficulty selection")
+    ClickImage("difficulty\easy")
+    if userDifficulty == "deflation" {
+        if ClickImage("difficulty\deflation") {
+            global difficulty := "deflation"
+            return
+        }
+    }
+    if userDifficulty ~= "primary|deflation" {
+        if ClickImage("difficulty\primary") {
+            global difficulty := "primary"
+            return
+        }
+    }
+    if ClickImage("difficulty\easy_standard") {
+        global difficulty := "easy"
         return
     }
-    ClickImage("difficulty\easy_standard")
-    global difficulty := "easy"
+    LogMsg("Something went wrong in difficulty selection")
 }
 
 SelectHard() {
