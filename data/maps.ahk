@@ -88,7 +88,7 @@ global MAPS := [
         ["Bloody Puddles", Todo, BLOODY_PUDDLES_DATA]
     ],
     [
-        ["Workshop", WorkshopRun],
+        ["Workshop", Todo, WORKSHOP_DATA],
         ["Quad", Todo, QUAD_DATA],
         ["Dark Castle", Todo, DARK_CASTLE_DATA],
         ["Muddy Puddles", Todo, MUDDY_PUDDLES_DATA],

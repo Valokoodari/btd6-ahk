@@ -1,11 +1,6 @@
-WorkshopRun() {
-    Switch difficulty {
-        Case "easy":
-            WorkshopEasy()
-        Default:
-            Todo()
-    }
-}
+WORKSHOP_DATA := Map(
+    "easy", [WorkshopEasy, ""],
+)
 
 WorkshopEasy() {
     global TS := Map(
