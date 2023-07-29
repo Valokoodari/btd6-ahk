@@ -1,4 +1,13 @@
-WorkshopGameScript() {
+WorkshopRun() {
+    Switch difficulty {
+        Case "easy":
+            WorkshopEasy()
+        Default:
+            Todo()
+    }
+}
+
+WorkshopEasy() {
     global TS := Map(
         "Dart", ["dart", [1020, 500]],
         "Druid", ["druid", [930, 495]],
