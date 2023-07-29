@@ -5,6 +5,8 @@
 
 DarkCastleRun() {
     Switch difficulty {
+        Case "easy":
+            DarkCastleEasy()
         Case "hard":
             DarkCastleHard()
         Case "alternate":
@@ -12,6 +14,6 @@ DarkCastleRun() {
         Case "impoppable":
             DarkCastleImpoppable()
         Default:
-            DarkCastleEasy()
+            Todo()
     }
 }
