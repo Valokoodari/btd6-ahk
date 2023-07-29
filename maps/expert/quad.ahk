@@ -1,11 +1,6 @@
-QuadRun() {
-    Switch difficulty {
-        Case "easy":
-            QuadEasy()
-        Default:
-            Todo()
-    }
-}
+QUAD_DATA := Map(
+    "easy", [QuadEasy, ""]
+)
 
 QuadEasy() {
     global TS := Map(
