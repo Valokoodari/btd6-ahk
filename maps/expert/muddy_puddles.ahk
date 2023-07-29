@@ -1,11 +1,6 @@
-MuddyPuddlesRun() {
-    Switch difficulty {
-        Case "easy":
-            MuddyPuddlesEasy()
-        Default:
-            Todo()
-    }
-}
+MUDDY_PUDDLES_DATA := Map(
+    "easy", [MuddyPuddlesEasy, ""]
+)
 
 MuddyPuddlesEasy() {
     global TS := Map(
