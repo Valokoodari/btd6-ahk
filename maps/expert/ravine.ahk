@@ -1,11 +1,6 @@
-RavineRun() {
-    Switch difficulty {
-        Case "easy":
-            RavineEasy()
-        Default:
-            Todo()
-    }
-}
+RAVINE_DATA := Map(
+    "easy", [RavineEasy, ""]
+)
 
 RavineEasy() {
     global TS := Map(
