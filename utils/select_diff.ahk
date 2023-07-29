@@ -9,29 +9,29 @@ SelectDifficulty() {
 }
 
 SelectEasy() {
-    if !ClickImage("buttons\easy") {
+    if !ClickImage("difficulty\easy") {
         LogMsg("Something went wrong in difficulty selection")
         return
     }
-    ClickImage("buttons\easy_standard")
+    ClickImage("difficulty\easy_standard")
     global difficulty := "easy"
 }
 
 SelectHard() {
-    ClickImage("buttons\hard")
+    ClickImage("difficulty\hard")
     if userDifficulty = "impoppable" {
-        if ClickImage("buttons\impoppable") {
+        if ClickImage("difficulty\impoppable") {
             global difficulty := "impoppable"
             return
         }
     }
     if userDifficulty ~= "alternate|impoppable" {
-        if ClickImage("buttons\alternate") {
+        if ClickImage("difficulty\alternate") {
             global difficulty := "alternate"
             return
         }
     }
-    if ClickImage("buttons\hard_standard") {
+    if ClickImage("difficulty\hard_standard") {
         global difficulty := "hard"
         return
     }
