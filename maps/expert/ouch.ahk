@@ -1,13 +1,13 @@
-HashtagOuchRun() {
+OuchRun() {
     Switch difficulty {
         Case "easy":
-            HashtagOuchEasy()
+            OuchEasy()
         Default:
             Todo()
     }
 }
 
-HashtagOuchEasy() {
+OuchEasy() {
     global TS := Map(
         "Sub", ["sub", [980, 540]],
         "Dart A", ["dart", [555, 545]],

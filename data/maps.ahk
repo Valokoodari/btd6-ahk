@@ -92,6 +92,6 @@ global MAPS := [
         ["Quad", QuadRun],
         ["Dark Castle", DarkCastleRun],
         ["Muddy Puddles", MuddyPuddlesRun],
-        ["#Ouch", HashtagOuchRun]
+        ["#Ouch", OuchRun]
     ]
 ]
