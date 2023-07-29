@@ -1,6 +1,6 @@
 SelectDifficulty() {
     Switch userDifficulty {
-        Case "hard","alternate","impoppable":
+        Case "hard","magic","double_hp","half_cash","alternate","impoppable","chimps":
             SelectHard()
         Case "medium","military","apopalypse","reverse":
             SelectMedium()
@@ -60,13 +60,37 @@ SelectMedium() {
 
 SelectHard() {
     ClickImage("difficulty\hard")
-    if userDifficulty = "impoppable" {
+    if userDifficulty == "half_cash" {
+        if ClickImage("difficulty\half_cash") {
+            global difficulty := "half_cash"
+            return
+        }
+    }
+    if userDifficulty ~= "double_hp|half_cash" {
+        if ClickImage("difficulty\double_hp") {
+            global difficulty := "double_hp"
+            return
+        }
+    }
+    if userDifficulty ~= "magic|double_hp|half_cash" {
+        if ClickImage("difficulty\magic") {
+            global difficulty := "magic"
+            return
+        }
+    }
+    if userDifficulty == "chimps" {
+        if ClickImage("difficulty\chimps") {
+            global difficulty := "chimps"
+            return
+        }
+    }
+    if userDifficulty ~= "impoppable|chimps" {
         if ClickImage("difficulty\impoppable") {
             global difficulty := "impoppable"
             return
         }
     }
-    if userDifficulty ~= "alternate|impoppable" {
+    if userDifficulty ~= "alternate|impoppable|chimps" {
         if ClickImage("difficulty\alternate") {
             global difficulty := "alternate"
             return
