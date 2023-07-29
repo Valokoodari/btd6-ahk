@@ -1,4 +1,13 @@
-FloodedValleyGameScript() {
+FloodedValleyRun() {
+    Switch difficulty {
+        Case "easy":
+            FloodedValleyEasy()
+        Default:
+            Todo()
+    }
+}
+
+FloodedValleyEasy() {
     global TS := Map(
         "Sub", ["sub", [1000, 770]],
         "Boat", ["boat", [1060, 670]],
