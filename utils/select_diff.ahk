@@ -24,7 +24,7 @@ SelectEasy() {
             return
         }
     }
-    if ClickImage("difficulty\easy_standard") {
+    if ClickImage("difficulty\easy") {
         global difficulty := "easy"
         return
     }
@@ -51,7 +51,7 @@ SelectMedium() {
             return
         }
     }
-    if ClickImage("difficulty\medium_standard") {
+    if ClickImage("difficulty\medium") {
         global difficulty := "medium"
         return
     }
@@ -96,7 +96,7 @@ SelectHard() {
             return
         }
     }
-    if ClickImage("difficulty\hard_standard") {
+    if ClickImage("difficulty\hard") {
         global difficulty := "hard"
         return
     }
