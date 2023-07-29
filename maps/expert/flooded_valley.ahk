@@ -1,11 +1,6 @@
-FloodedValleyRun() {
-    Switch difficulty {
-        Case "easy":
-            FloodedValleyEasy()
-        Default:
-            Todo()
-    }
-}
+FLOODED_VALLEY_DATA := Map(
+    "easy", [FloodedValleyEasy, ""]
+)
 
 FloodedValleyEasy() {
     global TS := Map(
