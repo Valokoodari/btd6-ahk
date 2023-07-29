@@ -11,9 +11,7 @@ SelectDifficulty() {
         LogMsg("Something went wrong in difficulty selection")
         return
     }
-    if difficulty ~= "alternate|impoppable" {
-        SelectHero()
-    }
+    SelectHero()
     ClickImage("difficulty\" difficulty)
     LogDifficulty()
 }

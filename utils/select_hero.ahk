@@ -1,24 +1,26 @@
 SelectHero() {
-    styles := ["normal", "dj", "sushi"]
-
-    for style in styles {
-        if SearchImage("hero\" style) {
+    mapData := MAPS[currentMap[1]][currentMap[2]]
+    if not mapData[2].Has(difficulty) {
+        return
+    }
+    hero := mapData[2][difficulty][2]
+    if hero == "" {
+        return
+    }
+    for style in HERO_SKINS[hero] {
+        if SearchImage("hero\" hero "\" style) {
             return
         }
     }
-    LogMsg("Benjamin not selected, changing the hero")
+    LogMsg("Changing the hero")
     ClickImage("hero\change")
-
-    changed := false
-    for style in styles {
-        if ClickImage("hero\select_" style) {
+    for style in HERO_SKINS[hero] {
+        if ClickImage("hero\" hero "\select_" style) {
             ClickImage("hero\select")
             ClickImage("hero\back")
-            changed := true
+            return
         }
     }
-    if !changed {
-        LogMsg("Couldn't change the hero, stopping the script...")
-        Reload()
-    }
+    LogMsg("Couldn't change the hero, stopping the script...")
+    Reload()
 }
