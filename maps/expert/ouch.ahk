@@ -1,11 +1,6 @@
-OuchRun() {
-    Switch difficulty {
-        Case "easy":
-            OuchEasy()
-        Default:
-            Todo()
-    }
-}
+OUCH_DATA := Map(
+    "easy", [OuchEasy, ""]
+)
 
 OuchEasy() {
     global TS := Map(

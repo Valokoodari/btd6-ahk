@@ -92,6 +92,6 @@ global MAPS := [
         ["Quad", QuadRun],
         ["Dark Castle", Todo, DARK_CASTLE_DATA],
         ["Muddy Puddles", Todo, MUDDY_PUDDLES_DATA],
-        ["#Ouch", OuchRun]
+        ["#Ouch", Todo, OUCH_DATA]
     ]
 ]
