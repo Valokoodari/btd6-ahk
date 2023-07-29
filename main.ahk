@@ -83,14 +83,10 @@ InGame() {
         CheckSettings()
     }
     mapData := MAPS[currentMap[1]][currentMap[2]]
-    if mapData.Has(3) {
-        if mapData[3].Has(difficulty) {
-            mapData[3][difficulty][1]()
-        } else {
-            Todo()
-        }
+    if mapData[2].Has(difficulty) {
+        mapData[2][difficulty][1]()
     } else {
-        mapData[2]()
+        Todo()
     }
     if difficulty != "" {
         LogMsg("Waiting for the game to end...")

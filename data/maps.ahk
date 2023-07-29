@@ -1,97 +1,97 @@
 global MAPS := [
     [
-        ["Monkey Meadow", Todo],
-        ["Tree Stump", Todo],
-        ["Town Center", Todo],
-        ["Middle of the road", Todo],
-        ["One Two Tree", Todo],
-        ["Scrapyard", Todo]
+        ["Monkey Meadow", Map()],
+        ["Tree Stump", Map()],
+        ["Town Center", Map()],
+        ["Middle of the road", Map()],
+        ["One Two Tree", Map()],
+        ["Scrapyard", Map()]
     ],
     [
-        ["The Cabin", Todo],
-        ["Resort", Todo],
-        ["Skates", Todo],
-        ["Lotus Island", Todo],
-        ["Candy Falls", Todo],
-        ["Winter Park", Todo]
+        ["The Cabin", Map()],
+        ["Resort", Map()],
+        ["Skates", Map()],
+        ["Lotus Island", Map()],
+        ["Candy Falls", Map()],
+        ["Winter Park", Map()]
     ],
     [
-        ["Carved", Todo],
-        ["Park Path", Todo],
-        ["Alpine Path", Todo],
-        ["Frozen Over", Todo],
-        ["In the Loop", Todo],
-        ["Cubism", Todo]
+        ["Carved", Map()],
+        ["Park Path", Map()],
+        ["Alpine Path", Map()],
+        ["Frozen Over", Map()],
+        ["In the Loop", Map()],
+        ["Cubism", Map()]
     ],
     [
-        ["Four Circles", Todo],
-        ["Hedge", Todo],
-        ["End of the Road", Todo],
-        ["Logs", Todo]
+        ["Four Circles", Map()],
+        ["Hedge", Map()],
+        ["End of the Road", Map()],
+        ["Logs", Map()]
     ],
     [
-        ["Water Park", Todo],
-        ["Polyphemus", Todo],
-        ["Covered Garden", Todo],
-        ["Quarry", Todo],
-        ["Quiet Street", Todo],
-        ["Bloonarius Prime", Todo]
+        ["Water Park", Map()],
+        ["Polyphemus", Map()],
+        ["Covered Garden", Map()],
+        ["Quarry", Map()],
+        ["Quiet Street", Map()],
+        ["Bloonarius Prime", Map()]
     ],
     [
-        ["Balance", Todo],
-        ["Encrypted", Todo],
-        ["Bazaar", Todo],
-        ["Adora's Temple", Todo],
-        ["Spring Spring", Todo],
-        ["KartsNDarts", Todo]
+        ["Balance", Map()],
+        ["Encrypted", Map()],
+        ["Bazaar", Map()],
+        ["Adora's Temple", Map()],
+        ["Spring Spring", Map()],
+        ["KartsNDarts", Map()]
     ],
     [
-        ["Moon Landing", Todo],
-        ["Haunted", Todo],
-        ["Downstream", Todo],
-        ["Firing Range", Todo],
-        ["Cracked", Todo],
-        ["Streambed", Todo]
+        ["Moon Landing", Map()],
+        ["Haunted", Map()],
+        ["Downstream", Map()],
+        ["Firing Range", Map()],
+        ["Cracked", Map()],
+        ["Streambed", Map()]
     ],
     [
-        ["Chutes", Todo],
-        ["Rake", Todo],
-        ["Spice Islands", Todo]
+        ["Chutes", Map()],
+        ["Rake", Map()],
+        ["Spice Islands", Map()]
     ],
     [
-        ["Erosion", Todo],
-        ["Midnight Mansion", Todo],
-        ["Sunken Columns", Todo],
-        ["X Factor", Todo],
-        ["Mesa", Todo],
-        ["Geared", Todo]
+        ["Erosion", Map()],
+        ["Midnight Mansion", Map()],
+        ["Sunken Columns", Map()],
+        ["X Factor", Map()],
+        ["Mesa", Map()],
+        ["Geared", Map()]
     ],
     [
-        ["Spillway", Todo],
-        ["Cargo", Todo],
-        ["Pat's Pond", Todo],
-        ["Peninsula", Todo],
-        ["High Finance", Todo],
-        ["Another Brick", Todo]
+        ["Spillway", Map()],
+        ["Cargo", Map()],
+        ["Pat's Pond", Map()],
+        ["Peninsula", Map()],
+        ["High Finance", Map()],
+        ["Another Brick", Map()]
     ],
     [
-        ["Off the Coast", Todo],
-        ["Cornfield", Todo],
-        ["Underground", Todo]
+        ["Off the Coast", Map()],
+        ["Cornfield", Map()],
+        ["Underground", Map()]
     ],
     [
-        ["Dark Dungeons", Todo, DARK_DUNGEONS_DATA],
-        ["Sanctuary", Todo, SANCTUARY_DATA],
-        ["Ravine", Todo, RAVINE_DATA],
-        ["Flooded Valley", Todo, FLOODED_VALLEY_DATA],
-        ["Infernal", Todo, INFERNAL_DATA],
-        ["Bloody Puddles", Todo, BLOODY_PUDDLES_DATA]
+        ["Dark Dungeons", DARK_DUNGEONS_DATA],
+        ["Sanctuary", SANCTUARY_DATA],
+        ["Ravine", RAVINE_DATA],
+        ["Flooded Valley", FLOODED_VALLEY_DATA],
+        ["Infernal", INFERNAL_DATA],
+        ["Bloody Puddles", BLOODY_PUDDLES_DATA]
     ],
     [
-        ["Workshop", Todo, WORKSHOP_DATA],
-        ["Quad", Todo, QUAD_DATA],
-        ["Dark Castle", Todo, DARK_CASTLE_DATA],
-        ["Muddy Puddles", Todo, MUDDY_PUDDLES_DATA],
-        ["#Ouch", Todo, OUCH_DATA]
+        ["Workshop", WORKSHOP_DATA],
+        ["Quad", QUAD_DATA],
+        ["Dark Castle", DARK_CASTLE_DATA],
+        ["Muddy Puddles", MUDDY_PUDDLES_DATA],
+        ["#Ouch", OUCH_DATA]
     ]
 ]
