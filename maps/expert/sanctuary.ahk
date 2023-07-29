@@ -1,11 +1,6 @@
-SanctuaryRun() {
-    Switch difficulty {
-        Case "easy":
-            SanctuaryEasy()
-        Default:
-            Todo()
-    }
-}
+SANCTUARY_DATA := Map(
+    "easy", [SanctuaryEasy, ""]
+)
 
 SanctuaryEasy() {
     ; TODO Automatically calculate the moving coordinates based on round

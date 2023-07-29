@@ -81,7 +81,7 @@ global MAPS := [
     ],
     [
         ["Dark Dungeons", Todo, DARK_DUNGEONS_DATA],
-        ["Sanctuary", SanctuaryRun],
+        ["Sanctuary", Todo, SANCTUARY_DATA],
         ["Ravine", Todo, RAVINE_DATA],
         ["Flooded Valley", Todo, FLOODED_VALLEY_DATA],
         ["Infernal", Todo, INFERNAL_DATA],
