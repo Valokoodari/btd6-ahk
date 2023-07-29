@@ -9,9 +9,6 @@ SelectMap() {
 }
 
 SelectExpertMap() {
-    if userDifficulty ~= "alternate|impoppable" {
-        SelectHero()
-    }
     mapToSelect := Random(1, 11)
     if mapSelect == "dark_castle" {
         mapToSelect := 9
