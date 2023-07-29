@@ -1,11 +1,6 @@
-InfernalRun() {
-    Switch difficulty {
-        Case "easy":
-            InfernalEasy()
-        Default:
-            Todo()
-    }
-}
+INFERNAL_DATA := Map(
+    "easy", [InfernalEasy, ""]
+)
 
 InfernalEasy() {
     global TS := Map(

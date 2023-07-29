@@ -84,7 +84,7 @@ global MAPS := [
         ["Sanctuary", SanctuaryRun],
         ["Ravine", RavineRun],
         ["Flooded Valley", Todo, FLOODED_VALLEY_DATA],
-        ["Infernal", InfernalRun],
+        ["Infernal", Todo, INFERNAL_DATA],
         ["Bloody Puddles", Todo, BLOODY_PUDDLES_DATA]
     ],
     [
