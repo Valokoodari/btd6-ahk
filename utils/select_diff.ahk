@@ -11,7 +11,7 @@ SelectDifficulty() {
 }
 
 SelectEasy() {
-    ClickImage("difficulty\easy")
+    ClickImage("difficulty\category_easy")
     if userDifficulty == "deflation" {
         if ClickImage("difficulty\deflation") {
             global difficulty := "deflation"
@@ -32,7 +32,7 @@ SelectEasy() {
 }
 
 SelectMedium() {
-    ClickImage("difficulty\medium")
+    ClickImage("difficulty\category_medium")
     if userDifficulty == "apopalypse" {
         if ClickImage("difficulty\apopalypse") {
             global difficulty := "apopalypse"
@@ -59,7 +59,7 @@ SelectMedium() {
 }
 
 SelectHard() {
-    ClickImage("difficulty\hard")
+    ClickImage("difficulty\category_hard")
     if userDifficulty == "half_cash" {
         if ClickImage("difficulty\half_cash") {
             global difficulty := "half_cash"
