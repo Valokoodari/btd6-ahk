@@ -1,4 +1,13 @@
-InfernalGameScript() {
+InfernalRun() {
+    Switch difficulty {
+        Case "easy":
+            InfernalEasy()
+        Default:
+            Todo()
+    }
+}
+
+InfernalEasy() {
     global TS := Map(
         "Dart", ["dart", [833, 693]],
         "Druid", ["druid", [840, 790]],
