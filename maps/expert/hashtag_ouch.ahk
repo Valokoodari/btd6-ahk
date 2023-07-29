@@ -1,4 +1,13 @@
-HashtagOuchGameScript() {
+HashtagOuchRun() {
+    Switch difficulty {
+        Case "easy":
+            HashtagOuchEasy()
+        Default:
+            Todo()
+    }
+}
+
+HashtagOuchEasy() {
     global TS := Map(
         "Sub", ["sub", [980, 540]],
         "Dart A", ["dart", [555, 545]],
