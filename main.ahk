@@ -2,9 +2,9 @@
 #MaxThreadsPerHotkey 3
 #Include %A_ScriptDir%
 
+#Include maps\expert\_include.ahk
 #Include utils\_include.ahk
 #Include data\_include.ahk
-#Include maps\expert\_include.ahk
 
 ^!+j:: {
     ClearLogFile()
@@ -82,7 +82,16 @@ InGame() {
     if changeSettings {
         CheckSettings()
     }
-    MAPS[currentMap[1]][currentMap[2]][2]()
+    mapData := MAPS[currentMap[1]][currentMap[2]]
+    if mapData.Has(3) {
+        if mapData[3].Has(difficulty) {
+            mapData[3][difficulty][1]()
+        } else {
+            Todo()
+        }
+    } else {
+        mapData[2]()
+    }
     if difficulty != "" {
         LogMsg("Waiting for the game to end...")
         WaitForVictoryOrDefeat()

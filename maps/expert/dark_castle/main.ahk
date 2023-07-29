@@ -3,17 +3,9 @@
 #Include alternate.ahk
 #Include impoppable.ahk
 
-DarkCastleRun() {
-    Switch difficulty {
-        Case "easy":
-            DarkCastleEasy()
-        Case "hard":
-            DarkCastleHard()
-        Case "alternate":
-            DarkCastleAlternate()
-        Case "impoppable":
-            DarkCastleImpoppable()
-        Default:
-            Todo()
-    }
-}
+DARK_CASTLE_DATA := Map(
+    "easy", [DarkCastleEasy, ""],
+    "hard", [DarkCastleHard, ""],
+    "alternate", [DarkCastleAlternate, "benjamin"],
+    "impoppable", [DarkCastleImpoppable, "benjamin"]
+)
