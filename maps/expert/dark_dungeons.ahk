@@ -1,11 +1,6 @@
-DarkDungeonsRun() {
-    Switch difficulty {
-        Case "easy":
-            DarkDungeonsEasy()
-        Default:
-            Todo()
-    }
-}
+DARK_DUNGEONS_DATA := Map(
+    "easy", [DarkDungeonsEasy, ""]
+)
 
 DarkDungeonsEasy() {
     global TS := Map(
