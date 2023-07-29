@@ -1,4 +1,13 @@
-RavineGameScript() {
+RavineRun() {
+    Switch difficulty {
+        Case "easy":
+            RavineEasy()
+        Default:
+            Todo()
+    }
+}
+
+RavineEasy() {
     global TS := Map(
         "Dart", ["dart", [204, 494]],
         "Druid A", ["druid", [840, 980]],
