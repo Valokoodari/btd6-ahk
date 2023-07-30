@@ -19,6 +19,9 @@
 ### Intermediate
 
 ### Advanced
+- [Erosion](/docs/maps/advanced/erosion.md)
+- [Midnight Mansion](/docs/maps/advanced/midnight_mansion.md)
+- [Sunken Columns](/docs/maps/advanced/sunken_columns.md)
 
 ### Expert
 - [Dark Dungeons](/docs/maps/expert/dark_dungeons.md)
