@@ -28,6 +28,9 @@
 - [Spillway](/docs/maps/advanced/spillway.md)
 - [Cargo](/docs/maps/advanced/cargo.md)
 - [Pat's Pond](/docs/maps/advanced/pats_pond.md)
+- [Peninsula](/docs/maps/advanced/peninsula.md)
+- [High Finance](/docs/maps/advanced/high_finance.md)
+- [Another Brick](/docs/maps/advanced/another_brick.md)
 
 ### Expert
 - [Dark Dungeons](/docs/maps/expert/dark_dungeons.md)
