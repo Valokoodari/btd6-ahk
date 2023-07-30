@@ -1,5 +1,10 @@
 # Required towers
 
+#### Easy (All advanced maps)
+- Dart Monkey 023
+- Sniper Monkey 322
+- Druid 130
+
 #### Easy (All expert maps)
 - Dart Monkey 024
 - Sniper Monkey 322
@@ -31,6 +36,9 @@
 - [Peninsula](/docs/maps/advanced/peninsula.md)
 - [High Finance](/docs/maps/advanced/high_finance.md)
 - [Another Brick](/docs/maps/advanced/another_brick.md)
+- [Off the Coast](/docs/maps/advanced/off_the_coast.md)
+- [Cornfield](/docs/maps/advanced/cornfield.md)
+- [Underground](/docs/maps/advanced/underground.md)
 
 ### Expert
 - [Dark Dungeons](/docs/maps/expert/dark_dungeons.md)
