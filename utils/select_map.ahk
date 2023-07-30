@@ -35,15 +35,13 @@ SelectExpertMap() {
             }
         }
     } else {
-        if mapToSelect < 7 {
-            SelectMap(12, mapToSelect)
-        } else {
-            SelectMap(13, mapToSelect - 6)
-        }
+        SelectMap(12, mapToSelect)
     }
 }
 
 SelectMap(page, number) {
+    page := page + (number - 1) // 6
+    number := Mod(number - 1, 6) + 1
     While GetCurrentMapPage() != page {
         Switch page {
             Case 1,2,3,4:
