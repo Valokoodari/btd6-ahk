@@ -48,7 +48,8 @@ WaitForVictoryOrDefeat() {
         }
         if SearchImage("states\defeat") {
             Sleep(500)
-            ClickImage("buttons\home_defeat", 2000)
+            ClickImage("buttons\home_defeat_1", 2000)
+            ClickImage("buttons\home_defeat_2", 2000)
             global defeats := defeats + 1
             LogMsg("Defeat")
             break

@@ -35,7 +35,8 @@ Start() {
             case "victory_menu":
                 ClickImage("buttons\home_victory", 2000)
             case "defeat":
-                ClickImage("buttons\home_defeat", 2000)
+                ClickImage("buttons\home_defeat_1", 2000)
+                ClickImage("buttons\home_defeat_2", 2000)
         }
     }
     LogMsg("Script stopped because the game window wasn't active")
