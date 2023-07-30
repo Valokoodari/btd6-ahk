@@ -63,7 +63,7 @@ global MAPS := [
         ["Midnight Mansion", MIDNIGHT_MANSION_DATA],
         ["Sunken Columns", SUNKEN_COLUMNS_DATA],
         ["X Factor", X_FACTOR_DATA],
-        ["Mesa", Map()],
+        ["Mesa", MESA_DATA],
         ["Geared", Map()]
     ],
     [
