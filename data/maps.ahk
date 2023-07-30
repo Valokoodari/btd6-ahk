@@ -64,7 +64,7 @@ global MAPS := [
         ["Sunken Columns", SUNKEN_COLUMNS_DATA],
         ["X Factor", X_FACTOR_DATA],
         ["Mesa", MESA_DATA],
-        ["Geared", Map()]
+        ["Geared", GEARED_DATA]
     ],
     [
         ["Spillway", Map()],
