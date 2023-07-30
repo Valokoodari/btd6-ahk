@@ -68,7 +68,7 @@ global MAPS := [
     ],
     [
         ["Spillway", SPILLWAY_DATA],
-        ["Cargo", Map()],
+        ["Cargo", CARGO_DATA],
         ["Pat's Pond", Map()],
         ["Peninsula", Map()],
         ["High Finance", Map()],
