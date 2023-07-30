@@ -42,7 +42,7 @@ ErosionEasy() {
     WaitForRound(36)
     Place("Dart C")
     Upgrade("Dart C", 0, 2, 3)      ; 000 -> 023
-    Upgrade("Sniper", 3, 0, 0)      ; 002 -> 302
+    Upgrade("Sniper", 3, 0, 0)      ; 020 -> 320
 
     WaitForRound(37)
     Place("Dart D")
