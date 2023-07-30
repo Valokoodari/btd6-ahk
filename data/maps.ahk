@@ -67,7 +67,7 @@ global MAPS := [
         ["Geared", GEARED_DATA]
     ],
     [
-        ["Spillway", Map()],
+        ["Spillway", SPILLWAY_DATA],
         ["Cargo", Map()],
         ["Pat's Pond", Map()],
         ["Peninsula", Map()],
