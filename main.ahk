@@ -82,6 +82,10 @@ InGame() {
     if changeSettings {
         CheckSettings()
     }
+    if currentMap[1] == 0 or currentMap[2] == 0 {
+        Todo()
+        return
+    }
     mapData := MAPS[currentMap[1]][currentMap[2]]
     if mapData[2].Has(difficulty) {
         mapData[2][difficulty][1]()
