@@ -75,7 +75,7 @@ global MAPS := [
         ["Another Brick", ANOTHER_BRICK_DATA]
     ],
     [
-        ["Off the Coast", Map()],
+        ["Off the Coast", OFF_THE_COAST_DATA],
         ["Cornfield", Map()],
         ["Underground", Map()]
     ],
