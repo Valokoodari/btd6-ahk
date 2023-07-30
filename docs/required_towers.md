@@ -21,14 +21,14 @@
 ### Advanced
 
 ### Expert
-- Dark Dungeons
-- Sanctuary
-- Ravine
-- Flooded Valley
-- Infernal
-- Bloody Puddles
-- Workshop
-- Quad
+- [Dark Dungeons](/docs/maps/expert/dark_dungeons.md)
+- [Sanctuary](/docs/maps/expert/sanctuary.md)
+- [Ravine](/docs/maps/expert/ravine.md)
+- [Flooded Valley](/docs/maps/expert/flooded_valley.md)
+- [Infernal](/docs/maps/expert/infernal.md)
+- [Bloody Puddles](/docs/maps/expert/bloody_puddles.md)
+- [Workshop](/docs/maps/expert/workshop.md)
+- [Quad](/docs/maps/expert/quad.md)
 - [Dark Castle](/docs/maps/expert/dark_castle.md)
-- Muddy Puddles
-- #Ouch
+- [Muddy Puddles](/docs/maps/expert/muddy_puddles.md)
+- [#Ouch](/docs/maps/expert/ouch.md)
