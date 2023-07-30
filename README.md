@@ -36,80 +36,10 @@ script manually.
 > **Note**  
 > To use optimal map selection in events, you must have all expert maps unlocked!  
 
-<details>
-<summary><h4>Required tower upgrades</h4></summary>
-
-
-#### Easy (All expert maps)
-- Dart Monkey 024
-- Sniper Monkey 322
-- Monkey Sub 223
-- Monkey Buccaneer 032
-- Wizard Monkey 032
-- Druid 130
-- Spike Factory 003
-
-> **Note**  
-> **Dark Castle**: Dart 023, Wizard 032, Spike 003, Sub 202  
-
 > **Note**  
 > Difficulties other than Easy have only been tested with Full Monkey Knowledge
 
-<details>
-<summary><h4>Primary Only (Dark Castle)</h4></summary>
-
-- Dart Monkey 024
-- Boomerang Monkey 324
-</details>
-<details>
-<summary><h4>Deflation (Dark Castle)</h4></summary>
-
-- _Quincy (Hero)_
-- Monkey Sub 204
-- Wizard 022
-- Alchemist 401
-</details>
-<details>
-<summary><h4>Hard (Dark Castle)</h4></summary>
-
-- Dart Monkey 024
-- Bomb Shooter 204
-- Monkey Sub 203
-- Wizard Monkey 522
-- Alchemist 401
-- Druid 401
-</details>
-<details>
-<summary><h4>Alternate Bloons Rounds (Dark Castle)</h4></summary>
-
-- _Benjamin (Hero)_
-- Dart Monkey 013
-- Bomb Shooter 204
-- Sniper Monkey 320
-- Monkey Sub 204
-- Monkey Ace 203
-- Wizard Monkey 402
-- Ninja Monkey 401
-- Alchemist 401
-- Spike Factory 204
-- Monkey Village 230
-
-</details>
-<details>
-<summary><h4>Impoppable (Dark Castle)</h4></summary>
-
-- _Benjamin (Hero)_
-- Dart Monkey 002
-- Sniper Monkey 505
-- Monkey Sub 203
-- Monkey Ace 205
-- Alchemist 420
-- Druid 130
-- Banana Farm 424
-- Monkey Village 234
-
-</details>
-</details>
+### [Required tower upgrades](/docs/required_towers.md)
 
 ## Usage
 For optimal results set `mapSelect` in `config.ini` according to the current event (`none`, 
