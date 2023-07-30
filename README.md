@@ -56,6 +56,20 @@ script manually.
 > Difficulties other than Easy have only been tested with Full Monkey Knowledge
 
 <details>
+<summary><h4>Primary Only (Dark Castle)</h4></summary>
+
+- Dart Monkey 024
+- Boomerang Monkey 324
+</details>
+<details>
+<summary><h4>Deflation (Dark Castle)</h4></summary>
+
+- _Quincy (Hero)_
+- Monkey Sub 204
+- Wizard 022
+- Alchemist 401
+</details>
+<details>
 <summary><h4>Hard (Dark Castle)</h4></summary>
 
 - Dart Monkey 024
