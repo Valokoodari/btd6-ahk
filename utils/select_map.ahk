@@ -14,7 +14,7 @@ MapSelection() {
 }
 
 SelectAdvancedMap() {
-    mapToSelect := Random(1, 8)
+    mapToSelect := Random(1, 9)
     SelectMap(9, mapToSelect)
 }
 
