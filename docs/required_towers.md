@@ -25,6 +25,9 @@
 - [X Factor](/docs/maps/advanced/x_factor.md)
 - [Mesa](/docs/maps/advanced/mesa.md)
 - [Geared](/docs/maps/advanced/geared.md)
+- [Spillway](/docs/maps/advanced/spillway.md)
+- [Cargo](/docs/maps/advanced/cargo.md)
+- [Pat's Pond](/docs/maps/advanced/pats_pond.md)
 
 ### Expert
 - [Dark Dungeons](/docs/maps/expert/dark_dungeons.md)
