@@ -22,6 +22,9 @@
 - [Erosion](/docs/maps/advanced/erosion.md)
 - [Midnight Mansion](/docs/maps/advanced/midnight_mansion.md)
 - [Sunken Columns](/docs/maps/advanced/sunken_columns.md)
+- [X Factor](/docs/maps/advanced/x_factor.md)
+- [Mesa](/docs/maps/advanced/mesa.md)
+- [Geared](/docs/maps/advanced/geared.md)
 
 ### Expert
 - [Dark Dungeons](/docs/maps/expert/dark_dungeons.md)
