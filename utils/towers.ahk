@@ -91,13 +91,16 @@ Remove(x, y) {
     Sleep(100)
 }
 
-GetRandom() {
+GetRandom(ground_position, water_position) {
     allTowers := [
         "dart","boomer","bomb","tack","ice","glue",
         "sniper","sub","boat","ace","heli","mortar","dartling",
         "wizard","super","ninja","alch","druid",
         "spike","village","engineer","beast"
     ]
-
-    return allTowers[Random(1, 22)]
+    tower := allTowers[Random(1, 22)]
+    if tower ~= "sub|boat" {
+        return [tower, water_position]
+    }
+    return [tower, ground_position]
 }
