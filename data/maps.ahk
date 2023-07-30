@@ -59,7 +59,7 @@ global MAPS := [
         ["Spice Islands", Map()]
     ],
     [
-        ["Erosion", Map()],
+        ["Erosion", EROSION_DATA],
         ["Midnight Mansion", Map()],
         ["Sunken Columns", Map()],
         ["X Factor", Map()],
