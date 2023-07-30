@@ -71,7 +71,7 @@ global MAPS := [
         ["Cargo", CARGO_DATA],
         ["Pat's Pond", PATS_POND_DATA],
         ["Peninsula", PENINSULA_DATA],
-        ["High Finance", Map()],
+        ["High Finance", HIGH_FINANCE_DATA],
         ["Another Brick", Map()]
     ],
     [

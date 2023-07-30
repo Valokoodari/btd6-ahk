@@ -8,3 +8,4 @@
 #Include cargo.ahk
 #Include pats_pond.ahk
 #Include peninsula.ahk
+#Include high_finance.ahk
