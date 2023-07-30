@@ -76,7 +76,7 @@ global MAPS := [
     ],
     [
         ["Off the Coast", OFF_THE_COAST_DATA],
-        ["Cornfield", Map()],
+        ["Cornfield", CORNFIELD_DATA],
         ["Underground", Map()]
     ],
     [
