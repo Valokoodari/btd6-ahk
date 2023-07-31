@@ -29,7 +29,7 @@ Targeting(tower, tabCount) {
     Sleep(200)
 }
 
-Upgrade(tower, topCount, middleCount, bottomCount) {
+Upgrade(tower, topCount, middleCount := 0, bottomCount := 0) {
     if defeated {
         return
     }
@@ -103,4 +103,31 @@ GetRandom(ground_position, water_position) {
         return [tower, water_position]
     }
     return [tower, ground_position]
+}
+
+Upgrade(tower, topCount, middleCount := 0, bottomCount := 0) {
+    if defeated {
+        return
+    }
+    x := TS[tower][2][1], y := TS[tower][2][2]
+
+    Click(x,y)          ; Open Tower
+    Sleep(100)
+    Loop topCount {
+		WaitForUpgrade1()
+        Send(KEYS["upgrade_1"])
+        Sleep(200)
+    }
+    Loop middleCount {
+		WaitForUpgrade2()
+        Send(KEYS["upgrade_2"])
+        Sleep(100)
+    }
+    Loop bottomCount {
+		WaitForUpgrade3()
+        Send(KEYS["upgrade_3"])
+        Sleep(100)
+    }
+    Send("{Esc}")       ; Close Tower
+    Sleep(200)
 }

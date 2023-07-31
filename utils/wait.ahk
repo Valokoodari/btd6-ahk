@@ -59,3 +59,55 @@ WaitForVictoryOrDefeat() {
         Sleep(2000)
     }
 }
+
+WaitForUpgrade1() {
+    while true {
+        if SearchUpgrade1() {
+            return
+        }
+        if defeated or SearchImage("states\defeat") {
+            global defeated := true
+            return
+        }
+        CheckLevelUp()
+    }
+}
+
+WaitForUpgrade2() {
+    while true {
+        if SearchUpgrade2() {
+            return
+        }
+        if defeated or SearchImage("states\defeat") {
+            global defeated := true
+            return
+        }
+        CheckLevelUp()
+    }
+}
+
+WaitForUpgrade3() {
+    while true {
+        if SearchUpgrade3() {
+            return
+        }
+        if defeated or SearchImage("states\defeat") {
+            global defeated := true
+            return
+        }
+        CheckLevelUp()
+    }
+}
+
+Wait(delay) {
+    if defeated {
+        return
+    }
+    Sleep(delay)
+    if SearchImage("states\defeat") {
+        Sleep(500)
+        ClickImage("buttons\home_defeat", 2000)
+        global defeats := defeats + 1
+        LogMsg("Defeat")
+    }
+}
