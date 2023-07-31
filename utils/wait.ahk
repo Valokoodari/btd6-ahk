@@ -60,35 +60,9 @@ WaitForVictoryOrDefeat() {
     }
 }
 
-WaitForUpgrade1() {
+WaitForUpgrade(path) {
     while true {
-        if SearchUpgrade1() {
-            return
-        }
-        if defeated or SearchImage("states\defeat") {
-            global defeated := true
-            return
-        }
-        CheckLevelUp()
-    }
-}
-
-WaitForUpgrade2() {
-    while true {
-        if SearchUpgrade2() {
-            return
-        }
-        if defeated or SearchImage("states\defeat") {
-            global defeated := true
-            return
-        }
-        CheckLevelUp()
-    }
-}
-
-WaitForUpgrade3() {
-    while true {
-        if SearchUpgrade3() {
+        if SearchUpgrade(path) {
             return
         }
         if defeated or SearchImage("states\defeat") {

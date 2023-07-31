@@ -28,20 +28,8 @@ GetCurrentMapPage() {
     }
 }
 
-SearchUpgrade1() {
-	if (SearchImage("buttons\upgrades\1R", "*TransBlack", 250, 475, 1494, 499) or SearchImage("buttons\upgrades\1L", "*TransBlack", 250, 475, 1494, 499)) {
-    return true
-}
-}
-
-SearchUpgrade2() {
-	if (SearchImage("buttons\upgrades\2R", "*TransBlack", 250, 625, 1494, 649) or SearchImage("buttons\upgrades\2L", "*TransBlack", 250, 625, 1494, 649)) {
-    return true
-}
-}
-
-SearchUpgrade3() {
-	if (SearchImage("buttons\upgrades\3R", "*TransBlack", 250, 775, 1494, 799) or SearchImage("buttons\upgrades\3L", "*TransBlack", 250, 775, 1494, 799)) {
-    return true
-}
+SearchUpgrade(path) {
+	if (SearchImage("buttons\upgrades\1R", "", 250, (325+path*150), 1494, (349+path*150)) or SearchImage("buttons\upgrades\1L", "", 250, (325+path*150), 1494, (349+path*150))) {
+        return true
+    }
 }
