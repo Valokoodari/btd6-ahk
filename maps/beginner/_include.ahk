@@ -4,3 +4,9 @@
 #Include middle_of_the_road.ahk
 #Include one_two_tree.ahk
 #Include scrapyard.ahk
+#Include the_cabin.ahk
+#Include resort.ahk
+#Include skates.ahk
+#Include lotus_island.ahk
+#Include candy_falls.ahk
+#Include winter_park.ahk

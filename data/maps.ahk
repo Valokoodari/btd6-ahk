@@ -8,12 +8,12 @@ global MAPS := [
         ["Scrapyard", SCRAPYARD_DATA]
     ],
     [
-        ["The Cabin", Map()],
-        ["Resort", Map()],
-        ["Skates", Map()],
-        ["Lotus Island", Map()],
-        ["Candy Falls", Map()],
-        ["Winter Park", Map()]
+        ["The Cabin", THE_CABIN_DATA],
+        ["Resort", RESORT_DATA],
+        ["Skates", SKATES_DATA],
+        ["Lotus Island", LOTUS_ISLAND_DATA],
+        ["Candy Falls", CANDY_FALLS_DATA],
+        ["Winter Park", WINTER_PARK_DATA]
     ],
     [
         ["Carved", Map()],
