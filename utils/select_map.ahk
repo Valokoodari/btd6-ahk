@@ -2,8 +2,10 @@ MAP_COORDS := [[444, 280], [878, 280], [1289, 280], [444, 590], [878, 590], [128
 
 MapSelection() {
     Switch mapCategory {
+        Case "intermediate":
+            SelectMap(5, 1)
         Case "advanced":
-            SelectAdvancedMap()
+            SelectMap(9, Random(1, 15))
         Default:
             SelectExpertMap()
     }
@@ -11,11 +13,6 @@ MapSelection() {
     SelectDifficulty()
     CheckOwerwrite()
     Sleep(4000)
-}
-
-SelectAdvancedMap() {
-    mapToSelect := Random(1, 15)
-    SelectMap(9, mapToSelect)
 }
 
 SelectExpertMap() {
