@@ -7,3 +7,4 @@
 #Include balance.ahk
 #Include encrypted.ahk
 #Include bazaar.ahk
+#Include adoras_temple.ahk

@@ -41,7 +41,7 @@ global MAPS := [
         ["Balance", BALANCE_DATA],
         ["Encrypted", ENCRYPTED_DATA],
         ["Bazaar", BAZAAR_DATA],
-        ["Adora's Temple", Map()],
+        ["Adora's Temple", ADORAS_TEMPLE_DATA],
         ["Spring Spring", Map()],
         ["KartsNDarts", Map()]
     ],
