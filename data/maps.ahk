@@ -31,7 +31,7 @@ global MAPS := [
     ],
     [
         ["Water Park", WATER_PARK_DATA],
-        ["Polyphemus", Map()],
+        ["Polyphemus", POLYPHEMUS_DATA],
         ["Covered Garden", Map()],
         ["Quarry", Map()],
         ["Quiet Street", Map()],
