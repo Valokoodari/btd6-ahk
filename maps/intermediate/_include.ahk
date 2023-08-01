@@ -17,3 +17,4 @@
 #Include cracked.ahk
 #Include streambed.ahk
 #Include chutes.ahk
+#Include rake.ahk
