@@ -10,3 +10,9 @@
 #Include lotus_island.ahk
 #Include candy_falls.ahk
 #Include winter_park.ahk
+#Include carved.ahk
+#Include park_path.ahk
+#Include alpine_run.ahk
+#Include frozen_over.ahk
+#Include in_the_loop.ahk
+#Include cubism.ahk

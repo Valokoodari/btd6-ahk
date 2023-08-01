@@ -16,12 +16,12 @@ global MAPS := [
         ["Winter Park", WINTER_PARK_DATA]
     ],
     [
-        ["Carved", Map()],
-        ["Park Path", Map()],
-        ["Alpine Path", Map()],
-        ["Frozen Over", Map()],
-        ["In the Loop", Map()],
-        ["Cubism", Map()]
+        ["Carved", CARVED_DATA],
+        ["Park Path", PARK_PATH_DATA],
+        ["Alpine Run", ALPINE_RUN_DATA],
+        ["Frozen Over", FROZEN_OVER_DATA],
+        ["In the Loop", IN_THE_LOOP_DATA],
+        ["Cubism", CUBISM_DATA]
     ],
     [
         ["Four Circles", Map()],
