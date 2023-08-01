@@ -6,3 +6,4 @@
 #Include bloonarius_prime.ahk
 #Include balance.ahk
 #Include encrypted.ahk
+#Include bazaar.ahk
