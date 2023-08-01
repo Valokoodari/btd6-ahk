@@ -24,10 +24,10 @@ global MAPS := [
         ["Cubism", CUBISM_DATA]
     ],
     [
-        ["Four Circles", Map()],
-        ["Hedge", Map()],
-        ["End of the Road", Map()],
-        ["Logs", Map()]
+        ["Four Circles", FOUR_CIRCLES_DATA],
+        ["Hedge", HEDGE_DATA],
+        ["End of the Road", END_OF_THE_ROAD_DATA],
+        ["Logs", LOGS_DATA]
     ],
     [
         ["Water Park", WATER_PARK_DATA],

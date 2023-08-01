@@ -16,3 +16,7 @@
 #Include frozen_over.ahk
 #Include in_the_loop.ahk
 #Include cubism.ahk
+#Include four_circles.ahk
+#Include hedge.ahk
+#Include end_of_the_road.ahk
+#Include logs.ahk
