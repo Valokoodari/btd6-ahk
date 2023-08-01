@@ -3,7 +3,7 @@ MAP_COORDS := [[444, 280], [878, 280], [1289, 280], [444, 590], [878, 590], [128
 MapSelection() {
     Switch mapCategory {
         Case "intermediate":
-            SelectMap(5, Random(1, 5))
+            SelectMap(5, Random(1, 6))
         Case "advanced":
             SelectMap(9, Random(1, 15))
         Default:

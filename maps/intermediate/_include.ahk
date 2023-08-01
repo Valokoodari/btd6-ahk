@@ -3,3 +3,4 @@
 #Include covered_garden.ahk
 #Include quarry.ahk
 #Include quiet_street.ahk
+#Include bloonarius_prime.ahk

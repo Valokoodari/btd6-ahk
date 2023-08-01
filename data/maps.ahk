@@ -35,7 +35,7 @@ global MAPS := [
         ["Covered Garden", COVERED_GARDEN_DATA],
         ["Quarry", QUARRY_DATA],
         ["Quiet Street", QUIET_STREET_DATA],
-        ["Bloonarius Prime", Map()]
+        ["Bloonarius Prime", BLOONARIUS_PRIME_DATA]
     ],
     [
         ["Balance", Map()],
