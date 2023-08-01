@@ -5,3 +5,4 @@
 #Include quiet_street.ahk
 #Include bloonarius_prime.ahk
 #Include balance.ahk
+#Include encrypted.ahk
