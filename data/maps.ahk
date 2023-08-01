@@ -56,7 +56,7 @@ global MAPS := [
     [
         ["Chutes", CHUTES_DATA],
         ["Rake", RAKE_DATA],
-        ["Spice Islands", Map()]
+        ["Spice Islands", SPICE_ISLANDS_DATA]
     ],
     [
         ["Erosion", EROSION_DATA],
