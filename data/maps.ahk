@@ -1,11 +1,11 @@
 global MAPS := [
     [
-        ["Monkey Meadow", Map()],
-        ["Tree Stump", Map()],
-        ["Town Center", Map()],
-        ["Middle of the road", Map()],
-        ["One Two Tree", Map()],
-        ["Scrapyard", Map()]
+        ["Monkey Meadow", MONKEY_MEADOW_DATA],
+        ["Tree Stump", TREE_STUMP_DATA],
+        ["Town Center", TOWN_CENTER_DATA],
+        ["Middle of the road", MIDDLE_OF_THE_ROAD_DATA],
+        ["One Two Tree", ONE_TWO_TREE_DATA],
+        ["Scrapyard", SCRAPYARD_DATA]
     ],
     [
         ["The Cabin", Map()],
