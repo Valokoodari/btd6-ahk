@@ -38,7 +38,7 @@ global MAPS := [
         ["Bloonarius Prime", BLOONARIUS_PRIME_DATA]
     ],
     [
-        ["Balance", Map()],
+        ["Balance", BALANCE_DATA],
         ["Encrypted", Map()],
         ["Bazaar", Map()],
         ["Adora's Temple", Map()],

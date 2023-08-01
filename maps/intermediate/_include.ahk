@@ -4,3 +4,4 @@
 #Include quarry.ahk
 #Include quiet_street.ahk
 #Include bloonarius_prime.ahk
+#Include balance.ahk
