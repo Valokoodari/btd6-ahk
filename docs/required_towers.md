@@ -1,7 +1,12 @@
 # Required towers
 
+#### Easy (All intermediate maps)
+- Dart Monkey 024
+- Sniper Monkey 320
+- Druid 130
+
 #### Easy (All advanced maps)
-- Dart Monkey 023
+- Dart Monkey 024
 - Sniper Monkey 322
 - Druid 130
 
