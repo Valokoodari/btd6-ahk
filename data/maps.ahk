@@ -43,7 +43,7 @@ global MAPS := [
         ["Bazaar", BAZAAR_DATA],
         ["Adora's Temple", ADORAS_TEMPLE_DATA],
         ["Spring Spring", SPRING_SRPING_DATA],
-        ["KartsNDarts", Map()]
+        ["KartsNDarts", KARTSNDARTS_DATA]
     ],
     [
         ["Moon Landing", Map()],
