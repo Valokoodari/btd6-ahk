@@ -48,7 +48,7 @@ global MAPS := [
     [
         ["Moon Landing", MOON_LANDING_DATA],
         ["Haunted", HAUNTED_DATA],
-        ["Downstream", Map()],
+        ["Downstream", DOWNSTREAM_DATA],
         ["Firing Range", Map()],
         ["Cracked", Map()],
         ["Streambed", Map()]
