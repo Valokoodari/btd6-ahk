@@ -33,7 +33,7 @@ global MAPS := [
         ["Water Park", WATER_PARK_DATA],
         ["Polyphemus", POLYPHEMUS_DATA],
         ["Covered Garden", COVERED_GARDEN_DATA],
-        ["Quarry", Map()],
+        ["Quarry", QUARRY_DATA],
         ["Quiet Street", Map()],
         ["Bloonarius Prime", Map()]
     ],
