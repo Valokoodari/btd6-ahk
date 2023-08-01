@@ -15,7 +15,7 @@ ClickImage(imageName, delay := 1000, options := "", xMin := 0, yMin := 0, xMax :
 }
 
 SearchRound(round) {
-    return SearchImage("rounds\" round, "*TransBlack", 1413, 21, 1520, 80)
+    return ImageSearch(&xCoord, &yCoord, 1413, 21, 1520, 80, "*8 *TransBlack " A_ScriptDir "\img\rounds\" round ".png")
 }
 
 GetCurrentMapPage() {
