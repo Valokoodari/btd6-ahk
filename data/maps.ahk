@@ -54,7 +54,7 @@ global MAPS := [
         ["Streambed", STREAMBED_DATA]
     ],
     [
-        ["Chutes", Map()],
+        ["Chutes", CHUTES_DATA],
         ["Rake", Map()],
         ["Spice Islands", Map()]
     ],

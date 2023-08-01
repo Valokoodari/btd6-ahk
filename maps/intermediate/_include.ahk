@@ -16,3 +16,4 @@
 #Include firing_range.ahk
 #Include cracked.ahk
 #Include streambed.ahk
+#Include chutes.ahk
