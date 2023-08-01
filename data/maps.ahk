@@ -46,7 +46,7 @@ global MAPS := [
         ["KartsNDarts", KARTSNDARTS_DATA]
     ],
     [
-        ["Moon Landing", Map()],
+        ["Moon Landing", MOON_LANDING_DATA],
         ["Haunted", Map()],
         ["Downstream", Map()],
         ["Firing Range", Map()],
