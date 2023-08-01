@@ -27,7 +27,4 @@ GeneralEasy() {
     Place("Sniper")
     Targeting("Sniper", 3)          ; First -> Strong
     Upgrade("Sniper", 3, 2, 0)      ; 000 -> 320
-
-    WaitForRound(40)
-    Send("{Esc}")
 }
