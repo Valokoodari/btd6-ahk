@@ -11,3 +11,4 @@
 #Include spring_spring.ahk
 #Include kartsndarts.ahk
 #Include moon_landing.ahk
+#Include haunted.ahk
