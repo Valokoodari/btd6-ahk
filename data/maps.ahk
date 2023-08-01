@@ -51,7 +51,7 @@ global MAPS := [
         ["Downstream", DOWNSTREAM_DATA],
         ["Firing Range", FIRING_RANGE_DATA],
         ["Cracked", CRACKED_DATA],
-        ["Streambed", Map()]
+        ["Streambed", STREAMBED_DATA]
     ],
     [
         ["Chutes", Map()],
