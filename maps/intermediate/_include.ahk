@@ -13,3 +13,4 @@
 #Include moon_landing.ahk
 #Include haunted.ahk
 #Include downstream.ahk
+#Include firing_range.ahk
