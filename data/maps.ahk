@@ -50,7 +50,7 @@ global MAPS := [
         ["Haunted", HAUNTED_DATA],
         ["Downstream", DOWNSTREAM_DATA],
         ["Firing Range", FIRING_RANGE_DATA],
-        ["Cracked", Map()],
+        ["Cracked", CRACKED_DATA],
         ["Streambed", Map()]
     ],
     [

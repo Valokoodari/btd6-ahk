@@ -14,3 +14,4 @@
 #Include haunted.ahk
 #Include downstream.ahk
 #Include firing_range.ahk
+#Include cracked.ahk
