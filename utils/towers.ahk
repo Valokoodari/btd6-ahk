@@ -29,7 +29,7 @@ Targeting(tower, tabCount) {
     Sleep(200)
 }
 
-Upgrade(tower, topCount, middleCount, bottomCount, option := "") {
+Upgrade(tower, topCount, middleCount, bottomCount, asap := false) {
     if defeated {
         return
     }
@@ -38,32 +38,32 @@ Upgrade(tower, topCount, middleCount, bottomCount, option := "") {
     Click(x,y)          ; Open Tower
     Sleep(100)
     Loop topCount {
-	if option = "asap" {
+	if asap {
 		WaitForUpgrade(1)
 	}
         Send(KEYS["upgrade_1"])
         Sleep(100)
-	if option = "asap" {
+	if asap {
 		Sleep(100)
 	}
     }
     Loop middleCount {
-	if option = "asap" {
+	if asap {
 		WaitForUpgrade(2)
 	}
         Send(KEYS["upgrade_2"])
         Sleep(100)
-	if option = "asap" {
+	if asap {
 		Sleep(100)
 	}
     }
     Loop bottomCount {
-        if option = "asap" {
+        if asap {
             WaitForUpgrade(3)
         }
-            Send(KEYS["upgrade_3"])
-            Sleep(100)
-        if option = "asap" {
+        Send(KEYS["upgrade_3"])
+        Sleep(100)
+        if asap {
             Sleep(100)
         }
     }
