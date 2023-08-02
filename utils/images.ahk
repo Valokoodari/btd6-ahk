@@ -29,7 +29,7 @@ GetCurrentMapPage() {
 }
 
 SearchUpgrade(path) {
-	if (SearchImage("buttons\upgrades\1R", "", 250, (325+path*150), 1494, (349+path*150)) or SearchImage("buttons\upgrades\1L", "", 250, (325+path*150), 1494, (349+path*150))) {
+	if (SearchImage("buttons\upgrades\" path "R", "", 250, (325+path*150), 1494, (349+path*150)) or SearchImage("buttons\upgrades\" path "L", "", 250, (325+path*150), 1494, (349+path*150))) {
         return true
     }
 }
