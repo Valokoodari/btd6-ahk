@@ -22,7 +22,7 @@ GetCurrentMapPage() {
     Loop 13 {
         color := PixelGetColor(701 + 37 * A_Index, 758)
         color := [(color >> 16) & 0xFF, (color >> 8) & 0xFF, color & 0xFF]
-        if (color[1] >= 44 and color[1] <= 84 and color[2] >= 139 and color[2] <= 159 and color[3] >= 235) {
+        if (color[1] >= 44 and color[1] <= 84 and color[2] >= 139 and color[2] <= 179 and color[3] >= 235) {
             return A_Index
         }
     }
