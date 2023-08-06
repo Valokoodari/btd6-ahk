@@ -26,4 +26,6 @@ GetCurrentMapPage() {
             return A_Index
         }
     }
+    LogMsg("Could not recognize the current map page")
+    Sleep(5000)
 }
