@@ -1,15 +1,19 @@
 MAP_COORDS := [[444, 280], [878, 280], [1289, 280], [444, 590], [878, 590], [1289, 590]]
 
 MapSelection() {
-    Switch mapCategory {
-        Case "beginner":
-            SelectMap(1, Random(1, 22))
-        Case "intermediate":
-            SelectMap(5, Random(1, 21))
-        Case "advanced":
-            SelectMap(9, Random(1, 15))
-        Default:
-            SelectExpertMap()
+    if MAP_LOCATIONS.Has(mapSelect) {
+        SelectMap(MAP_LOCATIONS[mapSelect][1], MAP_LOCATIONS[mapSelect][2])
+    } else {
+        Switch mapCategory {
+            Case "beginner":
+                SelectMap(1, Random(1, 22))
+            Case "intermediate":
+                SelectMap(5, Random(1, 21))
+            Case "advanced":
+                SelectMap(9, Random(1, 15))
+            Default:
+                SelectExpertMap()
+        }
     }
     LogMsg("Selected map: " MAPS[currentMap[1]][currentMap[2]][1])
     SelectDifficulty()
@@ -18,10 +22,6 @@ MapSelection() {
 }
 
 SelectExpertMap() {
-    mapToSelect := Random(1, 11)
-    if mapSelect == "dark_castle" {
-        mapToSelect := 9
-    }
     if FileExist("img\events\" mapSelect) {
         While true {
             ClickImage("buttons\expert")
@@ -34,7 +34,7 @@ SelectExpertMap() {
             }
         }
     } else {
-        SelectMap(12, mapToSelect)
+        SelectMap(12, Random(1, 11))
     }
 }
 
