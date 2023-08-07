@@ -3,17 +3,10 @@ MAP_COORDS := [[444, 280], [878, 280], [1289, 280], [444, 590], [878, 590], [128
 MapSelection() {
     if MAP_LOCATIONS.Has(mapSelect) {
         SelectMap(MAP_LOCATIONS[mapSelect][1], MAP_LOCATIONS[mapSelect][2])
+    } else if FileExist("img\events\" mapSelect) {
+        SelectEventMap()
     } else {
-        Switch mapCategory {
-            Case "beginner":
-                SelectMap(1, Random(1, 22))
-            Case "intermediate":
-                SelectMap(5, Random(1, 21))
-            Case "advanced":
-                SelectMap(9, Random(1, 15))
-            Default:
-                SelectExpertMap()
-        }
+        SelectRandomMap()
     }
     LogMsg("Selected map: " MAPS[currentMap[1]][currentMap[2]][1])
     SelectDifficulty()
@@ -21,20 +14,29 @@ MapSelection() {
     Sleep(4000)
 }
 
-SelectExpertMap() {
-    if FileExist("img\events\" mapSelect) {
-        While true {
-            ClickImage("buttons\expert")
-            currentMap[1] := GetCurrentMapPage()
-            Loop 6 {
-                if ClickImage("events\" mapSelect "\" A_Index - 1) {
-                    currentMap[2] := A_Index
-                    return
-                }
+SelectRandomMap() {
+    Switch mapCategory {
+        Case "beginner":
+            SelectMap(1, Random(1, 22))
+        Case "intermediate":
+            SelectMap(5, Random(1, 21))
+        Case "advanced":
+            SelectMap(9, Random(1, 15))
+        Case "expert":
+            SelectMap(12, Random(1, 11))
+    }
+}
+
+SelectEventMap() {
+    While true {
+        ClickImage("buttons\" mapCategory)
+        currentMap[1] := GetCurrentMapPage()
+        Loop 6 {
+            if ClickImage("events\" mapSelect "\" A_Index - 1) {
+                currentMap[2] := A_Index
+                return
             }
         }
-    } else {
-        SelectMap(12, Random(1, 11))
     }
 }
 
