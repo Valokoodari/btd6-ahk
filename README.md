@@ -2,9 +2,10 @@
 
 [![](https://dcbadge.vercel.app/api/server/nzJgMjt)](https://discord.gg/nzJgMjt)
 
-An AutoHotkey v2 script for Bloons TD 6 to help during collection events. Plays through expert maps
-on easy, standard difficulty with the collection event bonus active or a random map from any map
-category chosen by the user (expert by default).
+An AutoHotkey v2 script for Bloons TD 6 mainly to help during collection events. Plays through maps
+from map category chosen by the user (expert by default) on easy, standard difficulty. The script
+can be set to choose a random map, a map with a collection event bonus active, or a single map
+specified by the user.
 
 > **Warning**  
 > Read the [Ninja Kiwi Terms of Service](https://ninjakiwi.com/terms) before using this script
@@ -27,18 +28,16 @@ category chosen by the user (expert by default).
 > also be set correctly.
 
 > **Note**  
-> To use optimal map selection in events, you must have all expert maps unlocked!
-
-> **Note**  
-> Only easy, standard difficulty has been fully tested without any Monkey Knowledge.
+> Only easy, standard difficulty has been fully tested without any Monkey Knowledge. Other
+> modes may require full MK.
 
 ### [Required tower upgrades](/docs/required_towers.md)
 
 ## Usage
 For optimal results set `mapSelect` in `config.ini` according to the current event (`none`,
-`birthday`, `easter`, `fireworks`, `halloween`, `holiday`, `totem`). If you don't have all expert,
-maps unlocked you may set it to `dark_castle` to only choose Dark Castle. The default method
-chooses a random expert map.
+`birthday`, `easter`, `fireworks`, `halloween`, `holiday`, `totem`). You may also set `mapSelect`
+to the name of a single map in `snake_case` with special characters like `'` and `#` removed. The
+default method chooses a random expert map.
 
 Start the script on the home menu, stage selection menu, or collection menu with <kbd>Ctrl</kbd> +
 <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd>.
