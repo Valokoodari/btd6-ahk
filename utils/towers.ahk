@@ -1,14 +1,30 @@
-Place(tower) {
+Place(tower, asap := false) {
     if defeated {
         return
     }
     type := TS[tower][1]
     x := TS[tower][2][1], y := TS[tower][2][2]
 
-    Send(KEYS[type])
-    Sleep(100)
-    MouseMove(x,y)
-    Sleep(100)
+    If asap {
+        Loop{
+            Send(KEYS[type])
+            Sleep(100)
+            MouseMove(x,y)
+            Sleep(100)
+            if SearchImage("buttons\close_place", "", 1570, 85, 1635, 150) {
+                break
+            }
+            if SearchImage("states\defeat") or SearchImage("states\victory") {
+                return
+            }
+            CheckLevelUp()
+        }
+    } Else {
+        Send(KEYS[type])
+        Sleep(100)
+        MouseMove(x,y)
+        Sleep(100)
+    }
     Click(x,y)          ; Place Tower
     Sleep(200)
 }
