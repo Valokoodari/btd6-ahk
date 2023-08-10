@@ -29,3 +29,9 @@ GetCurrentMapPage() {
     LogMsg("Could not recognize the current map page")
     Sleep(5000)
 }
+
+SearchUpgrade(path) {
+	if (SearchImage("buttons\upgrades\" path "R", "", 250, (325+path*150), 1494, (349+path*150)) or SearchImage("buttons\upgrades\" path "L", "", 250, (325+path*150), 1494, (349+path*150))) {
+        return true
+    }
+}

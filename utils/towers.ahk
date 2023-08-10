@@ -1,14 +1,31 @@
-Place(tower) {
+Place(tower, asap := false) {
     if defeated {
         return
     }
     type := TS[tower][1]
     x := TS[tower][2][1], y := TS[tower][2][2]
 
-    Send(KEYS[type])
-    Sleep(100)
-    MouseMove(x,y)
-    Sleep(100)
+    If asap {
+        Loop{
+            Send(KEYS[type])
+            Sleep(100)
+            MouseMove(x,y)
+            Sleep(100)
+            If SearchImage("buttons\close_place", "", 1570, 85, 1635, 150) {
+                break
+            }
+            If SearchImage("states\defeat") or SearchImage("states\victory") {
+                global defeated := true
+                return
+            }
+            CheckLevelUp()
+        }
+    } Else {
+        Send(KEYS[type])
+        Sleep(100)
+        MouseMove(x,y)
+        Sleep(100)
+    }
     Click(x,y)          ; Place Tower
     Sleep(200)
 }
@@ -29,7 +46,7 @@ Targeting(tower, tabCount) {
     Sleep(200)
 }
 
-Upgrade(tower, topCount, middleCount, bottomCount) {
+Upgrade(tower, topCount, middleCount, bottomCount, asap := false) {
     if defeated {
         return
     }
@@ -38,16 +55,34 @@ Upgrade(tower, topCount, middleCount, bottomCount) {
     Click(x,y)          ; Open Tower
     Sleep(100)
     Loop topCount {
+        if asap {
+            WaitForUpgrade(1)
+        }
         Send(KEYS["upgrade_1"])
         Sleep(100)
+        if asap {
+            Sleep(100)
+        }
     }
     Loop middleCount {
+        if asap {
+            WaitForUpgrade(2)
+        }
         Send(KEYS["upgrade_2"])
         Sleep(100)
+        if asap {
+            Sleep(100)
+        }
     }
     Loop bottomCount {
+        if asap {
+            WaitForUpgrade(3)
+        }
         Send(KEYS["upgrade_3"])
         Sleep(100)
+        if asap {
+            Sleep(100)
+        }
     }
     Send("{Esc}")       ; Close Tower
     Sleep(200)
