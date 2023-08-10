@@ -19,22 +19,22 @@
 
 Start() {
     While WinActive("BloonsTD6") {
-        switch CheckMenuState() {
-            case "home":
+        Switch CheckMenuState() {
+            Case "home":
                 HomeMenu()
-            case "map_selection":
+            Case "map_selection":
                 MapSelection()
-            case "in_game","apopalypse":
+            Case "in_game","apopalypse":
                 InGame()
-            case "collect":
+            Case "collect":
                 OpenBoxes()
-            case "event":
+            Case "event":
                 ClickImage("buttons\play_collect")
-            case "victory":
+            Case "victory":
                 ClickImage("buttons\next")
-            case "victory_menu":
+            Case "victory_menu":
                 ClickImage("buttons\home_victory", 2000)
-            case "defeat":
+            Case "defeat":
                 ClickImage("buttons\home_defeat_1", 2000)
                 ClickImage("buttons\home_defeat_2", 2000)
         }
