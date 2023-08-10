@@ -65,7 +65,7 @@ WaitForUpgrade(path) {
         if SearchUpgrade(path) {
             return
         }
-        if defeated or SearchImage("states\defeat") {
+        if defeated or SearchImage("states\defeat") or SearchImage("states\victory") {
             global defeated := true
             return
         }
