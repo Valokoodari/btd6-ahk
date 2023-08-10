@@ -17,19 +17,19 @@ CheckInstaMonkey() {
 WaitForRound(round, delay := 0) {
     MouseMove(mouseRest[1], mouseRest[2])
     round := Mod(round, 10)
-    while true {
+    Loop {
         if not (round = 3) or (round = 3) and not SearchRound(8) {
             if (round = 7) or not (round = 7) and not SearchRound(7) {
                 if SearchRound(round) {
                     Sleep(delay)
-                    return
+                    break
                 }
             }
         }
         if defeated or SearchImage("states\defeat") {
             LogMsg("Found defeat instead of the round x" round)
             global defeated := true
-            return
+            break
         }
         CheckLevelUp()
     }
@@ -61,13 +61,13 @@ WaitForVictoryOrDefeat() {
 }
 
 WaitForUpgrade(path) {
-    While true {
+    Loop {
         if SearchUpgrade(path) {
-            return
+            break
         }
         if defeated or SearchImage("states\defeat") or SearchImage("states\victory") {
             global defeated := true
-            return
+            break
         }
         CheckLevelUp()
     }

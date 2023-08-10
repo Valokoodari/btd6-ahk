@@ -28,7 +28,7 @@ SelectRandomMap() {
 }
 
 SelectEventMap() {
-    While true {
+    Loop {
         ClickImage("buttons\" mapCategory)
         currentMap[1] := GetCurrentMapPage()
         Loop 6 {
