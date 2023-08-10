@@ -22,7 +22,7 @@ StartGame() {
 }
 
 Todo() {
-    LogMsg("The selected difficulty has not been implemented for this map.")
+    LogMsg("Going to reselect the map and difficulty")
     Send("{Esc}")
     Sleep(1500)
     global difficulty := ""
