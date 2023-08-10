@@ -61,7 +61,7 @@ WaitForVictoryOrDefeat() {
 }
 
 WaitForUpgrade(path) {
-    while true {
+    While true {
         if SearchUpgrade(path) {
             return
         }
