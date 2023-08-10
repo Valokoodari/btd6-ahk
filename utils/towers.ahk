@@ -38,24 +38,24 @@ Upgrade(tower, topCount, middleCount, bottomCount, asap := false) {
     Click(x,y)          ; Open Tower
     Sleep(100)
     Loop topCount {
-	if asap {
-		WaitForUpgrade(1)
-	}
+        if asap {
+            WaitForUpgrade(1)
+        }
         Send(KEYS["upgrade_1"])
         Sleep(100)
-	if asap {
-		Sleep(100)
-	}
+        if asap {
+            Sleep(100)
+        }
     }
     Loop middleCount {
-	if asap {
-		WaitForUpgrade(2)
-	}
+        if asap {
+            WaitForUpgrade(2)
+        }
         Send(KEYS["upgrade_2"])
         Sleep(100)
-	if asap {
-		Sleep(100)
-	}
+        if asap {
+            Sleep(100)
+        }
     }
     Loop bottomCount {
         if asap {
