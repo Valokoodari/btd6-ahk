@@ -4,6 +4,7 @@
 #Include hard.ahk
 #Include alternate.ahk
 #Include impoppable.ahk
+#Include chimps.ahk
 
 DARK_CASTLE_DATA := Map(
     "easy", [DarkCastleEasy, ""],
@@ -11,5 +12,6 @@ DARK_CASTLE_DATA := Map(
     "deflation", [DarkCastleDeflation, "quincy"],
     "hard", [DarkCastleHard, ""],
     "alternate", [DarkCastleAlternate, "benjamin"],
-    "impoppable", [DarkCastleImpoppable, "benjamin"]
+    "impoppable", [DarkCastleImpoppable, "benjamin"],
+    "chimps", [DarkCastleChimps, "obyn"]
 )
