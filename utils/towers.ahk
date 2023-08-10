@@ -11,10 +11,11 @@ Place(tower, asap := false) {
             Sleep(100)
             MouseMove(x,y)
             Sleep(100)
-            if SearchImage("buttons\close_place", "", 1570, 85, 1635, 150) {
+            If SearchImage("buttons\close_place", "", 1570, 85, 1635, 150) {
                 break
             }
-            if SearchImage("states\defeat") or SearchImage("states\victory") {
+            If SearchImage("states\defeat") or SearchImage("states\victory") {
+                global defeated := true
                 return
             }
             CheckLevelUp()
