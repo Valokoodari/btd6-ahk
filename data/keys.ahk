@@ -29,8 +29,8 @@ KEYS := Map(
     "beast",        "{vk49}",
 
     "play",         "{Space}",      ; Other hotkeys
-    "upgrade_1",    "{vkBC}",
-    "upgrade_2",    "{vkBE}",
+    "upgrade_1",    "{sc033}",
+    "upgrade_2",    "{sc034}",
     "upgrade_3",    "{sc035}",
     "targeting",    "{vk09}",
     "sell",         "{Backspace}"
