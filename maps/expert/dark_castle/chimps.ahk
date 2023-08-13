@@ -131,5 +131,5 @@ DarkCastleChimps() {
 
     WaitForRound(98)
     Place("Sub B")
-    Upgrade("Sub B", 2, 4, 0, true)     ; 000 -> 024
+    Upgrade("Sub B", 2, 4, 0, true)     ; 000 -> 240
 }
