@@ -1,7 +1,9 @@
 MAP_COORDS := [[444, 280], [878, 280], [1289, 280], [444, 590], [878, 590], [1289, 590]]
 
 MapSelection() {
-    if MAP_LOCATIONS.Has(mapSelect) {
+    if mapSelect = "unlock" {
+        SelectNextMap()
+    } else if MAP_LOCATIONS.Has(mapSelect) {
         SelectMap(MAP_LOCATIONS[mapSelect][1], MAP_LOCATIONS[mapSelect][2])
     } else if FileExist("img\events\" mapSelect) {
         SelectEventMap()
@@ -12,6 +14,11 @@ MapSelection() {
     SelectDifficulty()
     CheckOwerwrite()
     Sleep(4000)
+}
+
+SelectNextMap() {
+    nextMap := ALL_MAPS[Mod(victories, ALL_MAPS.Length) + 1]
+    SelectMap(nextMap[1], nextMap[2])
 }
 
 SelectRandomMap() {
