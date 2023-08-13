@@ -49,3 +49,12 @@
 - Druid 130
 - Banana Farm 424
 - Monkey Village 234
+
+### Chimps
+- _Obyn (Hero)_
+- Dart Monkey 002
+- Monkey Sub 243
+- Alchemist 420
+- Druid 015
+- Spike Factory 025
+- Monkey Village 230
