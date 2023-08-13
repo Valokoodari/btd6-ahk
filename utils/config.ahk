@@ -1,8 +1,5 @@
 mapSelect := IniRead("config.ini", "settings", "mapSelect", "none")
 mapCategory := IniRead("config.ini", "settings", "mapCategory", "expert")
-if not mapCategory ~= "beginner|intermediate|advanced|expert" {
-    mapCategory := "expert"
-}
 
 overwriteSave := IniRead("config.ini", "settings", "overwriteSave", false) == "true"
 

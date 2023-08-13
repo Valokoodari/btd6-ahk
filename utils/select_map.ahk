@@ -24,6 +24,9 @@ SelectRandomMap() {
             SelectMap(9, Random(1, 15))
         Case "expert":
             SelectMap(12, Random(1, 11))
+        Default:
+            randomMap := ALL_MAPS[Random(1, ALL_MAPS.Length)]
+            SelectMap(randomMap[1], randomMap[2])
     }
 }
 

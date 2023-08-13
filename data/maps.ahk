@@ -96,11 +96,13 @@ global MAPS := [
     ]
 ]
 
+global ALL_MAPS := []
 global MAP_LOCATIONS := Map()
 for pageNumber, page in MAPS {
     for mapNumber, mapData in page {
         name := StrReplace(StrLower(mapData[1]), " ", "_")
         name := StrReplace(StrReplace(name, "'"), "#")
         MAP_LOCATIONS[name] := [pageNumber, mapNumber]
+        ALL_MAPS.Push([pageNumber, mapNumber])
     }
 }
