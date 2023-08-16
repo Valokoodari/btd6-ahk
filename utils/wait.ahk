@@ -16,18 +16,15 @@ CheckInstaMonkey() {
 
 WaitForRound(round, delay := 0) {
     MouseMove(mouseRest[1], mouseRest[2])
-    round := Mod(round, 10)
     Loop {
-        if not (round = 3) or (round = 3) and not SearchRound(8) {
-            if (round = 7) or not (round = 7) and not SearchRound(7) {
-                if SearchRound(round) {
-                    Sleep(delay)
-                    break
-                }
-            }
+        if SearchRound(Mod(currentRound + 1, 10)) {
+            global currentRound := currentRound + 1
+        }
+        if currentRound == round {
+            Sleep(delay)
+            break
         }
         if defeated or SearchImage("states\defeat") {
-            LogMsg("Found defeat instead of the round x" round)
             global defeated := true
             break
         }
@@ -51,7 +48,7 @@ WaitForVictoryOrDefeat() {
             ClickImage("buttons\home_defeat_1", 2000)
             ClickImage("buttons\home_defeat_2", 2000)
             global defeats := defeats + 1
-            LogMsg("Defeat")
+            LogMsg("Defeat on round " currentRound)
             break
         }
         CheckInstaMonkey()

@@ -87,6 +87,7 @@ InGame() {
         Todo()
         return
     }
+    global currentRound := STARTING_ROUNDS[difficulty]
     mapData := MAPS[currentMap[1]][currentMap[2]]
     if mapData[2].Has(difficulty) {
         mapData[2][difficulty][1]()
@@ -101,6 +102,7 @@ InGame() {
     global difficulty := ""
     global currentMap := [0, 0]
     global mouseRest := [1, 1]
+    global currentRound := 0
 }
 
 OpenBoxes() {

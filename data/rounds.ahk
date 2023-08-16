@@ -1,0 +1,16 @@
+STARTING_ROUNDS := Map(
+    "easy", 1,
+    "primary", 1,
+    "deflation", 30,
+    "medium", 1,
+    "military", 1,
+    "apopalypse", 1,
+    "reverse", 1,
+    "hard", 3,
+    "magic", 3,
+    "double_hp", 3,
+    "half_cash", 3,
+    "alternate", 3,
+    "impoppable", 6,
+    "chimps", 6,
+)
