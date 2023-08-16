@@ -42,12 +42,12 @@
 ### Impoppable
 - _Benjamin (Hero)_
 - Dart Monkey 002
-- Sniper Monkey 505
+- Sniper Monkey 555
 - Monkey Sub 203
 - Monkey Ace 205
 - Alchemist 420
 - Druid 130
-- Banana Farm 424
+- Banana Farm 024
 - Monkey Village 234
 
 ### Chimps
