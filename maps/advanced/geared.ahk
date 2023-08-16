@@ -29,7 +29,6 @@ GearedEasy() {
     Upgrade("Sniper B 2", 0, 0, 1)  ; 021 -> 022
     Upgrade("Sniper C 2", 0, 2, 2)  ; 000 -> 022
 
-    WaitForRound(20)
     WaitForRound(28, 1000)
     Targeting("Sniper A 2", 3)      ; First -> Strong
     Upgrade("Sniper A 2", 2, 0, 2)  ; 000 -> 202
