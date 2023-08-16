@@ -119,8 +119,10 @@ OpenBoxes() {
 CollectDailyReward() {
     if ClickImage("buttons\chest", 3000, "", 563, 639, 588, 664) {
         LogMsg("Collecting the daily reward")
-        Click(x, y)
-        Sleep(3000)
+        Loop 2 {
+            Click(x, y)
+            Sleep(3000)
+        }
         ClickImage("buttons\close_chest", 1000, "", 571, 377, 596, 402)
     }
 }
