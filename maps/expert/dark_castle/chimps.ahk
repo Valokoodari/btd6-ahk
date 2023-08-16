@@ -108,10 +108,6 @@ DarkCastleChimps() {
     Place("Alch C")
     Upgrade("Alch C", 3, 2, 0)          ; 000 -> 320
 
-    WaitForRound(71)
-
-    WaitForRound(80)
-
     WaitForRound(82)
     Upgrade("Druid A", 0, 0, 1, true)   ; 014 -> 015
 
