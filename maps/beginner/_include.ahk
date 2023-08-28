@@ -19,4 +19,4 @@
 #Include four_circles.ahk
 #Include hedge.ahk
 #Include end_of_the_road.ahk
-#Include logs.ahk
+#Include logs\main.ahk

@@ -15,7 +15,9 @@ CheckInstaMonkey() {
 }
 
 WaitForRound(round, delay := 0) {
-    MouseMove(mouseRest[1], mouseRest[2])
+    if mouseRest[1] != 1 {
+        MouseMove(mouseRest[1], mouseRest[2])
+    }
     round := Mod(round, 10)
     Loop {
         if not (round = 3) or (round = 3) and not SearchRound(8) {
@@ -61,6 +63,9 @@ WaitForVictoryOrDefeat() {
 }
 
 WaitForUpgrade(path) {
+    if mouseRest[1] != 1 {
+        MouseMove(mouseRest[1], mouseRest[2])
+    }
     Loop {
         if SearchUpgrade(path) {
             break
