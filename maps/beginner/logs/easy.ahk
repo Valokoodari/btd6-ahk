@@ -1,7 +1,3 @@
-LOGS_DATA := Map(
-    "easy", [LogsEasy, ""]
-)
-
 LogsEasy() {
     global TS := Map(
         "Dart", ["dart", [457, 361]],
