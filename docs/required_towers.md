@@ -25,6 +25,7 @@
 ## By map
 
 ### Beginner
+- [Logs](/docs/maps/beginner/logs.md)
 
 ### Intermediate
 
