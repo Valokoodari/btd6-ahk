@@ -1,5 +1,6 @@
 SUNKEN_COLUMNS_DATA := Map(
-    "easy", [SunkenColumnsEasy, ""]
+    "easy", [SunkenColumnsEasy, ""],
+    "primary", [SunkenColumnsPrimary, ""]
 )
 
 SunkenColumnsEasy() {
@@ -10,4 +11,14 @@ SunkenColumnsEasy() {
         "Sniper", ["sniper", [827, 861]]
     )
     GeneralEasy()
+}
+
+SunkenColumnsPrimary() {
+    ; Leaked 57
+    global TS := Map(
+        "Dart A", ["dart", [668, 112]],
+        "Dart B", ["dart", [1013, 97]],
+        "Boomer", ["boomer", [838, 190]]
+    )
+    GeneralPrimary()
 }

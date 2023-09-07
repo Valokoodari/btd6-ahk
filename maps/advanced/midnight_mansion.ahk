@@ -1,5 +1,6 @@
 MIDNIGHT_MANSION_DATA := Map(
     "easy", [MidnightMansionEasy, ""],
+    "primary", [MidnightMansionPrimary, ""]
 )
 
 MidnightMansionEasy() {
@@ -10,4 +11,14 @@ MidnightMansionEasy() {
         "Sniper", ["sniper", [1228, 179]]
     )
     GeneralEasy()
+}
+
+MidnightMansionPrimary() {
+    ; Leaked 74
+    global TS := Map(
+        "Dart A", ["dart", [371, 267]],
+        "Dart B", ["dart", [1292, 268]],
+        "Boomer", ["boomer", [438, 198]]
+    )
+    GeneralPrimary()
 }
