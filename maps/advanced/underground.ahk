@@ -1,5 +1,6 @@
 UNDERGROUND_DATA := Map(
-    "easy", [UndergroundEasy, ""]
+    "easy", [UndergroundEasy, ""],
+    "primary", [UndergroundPrimary, ""]
 )
 
 UndergroundEasy() {
@@ -10,4 +11,14 @@ UndergroundEasy() {
         "Sniper", ["sniper", [834, 544]]
     )
     GeneralEasy()
+}
+
+UndergroundPrimary() {
+    ; Leaked 22
+    global TS := Map(
+        "Dart A", ["dart", [635, 530]],
+        "Dart B", ["dart", [1025, 530]],
+        "Boomer", ["boomer", [685, 573]]
+    )
+    GeneralPrimary()
 }

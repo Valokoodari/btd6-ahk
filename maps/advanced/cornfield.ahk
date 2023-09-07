@@ -1,5 +1,6 @@
 CORNFIELD_DATA := Map(
     "easy", [CornfieldEasy, ""],
+    "primary", [CornfieldPrimary, ""]
 )
 
 CornfieldEasy() {
@@ -10,4 +11,13 @@ CornfieldEasy() {
         "Sniper", ["sniper", [749, 591]]
     )
     GeneralEasy()
+}
+
+CornfieldPrimary() {
+    global TS := Map(
+        "Dart A", ["dart", [749, 478]],
+        "Dart B", ["dart", [814, 474]],
+        "Boomer", ["boomer", [787, 531]]
+    )
+    GeneralPrimary()
 }
