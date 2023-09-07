@@ -1,5 +1,6 @@
 ANOTHER_BRICK_DATA := Map(
     "easy", [AnotherBrickEasy, ""],
+    "primary", [AnotherBrickPrimary, ""]
 )
 
 AnotherBrickEasy() {
@@ -10,4 +11,13 @@ AnotherBrickEasy() {
         "Sniper", ["sniper", [1609, 473]]
     )
     GeneralEasy()
+}
+
+AnotherBrickPrimary() {
+    global TS := Map(
+        "Dart A", ["dart", [571, 348]],
+        "Dart B", ["dart", [636, 348]],
+        "Boomer", ["boomer", [604, 292]]
+    )
+    GeneralPrimary()
 }

@@ -1,5 +1,6 @@
 PATS_POND_DATA := Map(
-    "easy", [PatsPondEasy, ""]
+    "easy", [PatsPondEasy, ""],
+    "primary", [PatsPondPrimary, ""]
 )
 
 PatsPondEasy() {
@@ -10,4 +11,13 @@ PatsPondEasy() {
         "Sniper", ["sniper", [164, 145]]
     )
     GeneralEasy()
+}
+
+PatsPondPrimary() {
+    global TS := Map(
+        "Dart A", ["dart", [159, 484]],
+        "Dart B", ["dart", [1481, 595]],
+        "Boomer", ["boomer", [88, 483]]
+    )
+    GeneralPrimary()
 }

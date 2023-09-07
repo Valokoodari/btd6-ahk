@@ -1,5 +1,6 @@
 PENINSULA_DATA := Map(
-    "easy", [PeninsulaEasy, ""]
+    "easy", [PeninsulaEasy, ""],
+    "primary", [PeninsulaPrimary, ""]
 )
 
 PeninsulaEasy() {
@@ -10,4 +11,13 @@ PeninsulaEasy() {
         "Sniper", ["sniper", [839, 192]]
     )
     GeneralEasy()
+}
+
+PeninsulaPrimary() {
+    global TS := Map(
+        "Dart A", ["dart", [1072, 790]],
+        "Dart B", ["dart", [1125, 744]],
+        "Boomer", ["boomer", [1142, 803]]
+    )
+    GeneralPrimary()
 }

@@ -1,5 +1,6 @@
 CARGO_DATA := Map(
-    "easy", [CargoEasy, ""]
+    "easy", [CargoEasy, ""],
+    "primary", [CargoPrimary, ""]
 )
 
 CargoEasy() {
@@ -10,4 +11,13 @@ CargoEasy() {
         "Sniper", ["sniper", [1105, 240]]
     )
     GeneralEasy()
+}
+
+CargoPrimary() {
+    global TS := Map(
+        "Dart A", ["dart", [1205, 360]],
+        "Dart B", ["dart", [1247, 403]],
+        "Boomer", ["boomer", [1167, 412]]
+    )
+    GeneralPrimary()
 }
