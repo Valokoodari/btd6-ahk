@@ -1,5 +1,6 @@
 BALANCE_DATA := Map(
     "easy", [BalanceEasy, ""],
+    "primary", [BalancePrimary, ""]
 )
 
 BalanceEasy() {
@@ -10,4 +11,13 @@ BalanceEasy() {
         "Sniper", ["sniper", [844, 380]]
     )
     GeneralEasy()
+}
+
+BalancePrimary() {
+    global TS := Map(
+        "Dart A", ["dart", [840, 553]],
+        "Dart B", ["dart", [967, 531]],
+        "Boomer", ["boomer", [844, 375]]
+    )
+    GeneralPrimary()
 }

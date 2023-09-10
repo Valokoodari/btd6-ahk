@@ -1,5 +1,6 @@
 SPRING_SRPING_DATA := Map(
-    "easy", [SpringSpringEasy, ""]
+    "easy", [SpringSpringEasy, ""],
+    "primary", [SpringSpringPrimary, ""]
 )
 
 SpringSpringEasy() {
@@ -10,4 +11,13 @@ SpringSpringEasy() {
         "Sniper", ["sniper", [776, 549]],
     )
     GeneralEasy()
+}
+
+SpringSpringPrimary() {
+    global TS := Map(
+        "Dart A", ["dart", [1254, 565]],
+        "Dart B", ["dart", [277, 553]],
+        "Boomer", ["boomer", [309, 498]]
+    )
+    GeneralPrimary()
 }

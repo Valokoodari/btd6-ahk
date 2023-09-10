@@ -1,5 +1,6 @@
 KARTSNDARTS_DATA := Map(
-    "easy", [KartsNDartsEasy, ""]
+    "easy", [KartsNDartsEasy, ""],
+    "primary", [KartsNDartsPrimary, ""]
 )
 
 KartsNDartsEasy() {
@@ -10,4 +11,13 @@ KartsNDartsEasy() {
         "Sniper", ["sniper", [315, 147]],
     )
     GeneralEasy()
+}
+
+KartsNDartsPrimary() {
+    global TS := Map(
+        "Dart A", ["dart", [771, 360]],
+        "Dart B", ["dart", [923, 716]],
+        "Boomer", ["boomer", [709, 328]]
+    )
+    GeneralPrimary()
 }

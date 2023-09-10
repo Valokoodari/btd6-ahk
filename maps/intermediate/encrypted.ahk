@@ -1,5 +1,6 @@
 ENCRYPTED_DATA := Map(
     "easy", [EncryptedEasy, ""],
+    "primary", [EncryptedPrimary, ""]
 )
 
 EncryptedEasy() {
@@ -10,4 +11,14 @@ EncryptedEasy() {
         "Sniper", ["sniper", [323, 106]]
     )
     GeneralEasy()
+}
+
+EncryptedPrimary() {
+    ; Leaked 21
+    global TS := Map(
+        "Dart A", ["dart", [820, 379]],
+        "Dart B", ["dart", [784, 44]],
+        "Boomer", ["boomer", [838, 438]]
+    )
+    GeneralPrimary()
 }
