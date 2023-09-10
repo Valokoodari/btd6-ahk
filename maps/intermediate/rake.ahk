@@ -1,5 +1,6 @@
 RAKE_DATA := Map(
-    "easy", [RakeEasy, ""]
+    "easy", [RakeEasy, ""],
+    "primary", [RakePrimary, ""]
 )
 
 RakeEasy() {
@@ -10,4 +11,14 @@ RakeEasy() {
         "Sniper", ["sniper", [428, 211]],
     )
     GeneralEasy()
+}
+
+RakePrimary() {
+    ; Leaked 33
+    global TS := Map(
+        "Dart A", ["dart", [1085, 568]],
+        "Dart B", ["dart", [1204, 459]],
+        "Boomer", ["boomer", [1080, 456]]
+    )
+    GeneralPrimary()
 }
