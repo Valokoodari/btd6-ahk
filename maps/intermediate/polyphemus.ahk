@@ -1,5 +1,6 @@
 POLYPHEMUS_DATA := Map(
     "easy", [PolyphemusEasy, ""],
+    "primary", [PolyphemusPrimary, ""]
 )
 
 PolyphemusEasy() {
@@ -10,4 +11,14 @@ PolyphemusEasy() {
         "Sniper", ["sniper", [1111, 555]]
     )
     GeneralEasy()
+}
+
+PolyphemusPrimary() {
+    ; Leaked 34
+    global TS := Map(
+        "Dart A", ["dart", [561, 362]],
+        "Dart B", ["dart", [573, 758]],
+        "Boomer", ["boomer", [629, 339]]
+    )
+    GeneralPrimary()
 }

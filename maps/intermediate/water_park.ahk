@@ -1,5 +1,6 @@
 WATER_PARK_DATA := Map(
-    "easy", [WaterParkEasy, ""]
+    "easy", [WaterParkEasy, ""],
+    "primary", [WaterParkPrimary, ""]
 )
 
 WaterParkEasy() {
@@ -10,4 +11,13 @@ WaterParkEasy() {
         "Sniper", ["sniper", [407, 221]]
     )
     GeneralEasy()
+}
+
+WaterParkPrimary() {
+    global TS := Map(
+        "Dart A", ["dart", [1242, 527]],
+        "Dart B", ["dart", [1142, 448]],
+        "Boomer", ["boomer", [1205, 475]]
+    )
+    GeneralPrimary()
 }
