@@ -1,5 +1,6 @@
 STREAMBED_DATA := Map(
-    "easy", [StreambedEasy, ""]
+    "easy", [StreambedEasy, ""],
+    "primary", [StreambedPrimary, ""]
 )
 
 StreambedEasy() {
@@ -10,4 +11,13 @@ StreambedEasy() {
         "Sniper", ["sniper", [304, 979]],
     )
     GeneralEasy()
+}
+
+StreambedPrimary() {
+    global TS := Map(
+        "Dart A", ["dart", [648, 360]],
+        "Dart B", ["dart", [575, 296]],
+        "Boomer", ["boomer", [603, 414]]
+    )
+    GeneralPrimary()
 }

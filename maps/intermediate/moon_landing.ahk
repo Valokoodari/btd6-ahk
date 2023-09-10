@@ -1,5 +1,6 @@
 MOON_LANDING_DATA := Map(
-    "easy", [MoonLandingEasy, ""]
+    "easy", [MoonLandingEasy, ""],
+    "primary", [MoonLandingPrimary, ""]
 )
 
 MoonLandingEasy() {
@@ -10,4 +11,13 @@ MoonLandingEasy() {
         "Sniper", ["sniper", [1183, 683]],
     )
     GeneralEasy()
+}
+
+MoonLandingPrimary() {
+    global TS := Map(
+        "Dart A", ["dart", [1107, 742]],
+        "Dart B", ["dart", [1098, 625]],
+        "Boomer", ["boomer", [1098, 927]]
+    )
+    GeneralPrimary()
 }

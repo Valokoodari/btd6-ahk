@@ -1,5 +1,6 @@
 DOWNSTREAM_DATA := Map(
-    "easy", [DownstreamEasy, ""]
+    "easy", [DownstreamEasy, ""],
+    "primary", [DownstreamPrimary, ""]
 )
 
 DownstreamEasy() {
@@ -10,4 +11,13 @@ DownstreamEasy() {
         "Sniper", ["sniper", [751, 816]],
     )
     GeneralEasy()
+}
+
+DownstreamPrimary() {
+    global TS := Map(
+        "Dart A", ["dart", [623, 690]],
+        "Dart B", ["dart", [640, 745]],
+        "Boomer", ["boomer", [472, 590]]
+    )
+    GeneralPrimary()
 }

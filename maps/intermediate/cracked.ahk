@@ -1,5 +1,6 @@
 CRACKED_DATA := Map(
-    "easy", [CrackedEasy, ""]
+    "easy", [CrackedEasy, ""],
+    "primary", [CrackedPrimary, ""]
 )
 
 CrackedEasy() {
@@ -10,4 +11,13 @@ CrackedEasy() {
         "Sniper", ["sniper", [1320, 319]],
     )
     GeneralEasy()
+}
+
+CrackedPrimary() {
+    global TS := Map(
+        "Dart A", ["dart", [449, 303]],
+        "Dart B", ["dart", [494, 261]],
+        "Boomer", ["boomer", [417, 224]]
+    )
+    GeneralPrimary()
 }

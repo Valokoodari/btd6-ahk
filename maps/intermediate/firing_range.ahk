@@ -1,5 +1,6 @@
 FIRING_RANGE_DATA := Map(
-    "easy", [FiringRangeEasy, ""]
+    "easy", [FiringRangeEasy, ""],
+    "primary", [FiringRangePrimary, ""]
 )
 
 FiringRangeEasy() {
@@ -10,4 +11,13 @@ FiringRangeEasy() {
         "Sniper", ["sniper", [1513, 250]],
     )
     GeneralEasy()
+}
+
+FiringRangePrimary() {
+    global TS := Map(
+        "Dart A", ["dart", [180, 253]],
+        "Dart B", ["dart", [1511, 250]],
+        "Boomer", ["boomer", [302, 575]]
+    )
+    GeneralPrimary()
 }
