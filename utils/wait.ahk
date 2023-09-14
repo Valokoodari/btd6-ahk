@@ -58,12 +58,41 @@ WaitForVictoryOrDefeat() {
 }
 
 WaitForUpgrade(path) {
+    if defeated {
+        return
+    }
+    if mouseRest[1] != 1 {
+        if tx > 834 {
+            MouseMove(max(mouseRest[1], 425), mouseRest[2])
+        } else {
+            MouseMove(min(mouseRest[1], 1246), mouseRest[2])
+        }
+    }
     Loop {
         if SearchUpgrade(path) {
             break
         }
+        if SearchImage("states\defeat") or SearchImage("states\victory") {
+            global defeated := true
+            LogMsg("Found defeat instead of upgrade " path " on " toweropen)
+            break
+        }
+        CheckLevelUp()
+    }
+}
+
+WaitForAbility(tower, ability, position, delay := 0) {
+    if mouseRest[1] != 1 {
+        MouseMove(mouseRest[1], mouseRest[2])
+    }
+    Loop {
+        if SearchImage("abilities\" tower "\" ability, "", (50+100*position), 1000, (150+100*position), 1079) {
+            Sleep(delay)
+            break
+        }
         if defeated or SearchImage("states\defeat") or SearchImage("states\victory") {
             global defeated := true
+            LogMsg("Found defeat instead of ability " ability " from " tower)
             break
         }
         CheckLevelUp()
