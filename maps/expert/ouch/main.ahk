@@ -1,5 +1,7 @@
 #Include easy.ahk
+#Include impoppable.ahk
 
 OUCH_DATA := Map(
-    "easy", [OuchEasy, ""]
+    "easy", [OuchEasy, ""],
+    "impoppable", [OuchImpoppable, "benjamin"]
 )
