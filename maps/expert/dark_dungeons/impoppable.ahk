@@ -1,5 +1,5 @@
 DarkDungeonsImpoppable() {
-    global mouseRest := [1070, 653]
+    global mouseRest := [1130, 582]
     global TS := Map(
         "Dart A", ["dart", [797, 943]],
         "Dart B", ["dart", [335, 820]],
@@ -63,17 +63,19 @@ DarkDungeonsImpoppable() {
     Place("Village A", true)
     Upgrade("Village A", 0, 0, 2, true) ; 000 -> 002
     Place("Ace", true)
+    Upgrade("Spike A", 3, 0, 0, true)   ; 000 -> 300
+    Upgrade("Spike C", 1, 0, 0, true)   ; 000 -> 100
     Upgrade("Ace", 0, 0, 3, true)       ; 000 -> 003
     Place("Alch A", true)
     Upgrade("Alch A", 2, 0, 0, true)    ; 000 -> 200
     Upgrade("Ace", 2, 0, 0, true)       ; 003 -> 203
-    Upgrade("Village A", 0, 2, 0, true) ; 002 -> 022
     Place("Village B", true)
-    Upgrade("Village B", 0, 0, 2, true) ; 000 -> 002
+    Upgrade("Village B", 0, 0, 1, true) ; 000 -> 001
+    Upgrade("Village B", 0, 0, 1, true) ; 001 -> 002
+    Upgrade("Village A", 0, 2, 0, true) ; 002 -> 022
+    Upgrade("Spike B", 1, 0, 0, true)   ; 000 -> 100
     Upgrade("Farm A", 0, 0, 3, true)    ; 000 -> 003
     Upgrade("Village B", 2, 0, 0, true) ; 002 -> 202
-    Upgrade("Spike C", 1, 0, 0, true)   ; 000 -> 100
-    Upgrade("Spike B", 1, 0, 0, true)   ; 000 -> 100
     Upgrade("Farm B", 0, 0, 3, true)    ; 000 -> 003
     Upgrade("Alch A", 1, 0, 0, true)    ; 200 -> 300
     Place("Farm C", true)
@@ -86,9 +88,8 @@ DarkDungeonsImpoppable() {
     Upgrade("Spike C", 2, 0, 0, true)   ; 102 -> 302
     Place("Wizard A", true)
     Upgrade("Wizard A", 0, 3, 2, true)  ; 000 -> 032
-    Upgrade("Spike A", 1, 0, 2, true)   ; 000 -> 102
+    Upgrade("Spike A", 0, 0, 2, true)   ; 300 -> 302
     Targeting("Spike A", 3)             ; Normal -> Smart
-    Upgrade("Spike A", 2, 0, 0, true)   ; 102 -> 302
     Upgrade("Spike B", 0, 0, 2, true)   ; 100 -> 102
     Targeting("Spike B", 2)             ; Normal -> Far
     Upgrade("Spike B", 1, 0, 0, true)   ; 102 -> 202
@@ -102,13 +103,6 @@ DarkDungeonsImpoppable() {
     Upgrade("Wizard B", 0, 1, 2, true)  ; 020 -> 032
     Upgrade("Wizard C", 0, 1, 0, true)  ; 022 -> 032
     Upgrade("Alch A", 0, 0, 1, true)    ; 300 -> 301
-    Place("Sniper A", true)
-    Targeting("Sniper A", 3)            ; First -> Strong
-    Upgrade("Sniper A", 3, 0, 0, true)  ; 000 -> 300
-    Upgrade("Sniper A", 1, 0, 0, true)  ; 300 -> 400
-    Targeting("Spike C", 1)             ; Close -> Far
-    Upgrade("Village A", 0, 0, 1, true) ; 022 -> 023
-    Sell("Druid A")
     Sell("Dart B")
     Sell("Dart C")
     Sell("Dart D")
@@ -116,16 +110,21 @@ DarkDungeonsImpoppable() {
     Sell("Dart F")
     Sell("Dart G")
     Sell("Dart H")
-    Upgrade("Village A", 0, 0, 1, true) ; 023 -> 024
     Place("Druid C", true)
-    Upgrade("Druid C", 1, 3, 0, true)   ; 000 -> 130
+    Upgrade("Druid C", 0, 3, 0, true)   ; 000 -> 030
     Targeting("Druid C", 1)             ; Strong -> First
+    Upgrade("Druid C", 1, 0, 0, true)   ; 030 -> 130
+    Upgrade("Spike C", 1, 0, 0, true)   ; 302 -> 402
+    Targeting("Spike C", 1)             ; Close -> Far
+    Upgrade("Village A", 0, 0, 2, true) ; 022 -> 024
     Upgrade("Ace", 0, 0, 1, true)       ; 203 -> 204
     Upgrade("Farm A", 0, 0, 1, true)    ; 023 -> 024
     Upgrade("Alch A", 1, 0, 0, true)    ; 301 -> 401
     Upgrade("Farm B", 0, 0, 1, true)    ; 023 -> 024
     Upgrade("Farm C", 0, 0, 1, true)    ; 023 -> 024
-    Upgrade("Spike C", 1, 0, 0, true)   ; 302 -> 402
+    Place("Sniper A", true)
+    Targeting("Sniper A", 3)            ; First -> Strong
+    Upgrade("Sniper A", 4, 0, 0, true)  ; 000 -> 400
     Upgrade("Spike A", 1, 0, 0, true)   ; 302 -> 402
     Place("Sniper B", true)
     Upgrade("Sniper B", 2, 0, 5, true)  ; 000 -> 205
@@ -138,7 +137,7 @@ DarkDungeonsImpoppable() {
     Upgrade("Ace", 0, 0, 1, true)       ; 204 -> 205
     Sell("Village B")
     Place("Village B")
-    Upgrade("Village B", 0, 2, 0, true) ; 000 -> 020
+    Upgrade("Village B", 0, 2, 1, true) ; 000 -> 021
     Sell("Village A")
     Place("Village A", true)
     Upgrade("Village A", 2, 3, 0, true) ; 000 -> 230
