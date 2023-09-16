@@ -15,7 +15,9 @@ CheckInstaMonkey() {
 }
 
 WaitForRound(round, delay := 0) {
-    MouseMove(mouseRest[1], mouseRest[2])
+    if mouseRest[1] != 1 {
+        MouseMove(mouseRest[1], mouseRest[2])
+    }
     Loop {
         if SearchRound(Mod(currentRound + 1, 10)) {
             global currentRound := currentRound + 1
