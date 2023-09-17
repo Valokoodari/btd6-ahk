@@ -7,7 +7,7 @@ WorkshopImpoppable() {
         "Sniper A", ["sniper", [897, 496]],
         "Ben", ["hero", [1005, 30]],
         "Dart D", ["dart", [768, 497]],
-        "Spike A", ["spike", [1601, 629]],
+        "Spike A", ["spike", [1599, 629]],
         "Druid", ["druid", [943, 626]],
         "Farm A", ["farm", [1222, 421]],
         "Farm B", ["farm", [1224, 177]],
@@ -23,6 +23,8 @@ WorkshopImpoppable() {
         "Ace", ["ace", [1378, 783]],
         "Sniper B", ["sniper", [1241, 754]]
     )
+    
+    CheckDoubleCash()
 
     Place("Dart A")
     Place("Dart B")
@@ -30,28 +32,73 @@ WorkshopImpoppable() {
     Place("Sniper A")
 
     StartGame()
+
     Targeting("Dart A", 3)
     Targeting("Dart B", 3)
     Targeting("Sniper A", 3)
+
+    WaitForRound(12)
     Place("Ben", true)
+
+    WaitForRound(13)
     Place("Dart D", true)
+
+    WaitForRound(15)
     Place("Spike A", true)
+
+    WaitForRound(16)
     Upgrade("Spike A", 0, 0, 2, true)
     Targeting("Spike A", 1)             ; Normal -> Close
+
+    WaitForRound(18)
     Place("Druid", true)
-    Upgrade("Druid", 0, 3, 0, true)
+
+    WaitForRound(19)
+    Upgrade("Druid", 0, 1, 0, true)
+
+    WaitForRound(21)
+    Upgrade("Druid", 0, 2, 0, true)
     Targeting("Druid", 1)
+
+    WaitForRound(25)
     Place("Farm A", true)
-    Upgrade("Farm A", 2, 0, 0, true)
+
+    WaitForRound(26)
+    Upgrade("Farm A", 1, 0, 0, true)
+
+    WaitForRound(27)
+    Upgrade("Farm A", 1, 0, 0, true)
     Upgrade("Druid", 1, 0, 0, true)
+
+    WaitForRound(29)
     Place("Farm B", true)
-    Upgrade("Farm B", 2, 0, 0, true)
-    Upgrade("Spike A", 3, 0, 0, true)
+    Upgrade("Farm B", 1, 0, 0, true)
+
+    WaitForRound(30)
+    Upgrade("Farm B", 1, 0, 0, true)
+
+    WaitForRound(31)
+    Upgrade("Spike A", 1, 0, 0, true)
+
+    WaitForRound(32)
+    Upgrade("Spike A", 1, 0, 0, true)
+
+    WaitForRound(35)
+    Upgrade("Spike A", 1, 0, 0, true)
     Place("Farm C", true)
+
+    WaitForRound(36)
     Upgrade("Farm C", 2, 0, 0, true)
+
+    WaitForRound(38)
     Place("Village A", true)
     Upgrade("Village A", 0, 0, 2, true)
-    Upgrade("Farm C", 0, 0, 3, true)
+    Upgrade("Farm C", 0, 0, 2, true)
+
+    WaitForRound(39)
+    Upgrade("Farm C", 0, 0, 1, true)
+
+    WaitForRound(41)
     Sell("Dart C")
     Sell("Sniper A")
     Place("Wizard", true)
@@ -59,35 +106,74 @@ WorkshopImpoppable() {
     Upgrade("Village A", 1, 0, 0, true)
     Place("Village B", true)
     Upgrade("Village B", 0, 0, 2, true)
+
+    WaitForRound(43)
     Upgrade("Wizard", 0, 1, 0, true)
+
+    WaitForRound(44)
     Upgrade("Farm A", 0, 0, 3, true)
+
+    WaitForRound(45)
     Upgrade("Farm B", 0, 0, 3, true)
-    Upgrade("Village A", 0, 0, 2, true)
+
+    WaitForRound(48)
+    Upgrade("Village A", 0, 0, 1, true)
+
+    WaitForRound(49)
+    Upgrade("Village A", 0, 0, 1, true)
     Upgrade("Village A", 1, 0, 0, true)
     Place("Alch A", true)
     Upgrade("Alch A", 3, 2, 0, true)
     Sell("Village B")
+
+    WaitForRound(51)
     Upgrade("Spike A", 1, 0, 0, true)
+
+    WaitForRound(52)
     Place("Village C", true)
-    Upgrade("Village C", 2, 0, 2, true)
+    Upgrade("Village C", 2, 0, 0, true)
+
+    WaitForRound(53)
+    Upgrade("Village C", 0, 0, 2, true)
+
+    WaitForRound(54)
     Place("Alch B", true)
     Upgrade("Alch B", 3, 2, 0, true)
     Place("Spike B", true)
     Upgrade("Spike B", 0, 0, 3, true)
     Targeting("Spike B", 1)
+
+    WaitForRound(55)
     Upgrade("Spike B", 0, 2, 1, true)
+
+    WaitForRound(56)
     Place("Alch C", true)
     Upgrade("Alch C", 3, 2, 0, true)
+
+    WaitForRound(61)
     Upgrade("Farm A", 0, 0, 1, true)
+
+    WaitForRound(65)
     Upgrade("Farm B", 0, 0, 1, true)
+
+    WaitForRound(69)
     Upgrade("Farm C", 0, 0, 1, true)
     Place("Ace", true)
-    Upgrade("Ace", 0, 0, 4, true)
+    Upgrade("Ace", 0, 0, 3, true)
+
+    WaitForRound(73)
+    Upgrade("Ace", 0, 0, 1, true)
     Upgrade("Ace", 2, 0, 0, true)
+
+    WaitForRound(77)
     Upgrade("Spike B", 0, 0, 1, true)
+
+    WaitForRound(78)
     Place("Sniper B", true)
     Targeting("Sniper B", 3)
     Upgrade("Sniper B", 4, 0, 0, true)
+
+    WaitForRound(82)
     Open("Sniper B")
     WaitForUpgrade(1)
     Close()
@@ -102,5 +188,7 @@ WorkshopImpoppable() {
     Upgrade("Alch C", 1, 0, 0, true)
     Upgrade("Alch B", 1, 0, 0, true)
     Upgrade("Sniper B", 0, 0, 2, true)
+
+    WaitForRound(91)
     Upgrade("Sniper B", 1, 0, 0, true)
 }
