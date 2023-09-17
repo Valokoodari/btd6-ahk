@@ -124,67 +124,67 @@ MuddyPuddlesImpoppable() {
     WaitForRound(49)
     Upgrade("Village B", 0, 0, 1, true) ; 202 -> 203
     Place("Sniper B", true)
-    Upgrade("Sniper B", 0, 3, 2, true)
+    Upgrade("Sniper B", 0, 3, 2, true)  ; 000 -> 032
 
     WaitForRound(50)
-    Upgrade("Sub", 0, 0, 1, true)
+    Upgrade("Sub", 0, 0, 1, true)       ; 203 -> 204
 
     WaitForRound(52)
-    Upgrade("Sniper B", 0, 1, 0, true)
+    Upgrade("Sniper B", 0, 1, 0, true)  ; 032 -> 042
 
     WaitForRound(57)
-    Upgrade("Sniper B", 0, 1, 0, true)
+    Upgrade("Sniper B", 0, 1, 0, true)  ; 042 -> 052
     Place("Alch A", true)
-    Upgrade("Alch A", 3, 2, 0, true)
+    Upgrade("Alch A", 3, 2, 0, true)    ; 000 -> 320
 
     WaitForRound(58)
-    Upgrade("Alch A", 1, 0, 0, true)
+    Upgrade("Alch A", 1, 0, 0, true)    ; 320 -> 420
 
     WaitForRound(59)
     Place("Sniper C", true)
-    Targeting("Sniper C", 4)
-    Upgrade("Sniper C", 2, 0, 3, true)
+    Targeting("Sniper C", 4)            ; First -> Elite
+    Upgrade("Sniper C", 2, 0, 3, true)  ; 000 -> 203
 
     WaitForRound(61)
-    Upgrade("Sniper C", 0, 0, 1, true)
+    Upgrade("Sniper C", 0, 0, 1, true)  ; 203 -> 204
 
     WaitForRound(65)
-    Upgrade("Farm A", 0, 0, 1, true)
+    Upgrade("Farm A", 0, 0, 1, true)    ; 203 -> 204
 
     WaitForRound(69)
-    Upgrade("Farm B", 0, 0, 1, true)
+    Upgrade("Farm B", 0, 0, 1, true)    ; 203 -> 204
 
     WaitForRound(72)
-    Upgrade("Farm C", 0, 0, 1, true)
+    Upgrade("Farm C", 0, 0, 1, true)    ; 203 -> 204
 
     WaitForRound(75)
-    Upgrade("Sniper C", 0, 0, 1, true)
+    Upgrade("Sniper C", 0, 0, 1, true)  ; 204 -> 205
     Place("Ace", true)
-    Upgrade("Ace", 0, 0, 3, true)
-    Upgrade("Ace", 2, 0, 0, true)
+    Upgrade("Ace", 0, 0, 3, true)       ; 000 -> 003
+    Upgrade("Ace", 2, 0, 0, true)       ; 003 -> 203
 
     WaitForRound(78)
-    Upgrade("Ace", 0, 0, 1, true)
+    Upgrade("Ace", 0, 0, 1, true)       ; 203 -> 204
 
     WaitForRound(79)
     Place("Alch B", true)
-    Upgrade("Alch B", 3, 2, 0, true)
-    Upgrade("Alch B", 1, 0, 0, true)
-    Upgrade("Sniper A", 3, 0, 0, true)
+    Upgrade("Alch B", 3, 2, 0, true)    ; 000 -> 320
+    Upgrade("Alch B", 1, 0, 0, true)    ; 320 -> 420
+    Upgrade("Sniper A", 3, 0, 0, true)  ; 101 -> 401
 
     WaitForRound(83)
     Open("Sniper A")
     WaitForUpgrade(1)
     Sell("Village C")
     Place("Village C", true)
-    Upgrade("Village C", 2, 3, 0, true)
+    Upgrade("Village C", 2, 3, 0, true) ; 000 -> 230
     Sell("Village B")
     Sell("Farm A")
     Sell("Farm B")
     Sell("Farm C")
-    Upgrade("Ace", 0, 0, 1, true)
-    Upgrade("Sniper A", 0, 0, 1, true)
+    Upgrade("Ace", 0, 0, 1, true)       ; 204 -> 205
+    Upgrade("Sniper A", 0, 0, 1, true)  ; 401 -> 402
 
     WaitForRound(91)
-    Upgrade("Sniper A", 1, 0, 0, true)
+    Upgrade("Sniper A", 1, 0, 0, true)  ; 402 -> 502
 }

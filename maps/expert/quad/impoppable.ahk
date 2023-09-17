@@ -43,7 +43,7 @@ QuadImpoppable() {
 
     WaitForRound(7)
     Place("Sniper A", true)
-    Targeting("Sniper A", 3)            ; First -> Strong To-Do: Comments
+    Targeting("Sniper A", 3)            ; First -> Strong
 
     WaitForRound(8)
     Place("Dart E", true)
