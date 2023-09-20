@@ -18,7 +18,12 @@ SearchRound(round) {
     if round != 7 and SearchRound(7) {
         return false
     }
-    return ImageSearch(&xCoord, &yCoord, 1413, 21, 1520, 80, "*8 *TransBlack " A_ScriptDir "\img\rounds\" round ".png")
+    if (tx > 835) {
+        roundDetected := ImageSearch(&xCoord, &yCoord, 1413, 21, 1520, 80, "*8 *TransBlack " A_ScriptDir "\img\rounds\" round ".png")
+    } else {
+        roundDetected := ImageSearch(&xCoord, &yCoord, 1040, 21, 1115, 80, "*8 *TransBlack " A_ScriptDir "\img\rounds\" round ".png")
+    }
+    return roundDetected
 }
 
 GetCurrentMapPage() {

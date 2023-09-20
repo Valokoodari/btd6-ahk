@@ -22,9 +22,7 @@ WaitForRound(round, delay := 0) {
         return
     }
     Loop {
-        if SearchRound(Mod(currentRound + 1, 10)) {
-            global currentRound := currentRound + 1
-        }
+        UpdateRound()
         if currentRound == round {
             Sleep(delay)
             break
@@ -53,13 +51,12 @@ WaitForVictoryOrDefeat() {
             ClickImage("buttons\home_defeat_1", 2000)
             ClickImage("buttons\home_defeat_2", 2000)
             global defeats := defeats + 1
-            if speed_adjust {
-                LogMsg("Defeat on unknown round")
-            } else LogMsg("Defeat on round " currentRound)
+            LogMsg("Defeat on round " currentRound)
             break
         }
         CheckInstaMonkey()
         CheckLevelUp()
+        UpdateRound()
         Sleep(2000)
     }
 }
@@ -85,6 +82,7 @@ WaitForUpgrade(path) {
             break
         }
         CheckLevelUp()
+        UpdateRound()
     }
 }
 
@@ -103,6 +101,7 @@ WaitForAbility(tower, ability, position, delay := 0) {
             break
         }
         CheckLevelUp()
+        UpdateRound()
     }
 }
 
@@ -111,5 +110,11 @@ CheckDoubleCash() {
         LogMsg("Double Cash detected")
         global double_cash := true
         global speed_adjust := true
+    }
+}
+
+UpdateRound() {
+    if SearchRound(Mod(currentRound + 1, 10)) {
+        global currentRound := currentRound + 1
     }
 }

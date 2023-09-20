@@ -94,6 +94,7 @@ Sell(tower) {
 
     Open(tower)
     Send(KEYS["sell"])  ; Sell Tower
+    global tx := 1000
     Sleep(200)
 }
 
@@ -136,6 +137,7 @@ Close() {
         return
     }
         Send("{Esc}")       ; Close Tower
+        global tx := 1000
         Sleep(200)
 }
 
