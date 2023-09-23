@@ -94,7 +94,7 @@ Sell(tower) {
 
     Open(tower)
     Send(KEYS["sell"])  ; Sell Tower
-    global tx := 1000
+    global toweropen := ""
     Sleep(200)
 }
 
@@ -126,9 +126,9 @@ Open(tower) {
     if defeated {
         return
     }
-    global tx := TS[tower][2][1], ty := TS[tower][2][2], toweropen := tower
+    global x := TS[tower][2][1], y := TS[tower][2][2], toweropen := tower
 
-    Click(tx,ty)          ; Open Tower
+    Click(x,y)                ; Open Tower
     Sleep(100)
 }
 
@@ -136,8 +136,8 @@ Close() {
     if defeated {
         return
     }
-        Send("{Esc}")       ; Close Tower
-        global tx := 1000
+        Send("{Esc}")           ; Close Tower
+        global toweropen := ""
         Sleep(200)
 }
 

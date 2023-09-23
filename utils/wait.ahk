@@ -66,11 +66,13 @@ WaitForUpgrade(path) {
         return
     }
     if mouseRest[1] != 1 {
-        if tx > 834 {
+        if toweropen != "" {
+            if TS[toweropen][2][1] > 834 {
             MouseMove(max(mouseRest[1], 425), mouseRest[2])
-        } else {
-            MouseMove(min(mouseRest[1], 1246), mouseRest[2])
-        }
+            } else {
+                    MouseMove(min(mouseRest[1], 1246), mouseRest[2])
+                }
+        } else MouseMove(mouseRest[1], mouseRest[2])
     }
     Loop {
         if SearchUpgrade(path) {
