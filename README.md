@@ -32,6 +32,7 @@ specified by the user.
 > modes may require full MK.
 
 ### [Required tower upgrades](/docs/required_towers.md)
+### [Supported modes per map](/docs/mode_support.md)
 
 ## Usage
 For optimal results set `mapSelect` in `config.ini` according to the current event (`none`,
