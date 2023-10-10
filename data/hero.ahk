@@ -10,7 +10,7 @@ HERO_SKINS := Map(
     "pat", ["normal", "snowman", "kaiju"],
     "adora", ["normal", "joan", "void"],
     "brickell", ["normal", "pirate", "lifeguard"],
-    "etienne", ["normal", "etn"],
+    "etienne", ["normal", "etn", "book"],
     "sauda", ["normal", "viking", "jiangshi"],
     "psi", ["normal", "psimbals"]
 )
