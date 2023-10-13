@@ -103,6 +103,9 @@ InGame() {
     global currentMap := [0, 0]
     global mouseRest := [1, 1]
     global currentRound := 0
+    global toweropen := ""
+    global menuside := ""
+    global shopopen := false
     global double_cash := false
     global speed_adjust := false
 }
