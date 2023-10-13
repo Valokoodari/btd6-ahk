@@ -23,7 +23,7 @@ WaitForRound(round, delay := 0) {
     }
     Loop {
         UpdateRound()
-        if currentRound == round {
+        if currentRound >= round {
             Sleep(delay)
             break
         }
@@ -66,13 +66,11 @@ WaitForUpgrade(path) {
         return
     }
     if mouseRest[1] != 1 {
-        if toweropen != "" {
-            if TS[toweropen][2][1] > 834 {
+        if menuside = "L" {
             MouseMove(max(mouseRest[1], 425), mouseRest[2])
-            } else {
-                    MouseMove(min(mouseRest[1], 1246), mouseRest[2])
-                }
-        } else MouseMove(mouseRest[1], mouseRest[2])
+        } else {
+            MouseMove(min(mouseRest[1], 1246), mouseRest[2])
+        }
     }
     Loop {
         if SearchUpgrade(path) {
@@ -97,7 +95,10 @@ WaitForAbility(tower, ability, position, delay := 0) {
             Sleep(delay)
             break
         }
-        if defeated or SearchImage("states\defeat") or SearchImage("states\victory") {
+        if defeated {
+            break
+        }
+        if SearchImage("states\defeat") or SearchImage("states\victory") {
             global defeated := true
             LogMsg("Found defeat instead of ability " ability " from " tower)
             break
@@ -118,5 +119,18 @@ CheckDoubleCash() {
 UpdateRound() {
     if SearchRound(Mod(currentRound + 1, 10)) {
         global currentRound := currentRound + 1
+    }
+}
+
+Wait(delay) {
+    if mouseRest[1] != 1 {
+        MouseMove(mouseRest[1], mouseRest[2])
+    }
+    if defeated{
+        return
+    }
+    Sleep(delay)
+    if SearchImage("states\defeat") or SearchImage("states\victory") {
+        global defeated := true
     }
 }

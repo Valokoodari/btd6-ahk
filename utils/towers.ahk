@@ -31,13 +31,24 @@ Place(tower, asap := false) {
     Sleep(200)
 }
 
-Targeting(tower, tabCount) {
+Targeting(tower, tabCount, option := 1) {
     if defeated {
         return
     }
     Open(tower)
+    if option = 2 {
+        sleep(200)
+    }
     Loop tabCount {
-        Send(KEYS["targeting"])
+        if option = 2 {
+            if menuside = "L" {
+                Click(360, 320)
+            } else {
+                Click(1580, 320)
+            }
+        } else {
+            Send(KEYS["targeting"])
+        } 
         Sleep(100)
     }
     Close()
@@ -50,24 +61,27 @@ Upgrade(tower, topCount, middleCount, bottomCount, asap := false) {
     Open(tower)
     Loop topCount {
         if asap {
+            Sleep(100)
             WaitForUpgrade(1)
         }
         Send(KEYS["upgrade_1"])
-        Sleep(200)
+        Sleep(100)
     }
     Loop middleCount {
         if asap {
+            Sleep(100)
             WaitForUpgrade(2)
         }
         Send(KEYS["upgrade_2"])
-        Sleep(200)
+        Sleep(100)
     }
     Loop bottomCount {
         if asap {
+            Sleep(100)
             WaitForUpgrade(3)
         }
         Send(KEYS["upgrade_3"])
-        Sleep(200)
+        Sleep(100)
     }
     Close()
 }
@@ -95,6 +109,7 @@ Sell(tower) {
     Open(tower)
     Send(KEYS["sell"])  ; Sell Tower
     global toweropen := ""
+    global menuside := ""
     Sleep(200)
 }
 
@@ -128,7 +143,12 @@ Open(tower) {
     }
     global x := TS[tower][2][1], y := TS[tower][2][2], toweropen := tower
 
-    Click(x,y)                ; Open Tower
+    Click(x,y)              ; Open Tower
+    if x > 834 {
+        global menuside := "L"
+    } else {
+        global menuside := "R"
+    }
     Sleep(100)
 }
 
@@ -138,6 +158,7 @@ Close() {
     }
         Send("{Esc}")           ; Close Tower
         global toweropen := ""
+        global menuside := ""
         Sleep(200)
 }
 
@@ -180,4 +201,40 @@ Power(power, x := mouseRest[1], y := mouseRest[2]) {
     Sleep(100)
     Click(x,y)                              ; Use Power
     Sleep(200)
+}
+
+Recenter(tower, x, y) {
+    if defeated {
+        return
+    }
+    Open(tower)
+    Sleep(200)
+    if menuside = "L" {
+        MouseMove(220, 375)
+    } else {
+        MouseMove(1450, 375)
+    }
+    Sleep(100)
+    Click("down")
+    Sleep(100)
+    Click("up")
+    Sleep(100)
+    MouseMove(x,y)
+    Sleep(100)
+    Click(x,y)
+    Sleep(100)
+    Close()
+}
+
+Aim(tower, x, y) {
+    if defeated {
+        return
+    }
+    Open(tower)
+    Send(KEYS["special"])
+    Sleep(100)
+    MouseMove(x,y)
+    Sleep(100)
+    Click(x,y)
+    Close()
 }

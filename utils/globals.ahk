@@ -7,6 +7,8 @@ currentMap := [0, 0]
 mouseRest := [1, 1]
 defeated := false
 toweropen := ""
+menuside := ""
+shopopen := false
 double_cash := false
 speed_adjust := false
 

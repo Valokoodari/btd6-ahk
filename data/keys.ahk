@@ -38,5 +38,5 @@ KEYS := Map(
     "upgrade_3",    "{sc035}",
     "targeting",    "{sc00f}",
     "sell",         "{sc00e}",
-    "special",      "{sc051}"
+    "special",      "{PgDn}"
 )
