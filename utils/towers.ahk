@@ -182,15 +182,16 @@ Ability(tower, ability, position, asap := false) {
 }
 
 Power(power, x := mouseRest[1], y := mouseRest[2]) {
-    if defeated {
+    if defeated or !allowPowers {
         return
     }
-    ClickImage("buttons\powers", 500)       ; Open Powers Tab
-    ClickImage("buttons\power_shop", 500)   ; Open Powers Shop
-    ClickImage("powers\" power, 500)        ; Select Power
-    ClickImage("buttons\power_buy", 500)    ; Buy Power
-    ClickImage("buttons\power_close", 500)  ; Close Powers Shop
-    ClickImage("buttons\monkeys", 100)      ; Return to Monkey Tab
+    ClickImage("buttons\powers", 500)           ; Open Powers Tab
+    ClickImage("buttons\power_shop", 1000)      ; Open Powers Shop
+    if ClickImage("powers\" power, 500) {       ; Select Power
+        ClickImage("buttons\power_buy", 500)    ; Buy Power
+    }
+    ClickImage("buttons\power_close", 500)      ; Close Powers Shop
+    ClickImage("buttons\monkeys", 100)          ; Return to Monkey Tab
     Send(KEYS["power1"])
     Sleep(100)
     Send(KEYS[power])
@@ -199,7 +200,7 @@ Power(power, x := mouseRest[1], y := mouseRest[2]) {
     Sleep(100)
     MouseMove(x, y)
     Sleep(100)
-    Click(x,y)                              ; Use Power
+    Click(x,y)                                  ; Use Power
     Sleep(200)
 }
 
