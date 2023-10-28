@@ -24,7 +24,7 @@ OuchImpoppable() {
         "Alch B", ["alch", [1539, 860]]
     )
     
-    CheckDoubleCash()
+    CheckDoubleCash(true, false)
 
     Place("Dart")
     Place("Sub A")
