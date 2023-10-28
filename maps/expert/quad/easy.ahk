@@ -1,7 +1,3 @@
-QUAD_DATA := Map(
-    "easy", [QuadEasy, ""]
-)
-
 QuadEasy() {
     global TS := Map(
         "Dart A", ["dart", [470, 640]],

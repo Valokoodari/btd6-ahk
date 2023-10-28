@@ -1,7 +1,3 @@
-BLOODY_PUDDLES_DATA := Map(
-    "easy", [BloodyPuddlesEasy, ""]
-)
-
 BloodyPuddlesEasy() {
     global TS := Map(
         "Dart A", ["dart", [385, 290]],

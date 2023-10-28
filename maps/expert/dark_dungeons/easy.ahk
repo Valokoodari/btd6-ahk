@@ -1,7 +1,3 @@
-DARK_DUNGEONS_DATA := Map(
-    "easy", [DarkDungeonsEasy, ""]
-)
-
 DarkDungeonsEasy() {
     global TS := Map(
         "Dart A", ["dart", [260, 905]],

@@ -1,7 +1,3 @@
-INFERNAL_DATA := Map(
-    "easy", [InfernalEasy, ""]
-)
-
 InfernalEasy() {
     global TS := Map(
         "Dart", ["dart", [833, 693]],

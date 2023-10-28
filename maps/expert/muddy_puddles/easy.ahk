@@ -1,7 +1,3 @@
-MUDDY_PUDDLES_DATA := Map(
-    "easy", [MuddyPuddlesEasy, ""]
-)
-
 MuddyPuddlesEasy() {
     global TS := Map(
         "Sub", ["sub", [1195, 470]],

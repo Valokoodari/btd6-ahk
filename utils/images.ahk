@@ -18,7 +18,12 @@ SearchRound(round) {
     if round != 7 and SearchRound(7) {
         return false
     }
-    return ImageSearch(&xCoord, &yCoord, 1413, 21, 1520, 80, "*8 *TransBlack " A_ScriptDir "\img\rounds\" round ".png")
+    if menuside = "R" {
+        roundDetected := ImageSearch(&xCoord, &yCoord, 1040, 21, 1115, 80, "*8 *TransBlack " A_ScriptDir "\img\rounds\" round ".png")
+    } else {
+        roundDetected := ImageSearch(&xCoord, &yCoord, 1413, 21, 1520, 80, "*8 *TransBlack " A_ScriptDir "\img\rounds\" round ".png")
+    }
+    return roundDetected
 }
 
 GetCurrentMapPage() {
@@ -39,5 +44,16 @@ SearchUpgrade(path) {
     }
     if SearchImage("upgrades\" path "L", "", 230, (325+path*150), 300, (349+path*150)) {
         return true
+    }
+}
+
+CheckDoubleCash(speed := true, power := "unchanged") {
+    if SearchImage("states\double_cash", "*TransBlack", 280, 40, 350, 90) {
+        LogMsg("Double Cash detected")
+        global double_cash := true
+        global speed_adjust := speed
+        if power != "unchanged" {
+            global allowPowers := power
+        }
     }
 }

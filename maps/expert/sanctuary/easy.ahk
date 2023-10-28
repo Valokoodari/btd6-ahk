@@ -1,7 +1,3 @@
-SANCTUARY_DATA := Map(
-    "easy", [SanctuaryEasy, ""]
-)
-
 SanctuaryEasy() {
     ; TODO Automatically calculate the moving coordinates based on round
     global TS := Map(

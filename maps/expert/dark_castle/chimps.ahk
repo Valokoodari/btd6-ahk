@@ -1,8 +1,8 @@
 DarkCastleChimps() {
     global TS := Map(
         "Obyn", ["hero", [865, 447]],
-        "Dart A", ["dart", [739, 656]],
-        "Dart B", ["dart", [688, 691]],
+        "Dart A", ["dart", [795, 657]], ; 795, 657? ; 946, 657; 739, 656
+        "Dart B", ["dart", [730, 657]], ; 720, 657; 688, 691
         "Sub A", ["sub", [1083, 690]],
         "Sub B", ["sub", [1086, 398]],
         "Alch A", ["alch", [1011, 657]],

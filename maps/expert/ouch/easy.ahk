@@ -1,7 +1,3 @@
-OUCH_DATA := Map(
-    "easy", [OuchEasy, ""]
-)
-
 OuchEasy() {
     global TS := Map(
         "Sub", ["sub", [980, 540]],

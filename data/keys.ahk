@@ -1,37 +1,42 @@
 KEYS := Map(
-    "hero",         "{vk55}",       ; Hero
+    "hero",         "{sc016}",      ; Hero
 
-    "dart",         "{vk51}",       ; Primary towers
-    "boomer",       "{vk57}",
-    "bomb",         "{vk45}",
-    "tack",         "{vk52}",
-    "ice",          "{vk54}",
-    "glue",         "{vk59}",
+    "dart",         "{sc010}",      ; Primary towers
+    "boomer",       "{sc011}",
+    "bomb",         "{sc012}",
+    "tack",         "{sc013}",
+    "ice",          "{sc014}",
+    "glue",         "{sc015}",
 
-    "sniper",       "{vk5A}",       ; Military towers
-    "sub",          "{vk58}",
-    "boat",         "{vk43}",
-    "ace",          "{vk56}",
-    "heli",         "{vk42}",
-    "mortar",       "{vk4E}",
-    "dartling",     "{vk4D}",
+    "sniper",       "{sc02c}",      ; Military towers
+    "sub",          "{sc02d}",
+    "boat",         "{sc02e}",
+    "ace",          "{sc02f}",
+    "heli",         "{sc030}",
+    "mortar",       "{sc031}",
+    "dartling",     "{sc032}",
 
-    "wizard",       "{vk41}",       ; Magic towers
-    "super",        "{vk53}",
-    "ninja",        "{vk44}",
-    "alch",         "{vk46}",
-    "druid",        "{vk47}",
+    "wizard",       "{sc01e}",      ; Magic towers
+    "super",        "{sc01f}",
+    "ninja",        "{sc020}",
+    "alch",         "{sc021}",
+    "druid",        "{sc022}",
 
-    "farm",         "{vk48}",       ; Support towers
-    "spike",        "{vk4A}",
-    "village",      "{vk4B}",
-    "engineer",     "{vk4C}",
-    "beast",        "{vk49}",
+    "farm",         "{sc023}",      ; Support towers
+    "spike",        "{sc024}",
+    "village",      "{sc025}",
+    "engineer",     "{sc026}",
+    "beast",        "{sc017}",
 
-    "play",         "{Space}",      ; Other hotkeys
+    "power1",       "{sc02a down}", ; Powers
+    "power2",       "{sc02a up}",
+    "cashdrop",     "{sc01b}",
+
+    "play",         "{sc039}",      ; Other hotkeys
     "upgrade_1",    "{sc033}",
     "upgrade_2",    "{sc034}",
     "upgrade_3",    "{sc035}",
-    "targeting",    "{vk09}",
-    "sell",         "{Backspace}"
+    "targeting",    "{sc00f}",
+    "sell",         "{sc00e}",
+    "special",      "{PgDn}"
 )

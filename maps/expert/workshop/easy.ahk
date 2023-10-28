@@ -1,7 +1,3 @@
-WORKSHOP_DATA := Map(
-    "easy", [WorkshopEasy, ""],
-)
-
 WorkshopEasy() {
     global TS := Map(
         "Dart", ["dart", [1020, 500]],

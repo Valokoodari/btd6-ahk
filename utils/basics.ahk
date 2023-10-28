@@ -4,6 +4,9 @@ Reload() {
 }
 
 SlowClick(x, y) {
+    if defeated {
+        return
+    }
     Sleep(100)
     MouseMove(x,y)
     Sleep(100)

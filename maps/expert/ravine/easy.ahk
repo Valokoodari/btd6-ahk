@@ -1,7 +1,3 @@
-RAVINE_DATA := Map(
-    "easy", [RavineEasy, ""]
-)
-
 RavineEasy() {
     global TS := Map(
         "Dart", ["dart", [204, 494]],

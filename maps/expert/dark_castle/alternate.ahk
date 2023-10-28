@@ -20,111 +20,111 @@ DarkCastleAlternate() {
 
     StartGame()
     Place("Ninja")
-    Place("Dart A")
+    Place("Dart A", true)
 
     WaitForRound(4)
-    Upgrade("Ninja", 1, 0, 0)       ; 000 -> 100
+    Upgrade("Ninja", 1, 0, 0, true)     ; 000 -> 100
 
     WaitForRound(5)
-    Place("Sniper")
-    Targeting("Sniper", 3)          ; First -> Strong
+    Place("Sniper", true)
+    Targeting("Sniper", 3, true)        ; First -> Strong
 
     WaitForRound(7)
-    Upgrade("Sniper", 1, 0, 0)      ; 000 -> 100
+    Upgrade("Sniper", 1, 0, 0, true)    ; 000 -> 100
 
     WaitForRound(9)
-    Upgrade("Ninja", 0, 0, 1)       ; 100 -> 101
+    Upgrade("Ninja", 0, 0, 1, true)     ; 100 -> 101
 
     WaitForRound(11)
-    Upgrade("Ninja", 1, 0, 0)       ; 101 -> 201
+    Upgrade("Ninja", 1, 0, 0, true)     ; 101 -> 201
 
     WaitForRound(15)
-    Place("Ben")
+    Place("Ben", true)
 
     WaitForRound(17)
-    Upgrade("Ninja", 1, 0, 0)       ; 201 -> 301
+    Upgrade("Ninja", 1, 0, 0, true)     ; 201 -> 301
 
     WaitForRound(18)
-    Upgrade("Sniper", 0, 1, 0)      ; 100 -> 110
+    Upgrade("Sniper", 0, 1, 0, true)    ; 100 -> 110
 
     WaitForRound(19)
-    Place("Alch")
-    Targeting("Alch", 3)            ; First -> Strong
+    Place("Alch", true)
+    Targeting("Alch", 3, true)          ; First -> Strong
 
     WaitForRound(21)
-    Upgrade("Alch", 2, 0, 0)        ; 000 -> 200
+    Upgrade("Alch", 2, 0, 0, true)      ; 000 -> 200
 
     WaitForRound(23)
-    Place("Spike")
+    Place("Spike", true)
 
     WaitForRound(26)
-    Upgrade("Spike", 1, 0, 2)       ; 000 -> 102
+    Upgrade("Spike", 1, 0, 2, true)     ; 000 -> 102
 
     WaitForRound(29)
-    Upgrade("Spike", 1, 0, 1)       ; 102 -> 203
+    Upgrade("Spike", 1, 0, 1, true)     ; 102 -> 203
 
     WaitForRound(35)
-    Upgrade("Spike", 0, 0, 1)       ; 203 -> 204
+    Upgrade("Spike", 0, 0, 1, true)     ; 203 -> 204
 
     WaitForRound(38)
-    Upgrade("Ninja", 1, 0, 0)       ; 301 -> 401
-    Upgrade("Dart A", 0, 1, 3)      ; 000 -> 013
+    Upgrade("Ninja", 1, 0, 0, true)     ; 301 -> 401
+    Upgrade("Dart A", 0, 1, 3, true)    ; 000 -> 013
 
     WaitForRound(40)
-    Upgrade("Alch", 1, 0, 1)        ; 200 -> 301
+    Upgrade("Alch", 1, 0, 1, true)      ; 200 -> 301
 
     WaitForRound(41)
-    Upgrade("Sniper", 1, 1, 0)      ; 110 -> 220
+    Upgrade("Sniper", 1, 1, 0, true)    ; 110 -> 220
 
     WaitForRound(42)
-    Place("Wizard")
-    Upgrade("Wizard", 3, 0, 2)      ; 000 -> 202
+    Place("Wizard", true)
+    Upgrade("Wizard", 3, 0, 2, true)    ; 000 -> 202
 
     WaitForRound(45)
-    Upgrade("Alch", 1, 0, 0)        ; 301 -> 401
+    Upgrade("Alch", 1, 0, 0, true)      ; 301 -> 401
 
     WaitForRound(50)
-    Upgrade("Wizard", 1, 0, 0)      ; 302 -> 402
+    Upgrade("Wizard", 1, 0, 0, true)    ; 302 -> 402
 
     WaitForRound(52)
-    Upgrade("Sniper", 1, 0, 0)      ; 220 -> 320
+    Upgrade("Sniper", 1, 0, 0, true)    ; 220 -> 320
 
     WaitForRound(56)
-    Place("Ace")
-    Upgrade("Ace", 2, 0, 3)         ; 000 -> 203
+    Place("Ace", true)
+    Upgrade("Ace", 2, 0, 3, true)       ; 000 -> 203
 
     WaitForRound(59)
-    Place("Bomb")
-    Upgrade("Bomb", 2, 0, 4)        ; 000 -> 204
-    Place("Village")
-    Upgrade("Village", 1, 1, 0)     ; 000 -> 110
+    Place("Bomb", true)
+    Upgrade("Bomb", 2, 0, 4, true)      ; 000 -> 204
+    Place("Village", true)
+    Upgrade("Village", 1, 1, 0, true)   ; 000 -> 110
 
     WaitForRound(60)
-    Upgrade("Village", 1, 0, 0)     ; 110 -> 210
+    Upgrade("Village", 1, 0, 0, true)   ; 110 -> 210
 
     WaitForRound(62)
-    Upgrade("Village", 0, 1, 0)     ; 210 -> 220
+    Upgrade("Village", 0, 1, 0, true)   ; 210 -> 220
 
     WaitForRound(65)
-    Place("Sub A")
-    Upgrade("Sub A", 2, 0, 4)       ; 000 -> 204
+    Place("Sub A", true)
+    Upgrade("Sub A", 2, 0, 4, true)     ; 000 -> 204
 
     WaitForRound(68)
-    Place("Sub B")
-    Upgrade("Sub B", 2, 0, 4)       ; 000 -> 204
+    Place("Sub B", true)
+    Upgrade("Sub B", 2, 0, 4, true)     ; 000 -> 204
 
     WaitForRound(74)
-    Upgrade("Village", 0, 1, 0)     ; 220 -> 230
-    Place("Dart B")
-    Upgrade("Dart B", 0, 0, 2)      ; 000 -> 002
-    Place("Dart C")
-    Upgrade("Dart C", 0, 0, 2)      ; 000 -> 002
+    Upgrade("Village", 0, 1, 0, true)   ; 220 -> 230
+    Place("Dart B", true)
+    Upgrade("Dart B", 0, 0, 2, true)    ; 000 -> 002
+    Place("Dart C", true)
+    Upgrade("Dart C", 0, 0, 2, true)    ; 000 -> 002
 
     WaitForRound(76)
-    Place("Boomer")
-    Upgrade("Boomer", 4, 2, 0)      ; 000 -> 420
+    Place("Boomer", true)
+    Upgrade("Boomer", 4, 2, 0, true)    ; 000 -> 420
 
     WaitForRound(78)
-    Place("Sub C")
-    Upgrade("Sub C", 2, 0, 4)       ; 000 -> 204
+    Place("Sub C", true)
+    Upgrade("Sub C", 2, 0, 4, true)     ; 000 -> 204
 }
