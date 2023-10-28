@@ -11,6 +11,7 @@ menuside := ""
 shopopen := false
 double_cash := false
 speed_adjust := false
+allowPowers := powerSettings
 
 states := [
     "home",

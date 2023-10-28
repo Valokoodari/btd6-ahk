@@ -108,6 +108,7 @@ InGame() {
     global shopopen := false
     global double_cash := false
     global speed_adjust := false
+    global allowPowers := powerSettings
 }
 
 OpenBoxes() {

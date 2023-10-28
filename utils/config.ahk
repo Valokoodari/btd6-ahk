@@ -10,4 +10,4 @@ userDifficulty := IniRead("config.ini", "settings", "difficulty", "")
 
 changeSettings := IniRead("config.ini", "settings", "changeSettings", "true") == "true"
 
-allowPowers := IniRead("config.ini", "settings", "allowPowers", "true") == "true"
+powerSettings := IniRead("config.ini", "settings", "allowPowers", "true") == "true"

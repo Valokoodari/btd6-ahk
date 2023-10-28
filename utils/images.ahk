@@ -46,3 +46,14 @@ SearchUpgrade(path) {
         return true
     }
 }
+
+CheckDoubleCash(speed := true, power := "unchanged") {
+    if SearchImage("states\double_cash", "*TransBlack", 280, 40, 350, 90) {
+        LogMsg("Double Cash detected")
+        global double_cash := true
+        global speed_adjust := speed
+        if power != "unchanged" {
+            global allowPowers := power
+        }
+    }
+}
