@@ -28,7 +28,7 @@ QuadImpoppable() {
         "Super", ["super", [823, 304]]
     )
     
-    CheckDoubleCash()
+    CheckDoubleCash(true, false)
 
     Place("Dart A")
     Place("Dart B")
