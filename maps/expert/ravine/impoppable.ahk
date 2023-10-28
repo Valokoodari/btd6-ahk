@@ -25,7 +25,7 @@ RavineImpoppable() {
         "Dart F", ["dart", [699, 99]]
     )
     
-    CheckDoubleCash()
+    CheckDoubleCash(true, false)
 
     Place("Dart A")
     Place("Dart B")
