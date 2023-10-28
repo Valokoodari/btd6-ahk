@@ -24,7 +24,7 @@ FloodedValleyImpoppable() {
         "Alch C", ["alch", [275, 631]]
     )
     
-    CheckDoubleCash()
+    CheckDoubleCash(true, false)
 
     Place("Sub A")
     Place("Sub B")
