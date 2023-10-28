@@ -47,7 +47,6 @@ DarkCastleImpoppable() {
 
     WaitForRound(19)
     Place("Farm A", true)
-    Upgrade("Farm A", 0, 0, 2, true)    ; 000 -> 002
 
     WaitForRound(20)
     Upgrade("Dart A", 0, 0, 2, true)    ; 000 -> 002
@@ -57,11 +56,11 @@ DarkCastleImpoppable() {
     Targeting("Alch A", 3)              ; First -> Strong
     Upgrade("Alch A", 2, 0, 0, true)    ; 000 -> 200
 
-    WaitForRound(26)
+    WaitForRound(25)
     Place("Farm B", true)
 
     WaitForRound(30)
-    Upgrade("Farm A", 0, 0, 1, true)    ; 002 -> 003
+    Upgrade("Farm A", 0, 0, 3, true)    ; 000 -> 003
     Upgrade("Farm B", 0, 0, 2, true)    ; 000 -> 002
 
     WaitForRound(34)
