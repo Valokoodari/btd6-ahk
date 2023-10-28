@@ -30,7 +30,7 @@ BloodyPuddlesImpoppable() {
         "Sniper E", ["sniper", [1381, 1004]]
     )
 
-    CheckDoubleCash()
+    CheckDoubleCash(true, false)
 
     Place("Dart A")
     Place("Sub A")
