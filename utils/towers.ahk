@@ -20,6 +20,7 @@ Place(tower, asap := false) {
                 return
             }
             CheckLevelUp()
+            UpdateRound()
         }
     } else {
         Send(KEYS[type])
