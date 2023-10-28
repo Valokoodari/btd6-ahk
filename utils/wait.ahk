@@ -2,8 +2,13 @@ CheckLevelUp() {
     if SearchImage("states\level_up",, 982, 537, 1084, 603) {
         LogMsg("Level up detected")
         Loop 2 {
-            Click(6,4)
+            Click(6, 4)
             Sleep(2000)
+        }
+        if mouseRest[1] != 1 {
+            MouseMove(mouseRest[1], mouseRest[2])
+        } else {
+            MouseMove(960, 540)
         }
     }
 }
