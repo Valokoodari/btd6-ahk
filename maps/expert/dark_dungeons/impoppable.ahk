@@ -30,7 +30,7 @@ DarkDungeonsImpoppable() {
         "Sniper B", ["sniper", [826, 324]]
     )
     
-    CheckDoubleCash()
+    CheckDoubleCash(true, false)
     
     Place("Dart A")
     Place("Dart B")
