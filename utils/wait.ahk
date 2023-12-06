@@ -14,7 +14,17 @@ CheckInstaMonkey() {
     }
 }
 
+CheckPauseMenu() {
+    MouseMove(1, 1)
+    Sleep(1500)
+    if SearchImage("buttons\home") {
+        LogMsg("Pause menu detected on round " currentRound)
+        Send("{Esc}")
+    }
+}
+
 WaitForRound(round, delay := 0) {
+    CheckPauseMenu()
     MouseMove(mouseRest[1], mouseRest[2])
     Loop {
         if SearchRound(Mod(currentRound + 1, 10)) {
@@ -33,6 +43,7 @@ WaitForRound(round, delay := 0) {
 }
 
 WaitForVictoryOrDefeat() {
+    CheckPauseMenu()
     MouseMove(mouseRest[1], mouseRest[2])
     Loop {
         if SearchImage("states\victory") {
