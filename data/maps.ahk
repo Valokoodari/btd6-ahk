@@ -81,14 +81,15 @@ global MAPS := [
         ["Underground", UNDERGROUND_DATA]
     ],
     [
+        ["Glacial Trail", GLACIAL_TRAIL_DATA],
         ["Dark Dungeons", DARK_DUNGEONS_DATA],
         ["Sanctuary", SANCTUARY_DATA],
         ["Ravine", RAVINE_DATA],
         ["Flooded Valley", FLOODED_VALLEY_DATA],
-        ["Infernal", INFERNAL_DATA],
-        ["Bloody Puddles", BLOODY_PUDDLES_DATA]
+        ["Infernal", INFERNAL_DATA]
     ],
     [
+        ["Bloody Puddles", BLOODY_PUDDLES_DATA],
         ["Workshop", WORKSHOP_DATA],
         ["Quad", QUAD_DATA],
         ["Dark Castle", DARK_CASTLE_DATA],

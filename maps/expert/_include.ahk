@@ -6,6 +6,7 @@
 #Include sanctuary.ahk
 #Include dark_castle\main.ahk
 #Include dark_dungeons.ahk
+#Include glacial_trail.ahk
 #Include muddy_puddles.ahk
 #Include bloody_puddles.ahk
 #Include flooded_valley.ahk
