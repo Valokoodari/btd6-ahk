@@ -15,6 +15,7 @@
 - Sniper Monkey 322
 - Monkey Sub 223
 - Monkey Buccaneer 032
+- Heli Pilot 203
 - Wizard Monkey 032
 - Druid 130
 - Spike Factory 003
@@ -47,6 +48,7 @@
 - [Underground](/docs/maps/advanced/underground.md)
 
 ### Expert
+- [Glacial Trail](/docs/maps/expert/glacial_trail.md)
 - [Dark Dungeons](/docs/maps/expert/dark_dungeons.md)
 - [Sanctuary](/docs/maps/expert/sanctuary.md)
 - [Ravine](/docs/maps/expert/ravine.md)

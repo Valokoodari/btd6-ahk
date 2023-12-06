@@ -79,13 +79,14 @@
 |                    |                 |              |           |     |                   |               |            |         |
 | **_Expert_**       |                 |              |           |     |                   |               |            |         |
 |                    |                 |              |           |     |                   |               |            |         |
+| Glacial Trail      | ✅               | ❌            | ❌         |     | ❌                 | ❌             | ❌          | ❌       |
 | Dark Dungeons      | ✅               | ❌            | ❌         |     | ❌                 | ❌             | ❌          | ❌       |
 | Sanctuary          | ✅               | ❌            | ❌         |     | ❌                 | ❌             | ❌          | ❌       |
 | Ravine             | ✅               | ❌            | ❌         |     | ❌                 | ❌             | ❌          | ❌       |
 | Flooded Valley     | ✅               | ❌            | ❌         |     | ❌                 | ❌             | ❌          | ❌       |
 | Infernal           | ✅               | ❌            | ❌         |     | ❌                 | ❌             | ❌          | ❌       |
-| Bloody Puddles     | ✅               | ❌            | ❌         |     | ❌                 | ❌             | ❌          | ❌       |
 |                    |                 |              |           |     |                   |               |            |         |
+| Bloody Puddles     | ✅               | ❌            | ❌         |     | ❌                 | ❌             | ❌          | ❌       |
 | Workshop           | ✅               | ❌            | ❌         |     | ❌                 | ❌             | ❌          | ❌       |
 | Quad               | ✅               | ❌            | ❌         |     | ❌                 | ❌             | ❌          | ❌       |
 | Dark Castle        | ✅               | ✅            | ✅         |     | ❌                 | ❌             | ❌          | ❌       |
@@ -172,13 +173,14 @@
 |                    |                 |                    |                 |           |                         |            |        |
 | **_Expert_**       |                 |                    |                 |           |                         |            |        |
 |                    |                 |                    |                 |           |                         |            |        |
+| Glacial Trail      | ❌               | ❌                  | ❌               | ❌         | ❌                       | ❌          | ❌      |
 | Dark Dungeons      | ❌               | ❌                  | ❌               | ❌         | ❌                       | ❌          | ❌      |
 | Sanctuary          | ❌               | ❌                  | ❌               | ❌         | ❌                       | ❌          | ❌      |
 | Ravine             | ❌               | ❌                  | ❌               | ❌         | ❌                       | ❌          | ❌      |
 | Flooded Valley     | ❌               | ❌                  | ❌               | ❌         | ❌                       | ❌          | ❌      |
 | Infernal           | ❌               | ❌                  | ❌               | ❌         | ❌                       | ❌          | ❌      |
-| Bloody Puddles     | ❌               | ❌                  | ❌               | ❌         | ❌                       | ❌          | ❌      |
 |                    |                 |                    |                 |           |                         |            |        |
+| Bloody Puddles     | ❌               | ❌                  | ❌               | ❌         | ❌                       | ❌          | ❌      |
 | Workshop           | ❌               | ❌                  | ❌               | ❌         | ❌                       | ❌          | ❌      |
 | Quad               | ❌               | ❌                  | ❌               | ❌         | ❌                       | ❌          | ❌      |
 | Dark Castle        | ✅               | ❌                  | ❌               | ❌         | ✅                       | ✅          | ✅      |
