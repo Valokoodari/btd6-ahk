@@ -115,7 +115,6 @@ BloodyPuddlesImpoppable() {
 
     WaitForRound(39)
     Upgrade("Druid A", 0, 1, 0, true)   ; 020 -> 030
-    Targeting("Druid A", 1)
     Upgrade("Druid A", 1, 0, 0, true)   ; 030 -> 130
     Place("Ninja C", true)
 
@@ -133,7 +132,7 @@ BloodyPuddlesImpoppable() {
     Place("Farm C", true)
     Place("Wizard B", true)
     Upgrade("Wizard B", 0, 2, 0, true)  ; 000 -> 020
-    Targeting("Sub A", 2)
+    Targeting("Sub A", 2)               ; First -> Close
     WaitForRound(46)
     Upgrade("Wizard B", 0, 1, 2, true)  ; 020 -> 032
 
@@ -146,9 +145,8 @@ BloodyPuddlesImpoppable() {
     WaitForRound(48)
     Place("Druid B", true)
     Upgrade("Druid B", 0, 3, 0, true)   ; 000 -> 030
-    Targeting("Druid B", 1)
     Upgrade("Druid B", 1, 0, 0, true)   ; 030 -> 130
-    Targeting("Sub A", 2)
+    Targeting("Sub A", 2)               ; Close -> First
 
     WaitForRound(49)
     Upgrade("Farm C", 0, 0, 1, true)    ; 002 -> 003
@@ -190,10 +188,7 @@ BloodyPuddlesImpoppable() {
     Upgrade("Village A", 0, 0, 1, true) ; 203 -> 204
 
     WaitForRound(61)
-    ;Ability("benjamin", "1", "1", true)
-    ;Ability("benjamin", "2", "2")
     Sell("Ninja C")
-    ;Ability("benjamin", "1", "1", true)
     Open("Village B")
     WaitForUpgrade(3)
     Close()
