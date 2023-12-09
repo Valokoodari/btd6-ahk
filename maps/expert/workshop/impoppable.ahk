@@ -58,7 +58,6 @@ WorkshopImpoppable() {
 
     WaitForRound(21)
     Upgrade("Druid", 0, 2, 0, true)     ; 010 -> 030
-    Targeting("Druid", 1)               ; Strong -> First
 
     WaitForRound(25)
     Place("Farm A", true)
