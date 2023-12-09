@@ -59,7 +59,6 @@ DarkDungeonsImpoppable() {
 
     WaitForRound(13)
     Upgrade("Druid A", 0, 2, 0, true)   ; 010 -> 030
-    Targeting("Druid A", 1)             ; Strong -> First
     Upgrade("Druid A", 1, 0, 0, true)   ; 030 -> 130
 
     WaitForRound(16)
@@ -85,7 +84,6 @@ DarkDungeonsImpoppable() {
     WaitForRound(27)
     Place("Druid B", true)
     Upgrade("Druid B", 0, 3, 0, true)   ; 000 -> 030
-    Targeting("Druid B", 1)             ; Strong -> First
     Upgrade("Druid B", 1, 0, 0, true)   ; 030 -> 130
 
     WaitForRound(30)
@@ -189,7 +187,6 @@ DarkDungeonsImpoppable() {
     Sell("Dart H")
     Place("Druid C", true)
     Upgrade("Druid C", 0, 3, 0, true)   ; 000 -> 030
-    Targeting("Druid C", 1)             ; Strong -> First
     Upgrade("Druid C", 1, 0, 0, true)   ; 030 -> 130
 
     WaitForRound(62)
