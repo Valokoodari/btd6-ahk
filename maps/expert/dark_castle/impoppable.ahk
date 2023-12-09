@@ -104,11 +104,9 @@ DarkCastleImpoppable() {
     Place("Druid A", true)
     Upgrade("Druid A", 0, 3, 0, true)   ; 000 -> 030
     Upgrade("Druid A", 1, 0, 0, true)   ; 030 -> 130
-    Targeting("Druid A", 1)             ; Strong -> First
     Place("Druid B", true)
     Upgrade("Druid B", 0, 3, 0, true)   ; 000 -> 030
     Upgrade("Druid B", 1, 0, 0, true)   ; 030 -> 130
-    Targeting("Druid B", 1)             ; Strong -> First
 
     WaitForRound(48)
     Upgrade("Village A", 0, 0, 1, true) ; 002 -> 003
