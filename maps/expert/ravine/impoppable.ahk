@@ -58,7 +58,6 @@ RavineImpoppable() {
 
     WaitForRound(16)
     Upgrade("Druid A", 0, 2, 0, true)   ; 010 -> 030
-    Targeting("Druid A", 1)             ; Strong -> First
     Upgrade("Druid A", 1, 0, 0, true)   ; 030 -> 130
     Upgrade("Dart B", 0, 1, 0, true)    ; 020 -> 030
 
@@ -104,7 +103,6 @@ RavineImpoppable() {
     Upgrade("Village A", 1, 0, 0, true) ; 002 -> 102
     Place("Druid B", true)
     Upgrade("Druid B", 0, 3, 0, true)   ; 000 -> 030
-    Targeting("Druid B", 1)             ; Strong -> First
 
     WaitForRound(42)
     Upgrade("Druid B", 1, 0, 0, true)   ; 030 -> 130
