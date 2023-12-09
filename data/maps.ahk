@@ -1,26 +1,26 @@
 global MAPS := [
     [
         ["Monkey Meadow", MONKEY_MEADOW_DATA],
+        ["In the Loop", IN_THE_LOOP_DATA],
+        ["Middle of the road", MIDDLE_OF_THE_ROAD_DATA],
         ["Tree Stump", TREE_STUMP_DATA],
         ["Town Center", TOWN_CENTER_DATA],
-        ["Middle of the road", MIDDLE_OF_THE_ROAD_DATA],
-        ["One Two Tree", ONE_TWO_TREE_DATA],
-        ["Scrapyard", SCRAPYARD_DATA]
+        ["One Two Tree", ONE_TWO_TREE_DATA]
     ],
     [
+        ["Scrapyard", SCRAPYARD_DATA],
         ["The Cabin", THE_CABIN_DATA],
         ["Resort", RESORT_DATA],
         ["Skates", SKATES_DATA],
         ["Lotus Island", LOTUS_ISLAND_DATA],
-        ["Candy Falls", CANDY_FALLS_DATA],
-        ["Winter Park", WINTER_PARK_DATA]
+        ["Candy Falls", CANDY_FALLS_DATA]
     ],
     [
+        ["Winter Park", WINTER_PARK_DATA],
         ["Carved", CARVED_DATA],
         ["Park Path", PARK_PATH_DATA],
         ["Alpine Run", ALPINE_RUN_DATA],
         ["Frozen Over", FROZEN_OVER_DATA],
-        ["In the Loop", IN_THE_LOOP_DATA],
         ["Cubism", CUBISM_DATA]
     ],
     [
@@ -59,35 +59,37 @@ global MAPS := [
         ["Spice Islands", SPICE_ISLANDS_DATA]
     ],
     [
+        ["Dark Path", DARK_PATH_DATA],
         ["Erosion", EROSION_DATA],
         ["Midnight Mansion", MIDNIGHT_MANSION_DATA],
         ["Sunken Columns", SUNKEN_COLUMNS_DATA],
         ["X Factor", X_FACTOR_DATA],
-        ["Mesa", MESA_DATA],
-        ["Geared", GEARED_DATA]
+        ["Mesa", MESA_DATA]
     ],
     [
+        ["Geared", GEARED_DATA],
         ["Spillway", SPILLWAY_DATA],
         ["Cargo", CARGO_DATA],
         ["Pat's Pond", PATS_POND_DATA],
         ["Peninsula", PENINSULA_DATA],
-        ["High Finance", HIGH_FINANCE_DATA],
-        ["Another Brick", ANOTHER_BRICK_DATA]
+        ["High Finance", HIGH_FINANCE_DATA]
     ],
     [
+        ["Another Brick", ANOTHER_BRICK_DATA],
         ["Off the Coast", OFF_THE_COAST_DATA],
         ["Cornfield", CORNFIELD_DATA],
         ["Underground", UNDERGROUND_DATA]
     ],
     [
+        ["Glacial Trail", GLACIAL_TRAIL_DATA],
         ["Dark Dungeons", DARK_DUNGEONS_DATA],
         ["Sanctuary", SANCTUARY_DATA],
         ["Ravine", RAVINE_DATA],
         ["Flooded Valley", FLOODED_VALLEY_DATA],
-        ["Infernal", INFERNAL_DATA],
-        ["Bloody Puddles", BLOODY_PUDDLES_DATA]
+        ["Infernal", INFERNAL_DATA]
     ],
     [
+        ["Bloody Puddles", BLOODY_PUDDLES_DATA],
         ["Workshop", WORKSHOP_DATA],
         ["Quad", QUAD_DATA],
         ["Dark Castle", DARK_CASTLE_DATA],
