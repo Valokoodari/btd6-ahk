@@ -238,5 +238,6 @@ Aim(tower, x, y) {
     MouseMove(x,y)
     Sleep(100)
     Click(x,y)
+    Sleep(100)
     Close()
 }

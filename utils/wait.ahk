@@ -5,11 +5,7 @@ CheckLevelUp() {
             Click(6, 4)
             Sleep(2000)
         }
-        if mouseRest[1] != 1 {
-            MouseMove(mouseRest[1], mouseRest[2])
-        } else {
-            MouseMove(960, 540)
-        }
+        MouseMove(mouseRest[1], mouseRest[2])
     }
 }
 
@@ -19,10 +15,18 @@ CheckInstaMonkey() {
     }
 }
 
-WaitForRound(round, delay := 0) {
-    if mouseRest[1] != 1 {
-        MouseMove(mouseRest[1], mouseRest[2])
+CheckPauseMenu() {
+    MouseMove(1, 1)
+    Sleep(1500)
+    if SearchImage("buttons\home") {
+        LogMsg("Pause menu detected on round " currentRound)
+        Send("{Esc}")
     }
+}
+
+WaitForRound(round, delay := 0) {
+    CheckPauseMenu()
+    MouseMove(mouseRest[1], mouseRest[2])
     if speed_adjust {
         return
     }
@@ -41,6 +45,7 @@ WaitForRound(round, delay := 0) {
 }
 
 WaitForVictoryOrDefeat() {
+    CheckPauseMenu()
     MouseMove(mouseRest[1], mouseRest[2])
     Loop {
         if SearchImage("states\victory") {
@@ -70,12 +75,10 @@ WaitForUpgrade(path) {
     if defeated {
         return
     }
-    if mouseRest[1] != 1 {
-        if menuside = "L" {
-            MouseMove(max(mouseRest[1], 425), mouseRest[2])
-        } else {
-            MouseMove(min(mouseRest[1], 1246), mouseRest[2])
-        }
+    if menuside = "L" {
+        MouseMove(max(mouseRest[1], 425), mouseRest[2])
+    } else {
+        MouseMove(min(mouseRest[1], 1246), mouseRest[2])
     }
     Loop {
         if SearchUpgrade(path) {
@@ -92,9 +95,7 @@ WaitForUpgrade(path) {
 }
 
 WaitForAbility(tower, ability, position, delay := 0) {
-    if mouseRest[1] != 1 {
-        MouseMove(mouseRest[1], mouseRest[2])
-    }
+    MouseMove(mouseRest[1], mouseRest[2])
     Loop {
         if SearchImage("abilities\" tower "\" ability, "", (50+100*position), 1000, (150+100*position), 1079) {
             Sleep(delay)
@@ -120,9 +121,7 @@ UpdateRound() {
 }
 
 Wait(delay) {
-    if mouseRest[1] != 1 {
-        MouseMove(mouseRest[1], mouseRest[2])
-    }
+    MouseMove(mouseRest[1], mouseRest[2])
     if defeated{
         return
     }

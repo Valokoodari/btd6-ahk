@@ -4,7 +4,7 @@ defeats := 0
 
 currentRound := 0
 currentMap := [0, 0]
-mouseRest := [1, 1]
+mouseRest := [30, 1]
 defeated := false
 toweropen := ""
 menuside := ""
