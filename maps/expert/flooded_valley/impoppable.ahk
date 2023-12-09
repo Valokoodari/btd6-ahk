@@ -71,7 +71,6 @@ FloodedValleyImpoppable() {
     WaitForRound(27)
     Place("Druid A", true)
     Upgrade("Druid A", 0, 3, 0, true)   ; 000 -> 030
-    Targeting("Druid A", 1)             ; Strong -> First
     Upgrade("Druid A", 1, 0, 0, true)   ; 030 -> 130
 
     WaitForRound(28)
@@ -82,13 +81,11 @@ FloodedValleyImpoppable() {
     Upgrade("Village A", 0, 0, 2, true) ; 000 -> 002
     Place("Druid B", true)
     Upgrade("Druid B", 0, 3, 0, true)   ; 000 -> 030
-    Targeting("Druid B", 1)             ; Strong -> First
     Upgrade("Druid B", 1, 0, 0, true)   ; 030 -> 130
 
     WaitForRound(35)
     Place("Druid C", true)
     Upgrade("Druid C", 0, 3, 0, true)   ; 000 -> 030
-    Targeting("Druid C", 1)             ; Strong -> First
     Upgrade("Druid C", 1, 0, 0, true)   ; 030 -> 130
     Upgrade("Farm A", 0, 0, 2, true)    ; 000 -> 002
 
@@ -99,7 +96,6 @@ FloodedValleyImpoppable() {
     Upgrade("Sub A", 1, 2, 0, true)     ; 300 -> 420
     Place("Druid D", true)
     Upgrade("Druid D", 0, 3, 0, true)   ; 000 -> 030
-    Targeting("Druid D", 1)             ; Strong -> First
     Upgrade("Druid D", 1, 0, 0, true)   ; 030 -> 130
 
     WaitForRound(41)
