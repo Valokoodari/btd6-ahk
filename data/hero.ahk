@@ -3,7 +3,7 @@ HERO_SKINS := Map(
     "gwendolin", ["normal", "scientist", "harlegwen"],
     "striker_jones", ["normal", "biker", "octo"],
     "obyn", ["normal", "ocean", "mountain"],
-    "geraldo", ["normal"],
+    "corvus", ["normal"],
     "churchill", ["normal", "sentai", "sleigh"],
     "benjamin", ["normal", "dj", "sushi"],
     "ezili", ["normal", "smudge", "galaxy"],
@@ -12,5 +12,24 @@ HERO_SKINS := Map(
     "brickell", ["normal", "pirate", "lifeguard"],
     "etienne", ["normal", "etn", "book"],
     "sauda", ["normal", "viking", "jiangshi"],
-    "psi", ["normal", "psimbals"]
+    "psi", ["normal", "psimbals"],
+    "geraldo", ["normal"]
+)
+
+HERO_POSITIONS := Map(
+    "quincy", 0,
+    "gwendolin", 1,
+    "striker_jones", 2,
+    "obyn", 3,
+    "corvus", 4,
+    "churchill", 5,
+    "benjamin", 6,
+    "ezili", 7,
+    "pat", 8,
+    "adora", 9,
+    "brickell", 10,
+    "etienne", 11,
+    "sauda", 12,
+    "psi", 13,
+    "geraldo", 14
 )
