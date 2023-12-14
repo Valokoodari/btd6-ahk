@@ -24,8 +24,12 @@ CheckPauseMenu() {
 }
 
 WaitForRound(round, delay := 0) {
-    CheckPauseMenu()
-    MouseMove(mouseRest[1], mouseRest[2])
+    if defeated or SearchImage("states\defeat") {
+        global defeated := true
+    } else {
+        CheckPauseMenu()
+        MouseMove(mouseRest[1], mouseRest[2])
+    }
     Loop {
         if SearchRound(Mod(currentRound + 1, 10)) {
             global currentRound := currentRound + 1
