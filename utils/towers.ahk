@@ -160,7 +160,9 @@ Close() {
         Send("{Esc}")           ; Close Tower
         global toweropen := ""
         global menuside := ""
-        Sleep(200)
+        Sleep(100)
+        MouseMove(mouseRest[1], mouseRest[2])
+        Sleep(100)
 }
 
 Ability(tower, ability, position, asap := false) {
