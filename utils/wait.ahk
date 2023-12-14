@@ -25,8 +25,12 @@ CheckPauseMenu() {
 }
 
 WaitForRound(round, delay := 0) {
-    CheckPauseMenu()
-    MouseMove(mouseRest[1], mouseRest[2])
+    if defeated or SearchImage("states\defeat") {
+        global defeated := true
+    } else {
+        CheckPauseMenu()
+        MouseMove(mouseRest[1], mouseRest[2])
+    }
     if speed_adjust {
         return
     }
