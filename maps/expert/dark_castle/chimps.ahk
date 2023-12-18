@@ -33,7 +33,7 @@ DarkCastleChimps() {
     Upgrade("Sub A", 1, 0, 0, true)     ; 000 -> 100
 
     WaitForRound(14)
-    Upgrade("Sub A", 1, 0, , true)      ; 100 -> 200
+    Upgrade("Sub A", 1, 0, 0, true)      ; 100 -> 200
 
     WaitForRound(15)
     Upgrade("Sub A", 0, 0, 1, true)     ; 200 -> 201
@@ -45,7 +45,7 @@ DarkCastleChimps() {
     Upgrade("Dart A", 0, 0, 2, true)    ; 000 -> 002
 
     WaitForRound(25)
-    Upgrade("Sub A", 0, 0, , true)      ; 202 -> 203
+    Upgrade("Sub A", 0, 0, 1, true)      ; 202 -> 203
 
     WaitForRound(27)
     Place("Alch A", true)
