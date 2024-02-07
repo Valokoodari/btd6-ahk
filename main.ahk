@@ -29,7 +29,8 @@ Start() {
             Case "collect":
                 OpenBoxes()
             Case "event":
-                ClickImage("buttons\play_collect")
+                Send("{Esc}")
+                Sleep(1500)
             Case "victory":
                 ClickImage("buttons\next")
             Case "victory_menu":
