@@ -30,30 +30,31 @@ global MAPS := [
         ["Logs", LOGS_DATA]
     ],
     [
+        ["Sulfur Springs", SULFUR_SPRINGS_DATA],
         ["Water Park", WATER_PARK_DATA],
         ["Polyphemus", POLYPHEMUS_DATA],
         ["Covered Garden", COVERED_GARDEN_DATA],
         ["Quarry", QUARRY_DATA],
-        ["Quiet Street", QUIET_STREET_DATA],
-        ["Bloonarius Prime", BLOONARIUS_PRIME_DATA]
+        ["Quiet Street", QUIET_STREET_DATA]
     ],
     [
+        ["Bloonarius Prime", BLOONARIUS_PRIME_DATA],
         ["Balance", BALANCE_DATA],
         ["Encrypted", ENCRYPTED_DATA],
         ["Bazaar", BAZAAR_DATA],
         ["Adora's Temple", ADORAS_TEMPLE_DATA],
-        ["Spring Spring", SPRING_SRPING_DATA],
-        ["KartsNDarts", KARTSNDARTS_DATA]
+        ["Spring Spring", SPRING_SRPING_DATA]
     ],
     [
+        ["KartsNDarts", KARTSNDARTS_DATA],
         ["Moon Landing", MOON_LANDING_DATA],
         ["Haunted", HAUNTED_DATA],
         ["Downstream", DOWNSTREAM_DATA],
         ["Firing Range", FIRING_RANGE_DATA],
-        ["Cracked", CRACKED_DATA],
-        ["Streambed", STREAMBED_DATA]
+        ["Cracked", CRACKED_DATA]
     ],
     [
+        ["Streambed", STREAMBED_DATA],
         ["Chutes", CHUTES_DATA],
         ["Rake", RAKE_DATA],
         ["Spice Islands", SPICE_ISLANDS_DATA]
