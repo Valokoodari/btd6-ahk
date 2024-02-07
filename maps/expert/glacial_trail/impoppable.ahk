@@ -67,4 +67,7 @@ GlacialTrailImpoppable() {
 
     WaitForRound(87)
     Upgrade("Spike B", 0, 1, 0)         ; 240 -> 250
+
+    WaitForRound(98)
+    Upgrade("Wizard", 0, 2, 0)          ; 130 -> 150
 }
